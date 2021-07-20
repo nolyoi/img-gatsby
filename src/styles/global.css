@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.nav-underline {
+    border-bottom: 3px solid #A5B4FC;
+    padding-bottom: 5px;
+}
+
+.contact-underline {
+    border-bottom: 3px solid #11B981;
+    padding-bottom: 5px;
+}
+
+.leaflet-container {
+    height: 400px;
+    width: 100%;
+}
