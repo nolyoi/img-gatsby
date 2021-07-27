@@ -48,7 +48,13 @@ function AboutUs() {
                                 <img className="object-cover object-center w-full h-48 mx-auto rounded-lg" src="./desai.jpeg" alt="avatar" />
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Shreyas Desai</h3>
-                                    <span className="mt-1 font-medium text-gray-600 dark:text-gray-300">Doctor</span>
+                                    <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
+                                    <a className="text-indigo-500 inline-flex items-center">Learn More
+                                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
 
@@ -56,7 +62,13 @@ function AboutUs() {
                                 <img className="object-cover object-center w-full h-48 mx-auto rounded-lg" src="./sarma.jpeg" alt="avatar" />
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Havishakrishna Sarma</h3>
-                                    <span className="mt-1 font-medium text-gray-600 dark:text-gray-300">Doctor</span>
+                                    <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
+                                    <a className="text-indigo-500 inline-flex items-center">Learn More
+                                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
 
@@ -64,7 +76,13 @@ function AboutUs() {
                                 <img className="object-cover object-center w-full h-48 mx-auto rounded-lg" src="./christina.jpeg" alt="avatar" />
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Christina Vlamos</h3>
-                                    <span className="mt-1 font-medium text-gray-600 dark:text-gray-300">Nurse Practitioner</span>
+                                    <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Nurse Practitioner</p>
+                                    <a className="text-indigo-500 inline-flex items-center">Learn More
+                                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
 
@@ -72,7 +90,13 @@ function AboutUs() {
                                 <img className="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="avatar" />
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Gayle</h3>
-                                    <span className="mt-1 font-medium text-gray-600 dark:text-gray-300">Doctor</span>
+                                    <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
+                                    <a className="text-indigo-500 inline-flex items-center">Learn More
+                                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
 
@@ -80,7 +104,13 @@ function AboutUs() {
                                 <img className="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="avatar" />
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Patel</h3>
-                                    <span className="mt-1 font-medium text-gray-600 dark:text-gray-300">Doctor</span>
+                                    <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
+                                    <a className="text-indigo-500 inline-flex items-center">Learn More
+                                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
 
@@ -88,7 +118,13 @@ function AboutUs() {
                                 <img className="object-cover object-center w-full h-48 mx-auto rounded-lg" src="./mary.jpeg" alt="avatar" />
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Mary Szymaszek</h3>
-                                    <span className="mt-1 font-medium text-gray-600 dark:text-gray-300">Nurse/Office Manager</span>
+                                    <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Nurse/Office Manager</p>
+                                    <a className="text-indigo-500 inline-flex items-center">Learn More
+                                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>

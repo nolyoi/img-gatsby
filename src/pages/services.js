@@ -18,9 +18,9 @@ function Services() {
       </Helmet>
 
       <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0">
-        <h2 className="mt-20 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">Health Services</h2>
+        <h2 className="mt-20 mb-0 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">Health Services</h2>
         <section className="text-gray-600 body-font">
-          <div className="container px-5 pb-24 py-12 mx-auto">
+          <div className="container px-5 pb-20 py-6 mt-0 mx-auto">
             <p>
             Check Ups
 Wellness Exams
