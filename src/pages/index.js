@@ -106,7 +106,7 @@ function Index() {
                     </svg>
                   </div>
                   <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
-                    Mental Health & Substance Abuse
+                    Behavioral Health
                   </h1>
                   <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 ">You're about to launch soon and must be 100% focused on your product. Don't loose precious days designing, coding the landing page and testing .
                   </p>

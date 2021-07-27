@@ -1,13 +1,9 @@
 import * as React from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
-import { useState } from 'react';
 import { Helmet } from 'react-helmet';
 
 function Locations() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-
   return (
     <div>
       <Helmet>

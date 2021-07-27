@@ -9,13 +9,13 @@ function Footer() {
       <footer className="w-full text-white bg-gray-100 body-font" style={{ backgroundImage: "url('/footer-bg3.png')" }}>
         <div className="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
           <div className="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
-            <a className="flex items-center justify-center font-medium text-white title-font md:justify-start">
+            <Link to="/" className="flex items-center justify-center font-medium text-white title-font md:justify-start">
               <span className="w-6 text-2xl text-white">
                 ☤
               </span>
               Internal Medicine, & Geriatrics
-            </a>
-            <p className="mt-2 text-sm text-white">Quality care from friendly local professionals since 1987.</p>
+            </Link>
+            <p className="mt-2 text-sm text-white">Quality medical care from friendly local professionals since 1987.</p>
             <div className="mt-4">
               <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
                 <a className="text-white cursor-pointer hover:text-indigo-500">

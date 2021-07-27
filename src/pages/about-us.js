@@ -1,12 +1,9 @@
 import * as React from 'react';
-import { useState } from 'react';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 import { Helmet } from 'react-helmet';
 
 function AboutUs() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
     return (
         <div>
             <Helmet>
