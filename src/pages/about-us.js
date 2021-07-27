@@ -49,6 +49,7 @@ function AboutUs() {
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Shreyas Desai</h3>
                                     <span className="mt-1 font-medium text-gray-600 dark:text-gray-300">Doctor</span>
+                                    <a href="#" className="mt-1 font-medium text-gray-600 dark:text-gray-300">More</a>
                                 </div>
                             </div>
 
