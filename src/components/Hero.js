@@ -4,9 +4,10 @@ import HeroCarousel from 'react-hero-carousel';
 function Hero() {
   return (
     <div className="bg-white bg-opacity-0 mt-0 w-full">
-    <HeroCarousel interval={7000} height="60vh">
+    <HeroCarousel interval={7000} height="380px">
     <img
       src="https://reliantmedicalgroup.org/wp-content/uploads/2014/04/family-header.png?x14269"
+      height="400px"
       width="100%"
     />
     <img
@@ -15,8 +16,8 @@ function Hero() {
     />
     <img
       src="https://reliantmedicalgroup.org/wp-content/uploads/2014/04/family-header.png?x14269"
+      height="400px"
       width="100%"
-      
     />
   </HeroCarousel>
   </div>
