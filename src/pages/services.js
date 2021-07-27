@@ -55,7 +55,7 @@ Telemedicine
                   <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Primary Care</h1>
                   <p className="leading-relaxed mb-3">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.</p>
                   <a className="text-indigo-500 inline-flex items-center">Learn More
-                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M5 12h14"></path>
                       <path d="M12 5l7 7-7 7"></path>
                     </svg>
@@ -68,7 +68,7 @@ Telemedicine
                   <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Preventative Care</h1>
                   <p className="leading-relaxed mb-3">Wellness exams, annual blood work, check ups, and more.</p>
                   <a className="text-indigo-500 inline-flex items-center">Learn More
-                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" stroke-linecap="round" strokeLinejoin="round">
                       <path d="M5 12h14"></path>
                       <path d="M12 5l7 7-7 7"></path>
                     </svg>
@@ -81,7 +81,7 @@ Telemedicine
                   <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Behavioral Health</h1>
                   <p className="leading-relaxed mb-3">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.</p>
                   <a className="text-indigo-500 inline-flex items-center">Learn More
-                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" stroke-linecap="round" strokeLinejoin="round">
                       <path d="M5 12h14"></path>
                       <path d="M12 5l7 7-7 7"></path>
                     </svg>

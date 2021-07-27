@@ -3,8 +3,8 @@ import HeroCarousel from 'react-hero-carousel';
 
 function Hero() {
   return (
-    <div className="bg-white bg-opacity-0 mt-0 w-full z-50">
-    <HeroCarousel interval={7000} height="60vh">
+    <div className="bg-white bg-opacity-0 mt-0 w-full">
+    <HeroCarousel interval={7000} height="60vh" className="z-0">
     <img
       src="https://reliantmedicalgroup.org/wp-content/uploads/2014/04/family-header.png?x14269"
       width="100%"

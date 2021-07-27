@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 function Nav({ menuItem }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,9 +12,9 @@ function Nav({ menuItem }) {
         About Us
       </Link>
     } else {
-      return <Link to="/about-us" aria-label="About Us" title="Learn about our practice and team" className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400">
+      return <AniLink fade to="/about-us" aria-label="About Us" title="Learn about our practice and team" className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400">
         About Us
-      </Link>
+      </AniLink>
     }
   }
 
@@ -88,7 +89,7 @@ function Nav({ menuItem }) {
             </a>
           </li>
         </ul>
-        <div className="lg:hidden">
+        <div className="lg:hidden z-50">
           <button aria-label="Open Menu" title="Open Menu" className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
             onClick={
               () => setIsMenuOpen(true)
