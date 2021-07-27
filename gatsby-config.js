@@ -5,6 +5,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-fontawesome-css`,
     // {
     //   resolve: "gatsby-source-google-mymaps",
     //   options: {

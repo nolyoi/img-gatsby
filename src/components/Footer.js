@@ -1,11 +1,12 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faGoogle, faYelp } from '@fortawesome/free-brands-svg-icons'
 
 function Footer() {
   return (
-    <div className="flex items-end w-full mt-0 bg-white" style={{backgroundImage: '/footer-bg.png'}}>
-      <footer className="w-full text-white bg-gray-100 body-font" style={{backgroundImage: "url('/footer-bg3.png')"}}>
+    <div className="flex items-end w-full mt-0 bg-white" style={{ backgroundImage: '/footer-bg.png' }}>
+      <footer className="w-full text-white bg-gray-100 body-font" style={{ backgroundImage: "url('/footer-bg3.png')" }}>
         <div className="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
           <div className="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
             <a className="flex items-center justify-center font-medium text-white title-font md:justify-start">
@@ -17,14 +18,14 @@ function Footer() {
             <p className="mt-2 text-sm text-white">Quality care from friendly local professionals since 1987.</p>
             <div className="mt-4">
               <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
-                <a className="text-white cursor-pointer hover:text-gray-700">
-                  <i className="fa fa-facebook "></i>
+                <a className="text-white cursor-pointer hover:text-indigo-500">
+                  <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
                 </a>
-                <a href="https://www.google.com/maps/place/Internal+Medicine+%26+Geriatrics/@41.5752737,-87.171095,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xcea1d974d7aad2d8!8m2!3d41.575274!4d-87.1688708?hl=en" target="_blank" className="ml-3 text-gray-400 cursor-pointer hover:text-gray-700">
-                  <i className="fa fa-google "></i>
+                <a href="https://www.google.com/maps/place/Internal+Medicine+%26+Geriatrics/@41.5752737,-87.171095,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xcea1d974d7aad2d8!8m2!3d41.575274!4d-87.1688708?hl=en" target="_blank" className="ml-3 text-white cursor-pointer hover:text-indigo-500">
+                  <FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon>
                 </a>
-                <a href="https://www.yelp.com/biz/internal-medicine-and-geriatrics-portage-2" target="_blank" className="ml-3 text-gray-400 cursor-pointer hover:text-gray-700">
-                  <i className="fa fa-yelp"></i>
+                <a href="https://www.yelp.com/biz/internal-medicine-and-geriatrics-portage-2" target="_blank" className="ml-3 text-white cursor-pointer hover:text-indigo-500">
+                  <FontAwesomeIcon icon={faYelp}></FontAwesomeIcon>
                 </a>
               </span>
             </div>
@@ -51,7 +52,7 @@ function Footer() {
               <h2 className="mb-3 text-sm font-medium tracking-widest text-white uppercase title-font">Services</h2>
               <nav className="mb-10 list-none">
                 <li className="mt-3">
-                  <a className="text-gray-400 cursor-pointer hover:text-white">General Practice</a>
+                  <a className="text-gray-400 cursor-pointer hover:text-white">Family/General Practice</a>
                 </li>
                 <li className="mt-3">
                   <a className="text-gray-400 cursor-pointer hover:text-white">Geriatric Medicine</a>
@@ -106,7 +107,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div style={{backgroundColor: '#0e131a'}}>
+        <div style={{ backgroundColor: '#0e131a' }}>
           <div className="container px-5 py-3 mx-auto">
             <p className="text-sm text-gray-500 xl:text-center">Website developed & hosted by <a href="https://nolanm.dev/" target="_blank">Nolan Mayersky</a>.
             </p>
