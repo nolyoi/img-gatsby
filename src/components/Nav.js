@@ -43,7 +43,7 @@ function Nav({ menuItem }) {
   }
 
   return (
-    <div className="bg-gray-800 text-white px-0 py-5 mx-auto max-w-full md:px-24 lg:px-0 shadow-lg mb-0 z-30">
+    <div className="bg-gray-800 text-white px-2 py-5 mx-auto max-w-full md:px-24 lg:px-0 shadow-lg mb-0 z-30">
       <div className="container mx-auto">
         <div className="relative flex items-center justify-between w-full">
           <Link to="/" aria-label="Internal Medicine and Geriatrics" title="Internal Medicine and Geriatrics" className="inline-flex items-center">
@@ -74,11 +74,11 @@ function Nav({ menuItem }) {
             </li>
           </ul>
           <div className="lg:hidden z-50">
-            <button aria-label="Open Menu" title="Open Menu" className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
+            <button aria-label="Open Menu" title="Open Menu" className="p-2 mr-2 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
               onClick={
                 () => setIsMenuOpen(true)
               }>
-              <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
+              <svg className="w-5 text-indigo-300" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z" />
                 <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z" />
                 <path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z" />
@@ -91,10 +91,10 @@ function Nav({ menuItem }) {
                     <div className="flex items-center justify-between mb-4">
                       <div>
                         <Link to="/" aria-label="Internal Medicine and Geriatrics" title="Internal Medicine and Geriatrics" className="inline-flex items-center">
-                          <span className="w-8 text-5xl text-white">
+                          <span className="w-8 text-5xl text-gray-700">
                             ☤
                           </span>
-                          <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">
+                          <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                             Internal Medicine & Geriatrics
                           </span>
                         </Link>
@@ -122,7 +122,7 @@ function Nav({ menuItem }) {
                           {locationsLink()}
                         </li>
                         <li>
-                          Contact Us
+                          {contactLink()}
                         </li>
                         <li>
                           <a href="https://login.patientfusion.com/?defaultTab=login&redirect=https%3A%2F%2Fmy.patientfusion.com" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none" aria-label="Sign up" title="Sign up">

@@ -9,7 +9,7 @@ function Index() {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        ( <title>{`Internal Medicine and Geriatric - Serving Northwest Indiana for ${(new Date().getFullYear() - 1987) + "+"} years.</title>`}</title> )v
+        ( <title>{`Internal Medicine and Geriatric - Serving Northwest Indiana for ${(new Date().getFullYear() - 1987) + "+"} years.`}</title> )
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@600&display=swap" rel="stylesheet" />
@@ -18,7 +18,7 @@ function Index() {
       </Helmet>
       <Nav menuItem="index" />
       <Hero />
-      <div className="flex flex-col mx-auto">
+      <div className="flex flex-col mx-auto lg:mt-40 -mt-10">
         <div className="container px-4 py-16 mx-auto max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-20">
           <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
             <div>
