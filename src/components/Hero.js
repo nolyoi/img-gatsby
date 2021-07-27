@@ -4,7 +4,7 @@ import HeroCarousel from 'react-hero-carousel';
 function Hero() {
   return (
     <div className="bg-white bg-opacity-0 mt-0 w-full">
-    <HeroCarousel interval={7000} height="60vh" className="z-0">
+    <HeroCarousel interval={7000} height="60vh">
     <img
       src="https://reliantmedicalgroup.org/wp-content/uploads/2014/04/family-header.png?x14269"
       width="100%"

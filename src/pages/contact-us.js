@@ -10,14 +10,14 @@ function ContactUs() {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        ( <title>{`Internal Medicine and Geriatric - Contact us today!</title>`}</title> )v
+        ( <title>{`Internal Medicine and Geriatric - Contact our office today!</title>`}</title> )v
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@600&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </Helmet>
-      <Nav menuItem="contact" />
+      <Nav menuItem="contact-us" />
       <section className="text-gray-600 body-font relative">
         <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
           <div className="lg:w-4/5 md:w-4/5 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
@@ -37,11 +37,11 @@ function ContactUs() {
             </div>
           </div>
           <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-2 mt-0 md:mt-0">
-            <h2 className="mb-8 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none font-roboto">Get in touch <span className="text-green-500 contact-underline">today</span></h2>
+            <h2 className="mb-8 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none font-roboto">Get in touch <span className="text-green-500 font-bold font-marker">today</span></h2>
             <h3 className="text-gray-900 text-2xl mb-8 font-medium title-font">By Telephone</h3>
-            <p className="mb-20 text-5xl text-center transform -rotate-3"> <a href="tel:12197624423" className="text-indigo-500 cursor-pointer hover:text-orange-500 font-marker">(219)762-4423</a></p>
+            <p className="mb-12 text-5xl text-center transform -rotate-3"> <a href="tel:12197624423" className="text-indigo-500 cursor-pointer hover:text-orange-500 font-marker">(219)762-4423</a></p>
 
-            <h3 className="text-gray-900 text-2xl mb-8 font-medium title-font">By E-mail</h3>
+            <h3 className="text-gray-900 text-2xl mb-4 font-medium title-font">By E-mail</h3>
             <p className="leading-relaxed mb-5 text-gray-600 text-md">Use the form below to reach out to us via e-mail.</p>
             <div className="relative mb-4">
               <input type="text" placeholder="Your name" id="name" name="name" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />

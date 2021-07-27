@@ -18,7 +18,7 @@ function AboutUs() {
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
                 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
             </Helmet>
-            <Nav menuItem="about" />
+            <Nav menuItem="about-us" />
 
             <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0">
                 <section className="text-gray-600 body-font">

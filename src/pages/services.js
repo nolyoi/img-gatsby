@@ -11,7 +11,7 @@ function Services() {
       <Nav menuItem="services" />
       <Helmet>
         <meta charSet="utf-8" />
-        ( <title>{`Internal Medicine and Geriatric - Our health services./title>`}</title> )
+        ( <title>{`Internal Medicine and Geriatric - Browse our health services./title>`}</title> )
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@600&display=swap" rel="stylesheet" />
