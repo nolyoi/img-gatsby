@@ -12,7 +12,7 @@ function Nav({ menuItem }) {
         {title}
       </a>
     } else {
-      return <AniLink cover bg={bgColor} duration={0.8} direction={direction} to={to} aria-label={title} title={description} className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400">
+      return <AniLink fade bg={bgColor} duration={0.8} direction={direction} to={to} aria-label={title} title={description} className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400">
         {title}
       </AniLink>
     }
