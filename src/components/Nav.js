@@ -7,15 +7,23 @@ function Nav({ menuItem }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLink = ({ to, title, description, bgColor, direction = "left" }) => {
-    if (menuItem === title.toLowerCase().replace(/\s/g, "-")) {
+    if (isMenuOpen && menuItem === title.toLowerCase().replace(/\s/g, "-")) {
+      return <a href="#" aria-label={title} title="Learn about our practice and team" className="font-bold tracking-wide text-indigo-600 transition-colors duration-200 hover:text-deep-purple-accent-400">
+        {title}
+      </a>
+    } else if (isMenuOpen) {
+      return <AniLink fade bg={bgColor} duration={0.8} direction={direction} to={to} aria-label={title} title={description} className="font-medium tracking-wide text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400">
+        {title}
+      </AniLink>
+    } else if (menuItem === title.toLowerCase().replace(/\s/g, "-")) {
       return <a href="#" aria-label={title} title="Learn about our practice and team" className="font-bold nav-underline tracking-wide text-indigo-300 transition-colors duration-200 hover:text-deep-purple-accent-400">
         {title}
       </a>
-    } else {
-      return <AniLink fade bg={bgColor} duration={0.8} direction={direction} to={to} aria-label={title} title={description} className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400">
-        {title}
-      </AniLink>
     }
+
+    return <AniLink fade bg={bgColor} duration={0.8} direction={direction} to={to} aria-label={title} title={description} className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400">
+      {title}
+    </AniLink>
   }
 
   const aboutLink = () => {
