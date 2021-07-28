@@ -21,10 +21,10 @@ function Footer() {
                 <a className="text-white cursor-pointer hover:text-indigo-500">
                   <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
                 </a>
-                <a href="https://www.google.com/maps/place/Internal+Medicine+%26+Geriatrics/@41.5752737,-87.171095,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xcea1d974d7aad2d8!8m2!3d41.575274!4d-87.1688708?hl=en" target="_blank" className="ml-3 text-white cursor-pointer hover:text-indigo-500">
+                <a href="https://www.google.com/maps/place/Internal+Medicine+%26+Geriatrics/@41.5752737,-87.171095,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xcea1d974d7aad2d8!8m2!3d41.575274!4d-87.1688708?hl=en" target="_blank" className="ml-3 text-white cursor-pointer hover:text-indigo-500" rel="noreferrer">
                   <FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon>
                 </a>
-                <a href="https://www.yelp.com/biz/internal-medicine-and-geriatrics-portage-2" target="_blank" className="ml-3 text-white cursor-pointer hover:text-indigo-500">
+                <a href="https://www.yelp.com/biz/internal-medicine-and-geriatrics-portage-2" target="_blank" className="ml-3 text-white cursor-pointer hover:text-indigo-500" rel="noreferrer">
                   <FontAwesomeIcon icon={faYelp}></FontAwesomeIcon>
                 </a>
               </span>
@@ -109,7 +109,7 @@ function Footer() {
         </div>
         <div style={{ backgroundColor: '#0e131a' }}>
           <div className="container px-5 py-3 mx-auto">
-            <p className="text-sm text-gray-500 xl:text-center">Website developed & hosted by <a href="https://nolanm.dev/" target="_blank">Nolan Mayersky</a>.
+            <p className="text-sm text-gray-500 xl:text-center">Website developed & hosted by <a href="https://nolanm.dev/" target="_blank" rel="noreferrer">Nolan Mayersky</a>.
             </p>
             <p className="text-sm text-gray-500 capitalize xl:text-center">© {new Date().getFullYear()} <Link to="/">Internal Medicine & Geriatrics</Link>. All rights reserved.
             </p>
