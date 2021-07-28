@@ -2,6 +2,8 @@ import * as React from 'react';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 import { Helmet } from 'react-helmet';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 function AboutUs() {
     const [showModal, setShowModal] = React.useState(false);
@@ -21,12 +23,12 @@ function AboutUs() {
 
             <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0">
                 <section className="text-gray-600 body-font">
-                    <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-                        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                    <div className="container mx-auto flex px-5 py-24 md:flex-col flex-col items-center">
+                        <div className="lg:max-w-lg lg:w-full md:w-full w-5/6 mb-10 md:mb-10">
                             <img className="object-cover object-center rounded" alt="hero" src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Flag_of_Indiana.svg" />
                         </div>
-                        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                            <h1 className="title-font sm:text-4xl text-3xl mb-4 text-gray-900 font-bold tracking-tight">Serving Northwest Indiana for {new Date().getFullYear() - 1987} years
+                        <div className="lg:flex-grow md:w-full lg:pl-24 flex flex-col md:items-start items-center text-left">
+                            <h1 className="title-font sm:text-4xl text-3xl mb-4 text-gray-900 font-bold tracking-tight md:text-center w-full">Serving Northwest Indiana for {new Date().getFullYear() - 1987} years
                             </h1>
                             <p className="mb-6 leading-relaxed">Our team of experienced medical professionals have been serving communities in the Northwest Indiana region since 1987. We now operate 3 offices in Portage and Gary Indiana.</p>
 
@@ -34,7 +36,7 @@ function AboutUs() {
 
                             <div className="flex w-full justify-items-center items-center content-center">
                                 <a href="/" className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-green-500 hover:bg-green-600 focus:shadow-outline focus:outline-none" aria-label="Sign up" title="Sign up">
-                                    Contact us Today!
+                                    <FontAwesomeIcon icon={faPaperPlane} className="mr-2"/> Contact us Today!
                                 </a>
                             </div>
                         </div>

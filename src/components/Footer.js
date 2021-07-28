@@ -109,9 +109,9 @@ function Footer() {
         </div>
         <div style={{ backgroundColor: '#0e131a' }}>
           <div className="container px-5 py-3 mx-auto">
-            <p className="text-sm text-gray-500 xl:text-center">Website developed & hosted by <a href="https://nolanm.dev/" target="_blank" rel="noreferrer">Nolan Mayersky</a>.
+            <p className="text-sm text-gray-500 xl:text-center sm:text-center">Website built & hosted by <a href="https://nolanm.dev/" className="text-indigo-300 hover:text-indigo-700" target="_blank" rel="noreferrer">Nolan Mayersky</a>.
             </p>
-            <p className="text-sm text-gray-500 capitalize xl:text-center">© {new Date().getFullYear()} <Link to="/">Internal Medicine & Geriatrics</Link>. All rights reserved.
+            <p className="text-sm text-gray-500 capitalize xl:text-center sm:text-center">© {new Date().getFullYear()} <Link to="/" className="text-indigo-300 hover:text-indigo-700">Internal Medicine & Geriatrics</Link>. All rights reserved.
             </p>
           </div>
         </div>
