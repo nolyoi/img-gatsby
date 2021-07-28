@@ -8,7 +8,7 @@ function ContactUs() {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        ( <title>{`Internal Medicine and Geriatric - Contact our office today!</title>`}</title> )v
+        ( <title>{`Internal Medicine and Geriatric - Contact our office today!`}</title> )v
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@600&display=swap" rel="stylesheet" />
@@ -17,9 +17,9 @@ function ContactUs() {
       </Helmet>
       <Nav menuItem="contact-us" />
       <section className="text-gray-600 body-font relative">
-        <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+        <div className="container md:items-center px-5 py-24 mx-auto flex sm:flex-col flex-wrap">
           <div className="lg:w-4/5 md:w-4/5 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-            <iframe width="100%" height="100%" className="absolute inset-0" frameborder="0" title="map" marginHeight="0" marginWidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=Internal%20Medicine%20and%20Geriatrics%20Portage%20In+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"></iframe>
+            <iframe width="100%" height="100%" className="absolute inset-0 h-50" frameborder="0" title="map" marginHeight="0" marginWidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=Internal%20Medicine%20and%20Geriatrics%20Portage%20In+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"></iframe>
             <div className="bg-white w-4/5 relative flex flex-wrap py-6 rounded shadow-md">
               <div className="lg:w-1/2 px-6">
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
@@ -34,8 +34,8 @@ function ContactUs() {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-2 mt-0 md:mt-0">
-            <h2 className="mb-8 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none font-roboto">Get in touch <span className="text-green-500 font-bold font-marker">today</span></h2>
+          <div className="lg:w-1/2 md:w-full bg-white flex flex-col md:ml-auto w-full md:py-2 mt-0 md:mt-10">
+            <h2 className="mb-8 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none font-roboto md:text-center sm:w-full">Get in touch <span className="text-green-500 font-bold font-marker">today</span></h2>
             <h3 className="text-gray-900 text-2xl mb-8 font-medium title-font">By Telephone</h3>
             <p className="mb-12 text-5xl text-center transform -rotate-3"> <a href="tel:12197624423" className="text-indigo-500 cursor-pointer hover:text-orange-500 font-marker">(219)762-4423</a></p>
 

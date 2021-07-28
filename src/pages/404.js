@@ -1,54 +1,32 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from 'react';
+import Nav from '../components/Nav';
+import Footer from '../components/Footer';
+import { Helmet } from 'react-helmet';
+import { Link } from 'gatsby';
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-
-// markup
-const NotFoundPage = () => {
+function NotFoundPage() {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
+    <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        ( <title>{`Internal Medicine and Geriatric - 404!`}</title> )v
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+      </Helmet>
+      <Nav menuItem="contact-us" />
+      <section className="text-gray-600 body-font relative">
+        <div className="container md:items-center px-5 py-24 mx-auto flex sm:flex-col flex-wrap">
+          <div><img src="./404.png" /></div>
+          <div className="text-2xl font-bold text-blueGray-400"><Link to="/">Return home</Link></div>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
 }
 
-export default NotFoundPage
+export default NotFoundPage;

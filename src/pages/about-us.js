@@ -4,6 +4,7 @@ import Nav from '../components/Nav';
 import { Helmet } from 'react-helmet';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'gatsby';
 
 function AboutUs() {
     const [showModal, setShowModal] = React.useState(false);
@@ -23,7 +24,7 @@ function AboutUs() {
 
             <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0">
                 <section className="text-gray-600 body-font">
-                    <div className="container mx-auto flex px-5 py-24 md:flex-col flex-col items-center">
+                    <div className="container mx-auto flex px-5 py-24 md:flex-col lg:flex-row flex-col items-center">
                         <div className="lg:max-w-lg lg:w-full md:w-full w-5/6 mb-10 md:mb-10">
                             <img className="object-cover object-center rounded" alt="hero" src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Flag_of_Indiana.svg" />
                         </div>
@@ -35,9 +36,9 @@ function AboutUs() {
                             <p className="mb-8 leading-relaxed">IMG provides various services such as family, pediatric, and geriatric medicine as well as mental health and substance abuse services. Reach out to our friendly staff today for more information or to schedule an appointment!</p>
 
                             <div className="flex w-full justify-items-center items-center content-center">
-                                <a href="/" className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-green-500 hover:bg-green-600 focus:shadow-outline focus:outline-none" aria-label="Sign up" title="Sign up">
+                                <Link to="/contact-us" className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-green-500 hover:bg-green-600 focus:shadow-outline focus:outline-none" aria-label="Sign up" title="Sign up">
                                     <FontAwesomeIcon icon={faPaperPlane} className="mr-2"/> Contact us Today!
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
