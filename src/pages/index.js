@@ -18,7 +18,7 @@ function Index() {
       </Helmet>
       <Nav menuItem="index" />
       <Hero />
-      <div className="flex flex-col mx-auto lg:mt-40 -mt-10">
+      <div className="flex flex-col mx-auto lg:mt-32 -mt-10">
         <div className="container px-4 py-16 mx-auto max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-20">
           <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
             <div>
