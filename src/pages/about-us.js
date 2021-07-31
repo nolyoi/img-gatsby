@@ -48,7 +48,7 @@ function AboutUs() {
                     <h2 className="mb-6 font-sans text-3xl font-bold tracking-tight text-center text-gray-900 sm:text-4xl sm:leading-none">Meet Our Team</h2>
 
                     <div className="flex items-center justify-center w-full">
-                        <div className="grid gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+                        <div className="grid gap-6 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
                             <div className="w-full max-w-xs text-center">
                                 <img className="object-cover object-center w-full h-48 mx-auto rounded-lg" src="./desai.jpeg" alt="avatar" />
                                 <div className="mt-2">

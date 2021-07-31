@@ -8,7 +8,7 @@ function Footer() {
     <div className="flex items-end w-full mt-0 bg-white" style={{ backgroundImage: '/footer-bg.png' }}>
       <footer className="w-full text-white bg-gray-100 body-font" style={{ backgroundImage: "url('/footer-bg3.png')" }}>
         <div className="container flex flex-col flex-wrap px-5 py-24 md:py-12 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
-          <div className="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:w-full md:mb-8 md:text-center">
+          <div className="flex-shrink-0 w-64 mx-auto text-center md:mx-0 lg:w-1/4 md:w-full md:mb-8 md:text-center lg:text-left">
             <Link to="/" className="flex items-center justify-center font-medium text-white title-font md:justify-center">
               <span className="w-6 text-2xl text-white">
                 ☤
