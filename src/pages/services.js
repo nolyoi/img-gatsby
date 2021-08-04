@@ -2,16 +2,14 @@ import * as React from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import { Helmet } from 'react-helmet';
-import sal from 'sal.js';
 
 function Services() {
-  sal();
   return (
     <div>
       <Nav menuItem="services" />
       <Helmet>
         <meta charSet="utf-8" />
-        ( <title>{`Internal Medicine and Geriatric - Browse our health services.`}</title> )
+        ( <title>{`Internal Medicine and Geriatrics - Browse our health services.`}</title> )
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@600&display=swap" rel="stylesheet" />

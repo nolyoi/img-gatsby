@@ -18,7 +18,7 @@ function Footer() {
             <p className="mt-2 text-sm text-white">Quality medical care from friendly local professionals since 1987.</p>
             <div className="mt-4">
               <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
-                <a className="text-white cursor-pointer hover:text-indigo-500">
+                <a href="https://www.facebook.com/imgportage/" target="_blank" className="text-white cursor-pointer hover:text-indigo-500">
                   <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
                 </a>
                 <a href="https://www.google.com/maps/place/Internal+Medicine+%26+Geriatrics/@41.5752737,-87.171095,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xcea1d974d7aad2d8!8m2!3d41.575274!4d-87.1688708?hl=en" target="_blank" className="ml-3 text-white cursor-pointer hover:text-indigo-500" rel="noreferrer">
@@ -81,7 +81,7 @@ function Footer() {
 
                 <li className="mt-6">
                   <Link to="/locations#suboxone" className="text-gray-400 cursor-pointer hover:text-white">
-                    <h2 className="mb-3 text-sm font-medium tracking-widest text-white uppercase title-font">Portage Office - Suboxone</h2>
+                    <h2 className="mb-3 text-sm font-medium tracking-widest text-white uppercase title-font">Portage Suboxone Clinic</h2>
                     3190 Lancer Street
                     <br />
                     Portage, IN. 46368

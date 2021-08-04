@@ -30,7 +30,7 @@ function AboutUs() {
                             <img className="object-cover object-center rounded" alt="hero" src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Flag_of_Indiana.svg" />
                         </div>
                         <div className="lg:flex-grow md:w-full lg:pl-24 flex flex-col md:items-start items-center text-left">
-                            <h1 className="title-font sm:text-4xl text-3xl mb-4 text-gray-900 font-bold tracking-tight md:text-center w-full">Serving Northwest Indiana for {new Date().getFullYear() - 1987} years
+                            <h1 className="title-font sm:text-4xl text-3xl mb-4 text-gray-900 font-bold tracking-tight lg:text-left md:text-center md:mb-4 md:mt-8 w-full">Serving Northwest Indiana for {new Date().getFullYear() - 1987} years
                             </h1>
                             <p className="mb-6 leading-relaxed">Our team of experienced medical professionals have been serving communities in the Northwest Indiana region since 1987. We now operate 3 offices in Portage and Gary Indiana.</p>
 
@@ -51,7 +51,7 @@ function AboutUs() {
                     <div className="flex items-center justify-center w-full">
                         <div className="grid gap-6 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
                             <div className="w-full max-w-xs text-center">
-                                <img className="object-cover object-center w-full h-48 mx-auto rounded-lg" src="./desai.jpeg" alt="avatar" />
+                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><div className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{backgroundImage: 'url("./desai.jpeg")'}} alt="avatar"></div></div>
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Shreyas Desai</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
@@ -65,7 +65,7 @@ function AboutUs() {
                             </div>
 
                             <div className="w-full max-w-xs text-center">
-                                <img className="object-cover object-center w-full h-48 mx-auto rounded-lg" src="./sarma.jpeg" alt="avatar" />
+                            <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><div className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{backgroundImage: 'url("./sarma.jpeg")'}} alt="avatar"></div></div>
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Havishakrishna Sarma</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
@@ -79,7 +79,7 @@ function AboutUs() {
                             </div>
 
                             <div className="w-full max-w-xs text-center">
-                                <img className="object-cover object-center w-full h-48 mx-auto rounded-lg" src="./christina.jpeg" alt="avatar" />
+                            <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><div className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{backgroundImage: 'url("./christina.jpeg")'}} alt="avatar"></div></div>
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Christina Connelly</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Nurse Practitioner</p>
@@ -93,7 +93,7 @@ function AboutUs() {
                             </div>
 
                             <div className="w-full max-w-xs text-center">
-                                <img className="object-cover object-center w-full h-48 mx-auto rounded-lg" src="./gayle.jpeg" alt="avatar" />
+                            <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><div className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{backgroundImage: 'url("./gayle.jpeg")'}} alt="avatar"></div></div>
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Gayle</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
@@ -107,7 +107,7 @@ function AboutUs() {
                             </div>
 
                             <div className="w-full max-w-xs text-center">
-                                <img className="object-cover object-center w-full h-48 mx-auto rounded-lg" src="./patel.jpeg" alt="avatar" />
+                            <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><div className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{backgroundImage: 'url("./patel.jpeg")'}} alt="avatar"></div></div>
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Patel</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
