@@ -5,16 +5,20 @@ function Hero() {
   return (
     <div className="bg-white bg-opacity-0 mt-0 w-full">
       <HeroCarousel interval={7000} height="380px">
-      <div className="w-full bg-gray-800 shadow-xl bg-opacity-70 text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./recovery.webp)', backgroundSize: 'cover', backgroundPosition: 'center', height: '400px' }}>
-          <div className="container mx-auto pt-10 grid grid-cols-6 gap-0 items-end">
-            <div className="col-span-3 col-start-2 text-left text-gray-300 mb-0">
-              <h1 className="mb-4 font-sans text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl sm:leading-none">Struggling with Addiction? Checkout the <span className="text-indigo-600 font-bold">IMG Suboxone Clinic</span>!</h1>
-              <p>Our Suboxone clinic is conveniently located just off of Willowcreek Ave in Portage, Indiana. If you are struggling with the diseas of addiction, please reach out to us today at <a href="tel:12192924501" className="font-bold text-orange-500 hover:text-indigo-300">(219) 292-4501</a>.</p>
-            </div>
-            <div className="col-span-2 col-start-5 items-end">
-              <div className="w-full max-w-xs text-right">
-                <div className="mt-10 ml-16 relative flex items-right justify-right overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg">
-                  <div className="absolute w-full h-full bg-center bg-cover" style={{ backgroundImage: 'url("./suboxone.png")' }} alt="avatar">
+        <div className="w-full bg-gray-800 shadow-xl bg-opacity-70 text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./recovery.webp)', backgroundSize: 'cover', backgroundPosition: 'center', height: '400px' }}>
+          <div className="container mx-auto">
+            <div className="flex flex-row mx-auto pt-10 items-center justify-center">
+              <div className="lg:w-1/2 text-gray-300 mb-0">
+                <div className="mx-auto justify-self-end">
+                  <h1 className="mt-10 mb-4 font-sans text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl sm:leading-none">Struggling with Addiction? Checkout the <span className="text-indigo-600 font-bold">IMG Suboxone Clinic</span>!</h1>
+                  <p>Our Suboxone clinic is conveniently located just off of Willowcreek Ave in Portage, Indiana. If you are struggling with the diseas of addiction, please reach out to us today at <a href="tel:12192924501" className="font-bold text-orange-500 hover:text-indigo-300">(219) 292-4501</a>.</p>
+                </div>
+              </div>
+              <div className="lg:w-1/2 items-center">
+                <div className="mx-auto w-full max-w-xs">
+                  <div className="mt-10 relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto">
+                    <div className="absolute w-full h-full bg-center bg-cover" style={{ backgroundImage: 'url("./suboxone.png")' }} alt="avatar">
+                    </div>
                   </div>
                 </div>
               </div>
