@@ -5,7 +5,22 @@ function Hero() {
   return (
     <div className="bg-white bg-opacity-0 mt-0 w-full">
       <HeroCarousel interval={7000} height="380px">
-        {/* Slide 1 */}
+        <div className="w-full bg-gray-200 overflow-hidden text-center relative" style={{ backgroundImage: 'url(./furly-bg.png)', height: '400px' }}>
+          <div className="container mx-auto pt-10 grid grid-cols-6 gap-0 items-end">
+            <div className="col-span-2 col-start-2 items-end">
+              <div className="w-full max-w-xs text-right">
+                <div className="mt-10 ml-16 relative flex items-right justify-right overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg">
+                  <div className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("./patel.jpeg")' }} alt="avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-span-3 col-start-4 text-left">
+              <h1 className="mb-4 font-sans text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl sm:leading-none">Welcome to our new doctor, <br /> <span className="text-indigo-600 font-bold">T. Patel, MD</span>!</h1>
+              <p>Sed ornare nulla vel massa accumsan porta. Integer condimentum convallis sagittis. Nunc rhoncus mauris sit amet ligula lobortis condimentum. Sed id elit quis diam vulputate finibus eu in ipsum. Vestibulum ac turpis sed felis volutpat lobortis at eu arcu. Suspendisse pellentesque velit nulla.</p>
+            </div>
+          </div>
+        </div>
         <div className="w-full bg-gray-800 shadow-xl bg-opacity-70 text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./recovery.webp)', backgroundSize: 'cover', backgroundPosition: 'center', height: '400px' }}>
           <div className="container mx-auto pt-10 grid grid-cols-6 gap-0 items-end">
             <div className="col-span-3 col-start-2 text-left text-gray-300 mb-0">
@@ -17,24 +32,6 @@ function Hero() {
                 <div className="mt-10 ml-16 relative flex items-right justify-right overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg">
                   <div className="absolute w-full h-full bg-center bg-cover" style={{ backgroundImage: 'url("./suboxone.png")' }} alt="avatar">
                   </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Slide 2 */}
-            <div className="w-full bg-gray-200 overflow-hidden text-center relative" style={{ backgroundImage: 'url(./furly-bg.png)', height: '400px' }}>
-              <div className="container mx-auto pt-10 grid grid-cols-6 gap-0 items-end">
-                <div className="col-span-2 col-start-2 items-end">
-                  <div className="w-full max-w-xs text-right">
-                    <div className="mt-10 ml-16 relative flex items-right justify-right overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg">
-                      <div className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("./patel.jpeg")' }} alt="avatar">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-span-3 col-start-4 text-left">
-                  <h1 className="mb-4 font-sans text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl sm:leading-none">Welcome to our new doctor, <br /> <span className="text-indigo-600 font-bold">T. Patel, MD</span>!</h1>
-                  <p>Sed ornare nulla vel massa accumsan porta. Integer condimentum convallis sagittis. Nunc rhoncus mauris sit amet ligula lobortis condimentum. Sed id elit quis diam vulputate finibus eu in ipsum. Vestibulum ac turpis sed felis volutpat lobortis at eu arcu. Suspendisse pellentesque velit nulla.</p>
                 </div>
               </div>
             </div>
