@@ -83,12 +83,12 @@ function AboutUs() {
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Christina Connelly</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Nurse Practitioner</p>
-                                    <a onClick={() => setShowChristina(true)} className="text-indigo-500 inline-flex items-center">Learn More
+                                    <button onClick={() => setShowChristina(true)} className="text-indigo-500 inline-flex items-center">Learn More
                                         <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M5 12h14"></path>
                                             <path d="M12 5l7 7-7 7"></path>
                                         </svg>
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
 
@@ -220,7 +220,7 @@ function AboutUs() {
                                         <h3 className="text-2xl font-semibold mt-1">
                                             About Dr. Connelly
                                         </h3>
-                                        <p className="mb-4 mt-2">Christina Connelly is a certified Family Nurse Practitioner. She obtained her Bachelor’s Degree in Nursing from Indiana University. She went on to complete her Master’s Degree at Indiana Wesleyan University graduating in 2015. </p>
+                                        <p className="mb-4 mt-2">Christina Connelly is a certified <strong><i>Family Nurse Practitioner</i></strong>. She obtained her <i>Bachelor’s Degree</i> in Nursing from <strong>Indiana University</strong>. She went on to complete her <i>Master’s Degree</i> at <strong>Indiana Wesleyan University</strong> graduating in 2015. </p>
                                         
                                         <p className="mb-4 mt-2">As a Family Nurse Practitioner, she has practiced in a variety of inpatient and outpatient settings. She has also integrated telemedicine into her practice. Christina has experience in critical care, as well as a special focus in obesity medicine, the treatment of opiate dependence, and geriatric medicine. 
                                         She places high value on individualized care, strong family values, and preventative medicine.</p>
