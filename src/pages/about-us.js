@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 import { Helmet } from 'react-helmet';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faHeartbeat, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'gatsby';
 
 function AboutUs() {
@@ -51,7 +51,7 @@ function AboutUs() {
                     <div className="flex items-center justify-center w-full">
                         <div className="grid gap-6 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
                             <div className="w-full max-w-xs text-center">
-                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><div className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{backgroundImage: 'url("./desai.jpeg")'}} alt="avatar"></div></div>
+                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><button onClick={() => setShowDesai(true)} className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{backgroundImage: 'url("./desai.jpeg")'}} alt="avatar"></button></div>
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Shreyas Desai</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
@@ -79,7 +79,7 @@ function AboutUs() {
                             </div>
 
                             <div className="w-full max-w-xs text-center">
-                            <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><div className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{backgroundImage: 'url("./christina.jpeg")'}} alt="avatar"></div></div>
+                            <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><button onClick={() => setShowChristina(true)} className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{backgroundImage: 'url("./christina.jpeg")'}} alt="avatar"></button></div>
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Christina Connelly</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Nurse Practitioner</p>
@@ -146,7 +146,7 @@ function AboutUs() {
                             <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                 <div className="flex items-start justify-between p-5 border-b border-dashed border-gray-300 rounded-t align-middle">
                                     <h3 className="text-3xl font-semibold mt-1">
-                                        Doctor Shreyas Desai
+                                    <FontAwesomeIcon icon={faHeartbeat} className="text-red-500 mr-2"></FontAwesomeIcon> Doctor Shreyas Desai
                                     </h3>
                                     <button
                                         className="p-1 ml-auto bg-gray-200 hover:bg-red-500 rounded border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -198,11 +198,11 @@ function AboutUs() {
                     <div
                         className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
                     >
-                        <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                        <div className="relative w-auto my-8 mx-auto max-w-3xl">
                             <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                 <div className="flex items-start justify-between p-5 border-b border-dashed border-gray-300 rounded-t align-middle">
                                     <h3 className="text-3xl font-semibold mt-1">
-                                        Doctor Christina Connelly
+                                        <FontAwesomeIcon icon={faHeartbeat} className="text-red-500 mr-2"></FontAwesomeIcon> Christina Connelly, NP
                                     </h3>
                                     <button
                                         className="p-1 ml-auto bg-gray-200 hover:bg-red-500 rounded border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"

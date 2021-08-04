@@ -73,7 +73,7 @@ function Services() {
                   <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Preventative Care</h1>
                   <p className="text-gray-100 leading-relaxed mb-3">Wellness exams, annual blood work, check ups, and more. Our doctors are happy to help with your preventative care needs.</p>
                   <a href="#" className="text-indigo-200 inline-flex items-center">Learn More
-                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" stroke-linecap="round" strokeLinejoin="round">
+                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M5 12h14"></path>
                       <path d="M12 5l7 7-7 7"></path>
                     </svg>
@@ -89,7 +89,7 @@ function Services() {
                   <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Substance Abuse</h1>
                   <p className="text-gray-100 leading-relaxed mb-3">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.</p>
                   <a href="#" className="text-indigo-200 inline-flex items-center">Learn More
-                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" stroke-linecap="round" strokeLinejoin="round">
+                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M5 12h14"></path>
                       <path d="M12 5l7 7-7 7"></path>
                     </svg>
@@ -119,7 +119,7 @@ function Services() {
                   <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Geriatrics</h1>
                   <p className="text-gray-100 leading-relaxed mb-3">We provide services for the physical, emotional and social well-being of elderly patients with medical and psychosocial problems.</p>
                   <a href="#" className="text-indigo-200 inline-flex items-center">Learn More
-                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" stroke-linecap="round" strokeLinejoin="round">
+                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M5 12h14"></path>
                       <path d="M12 5l7 7-7 7"></path>
                     </svg>
@@ -135,7 +135,7 @@ function Services() {
                   <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Prenatal</h1>
                   <p className="text-gray-100 leading-relaxed mb-3">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.</p>
                   <a href="#" className="text-indigo-200 inline-flex items-center">Learn More
-                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" stroke-linecap="round" strokeLinejoin="round">
+                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M5 12h14"></path>
                       <path d="M12 5l7 7-7 7"></path>
                     </svg>

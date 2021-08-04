@@ -4,24 +4,44 @@ import HeroCarousel from 'react-hero-carousel';
 function Hero() {
   return (
     <div className="bg-white bg-opacity-0 mt-0 w-full">
-    <HeroCarousel interval={6000} height="380px">
-    <div className="w-full bg-gray-800 overflow-hidden text-center relative bg-blend-overlay bg-opacity-50" style={{backgroundImage: 'url("https://reliantmedicalgroup.org/wp-content/uploads/2014/04/family-header.png?x14269")', backgroundPosition: 'center', backgroundSize: 'cover', height: '400px'}}>
-      <div className="container mx-auto pt-10 grid grid-cols-3 gap-4">
-        <div className="col-span-1">
-        <div className="bg-indigo-600 bg-opacity-90 rounded-lg p-4">
-        <h1 className="mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">Welcome to our new GP, Dr. Patel!</h1>
-        <button className="px-4 py-3 bg-white text-indigo-600 border-2 border-black text-xs font-semibold hover:border-white hover:text-white hover:bg-indigo-800" href="#">More</button>
+      <HeroCarousel interval={7000} height="380px">
+        {/* Slide 1 */}
+        <div className="w-full bg-gray-800 shadow-xl bg-opacity-70 text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./recovery.webp)', backgroundSize: 'cover', backgroundPosition: 'center', height: '400px' }}>
+          <div className="container mx-auto pt-10 grid grid-cols-6 gap-0 items-end">
+            <div className="col-span-3 col-start-2 text-left text-gray-300 mb-0">
+              <h1 className="mb-4 font-sans text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl sm:leading-none">Struggling with Addiction? Checkout the <span className="text-indigo-600 font-bold">IMG Suboxone Clinic</span>!</h1>
+              <p>Our Suboxone clinic is conveniently located just off of Willowcreek Ave in Portage, Indiana. If you are struggling with the diseas of addiction, please reach out to us today at <a href="tel:12192924501" className="font-bold text-orange-500 hover:text-indigo-300">(219) 292-4501</a>.</p>
+            </div>
+            <div className="col-span-2 col-start-5 items-end">
+              <div className="w-full max-w-xs text-right">
+                <div className="mt-10 ml-16 relative flex items-right justify-right overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg">
+                  <div className="absolute w-full h-full bg-center bg-cover" style={{ backgroundImage: 'url("./suboxone.png")' }} alt="avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Slide 2 */}
+            <div className="w-full bg-gray-200 overflow-hidden text-center relative" style={{ backgroundImage: 'url(./furly-bg.png)', height: '400px' }}>
+              <div className="container mx-auto pt-10 grid grid-cols-6 gap-0 items-end">
+                <div className="col-span-2 col-start-2 items-end">
+                  <div className="w-full max-w-xs text-right">
+                    <div className="mt-10 ml-16 relative flex items-right justify-right overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg">
+                      <div className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("./patel.jpeg")' }} alt="avatar">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-span-3 col-start-4 text-left">
+                  <h1 className="mb-4 font-sans text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl sm:leading-none">Welcome to our new doctor, <br /> <span className="text-indigo-600 font-bold">T. Patel, MD</span>!</h1>
+                  <p>Sed ornare nulla vel massa accumsan porta. Integer condimentum convallis sagittis. Nunc rhoncus mauris sit amet ligula lobortis condimentum. Sed id elit quis diam vulputate finibus eu in ipsum. Vestibulum ac turpis sed felis volutpat lobortis at eu arcu. Suspendisse pellentesque velit nulla.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-      </div>
+      </HeroCarousel>
     </div>
-    <div className="w-full bg-gray-800 overflow-hidden text-center relative bg-blend-overlay bg-opacity-50" style={{backgroundImage: 'url("http://old-www.islandhospital.com/wp-content/uploads/2015/10/Find-Doctor-Header-Images-2.jpg")', backgroundPosition: 'center', backgroundSize: 'cover', height: '400px'}}>
-      <div className="container mx-auto pt-10">
-        <h1 className="mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">Welcome to our new GP, Dr. Patel!</h1>
-      </div>
-    </div>
-  </HeroCarousel>
-  </div>
     // <div className="flex bg-white bg-opacity-0 mt-4 lg:max-w-screen-xl mx-auto"
     //   style={
     //     { height: "600px" }
@@ -51,7 +71,7 @@ function Hero() {
     //     </div>
     //   </div>
     // </div>
-    
+
   );
 }
 
