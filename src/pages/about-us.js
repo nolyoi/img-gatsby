@@ -7,7 +7,8 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'gatsby';
 
 function AboutUs() {
-    const [showModal, setShowModal] = React.useState(false);
+    const [showDesai, setShowDesai] = React.useState(false);
+    const [showChristina, setShowChristina] = React.useState(false);
 
     return (
         <div>
@@ -54,7 +55,7 @@ function AboutUs() {
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Shreyas Desai</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
-                                    <button onClick={() => setShowModal(true)} className="text-indigo-500 inline-flex items-center">Learn More
+                                    <button onClick={() => setShowDesai(true)} className="text-indigo-500 inline-flex items-center">Learn More
                                         <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M5 12h14"></path>
                                             <path d="M12 5l7 7-7 7"></path>
@@ -80,9 +81,9 @@ function AboutUs() {
                             <div className="w-full max-w-xs text-center">
                                 <img className="object-cover object-center w-full h-48 mx-auto rounded-lg" src="./christina.jpeg" alt="avatar" />
                                 <div className="mt-2">
-                                    <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Christina Vlamos</h3>
+                                    <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Christina Connelly</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Nurse Practitioner</p>
-                                    <a className="text-indigo-500 inline-flex items-center">Learn More
+                                    <a onClick={() => setShowChristina(true)} className="text-indigo-500 inline-flex items-center">Learn More
                                         <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M5 12h14"></path>
                                             <path d="M12 5l7 7-7 7"></path>
@@ -92,7 +93,7 @@ function AboutUs() {
                             </div>
 
                             <div className="w-full max-w-xs text-center">
-                                <img className="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="avatar" />
+                                <img className="object-cover object-center w-full h-48 mx-auto rounded-lg" src="./gayle.jpeg" alt="avatar" />
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Gayle</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
@@ -106,7 +107,7 @@ function AboutUs() {
                             </div>
 
                             <div className="w-full max-w-xs text-center">
-                                <img className="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="avatar" />
+                                <img className="object-cover object-center w-full h-48 mx-auto rounded-lg" src="./patel.jpeg" alt="avatar" />
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Patel</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
@@ -136,7 +137,7 @@ function AboutUs() {
                     </div>
                 </section>
             </div>
-            {showModal ? (
+            {showDesai ? (
                 <div>
                     <div
                         className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
@@ -149,7 +150,7 @@ function AboutUs() {
                                     </h3>
                                     <button
                                         className="p-1 ml-auto bg-gray-200 hover:bg-red-500 rounded border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                                        onClick={() => setShowModal(false)}
+                                        onClick={() => setShowDesai(false)}
                                     >
                                         <span className="text-gray-500 hover:text-white z-50 h-6 w-6 text-2xl block outline-none focus:outline-none">
                                             ×
@@ -180,10 +181,54 @@ function AboutUs() {
                                     <button
                                         className="bg-gray-700 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                         type="button"
-                                        onClick={() => setShowModal(false)}
+                                        onClick={() => setShowDesai(false)}
                                     >
                                         Back
                                     </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="opacity-40 fixed inset-0 z-40 bg-black"></div>
+                </div>
+            ) : null}
+
+{showChristina ? (
+                <div>
+                    <div
+                        className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+                    >
+                        <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                            <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                                <div className="flex items-start justify-between p-5 border-b border-dashed border-gray-300 rounded-t align-middle">
+                                    <h3 className="text-3xl font-semibold mt-1">
+                                        Doctor Christina Connelly
+                                    </h3>
+                                    <button
+                                        className="p-1 ml-auto bg-gray-200 hover:bg-red-500 rounded border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                        onClick={() => setShowChristina(false)}
+                                    >
+                                        <span className="text-gray-500 hover:text-white z-50 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                                            ×
+                                        </span>
+                                    </button>
+                                </div>
+                                {/*body*/}
+                                <div className="mt-2">
+                                    <span className="inline-block py-4 px-8 text-blueGray-500 text-lg">
+                                        <img className="inline-block w-60 mr-8 mb-3 object-cover float-left h-60 rounded-full" src="./christina.jpeg" alt="avatar" />
+                                        <h3 className="text-2xl font-semibold mt-1">
+                                            About Dr. Connelly
+                                        </h3>
+                                        <p className="mb-4 mt-2">Christina Connelly is a certified Family Nurse Practitioner. She obtained her Bachelor’s Degree in Nursing from Indiana University. She went on to complete her Master’s Degree at Indiana Wesleyan University graduating in 2015. </p>
+                                        
+                                        <p className="mb-4 mt-2">As a Family Nurse Practitioner, she has practiced in a variety of inpatient and outpatient settings. She has also integrated telemedicine into her practice. Christina has experience in critical care, as well as a special focus in obesity medicine, the treatment of opiate dependence, and geriatric medicine. 
+                                        She places high value on individualized care, strong family values, and preventative medicine.</p>
+
+                                        <p className="mb-4 mt-2">Christina was born and raised in Northwest Indiana and currently lives in Valparaiso with her husband and youngest daughter. Being part of the community herself, has inspired her to make a positive impact on others and their health.</p>
+                                        <p className="mb-4 mt-2">In her spare time Christina enjoys spending time with her eldest sons, exploring the Dunes State Park, traveling, snorkeling and exercise of any kind. 
+                                        </p>
+                                    </span>
                                 </div>
                             </div>
                         </div>

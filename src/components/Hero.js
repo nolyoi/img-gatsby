@@ -4,21 +4,22 @@ import HeroCarousel from 'react-hero-carousel';
 function Hero() {
   return (
     <div className="bg-white bg-opacity-0 mt-0 w-full">
-    <HeroCarousel interval={7000} height="380px">
-    <img
-      src="https://reliantmedicalgroup.org/wp-content/uploads/2014/04/family-header.png?x14269"
-      height="400px"
-      width="100%"
-    />
-    <img
-      src="http://old-www.islandhospital.com/wp-content/uploads/2015/10/Find-Doctor-Header-Images-2.jpg"
-      width="100%"
-    />
-    <img
-      src="https://reliantmedicalgroup.org/wp-content/uploads/2014/04/family-header.png?x14269"
-      height="400px"
-      width="100%"
-    />
+    <HeroCarousel interval={6000} height="380px">
+    <div className="w-full bg-gray-800 overflow-hidden text-center relative bg-blend-overlay bg-opacity-50" style={{backgroundImage: 'url("https://reliantmedicalgroup.org/wp-content/uploads/2014/04/family-header.png?x14269")', backgroundPosition: 'center', backgroundSize: 'cover', height: '400px'}}>
+      <div className="container mx-auto pt-10 grid grid-cols-3 gap-4">
+        <div className="col-span-1">
+        <div className="bg-indigo-600 bg-opacity-90 rounded-lg p-4">
+        <h1 className="mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">Welcome to our new GP, Dr. Patel!</h1>
+        <button className="px-4 py-3 bg-white text-indigo-600 border-2 border-black text-xs font-semibold hover:border-white hover:text-white hover:bg-indigo-800" href="#">More</button>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div className="w-full bg-gray-800 overflow-hidden text-center relative bg-blend-overlay bg-opacity-50" style={{backgroundImage: 'url("http://old-www.islandhospital.com/wp-content/uploads/2015/10/Find-Doctor-Header-Images-2.jpg")', backgroundPosition: 'center', backgroundSize: 'cover', height: '400px'}}>
+      <div className="container mx-auto pt-10">
+        <h1 className="mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">Welcome to our new GP, Dr. Patel!</h1>
+      </div>
+    </div>
   </HeroCarousel>
   </div>
     // <div className="flex bg-white bg-opacity-0 mt-4 lg:max-w-screen-xl mx-auto"

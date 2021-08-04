@@ -2,8 +2,10 @@ import * as React from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import { Helmet } from 'react-helmet';
+import sal from 'sal.js';
 
 function Services() {
+  sal();
   return (
     <div>
       <Nav menuItem="services" />
@@ -21,7 +23,8 @@ function Services() {
         <h2 className="mt-20 mb-0 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">Health Services</h2>
         <section className="text-gray-600 body-font">
           <div className="container px-5 pb-20 py-6 mt-0 mx-auto">
-            <p>
+            <p className="text-gray-700 leading-relaxed mb-3">IMG is here throughout all stages of life providing continuity of care. From pediatrics, to general/family, to geriatrics, and more.</p>
+            <p className="text-gray-700 leading-relaxed mb-3">
               Check Ups
               Wellness Exams
               MRI
@@ -47,12 +50,15 @@ function Services() {
               Heart Disease
               Telemedicine
             </p>
-            <div className="flex flex-wrap -m-4 mt-20">
-              <div className="p-4 lg:w-1/3 w-full">
-                <div className="h-full bg-gray-800 bg-opacity-95 px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./primary-care.png' }}>
-                  <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-100 mb-3">Primary Care</h1>
+            <div className="flex flex-wrap -m-8 mt-20">
+              <div data-sal="slide-right"
+                data-sal-delay="300"
+                data-sal-duration="1500"
+                data-sal-easing="ease-out-quint" className="mb-8 p-4 lg:w-1/3 md:w-1/2 w-full">
+                <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./primary-care.png)', backgroundPosition: 'center' }}>
+                  <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Primary Care</h1>
                   <p className="text-gray-100 leading-relaxed mb-3">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.</p>
-                  <a className="text-indigo-200 inline-flex items-center">Learn More
+                  <a href="#" className="text-indigo-200 inline-flex items-center">Learn More
                     <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M5 12h14"></path>
                       <path d="M12 5l7 7-7 7"></path>
@@ -61,11 +67,14 @@ function Services() {
 
                 </div>
               </div>
-              <div className="p-4 lg:w-1/3 w-full">
-                <div className="h-full bg-gray-800 bg-opacity-95 px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./preventative-care.jpg' }}>
-                  <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-100 mb-3">Preventative Care</h1>
-                  <p className="text-gray-100 leading-relaxed mb-3">Wellness exams, annual blood work, check ups, and more.</p>
-                  <a className="text-indigo-200 inline-flex items-center">Learn More
+              <div data-sal="slide-right"
+                data-sal-delay="200"
+                data-sal-duration="1500"
+                data-sal-easing="ease-out-quint" className="mb-8 p-4 lg:w-1/3 md:w-1/2 w-full">
+                <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./preventative-care.jpg)', backgroundPosition: 'center' }}>
+                  <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Preventative Care</h1>
+                  <p className="text-gray-100 leading-relaxed mb-3">Wellness exams, annual blood work, check ups, and more. Our doctors are happy to help with your preventative care needs.</p>
+                  <a href="#" className="text-indigo-200 inline-flex items-center">Learn More
                     <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" stroke-linecap="round" strokeLinejoin="round">
                       <path d="M5 12h14"></path>
                       <path d="M12 5l7 7-7 7"></path>
@@ -74,11 +83,60 @@ function Services() {
 
                 </div>
               </div>
-              <div className="p-4 lg:w-1/3 w-full">
-                <div className="h-full bg-gray-800 bg-opacity-95 px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./behavioral-health.jpg' }}>
-                  <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-100 mb-3">Behavioral Health</h1>
+              <div data-sal="slide-right"
+                data-sal-delay="100"
+                data-sal-duration="1500"
+                data-sal-easing="ease-out-quint" className="mb-8 p-4 lg:w-1/3 md:w-1/2 w-full">
+                <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./behavioral-health.jpg)', backgroundPosition: 'center' }}>
+                  <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Substance Abuse</h1>
                   <p className="text-gray-100 leading-relaxed mb-3">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.</p>
-                  <a className="text-indigo-200 inline-flex items-center">Learn More
+                  <a href="#" className="text-indigo-200 inline-flex items-center">Learn More
+                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" stroke-linecap="round" strokeLinejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div data-sal="slide-right"
+                data-sal-delay="100"
+                data-sal-duration="1500"
+                data-sal-easing="ease-out-quint" className="mb-8 p-4 lg:w-1/3 md:w-1/2 w-full">
+                <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./pediatrics.jpeg)', backgroundPosition: 'center' }}>
+                  <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Pediatrics</h1>
+                  <p className="text-gray-100 leading-relaxed mb-3">Our staff understand that it is a privilege to serve your family and to maintain and improve the health of your children.</p>
+                  <a href="#" className="text-indigo-200 inline-flex items-center">Learn More
+                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div data-sal="slide-right"
+                data-sal-delay="200"
+                data-sal-duration="1500"
+                data-sal-easing="ease-out-quint" className="mb-8 p-4 lg:w-1/3 md:w-1/2 w-full">
+                <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./geriatrics.jpeg)', backgroundPosition: 'center' }}>
+                  <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Geriatrics</h1>
+                  <p className="text-gray-100 leading-relaxed mb-3">We provide services for the physical, emotional and social well-being of elderly patients with medical and psychosocial problems.</p>
+                  <a href="#" className="text-indigo-200 inline-flex items-center">Learn More
+                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" stroke-linecap="round" strokeLinejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+
+                </div>
+              </div>
+              <div data-sal="slide-right"
+                data-sal-delay="300"
+                data-sal-duration="1500"
+                data-sal-easing="ease-out-quint" className="mb-8 p-4 lg:w-1/3 md:w-1/2 w-full">
+                <div className="h-full shadow-xl bg-gray-800 bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./prenatal.jpeg)', backgroundPosition: 'center' }}>
+                  <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Prenatal</h1>
+                  <p className="text-gray-100 leading-relaxed mb-3">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.</p>
+                  <a href="#" className="text-indigo-200 inline-flex items-center">Learn More
                     <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" stroke-linecap="round" strokeLinejoin="round">
                       <path d="M5 12h14"></path>
                       <path d="M12 5l7 7-7 7"></path>
