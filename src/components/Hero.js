@@ -11,7 +11,7 @@ function Hero() {
               <div className="lg:w-9/12 text-gray-300 mb-0 mt-4">
                 <div className="mx-auto max-w-1/2 justify-self-end">
                   <img src="./suboxone.png" height="48%" className="h-48 ml-6 float-right" />
-                  <h1 className="mt-10 mb-4 font-sans text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl sm:leading-none">Struggling with Addiction? Checkout the <span className="text-indigo-600 font-bold">IMG Suboxone Clinic</span>!</h1>
+                  <h1 className="mt-10 mb-4 font-sans text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl sm:leading-none">Struggling with Addiction? Call the <span className="text-indigo-600 font-bold">IMG Suboxone Clinic</span>!</h1>
                   <p>Our Suboxone clinic is conveniently located just off of Willowcreek Ave in Portage, Indiana. If you are struggling with the diseas of addiction, please reach out to us today at <a href="tel:12192924501" className="font-bold text-orange-500 hover:text-indigo-300">(219) 292-4501</a>.</p>
                 </div>
               </div>
@@ -20,16 +20,16 @@ function Hero() {
         </div>
         <div className="w-full bg-gray-200 overflow-hidden text-center relative" style={{ backgroundImage: 'url(./furly-bg.png)', height: '400px' }}>
           <div className="container mx-auto pt-10 grid grid-cols-6 gap-0 items-end">
-            <div className="col-span-2 col-start-2 items-end">
+            <div className="col-span-1 col-end-3">
               <div className="w-full max-w-xs text-right">
-                <div className="mt-10 ml-16 relative flex items-right justify-right overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg">
+                <div className="mt-10 ml-16 relative flex items-right justify-right overflow-hidden object-cover object-center w-48 h-48 mx-auto rounded-full">
                   <div className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("./patel.jpeg")' }} alt="avatar">
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-span-3 col-start-4 text-left">
-              <h1 className="mb-4 font-sans text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl sm:leading-none">Welcome to our new doctor, <br /> <span className="text-indigo-600 font-bold">T. Patel, MD</span>!</h1>
+            <div className="col-span-2 col-end-6 text-left">
+              <h1 className="mb-4 font-sans text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl sm:leading-none">Welcome to our new doctor, <span className="text-indigo-600 font-bold">T. Patel, MD</span>!</h1>
               <p>Sed ornare nulla vel massa accumsan porta. Integer condimentum convallis sagittis. Nunc rhoncus mauris sit amet ligula lobortis condimentum. Sed id elit quis diam vulputate finibus eu in ipsum. Vestibulum ac turpis sed felis volutpat lobortis at eu arcu. Suspendisse pellentesque velit nulla.</p>
             </div>
           </div>

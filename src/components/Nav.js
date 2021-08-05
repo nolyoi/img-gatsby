@@ -42,6 +42,10 @@ function Nav({ menuItem }) {
     return navLink({ to: '/contact-us', title: 'Contact Us', bgColor: '#293749', description: 'Learn about our practice and team', direction: 'left' })
   }
 
+  const blogLink = () => {
+    return navLink({ to: '/blog', title: 'Blog', bgColor: '#293749', description: 'Latest news and announcements from IMG.', direction: 'left' })
+  }
+
   return (
     <div className="bg-gray-800 text-white px-2 py-5 mx-auto max-w-full md:px-24 lg:px-0 shadow-lg mb-0 z-30">
       <div className="container mx-auto">
@@ -62,11 +66,15 @@ function Nav({ menuItem }) {
               {servicesLink()}
             </li>
             <li>
+                          {blogLink()}
+                        </li>
+            <li>
               {locationsLink()}
             </li>
             <li>
               {contactLink()}
             </li>
+         
             <li>
               <a href="https://login.patientfusion.com/?defaultTab=login&redirect=https%3A%2F%2Fmy.patientfusion.com" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none" aria-label="Patient Login" title="Patient Login">
                 Patient Login
@@ -119,11 +127,15 @@ function Nav({ menuItem }) {
                           {servicesLink()}
                         </li>
                         <li>
+                          {blogLink()}
+                        </li>
+                        <li>
                           {locationsLink()}
                         </li>
                         <li>
                           {contactLink()}
                         </li>
+                        
                         <li>
                           <a href="https://login.patientfusion.com/?defaultTab=login&redirect=https%3A%2F%2Fmy.patientfusion.com" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none" aria-label="Sign up" title="Sign up">
                             Patient Login
