@@ -4,8 +4,10 @@ import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 import { Helmet } from "react-helmet";
 import { Link } from 'gatsby';
+import sal from 'sal.js';
 
 function Index() {
+  sal();
   return (
     <div>
       <Helmet>
@@ -23,19 +25,31 @@ function Index() {
         <div className="container px-4 py-16 mx-auto max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-20">
           <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
             <div>
-              <img className="object-cover w-full h-56 rounded sm:h-96" src="https://www.irishtimes.com/polopoly_fs/1.4141776.1579173983!/image/image.jpg_gen/derivatives/landscape_620/image.jpg" alt="" />
+              <img data-sal="slide-right"
+                data-sal-delay="200"
+                data-sal-duration="1500"
+                data-sal-easing="ease-out-quint" className="object-cover w-full h-56 rounded sm:h-96" src="https://www.irishtimes.com/polopoly_fs/1.4141776.1579173983!/image/image.jpg_gen/derivatives/landscape_620/image.jpg" alt="" />
             </div>
             <div className="flex flex-col justify-center">
               <div className="max-w-full mb-6">
-                <h2 className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                <h2 data-sal="slide-left"
+                data-sal-delay="300"
+                data-sal-duration="1500"
+                data-sal-easing="ease-out-quint" className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
                   Local doctors you can trust.
                 </h2>
-                <p className="text-base text-gray-700 md:text-lg">
+                <p data-sal="slide-left"
+                data-sal-delay="300"
+                data-sal-duration="1500"
+                data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg">
                   IMG is dedicated to providing high quality healthcare in a compassionate, ethical, and caring environment.
                 </p>
               </div>
               <div className="grid gap-5 row-gap-8 sm:grid-cols-2">
-                <div className="bg-white border-l-4 shadow-sm border-indigo-500">
+                <div data-sal="slide-left"
+                data-sal-delay="350"
+                data-sal-duration="1500"
+                data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-indigo-500">
                   <div className="h-full p-5 border border-l-0 rounded-r">
                     <h6 className="mb-2 font-semibold leading-5">
                       I'll be sure to note that in my log
@@ -46,7 +60,10 @@ function Index() {
                     </p>
                   </div>
                 </div>
-                <div className="bg-white border-l-4 shadow-sm border-indigo-600">
+                <div data-sal="slide-left"
+                data-sal-delay="400"
+                data-sal-duration="1500"
+                data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-indigo-600">
                   <div className="h-full p-5 border border-l-0 rounded-r">
                     <h6 className="mb-2 font-semibold leading-5">
                       A business big enough that it could be listed
@@ -65,7 +82,10 @@ function Index() {
         <section className="text-gray-700">
           <div className="container flex flex-col items-center px-5 pt-8 mx-auto">
             <div className="flex flex-col w-full mb-8 text-left lg:text-center">
-              <h1 className="mx-auto text-2xl font-semibold leading-none tracking-tighter text-black lg:w-1/2 sm:text-6xl title-font">
+              <h1 data-sal="fade"
+                data-sal-delay="200"
+                data-sal-duration="1500"
+                data-sal-easing="ease-out-quint" className="mx-auto text-2xl font-semibold leading-none tracking-tighter text-black lg:w-1/2 sm:text-6xl title-font">
                 Health Services
               </h1>
             </div>
@@ -73,7 +93,10 @@ function Index() {
           <div className="container items-center px-5 pb-8 mx-auto lg:px-24">
             <div className="flex flex-wrap mb-12 text-left">
               <div className="w-full mx-auto lg:w-1/3">
-                <div className="p-6">
+                <div data-sal="slide-up"
+                data-sal-delay="300"
+                data-sal-duration="1500"
+                data-sal-easing="ease-out-quint" className="p-6">
                   {/* <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-black bg-gray-100 rounded-full">
                   </div> */}
                   <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
@@ -84,7 +107,10 @@ function Index() {
                 </div>
               </div>
               <div className="w-full mx-auto lg:w-1/3">
-                <div className="p-6">
+                <div data-sal="slide-up"
+                data-sal-delay="350"
+                data-sal-duration="1500"
+                data-sal-easing="ease-out-quint" className="p-6">
                   {/* <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-black bg-gray-100 rounded-full">
                   </div> */}
                   <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
@@ -95,7 +121,10 @@ function Index() {
                 </div>
               </div>
               <div className="w-full mx-auto lg:w-1/3">
-                <div className="p-6">
+                <div data-sal="slide-up"
+                data-sal-delay="400"
+                data-sal-duration="1500"
+                data-sal-easing="ease-out-quint" className="p-6">
                   {/* <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-black bg-gray-100 rounded-full">
                   </div> */}
                   <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
@@ -106,7 +135,10 @@ function Index() {
                 </div>
               </div>
               <div className="w-full justify-center float-right mt-4 pr-6 place-items-center">
-                <div className="w-full self-center text-center">
+                <div data-sal="slide-up"
+                data-sal-delay="450"
+                data-sal-duration="1500"
+                data-sal-easing="ease-out-quint" className="w-full self-center text-center">
                 <Link to="/services" className="inline-flex items-center justify-center w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none">View all services</Link>
                 </div>
               </div>
