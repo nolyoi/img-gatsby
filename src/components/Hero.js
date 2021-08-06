@@ -5,7 +5,7 @@ function Hero() {
   return (
     <div className="bg-white bg-opacity-0 mt-0 w-full h-screen">
       <HeroCarousel interval={7000}>
-        <div className="w-full bg-gray-800 shadow-xl bg-opacity-70 h-screen relative bg-blend-overlay" style={{ backgroundImage: 'url(./addiction.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="w-full h-screen bg-gray-800 shadow-xl bg-opacity-70 overflow-hidden text-center relative" style={{ backgroundImage: 'url(./addiction.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="container mx-auto my-auto pt-20 h-full">
             <div className="w-9/12 mx-auto text-gray-300 mt-40 items-center content-center content-center h-full">
               <img src="./suboxone.png" height="48%" className="h-48 lg:float-right lg:mx-0 mx-auto lg:-mt-8 mb-20 lg:pl-10" />
