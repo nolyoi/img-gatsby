@@ -16,7 +16,7 @@ function ContactUs() {
         <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </Helmet>
       <Nav menuItem="contact-us" />
-      <section className="text-gray-600 body-font relative">
+      <section className="text-gray-600 body-font relative mt-10 mb-36">
         <div className="container md:items-center px-5 mx-auto flex lg:flex-row sm:flex-col flex-wrap">
           <div className="lg:w-1/2 md:w-4/5 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
             <iframe width="100%" height="100%" className="absolute inset-0" frameborder="0" title="map" marginHeight="0" marginWidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=Internal%20Medicine%20and%20Geriatrics%20Portage%20In+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"></iframe>
@@ -40,7 +40,7 @@ function ContactUs() {
             <p className="mb-12 text-5xl text-center transform -rotate-3"> <a href="tel:12197624423" className="text-indigo-500 cursor-pointer hover:text-orange-500 font-marker">(219)762-4423</a></p>
 
             <h3 className="text-gray-900 text-2xl mb-4 font-medium title-font">By E-mail</h3>
-            <p className="leading-relaxed mb-5 text-gray-600 text-md">Use the form below to reach out to us via e-mail.</p>
+            <p className="leading-relaxed mb-5 text-gray-600 text-md">Use the form below to reach contact us via e-mail. If you need a quick response, please call us.</p>
             <form action="https://getform.io/f/d7661c51-73c1-41e2-a669-580b50c55fb5" method="POST">
             <div className="relative mb-4">
               <input type="text" placeholder="Your name" id="name" name="name" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />

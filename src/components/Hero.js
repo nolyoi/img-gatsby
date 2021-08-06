@@ -4,8 +4,8 @@ import HeroCarousel from 'react-hero-carousel';
 function Hero() {
   return (
     <div className="bg-white bg-opacity-0 mt-0 w-full">
-      <HeroCarousel interval={3000} height="380px">
-        <div className="w-full bg-gray-800 shadow-xl bg-opacity-70 text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./recovery.webp)', backgroundSize: 'cover', backgroundPosition: 'center', height: '400px' }}>
+      <HeroCarousel interval={3000} height="600px">
+        <div className="w-full bg-gray-800 shadow-xl bg-opacity-70 text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./recovery.webp)', backgroundSize: 'cover', backgroundPosition: 'center', height: '600px' }}>
           <div className="container mx-auto">
             <div className="w-8/12 mx-auto pt-14 text-gray-300">
               <img src="./suboxone.png" height="48%" className="h-48 float-right" />
@@ -14,7 +14,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="w-full bg-gray-200 overflow-hidden text-center relative" style={{ backgroundImage: 'url(./furly-bg.png)', height: '400px' }}>
+        <div className="w-full bg-gray-200 overflow-hidden text-center relative" style={{ backgroundImage: 'url(./furly-bg.png)', height: '600px' }}>
           <div className="container mx-auto pt-10">
             <div className="w-8/12 mx-auto pt-14">
               <img src="./patel.jpeg" className="w-48 h-48 rounded-full float-left" alt="avatar" />

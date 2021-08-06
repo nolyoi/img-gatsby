@@ -44,6 +44,9 @@ function Footer() {
                   <Link to="/about-us#staff" className="text-gray-400 cursor-pointer hover:text-white">Our Staff</Link>
                 </li>
                 <li className="mt-3">
+                  <Link to="/blog" className="text-gray-400 cursor-pointer hover:text-white">Blog</Link>
+                </li>
+                <li className="mt-3">
                   <a className="text-gray-400 cursor-pointer hover:text-white">Contact Us</a>
                 </li>
               </nav>
@@ -70,7 +73,7 @@ function Footer() {
               <nav className="mb-10 list-none">
                 <li className="mt-0">
                   <Link to="/locations#portage" className="text-gray-400 cursor-pointer hover:text-white">
-                    <h2 className="mb-3 text-sm font-medium tracking-widest text-white uppercase title-font">Portage Office - Main</h2>
+                    <h2 className="mb-3 text-sm font-medium tracking-widest text-white uppercase title-font">Portage Office</h2>
                     2640 Hamstrom Road
                     <br />
                     Portage, IN. 46368
@@ -81,7 +84,7 @@ function Footer() {
 
                 <li className="mt-6">
                   <Link to="/locations#suboxone" className="text-gray-400 cursor-pointer hover:text-white">
-                    <h2 className="mb-3 text-sm font-medium tracking-widest text-white uppercase title-font">Portage Suboxone Clinic</h2>
+                    <h2 className="mb-3 text-sm font-medium tracking-widest text-white uppercase title-font">Suboxone Clinic</h2>
                     3190 Lancer Street
                     <br />
                     Portage, IN. 46368

@@ -22,7 +22,7 @@ function Index() {
       </Helmet>
       <Nav menuItem="index" />
       <Hero />
-      <div className="flex flex-col mx-auto lg:mt-20 sm:mt-20">
+      <div className="flex flex-col mx-auto lg:mt-24 sm:mt-20">
         <div className="container px-4 py-16 mx-auto max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-20">
           <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
             <div>
@@ -78,7 +78,7 @@ function Index() {
           </div>
         </div>
 
-        <section className="text-gray-700 mt-20">
+        <section className="text-gray-700 mt-24 mb-24">
           <div className="container flex flex-col items-center px-5 pt-8 mx-auto">
             <div className="flex flex-col w-full mb-8 text-left lg:text-center">
               <h1 data-sal="fade"
