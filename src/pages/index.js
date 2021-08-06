@@ -8,7 +8,7 @@ import sal from 'sal.js';
 
 function Index() {
   sal();
-  
+
   return (
     <div>
       <Helmet>
@@ -22,14 +22,14 @@ function Index() {
       </Helmet>
       <Nav menuItem="index" />
       <Hero />
-      <div className="flex flex-col mx-auto lg:mt-16 -mt-10">
+      <div className="flex flex-col mx-auto lg:mt-20 sm:mt-20">
         <div className="container px-4 py-16 mx-auto max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-20">
           <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
             <div>
-              <img data-sal="slide-right"
+              <img data-sal="slide-up"
                 data-sal-delay="200"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="object-cover w-full h-56 rounded sm:h-96" src="https://www.irishtimes.com/polopoly_fs/1.4141776.1579173983!/image/image.jpg_gen/derivatives/landscape_620/image.jpg" alt="" />
+                data-sal-duration="2000"
+                data-sal-easing="ease-out-quint" className="object-cover w-full h-56 rounded sm:h-96 pr-8" src="./stethoscope-heart.jpeg" alt="" />
             </div>
             <div className="flex flex-col justify-center">
               <div className="max-w-full mb-6">
@@ -43,35 +43,33 @@ function Index() {
                 data-sal-delay="300"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg">
-                  IMG is dedicated to providing high quality healthcare in a compassionate, ethical, and caring environment.
+                  IMG has been caring for Northwest Indiana for over 34 years and is dedicated to providing high quality healthcare in a compassionate, ethical, and caring environment.
                 </p>
               </div>
               <div className="grid gap-5 row-gap-8 sm:grid-cols-2">
                 <div data-sal="slide-left"
                 data-sal-delay="350"
                 data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-indigo-500">
+                data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-green-500">
                   <div className="h-full p-5 border border-l-0 rounded-r">
                     <h6 className="mb-2 font-semibold leading-5">
-                      I'll be sure to note that in my log
+                      Continuity of Care
                     </h6>
                     <p className="text-sm text-gray-900">
-                      Lookout flogging bilge rat main sheet bilge water nipper fluke
-                      to go on account heave down.
+                      Our practice provides care to children through the elderly. We have the ability to care for our patients through all stages of their lives.
                     </p>
                   </div>
                 </div>
                 <div data-sal="slide-left"
                 data-sal-delay="400"
                 data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-indigo-600">
+                data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-blue-600">
                   <div className="h-full p-5 border border-l-0 rounded-r">
                     <h6 className="mb-2 font-semibold leading-5">
-                      A business big enough that it could be listed
+                      Serving our local community
                     </h6>
                     <p className="text-sm text-gray-900">
-                      Those options are already baked in with this model shoot me an
-                      email clear.
+                      Internal Medicine & Geriatrics is locally owned and run. We aren't a big company and provide individual attention to all of our patients.
                     </p>
                   </div>
                 </div>
@@ -80,7 +78,7 @@ function Index() {
           </div>
         </div>
 
-        <section className="text-gray-700">
+        <section className="text-gray-700 mt-20">
           <div className="container flex flex-col items-center px-5 pt-8 mx-auto">
             <div className="flex flex-col w-full mb-8 text-left lg:text-center">
               <h1 data-sal="fade"
