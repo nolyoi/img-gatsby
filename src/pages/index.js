@@ -53,7 +53,7 @@ function Index() {
                 data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-green-500">
                   <div className="h-full p-5 border border-l-0 rounded-r">
                     <h6 className="mb-2 font-semibold leading-5">
-                      Continuity of Care
+                      Continuity of care
                     </h6>
                     <p className="text-sm text-gray-900">
                       Our practice provides care to children through the elderly. We have the ability to care for our patients through all stages of their lives.
