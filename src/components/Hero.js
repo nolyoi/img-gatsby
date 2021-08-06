@@ -3,18 +3,18 @@ import HeroCarousel from 'react-hero-carousel';
 
 function Hero() {
   return (
-    <div className="bg-white bg-opacity-0 mt-0 w-full">
-      <HeroCarousel interval={7000} height="600px">
-        <div className="w-full bg-gray-800 shadow-xl bg-opacity-70 relative bg-blend-overlay" style={{ backgroundImage: 'url(./addiction.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center', height: '600px' }}>
-          <div className="container mx-auto lg:pt-32 pt-20">
-            <div className="w-9/12 mx-auto text-gray-300">
+    <div className="bg-white bg-opacity-0 mt-0 w-full h-screen">
+      <HeroCarousel interval={7000}>
+        <div className="w-full bg-gray-800 shadow-xl bg-opacity-70 h-screen relative bg-blend-overlay" style={{ backgroundImage: 'url(./addiction.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          <div className="container mx-auto my-auto pt-20 h-full">
+            <div className="w-9/12 mx-auto text-gray-300 mt-40 items-center content-center content-center h-full">
               <img src="./suboxone.png" height="48%" className="h-48 lg:float-right lg:mx-0 mx-auto lg:-mt-8 mb-20 lg:pl-10" />
               <h1 className="mt-12 mb-4 pr-8 text-center font-sans text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl sm:leading-none">Struggling with Addiction? Call the <span className="text-indigo-600 font-bold">IMG Suboxone Clinic</span>!</h1>
               <p>Our Suboxone clinic is conveniently located just off of Willowcreek Ave in Portage, Indiana. If you are struggling with the diseas of addiction, please reach out to us today at <a href="tel:12192924501" className="font-bold text-orange-500 hover:text-indigo-300">(219) 292-4501</a>.</p>
             </div>
           </div>
         </div>
-        <div className="w-full bg-gray-200 overflow-hidden text-center relative" style={{ backgroundImage: 'url(./glove-heart.jpeg)', backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'left', backgroundColor: '#EBEEED', height: '600px' }}>
+        <div className="w-full h-screen bg-gray-800 shadow-xl bg-opacity-70 overflow-hidden text-center relative" style={{ backgroundImage: 'url(./glove-heart.jpeg)', backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'left', backgroundColor: '#EBEEED' }}>
           <div className="container mx-auto pt-20">
             <div className="w-9/12 mx-auto pt-14">
             <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-60 h-40 mx-auto rounded-xl"><img src="./patel.jpeg" className="absolute w-full " alt="avatar" /></div>
