@@ -2,7 +2,8 @@ import * as React from 'react';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet";
+import { Link } from 'gatsby';
 
 function Index() {
   return (
@@ -63,10 +64,9 @@ function Index() {
 
         <section className="text-gray-700">
           <div className="container flex flex-col items-center px-5 pt-8 mx-auto">
-            <div className="flex flex-col w-full mb-12 text-left lg:text-center">
-              <h2 className="mb-8 text-xs font-semibold tracking-widest text-black uppercase title-font">a great header right here</h2>
+            <div className="flex flex-col w-full mb-8 text-left lg:text-center">
               <h1 className="mx-auto text-2xl font-semibold leading-none tracking-tighter text-black lg:w-1/2 sm:text-6xl title-font">
-                A Long headline to switch your visitors into customers.
+                Health Services
               </h1>
             </div>
           </div>
@@ -74,62 +74,40 @@ function Index() {
             <div className="flex flex-wrap mb-12 text-left">
               <div className="w-full mx-auto lg:w-1/3">
                 <div className="p-6">
-                  <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-black bg-gray-100 rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 icon icon-tabler icon-tabler-aperture" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <circle cx="12" cy="12" r="9"></circle>
-                      <line x1="3.6" y1="15" x2="14.15" y2="15"></line>
-                      <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(72 12 12)"></line>
-                      <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(144 12 12)"></line>
-                      <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(216 12 12)"></line>
-                      <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(288 12 12)"></line>
-                    </svg>
-                  </div>
+                  {/* <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-black bg-gray-100 rounded-full">
+                  </div> */}
                   <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
                     Family & General Practice
                   </h1>
-                  <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 ">You're about to launch soon and must be 100% focused on your product. Don't loose precious days designing, coding the landing page and testing .
+                  <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 ">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.
                   </p>
                 </div>
               </div>
               <div className="w-full mx-auto lg:w-1/3">
                 <div className="p-6">
-                  <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-black bg-gray-100 rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 icon icon-tabler icon-tabler-aperture" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <circle cx="12" cy="12" r="9"></circle>
-                      <line x1="3.6" y1="15" x2="14.15" y2="15"></line>
-                      <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(72 12 12)"></line>
-                      <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(144 12 12)"></line>
-                      <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(216 12 12)"></line>
-                      <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(288 12 12)"></line>
-                    </svg>
-                  </div>
+                  {/* <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-black bg-gray-100 rounded-full">
+                  </div> */}
                   <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
-                    Behavioral Health
+                    Substance Abuse
                   </h1>
-                  <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 ">You're about to launch soon and must be 100% focused on your product. Don't loose precious days designing, coding the landing page and testing .
+                  <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 ">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.
                   </p>
                 </div>
               </div>
               <div className="w-full mx-auto lg:w-1/3">
                 <div className="p-6">
-                  <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-black bg-gray-100 rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 icon icon-tabler icon-tabler-aperture" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <circle cx="12" cy="12" r="9"></circle>
-                      <line x1="3.6" y1="15" x2="14.15" y2="15"></line>
-                      <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(72 12 12)"></line>
-                      <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(144 12 12)"></line>
-                      <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(216 12 12)"></line>
-                      <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(288 12 12)"></line>
-                    </svg>
-                  </div>
+                  {/* <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-black bg-gray-100 rounded-full">
+                  </div> */}
                   <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
                     Geriatrics & Pediatrics
                   </h1>
-                  <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 ">You're about to launch soon and must be 100% focused on your product. Don't loose precious days designing, coding the landing page and testing .
+                  <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 ">We provide services for the physical, emotional and social well-being of children and elderly patients with medical and psychosocial problems.
                   </p>
+                </div>
+              </div>
+              <div className="w-full justify-center float-right mt-4 pr-6 place-items-center">
+                <div className="w-full self-center text-center">
+                <Link to="/services" className="inline-flex items-center justify-center w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none">View all services</Link>
                 </div>
               </div>
             </div>
