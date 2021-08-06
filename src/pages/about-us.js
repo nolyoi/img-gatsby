@@ -30,7 +30,7 @@ function AboutUs() {
                             <img className="object-cover object-center rounded" alt="hero" src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Flag_of_Indiana.svg" />
                         </div>
                         <div className="lg:flex-grow md:w-full lg:pl-24 flex flex-col md:items-start items-center text-left">
-                            <h1 className="title-font sm:text-4xl text-3xl mb-4 text-gray-900 font-bold tracking-tight lg:text-left md:text-center md:mb-4 md:mt-8 w-full">Serving Northwest Indiana for {new Date().getFullYear() - 1987} years
+                            <h1 className="title-font sm:text-4xl text-3xl mb-4 text-gray-900 font-bold tracking-tight lg:text-left md:text-center md:mb-4 lg:-mt-8 md:mt-8 w-full">Serving Northwest Indiana for {new Date().getFullYear() - 1987} years
                             </h1>
                             <p className="mb-6 leading-relaxed">Our team of experienced medical professionals have been serving communities in the Northwest Indiana region since 1987. We now operate 3 offices in Portage and Gary Indiana.</p>
 

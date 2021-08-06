@@ -2,11 +2,8 @@ import * as React from 'react';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 import { Helmet } from 'react-helmet';
-import sal from 'sal.js';
 
-function Services() {
-  sal();
-  
+function Services() {  
   return (
     <div>
       <Nav menuItem="services" />
