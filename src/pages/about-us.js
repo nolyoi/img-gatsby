@@ -23,6 +23,7 @@ function AboutUs() {
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
                 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
             </Helmet>
+
             <Nav menuItem="about-us" />
 
             <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0 mt-10">
@@ -64,14 +65,14 @@ function AboutUs() {
 
                 <section className="container p-6 mx-auto bg-white dark:bg-gray-800 mt-10 mb-20" id="staff">
                     <h2 data-sal="slide-up"
-                data-sal-delay="400"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="mb-6 font-sans text-3xl font-bold tracking-tight text-center text-gray-900 sm:text-4xl sm:leading-none">Meet Our Team</h2>
+                        data-sal-delay="400"
+                        data-sal-duration="1500"
+                        data-sal-easing="ease-out-quint" className="mb-6 font-sans text-3xl font-bold tracking-tight text-center text-gray-900 sm:text-4xl sm:leading-none">Meet Our Team</h2>
 
                     <div data-sal="slide-left"
-                                data-sal-delay="200"
-                                data-sal-duration="1500"
-                                data-sal-easing="ease-out-quint" className="flex items-center justify-center w-full">
+                        data-sal-delay="200"
+                        data-sal-duration="1500"
+                        data-sal-easing="ease-out-quint" className="flex items-center justify-center w-full">
                         <div className="grid gap-6 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
                             <div className="w-full max-w-xs text-center">
                                 <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><button onClick={() => setShowDesai(true)} className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("./desai.jpeg")' }} alt="avatar"></button></div>

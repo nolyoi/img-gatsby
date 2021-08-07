@@ -20,8 +20,10 @@ function Index() {
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </Helmet>
+
       <Nav menuItem="index" />
       <Hero />
+      
       <div className="flex flex-col mx-auto lg:mt-24 sm:mt-20">
         <div className="container px-4 py-16 mx-auto max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-20">
           <div className="grid gap-5 row-gap-8 lg:grid-cols-2">

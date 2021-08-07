@@ -15,7 +15,9 @@ function ContactUs() {
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </Helmet>
+
       <Nav menuItem="contact-us" />
+
       <section className="text-gray-600 body-font relative mt-10 mb-36">
         <div className="container md:items-center px-5 mx-auto flex lg:flex-row sm:flex-col flex-wrap">
           <div className="lg:w-1/2 md:w-4/5 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative lg:h-screen h-96">
@@ -42,20 +44,20 @@ function ContactUs() {
             <h3 className="text-gray-900 text-2xl mb-4 font-medium title-font">By E-mail</h3>
             <p className="leading-relaxed mb-5 text-gray-600 text-md">Use the form below to reach contact us via e-mail. If you need a quick response, please call us</p>
             <form action="https://getform.io/f/d7661c51-73c1-41e2-a669-580b50c55fb5" method="POST">
-            <div className="relative mb-4">
-              <input type="text" placeholder="Your name" id="name" name="name" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-            </div>
-            <div className="relative mb-4">
-              <input type="email" placeholder="Your e-mail address" id="email" name="email" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-            </div>
-            <div className="relative mb-4">
-              <input type="phone" placeholder="(219)555-5555" id="phone" name="phone" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-            </div>
-            <div className="relative mb-4">
-              <textarea id="message" placeholder="How can we help you?" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-            </div>
-            <button type="submit" className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send</button>
-            <p className="text-xs text-gray-500 mt-3">We will do our best to get back to you ASAP. For a quicker response, please call.</p>
+              <div className="relative mb-4">
+                <input type="text" placeholder="Your name" id="name" name="name" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              </div>
+              <div className="relative mb-4">
+                <input type="email" placeholder="Your e-mail address" id="email" name="email" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              </div>
+              <div className="relative mb-4">
+                <input type="phone" placeholder="(219)555-5555" id="phone" name="phone" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              </div>
+              <div className="relative mb-4">
+                <textarea id="message" placeholder="How can we help you?" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+              </div>
+              <button type="submit" className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send</button>
+              <p className="text-xs text-gray-500 mt-3">We will do our best to get back to you ASAP. For a quicker response, please call.</p>
             </form>
           </div>
         </div>
