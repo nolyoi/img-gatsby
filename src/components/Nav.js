@@ -58,7 +58,8 @@ function Nav({ menuItem }) {
         <div className="relative flex items-center justify-between w-full">
           <Link to="/" aria-label="Internal Medicine and Geriatrics" title="Internal Medicine and Geriatrics" className="inline-flex items-center">
             <span className="w-8 text-5xl text-white">
-              ☤&#xFE0E;
+              	
+              &#9764;&#xFE0E;
             </span>
             <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase pr-12">
               Internal Medicine & Geriatrics
