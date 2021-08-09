@@ -24,7 +24,7 @@ function Index() {
       <Nav menuItem="index" />
       <Hero />
       
-      <section className="flex flex-col m-auto h-screen">
+      <section className="flex flex-col m-auto h-screen sm:h-full sm:my-24">
         <div className="flex flex-wrap content-center container px-24 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
            <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
             <div>
@@ -81,7 +81,7 @@ function Index() {
           </div>
         </section>
 
-        <section className="flex text-gray-700 h-screen">
+        <section className="flex text-gray-700 h-screen sm:h-full sm:my-24">
           <div className="m-auto">
           <div className="flex flex-col items-center px-5 pt-8">
             <div className="flex flex-col w-full mb-8 text-left lg:text-center">
@@ -93,7 +93,7 @@ function Index() {
               </h1>
             </div>
           </div>
-          <div className="container items-center px-5 pb-8 mx-auto lg:px-24">
+          <div className="container items-center px-5 pb-8 mx-auto lg:px-24 max-h-full">
             <div className="flex flex-wrap mb-12 text-left">
               <div className="w-full mx-auto lg:w-1/3">
                 <div data-sal="slide-up"
@@ -137,7 +137,7 @@ function Index() {
                   </p>
                 </div>
               </div>
-              <div className="w-full justify-center float-right mt-4 pr-6 place-items-center">
+              <div className="w-full justify-center float-right mt-8 pr-6 place-items-center">
                 <div data-sal="slide-up"
                 data-sal-delay="450"
                 data-sal-duration="1500"
