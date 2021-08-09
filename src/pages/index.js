@@ -92,14 +92,32 @@ function Index() {
         <Nav menuItem="index" />
         <Hero />
 
-        <Section id="intro" className="flex flex-col mx-auto lg:mt-24 sm:mt-20">
-          <div className="container px-4 py-16 mx-auto max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-20">
-            <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
-              <div>
-                <img data-sal="slide-up"
-                  data-sal-delay="200"
-                  data-sal-duration="2000"
-                  data-sal-easing="ease-out-quint" className="object-cover w-full h-56 rounded sm:h-96 pr-8" src="./stethoscope-heart.jpeg" alt="" />
+      <Nav menuItem="index" />
+      <Hero />
+      
+      <section className="flex flex-col m-auto h-screen">
+        <div className="flex flex-wrap content-center container px-24 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
+           <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
+            <div>
+              <img data-sal="slide-up"
+                data-sal-delay="200"
+                data-sal-duration="2000"
+                data-sal-easing="ease-out-quint" className="object-cover w-full h-56 rounded sm:h-96 pr-8" src="./stethoscope-heart.jpeg" alt="" />
+            </div>
+            <div className="flex flex-col justify-center">
+              <div className="max-w-full mb-6">
+                <h2 data-sal="slide-left"
+                data-sal-delay="300"
+                data-sal-duration="1500"
+                data-sal-easing="ease-out-quint" className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                  Local doctors you can trust.
+                </h2>
+                <p data-sal="slide-left"
+                data-sal-delay="300"
+                data-sal-duration="1500"
+                data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg">
+                  IMG has been caring for Northwest Indiana for over 34 years and is dedicated to providing high quality healthcare in a compassionate, ethical, and caring environment.
+                </p>
               </div>
               <div className="flex flex-col justify-center">
                 <div className="max-w-full mb-6">
@@ -147,10 +165,12 @@ function Index() {
               </div>
             </div>
           </div>
-        </Section>
+          </div>
+        </section>
 
-        <Section id="services" className="text-gray-700 mt-24 mb-24">
-          <div className="container flex flex-col items-center px-5 pt-8 mx-auto">
+        <section className="flex text-gray-700 h-screen">
+          <div className="m-auto">
+          <div className="flex flex-col items-center px-5 pt-8">
             <div className="flex flex-col w-full mb-8 text-left lg:text-center">
               <h1 data-sal="fade"
                 data-sal-delay="200"
@@ -214,8 +234,8 @@ function Index() {
               </div>
             </div>
           </div>
-        </Section>
-      </ScrollingProvider>
+          </div>
+        </section>
       <Footer />
     </div>
   );

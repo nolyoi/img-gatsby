@@ -17,6 +17,7 @@ function AboutUs() {
             <Helmet>
                 <meta charSet="utf-8" />
                 ( <title>{`Internal Medicine and Geriatrics - About Us`}</title> )
+                <meta name="Description" CONTENT="About Internal Medicine and Geriatrics." />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                 <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@600&display=swap" rel="stylesheet" />
