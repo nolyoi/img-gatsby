@@ -2,6 +2,11 @@ import * as React from 'react';
 import { useState } from 'react';
 import { Link } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import {
+  ScrollingProvider,
+  useScrollSection,
+  Section,
+} from 'react-scroll-section';
 
 function Nav({ menuItem }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,7 +52,8 @@ function Nav({ menuItem }) {
   }
 
   return (
-    <div className="bg-gray-800 text-white px-2 py-5 mx-auto max-w-full md:px-24 lg:px-0 shadow-xl mb-0 z-50">
+    
+    <Section id="nav" className="bg-gray-800 text-white px-2 py-5 mx-auto max-w-full md:px-24 lg:px-0 shadow-xl mb-0 z-50">
       <div className="container mx-auto">
         <div className="relative flex items-center justify-between w-full">
           <Link to="/" aria-label="Internal Medicine and Geriatrics" title="Internal Medicine and Geriatrics" className="inline-flex items-center">
@@ -149,7 +155,7 @@ function Nav({ menuItem }) {
             } </div>
         </div>
       </div>
-    </div>
+    </Section>
   );
 }
 

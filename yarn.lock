@@ -11587,6 +11587,18 @@ react-refresh@^0.9.0:
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.9.0.tgz"
   integrity sha512-Gvzk7OZpiqKSkxsQvO/mbTN1poglhmAV7gR/DdIrRrSMXraRQQlfikRJOr3Nb9GTMPC5kof948Zy6jJZIFtDvQ==
 
+react-scroll-section@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/react-scroll-section/-/react-scroll-section-3.0.2.tgz#28e9697f4e2f91348a121151bd9c5e4df089d301"
+  integrity sha512-ktOGETDiFK4YLTwauxGELWzmuGcD7J/ePv9D39Se+4Fs0pT4r/dip65vGPae18MOqY7MwyMKVjJFMx1n6kR6Bg==
+  dependencies:
+    smoothscroll-polyfill "^0.4.4"
+
+react-scroll-wheel-handler@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-scroll-wheel-handler/-/react-scroll-wheel-handler-2.0.1.tgz#b2c834efdde9d841c0dd838ba3f9fb03a22e2b3a"
+  integrity sha512-D2g2lEG8wU3FsSQmL/AS/Gzud9q1un4SwEUmW8ulljxEpxkqzIPSetOOG+YXAOFxV18rkbPEKFTlcs3zjxXN6g==
+
 react-side-effect@^2.1.0:
   version "2.1.1"
   resolved "https://registry.npmjs.org/react-side-effect/-/react-side-effect-2.1.1.tgz"
@@ -12587,6 +12599,11 @@ slugify@^1.4.4:
   version "1.5.3"
   resolved "https://registry.npmjs.org/slugify/-/slugify-1.5.3.tgz"
   integrity sha512-/HkjRdwPY3yHJReXu38NiusZw2+LLE2SrhkWJtmlPDB1fqFSvioYj62NkPcrKiNCgRLeGcGK7QBvr1iQwybeXw==
+
+smoothscroll-polyfill@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/smoothscroll-polyfill/-/smoothscroll-polyfill-0.4.4.tgz#3a259131dc6930e6ca80003e1cb03b603b69abf8"
+  integrity sha512-TK5ZA9U5RqCwMpfoMq/l1mrH0JAR7y7KRvOBx0n2869aLxch+gT9GhN3yUfjiw+d/DiF1mKo14+hd62JyMmoBg==
 
 snake-case@^2.1.0:
   version "2.1.0"

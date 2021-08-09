@@ -5,9 +5,77 @@ import Nav from '../components/Nav';
 import { Helmet } from "react-helmet";
 import { Link } from 'gatsby';
 import sal from 'sal.js';
+import { useState, useEffect, useCallback } from 'react';
+import {
+  ScrollingProvider,
+  useScrollSection,
+  Section,
+} from 'react-scroll-section';
 
 function Index() {
   sal();
+
+  let state = {
+    currentIndex: 0,
+    colors: ["nav", "intro", "services"],
+  };
+
+  const [colors, setColors] = useState(["nav", "intro", "services"]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [scrollDir, setScrollDir] = useState("scrolling down");
+
+
+  useEffect(() => {
+    const threshold = 0;
+    let lastScrollY = window.pageYOffset;
+    let ticking = false;
+
+    const updateScrollDir = () => {
+      const scrollY = window.pageYOffset;
+
+      if (Math.abs(scrollY - lastScrollY) < threshold) {
+        ticking = false;
+        return;
+      }
+      setScrollDir(scrollY > lastScrollY ? nextIndex() : prevIndex());
+      lastScrollY = scrollY > 0 ? scrollY : 0;
+      ticking = false;
+    };
+
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateScrollDir);
+        ticking = true;
+      }
+    };
+
+    window.addEventListener("scroll", onScroll);
+    console.log(scrollDir);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [scrollDir]);
+
+  function nextIndex() {
+    if (currentIndex == colors.length - 1) {
+      return setCurrentIndex(colors.length - 1);
+    }
+
+    return setCurrentIndex(
+      currentIndex + 1,
+    );
+  };
+
+  function prevIndex() {
+    if (currentIndex == 0) {
+      return setCurrentIndex(
+        0
+      );
+    }
+
+    return setCurrentIndex(
+      currentIndex - 1,
+    );
+  };
 
   return (
     <div>
@@ -20,67 +88,68 @@ function Index() {
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </Helmet>
+      <ScrollingProvider>
+        <Nav menuItem="index" />
+        <Hero />
 
-      <Nav menuItem="index" />
-      <Hero />
-      
-      <div className="flex flex-col mx-auto lg:mt-24 sm:mt-20">
-        <div className="container px-4 py-16 mx-auto max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-20">
-          <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
-            <div>
-              <img data-sal="slide-up"
-                data-sal-delay="200"
-                data-sal-duration="2000"
-                data-sal-easing="ease-out-quint" className="object-cover w-full h-56 rounded sm:h-96 pr-8" src="./stethoscope-heart.jpeg" alt="" />
-            </div>
-            <div className="flex flex-col justify-center">
-              <div className="max-w-full mb-6">
-                <h2 data-sal="slide-left"
-                data-sal-delay="300"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                  Local doctors you can trust.
-                </h2>
-                <p data-sal="slide-left"
-                data-sal-delay="300"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg">
-                  IMG has been caring for Northwest Indiana for over 34 years and is dedicated to providing high quality healthcare in a compassionate, ethical, and caring environment.
-                </p>
+        <Section id="intro" className="flex flex-col mx-auto lg:mt-24 sm:mt-20">
+          <div className="container px-4 py-16 mx-auto max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-20">
+            <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
+              <div>
+                <img data-sal="slide-up"
+                  data-sal-delay="200"
+                  data-sal-duration="2000"
+                  data-sal-easing="ease-out-quint" className="object-cover w-full h-56 rounded sm:h-96 pr-8" src="./stethoscope-heart.jpeg" alt="" />
               </div>
-              <div className="grid gap-5 row-gap-8 sm:grid-cols-2">
-                <div data-sal="slide-left"
-                data-sal-delay="350"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-green-500">
-                  <div className="h-full p-5 border border-l-0 rounded-r">
-                    <h6 className="mb-2 font-semibold leading-5">
-                      Continuity of care
-                    </h6>
-                    <p className="text-sm text-gray-900">
-                      Our practice provides care to children through the elderly. We have the ability to care for our patients through all stages of their lives.
-                    </p>
-                  </div>
+              <div className="flex flex-col justify-center">
+                <div className="max-w-full mb-6">
+                  <h2 data-sal="slide-left"
+                    data-sal-delay="300"
+                    data-sal-duration="1500"
+                    data-sal-easing="ease-out-quint" className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                    Local doctors you can trust.
+                  </h2>
+                  <p data-sal="slide-left"
+                    data-sal-delay="300"
+                    data-sal-duration="1500"
+                    data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg">
+                    IMG has been caring for Northwest Indiana for over 34 years and is dedicated to providing high quality healthcare in a compassionate, ethical, and caring environment.
+                  </p>
                 </div>
-                <div data-sal="slide-left"
-                data-sal-delay="400"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-blue-600">
-                  <div className="h-full p-5 border border-l-0 rounded-r">
-                    <h6 className="mb-2 font-semibold leading-5">
-                      Serving our local community
-                    </h6>
-                    <p className="text-sm text-gray-900">
-                      Internal Medicine & Geriatrics is locally owned and run. We aren't a big company and provide individual attention to all of our patients.
-                    </p>
+                <div className="grid gap-5 row-gap-8 sm:grid-cols-2">
+                  <div data-sal="slide-left"
+                    data-sal-delay="350"
+                    data-sal-duration="1500"
+                    data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-green-500">
+                    <div className="h-full p-5 border border-l-0 rounded-r">
+                      <h6 className="mb-2 font-semibold leading-5">
+                        Continuity of care
+                      </h6>
+                      <p className="text-sm text-gray-900">
+                        Our practice provides care to children through the elderly. We have the ability to care for our patients through all stages of their lives.
+                      </p>
+                    </div>
+                  </div>
+                  <div data-sal="slide-left"
+                    data-sal-delay="400"
+                    data-sal-duration="1500"
+                    data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-blue-600">
+                    <div className="h-full p-5 border border-l-0 rounded-r">
+                      <h6 className="mb-2 font-semibold leading-5">
+                        Serving our local community
+                      </h6>
+                      <p className="text-sm text-gray-900">
+                        Internal Medicine & Geriatrics is locally owned and run. We aren't a big company and provide individual attention to all of our patients.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </Section>
 
-        <section className="text-gray-700 mt-24 mb-24">
+        <Section id="services" className="text-gray-700 mt-24 mb-24">
           <div className="container flex flex-col items-center px-5 pt-8 mx-auto">
             <div className="flex flex-col w-full mb-8 text-left lg:text-center">
               <h1 data-sal="fade"
@@ -95,9 +164,9 @@ function Index() {
             <div className="flex flex-wrap mb-12 text-left">
               <div className="w-full mx-auto lg:w-1/3">
                 <div data-sal="slide-up"
-                data-sal-delay="300"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="p-6">
+                  data-sal-delay="300"
+                  data-sal-duration="1500"
+                  data-sal-easing="ease-out-quint" className="p-6">
                   {/* <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-black bg-gray-100 rounded-full">
                   </div> */}
                   <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
@@ -109,9 +178,9 @@ function Index() {
               </div>
               <div className="w-full mx-auto lg:w-1/3">
                 <div data-sal="slide-up"
-                data-sal-delay="350"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="p-6">
+                  data-sal-delay="350"
+                  data-sal-duration="1500"
+                  data-sal-easing="ease-out-quint" className="p-6">
                   {/* <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-black bg-gray-100 rounded-full">
                   </div> */}
                   <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
@@ -123,9 +192,9 @@ function Index() {
               </div>
               <div className="w-full mx-auto lg:w-1/3">
                 <div data-sal="slide-up"
-                data-sal-delay="400"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="p-6">
+                  data-sal-delay="400"
+                  data-sal-duration="1500"
+                  data-sal-easing="ease-out-quint" className="p-6">
                   {/* <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-black bg-gray-100 rounded-full">
                   </div> */}
                   <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
@@ -137,17 +206,16 @@ function Index() {
               </div>
               <div className="w-full justify-center float-right mt-4 pr-6 place-items-center">
                 <div data-sal="slide-up"
-                data-sal-delay="450"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="w-full self-center text-center">
-                <Link to="/services" className="inline-flex items-center justify-center w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none">View all services</Link>
+                  data-sal-delay="450"
+                  data-sal-duration="1500"
+                  data-sal-easing="ease-out-quint" className="w-full self-center text-center">
+                  <Link to="/services" className="inline-flex items-center justify-center w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none">View all services</Link>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-
-      </div>
+        </Section>
+      </ScrollingProvider>
       <Footer />
     </div>
   );
