@@ -61,7 +61,7 @@ function Nav({ menuItem }) {
               	
               &#9764;&#xFE0E;
             </span>
-            <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase pr-12">
+            <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase pr-12" style={{ fontFamily: 'Segoe UI' }}>
               Internal Medicine & Geriatrics
             </span>
           </Link>
