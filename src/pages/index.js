@@ -24,9 +24,9 @@ function Index() {
       <Nav menuItem="index" />
       <Hero />
       
-      <div className="flex flex-col mx-auto lg:mt-24 sm:mt-20">
-        <div className="container px-4 py-16 mx-auto max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-20">
-          <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
+      <section className="flex flex-col m-auto h-screen">
+        <div className="flex flex-wrap content-center container px-24 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
+           <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
             <div>
               <img data-sal="slide-up"
                 data-sal-delay="200"
@@ -78,10 +78,12 @@ function Index() {
               </div>
             </div>
           </div>
-        </div>
+          </div>
+        </section>
 
-        <section className="text-gray-700 mt-24 mb-24">
-          <div className="container flex flex-col items-center px-5 pt-8 mx-auto">
+        <section className="flex text-gray-700 h-screen">
+          <div className="m-auto">
+          <div className="flex flex-col items-center px-5 pt-8">
             <div className="flex flex-col w-full mb-8 text-left lg:text-center">
               <h1 data-sal="fade"
                 data-sal-delay="200"
@@ -145,9 +147,8 @@ function Index() {
               </div>
             </div>
           </div>
+          </div>
         </section>
-
-      </div>
       <Footer />
     </div>
   );
