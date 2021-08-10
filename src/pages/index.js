@@ -24,7 +24,7 @@ function Index() {
       <Nav menuItem="index" />
       <Hero />
       
-      <section className="flex flex-col m-auto h-screen sm:h-full sm:my-24">
+      <section className="flex flex-col m-auto h-screen lg:h-screen sm:h-full sm:my-24">
         <div className="flex flex-wrap content-center container px-24 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
            <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
             <div>
@@ -81,7 +81,7 @@ function Index() {
           </div>
         </section>
 
-        <section className="flex text-gray-700 h-screen sm:h-full sm:my-24">
+        <section className="flex text-gray-700 h-screen lg:h-screen sm:h-full sm:my-24">
           <div className="m-auto">
           <div className="flex flex-col items-center px-5 pt-8">
             <div className="flex flex-col w-full mb-8 text-left lg:text-center">
