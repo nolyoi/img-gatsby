@@ -9,6 +9,7 @@ function Locations() {
       <Helmet>
         <meta charSet="utf-8" />
         ( <title>{`Internal Medicine and Geriatric - Our office locations in Northwest Indiana`}</title> )
+        <meta name="Description" CONTENT="Our various locations in Portage and Gary Indiana." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@600&display=swap" rel="stylesheet" />
