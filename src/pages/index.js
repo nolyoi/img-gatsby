@@ -81,7 +81,7 @@ function Index() {
           </div>
         </section>
 
-        <section className="flex text-gray-700 h-screen lg:h-screen sm:h-full sm:my-24">
+        <section className="flex text-gray-700 h-screen lg:h-screen sm:h-full sm:my-24 sm:pt-12">
           <div className="m-auto">
           <div className="flex flex-col items-center px-5 pt-8">
             <div className="flex flex-col w-full mb-8 text-left lg:text-center">
