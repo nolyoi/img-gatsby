@@ -52,13 +52,13 @@ function Nav({ menuItem }) {
   }
 
   return (
-    
+
     <Section id="nav" className="bg-gray-800 text-white px-2 py-5 mx-auto max-w-full md:px-24 lg:px-0 shadow-xl mb-0 z-50">
       <div className="container mx-auto">
         <div className="relative flex items-center justify-between w-full">
           <Link to="/" aria-label="Internal Medicine and Geriatrics" title="Internal Medicine and Geriatrics" className="inline-flex items-center">
             <span className="w-8 text-5xl text-white">
-              	
+
               &#9764;&#xFE0E;
             </span>
             <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase pr-12" style={{ fontFamily: 'Segoe UI' }}>
@@ -73,15 +73,15 @@ function Nav({ menuItem }) {
               {servicesLink()}
             </li>
             <li>
-                          {blogLink()}
-                        </li>
+              {blogLink()}
+            </li>
             <li>
               {locationsLink()}
             </li>
             <li>
               {contactLink()}
             </li>
-         
+
             <li>
               <a href="https://login.patientfusion.com/?defaultTab=login&redirect=https%3A%2F%2Fmy.patientfusion.com" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none" aria-label="Patient Login" title="Patient Login">
                 Patient Login
@@ -142,7 +142,7 @@ function Nav({ menuItem }) {
                         <li>
                           {contactLink()}
                         </li>
-                        
+
                         <li>
                           <a href="https://login.patientfusion.com/?defaultTab=login&redirect=https%3A%2F%2Fmy.patientfusion.com" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none" aria-label="Sign up" title="Sign up">
                             Patient Login
