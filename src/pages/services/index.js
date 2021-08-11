@@ -21,7 +21,7 @@ function Services() {
         <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </Helmet>
 
-      <div className="bg-white bg-opacity-0 mt-0 w-full h-1/2">
+      <section className="bg-white bg-opacity-0 mt-0 w-full h-1/2">
         <div className="w-full h-1/2 bg-gray900 shadow-xl bg-opacity-95 overflow-hidden text-center relative" style={{ backgroundImage: 'url(./runner.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="container mx-auto my-auto pt-20 h-1/2">
             <div className="w-9/12 mx-auto text-gray-300 mt-0 my-40 items-center content-center content-center h-1/2">
@@ -35,7 +35,7 @@ function Services() {
             </div>
           </div>
         </div>
-    </div>
+    </section>
 
       <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0">
         <h2 data-sal="fade"

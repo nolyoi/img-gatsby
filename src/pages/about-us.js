@@ -126,7 +126,7 @@ function AboutUs() {
                                 data-sal-easing="ease-out-quint" className="w-full max-w-xs text-center">
                                 <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><div className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("./gayle.jpeg")' }} alt="avatar"></div></div>
                                 <div className="mt-2">
-                                    <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Gayle</h3>
+                                    <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Gayle Voight-Block</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
                                     <a className="text-indigo-500 inline-flex items-center">Learn More
                                         <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -201,11 +201,13 @@ function AboutUs() {
                                         <h3 className="text-2xl font-semibold mt-1">
                                             About Dr. Desai
                                         </h3>
-                                        <p className="mb-4 mt-2">I always felt like I could do anything. That’s the main
-                                            thing people are controlled by! Thoughts- their perception
-                                            of themselves! They're slowed down by their perception of
-                                            themselves. If you're taught you can’t do anything, you
-                                            won’t do anything. I was taught I could do everything.
+                                        <p className="mb-4 mt-2">Shreyas Desai is certified in Internal Medicine and Geriatrics. He obtained his Bachelor’s Degree in Internal Medicine from Mount Sinai University. He went on to complete his Oncology training at Northwestern University.
+                                        </p>
+                                        <p className="mb-4 mt-2">
+As a Doctor, he has practiced in a variety of inpatient and outpatient settings. Dr. Desai has also integrated telemedicine into his practice. Dr. Desai has experience in critical care, as well as a special focus in obesity medicine, the treatment of opiate dependence, and geriatric medicine. He places high value on individualized care, strong family values, and preventative medicine.
+</p>
+<p className="mb-4 mt-2">
+Dr. Desai was born in India and immigrated to the U.S. where he completed his studies and currently resides in Northwest Indiana. Dr. Desai is a father and grandfather with 5 grandchildren and 3 children. His children also work in medicine and law. Being part of the community has inspired him to make a positive impact on others and their health.
                                         </p>
                                         <p>I always felt like I could do anything. That’s the main
                                             thing people are controlled by! Thoughts- their perception
