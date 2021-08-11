@@ -6,7 +6,7 @@ import sal from 'sal.js';
 
 function Services() {
   sal();
-  
+
   return (
     <div>
       <Nav menuItem="services" />
@@ -22,32 +22,32 @@ function Services() {
       </Helmet>
 
       <section className="bg-white bg-opacity-0 mt-0 w-full h-1/2">
-        <div className="w-full h-1/2 bg-gray900 shadow-xl bg-opacity-95 overflow-hidden text-center relative" style={{ backgroundImage: 'url(./runner.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="w-full h-1/2 bg-gray900 bg-opacity-95 overflow-hidden text-center relative" style={{ backgroundImage: 'url(./runner.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="container mx-auto my-auto pt-20 h-1/2">
             <div className="w-9/12 mx-auto text-gray-300 mt-0 my-40 items-center content-center content-center h-1/2">
-              <h1 className="ml-40 mt-10 mb-4 pr-8 text-center font-sans text-4xl font-bold tracking-tight text-gray-100 sm:text-4xl shadow-xl sm:leading-none"><span  data-sal="fade"
+              <h1 className="ml-40 mt-10 mb-4 pr-8 text-center font-sans text-4xl font-bold tracking-tight text-gray-100 sm:text-4xl shadow-xl sm:leading-none"><span data-sal="fade"
                 data-sal-delay="300"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint">IMG</span> <span data-sal="fade"
-                data-sal-delay="900"
-                data-sal-duration="2000"
-                data-sal-easing="ease-out-quint" className="text-white font-bold">Health Services</span></h1>
+                  data-sal-delay="900"
+                  data-sal-duration="2000"
+                  data-sal-easing="ease-out-quint" className="text-white font-bold">Health Services</span></h1>
             </div>
           </div>
         </div>
-    </section>
+      </section>
 
       <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0">
         <h2 data-sal="fade"
-                data-sal-delay="300"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="mt-20 mb-0 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">Health Services</h2>
+          data-sal-delay="300"
+          data-sal-duration="1500"
+          data-sal-easing="ease-out-quint" className="mt-20 mb-0 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">Health Services</h2>
         <section className="text-gray-600 body-font">
           <div className="container px-5 pb-20 py-6 mt-0 mx-auto">
             <p data-sal="slide-up"
-                data-sal-delay="300"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="text-gray-700 leading-relaxed mb-3">IMG is here throughout all stages of life providing continuity of care. From pediatrics, to general/family, to geriatrics, and more.</p>
+              data-sal-delay="300"
+              data-sal-duration="1500"
+              data-sal-easing="ease-out-quint" className="text-gray-700 leading-relaxed mb-3">IMG is here throughout all stages of life providing continuity of care. From pediatrics, to general/family, geriatrics, substance abuse, and more.</p>
             {/* <p className="text-gray-700 leading-relaxed mb-3">
               Check Ups
               Wellness Exams

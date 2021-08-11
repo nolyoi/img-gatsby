@@ -107,16 +107,18 @@ function AboutUs() {
                                 data-sal-delay="400"
                                 data-sal-duration="1500"
                                 data-sal-easing="ease-out-quint" className="w-full max-w-xs text-center">
-                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><button onClick={() => setShowChristina(true)} className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("./christina.jpeg")' }} alt="avatar"></button></div>
+                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><div className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("./patel.jpeg")' }} alt="avatar"></div></div>
+
                                 <div className="mt-2">
-                                    <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Christina Connelly</h3>
-                                    <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Nurse Practitioner</p>
-                                    <button onClick={() => setShowChristina(true)} className="text-indigo-500 inline-flex items-center">Learn More
+                                    <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Truptiben Patel</h3>
+                                    <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
+                                    <a className="text-indigo-500 inline-flex items-center">Learn More
                                         <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M5 12h14"></path>
                                             <path d="M12 5l7 7-7 7"></path>
                                         </svg>
-                                    </button>
+                                    </a>
+
                                 </div>
                             </div>
 
@@ -127,7 +129,7 @@ function AboutUs() {
                                 <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><div className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("./gayle.jpeg")' }} alt="avatar"></div></div>
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Gayle Voight-Block</h3>
-                                    <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
+                                    <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Nurse Practitioner</p>
                                     <a className="text-indigo-500 inline-flex items-center">Learn More
                                         <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M5 12h14"></path>
@@ -141,16 +143,16 @@ function AboutUs() {
                                 data-sal-delay="350"
                                 data-sal-duration="1500"
                                 data-sal-easing="ease-out-quint" className="w-full max-w-xs text-center">
-                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><div className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("./patel.jpeg")' }} alt="avatar"></div></div>
+                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><button onClick={() => setShowChristina(true)} className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("./christina.jpeg")' }} alt="avatar"></button></div>
                                 <div className="mt-2">
-                                    <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Patel</h3>
-                                    <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
-                                    <a className="text-indigo-500 inline-flex items-center">Learn More
+                                    <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Christina Connelly</h3>
+                                    <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Nurse Practitioner</p>
+                                    <button onClick={() => setShowChristina(true)} className="text-indigo-500 inline-flex items-center">Learn More
                                         <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M5 12h14"></path>
                                             <path d="M12 5l7 7-7 7"></path>
                                         </svg>
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
 
@@ -196,7 +198,7 @@ function AboutUs() {
                                 </div>
                                 {/*body*/}
                                 <div className="mt-2 mb-4">
-                                    <span className="inline-block py-4 px-8 text-blueGray-500 text-lg">
+                                    <span className="inline-block py-4 px-8 text-gray-500 text-lg">
                                         <img className="inline-block w-60 mr-8 mb-3 object-cover float-left h-60 rounded-full" src="./desai.jpeg" alt="avatar" />
                                         <h3 className="text-2xl font-semibold mt-1">
                                             About Dr. Desai
@@ -204,16 +206,10 @@ function AboutUs() {
                                         <p className="mb-4 mt-2">Shreyas Desai is certified in Internal Medicine and Geriatrics. He obtained his Bachelor’s Degree in Internal Medicine from Mount Sinai University. He went on to complete his Oncology training at Northwestern University.
                                         </p>
                                         <p className="mb-4 mt-2">
-As a Doctor, he has practiced in a variety of inpatient and outpatient settings. Dr. Desai has also integrated telemedicine into his practice. Dr. Desai has experience in critical care, as well as a special focus in obesity medicine, the treatment of opiate dependence, and geriatric medicine. He places high value on individualized care, strong family values, and preventative medicine.
-</p>
-<p className="mb-4 mt-2">
-Dr. Desai was born in India and immigrated to the U.S. where he completed his studies and currently resides in Northwest Indiana. Dr. Desai is a father and grandfather with 5 grandchildren and 3 children. His children also work in medicine and law. Being part of the community has inspired him to make a positive impact on others and their health.
+                                            As a Doctor, he has practiced in a variety of inpatient and outpatient settings. Dr. Desai has also integrated telemedicine into his practice. Dr. Desai has experience in critical care, as well as a special focus in obesity medicine, the treatment of opiate dependence, and geriatric medicine. He places high value on individualized care, strong family values, and preventative medicine.
                                         </p>
-                                        <p>I always felt like I could do anything. That’s the main
-                                            thing people are controlled by! Thoughts- their perception
-                                            of themselves! They're slowed down by their perception of
-                                            themselves. If you're taught you can’t do anything, you
-                                            won’t do anything. I was taught I could do everything.
+                                        <p className="mb-4 mt-2">
+                                            Dr. Desai was born in India and immigrated to the U.S. where he completed his studies and currently resides in Northwest Indiana. Dr. Desai is a father and grandfather with 5 grandchildren and 3 children. His children also work in medicine and law. Being part of the community has inspired him to make a positive impact on others and their health.
                                         </p>
                                     </span>
                                 </div>
@@ -248,7 +244,7 @@ Dr. Desai was born in India and immigrated to the U.S. where he completed his st
                                 </div>
                                 {/*body*/}
                                 <div className="mt-2">
-                                    <span className="inline-block py-4 px-8 text-blueGray-500 text-lg">
+                                    <span className="inline-block py-4 px-8 text-gray-500 text-lg">
                                         <img className="inline-block w-60 mr-8 mb-3 object-cover float-left h-60 rounded-full" src="./christina.jpeg" alt="avatar" />
                                         <h3 className="text-2xl font-semibold mt-1">
                                             About Dr. Connelly

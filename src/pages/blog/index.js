@@ -47,20 +47,20 @@ const BlogIndexPage = ({ data }) => {
       <Nav menuItem="news" />
 
       <section className="bg-white bg-opacity-0 mt-0 w-full h-2/3">
-        <div className="w-full h-2/3 bg-gray-900 shadow-xl bg-opacity-100 overflow-hidden text-center relative" style={{ backgroundImage: 'url(./news.jpeg)', backgroundSize: 'cover', backgroundPosition: 'top' }}>
+        <div className="w-full h-2/3 bg-gray-900 bg-opacity-100 overflow-hidden text-center relative" style={{ backgroundImage: 'url(./news.jpeg)', backgroundSize: 'cover', backgroundPosition: 'top' }}>
           <div className="container m-auto pt-20 h-1/2">
             <div className="w-9/12 mx-auto text-gray-300 mt-0 my-40 items-center content-center content-center h-2/3">
-              <h1 className="ml-0 mt-10 mb-4 text-center font-sans text-4xl font-bold tracking-tight text-indigo-700 sm:text-4xl sm:leading-none"><span  data-sal="fade"
+              <h1 className="ml-0 mt-10 mb-4 text-center font-sans text-4xl font-bold tracking-tight text-indigo-700 sm:text-4xl sm:leading-none"><span data-sal="fade"
                 data-sal-delay="300"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint">IMG</span> <span data-sal="fade"
-                data-sal-delay="900"
-                data-sal-duration="2000"
-                data-sal-easing="ease-out-quint" className="text-gray-700 font-bold">Latest Announcements</span></h1>
+                  data-sal-delay="900"
+                  data-sal-duration="2000"
+                  data-sal-easing="ease-out-quint" className="text-gray-700 font-bold">Latest Announcements</span></h1>
             </div>
           </div>
         </div>
-    </section>
+      </section>
 
       <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0 mb-20">
         <div className="container flex mx-auto ">
@@ -77,10 +77,10 @@ const BlogIndexPage = ({ data }) => {
 
           <section className="w-1/3 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">
             <div className="mb-4">
-            <h2 className="pl-4 font-sans text-md font-bold tracking-tight text-gray-800 sm:text-lg sm:leading-none">Posts by Month</h2>
+              <h2 className="pl-4 font-sans text-md font-bold tracking-tight text-gray-800 sm:text-lg sm:leading-none">Posts by Month</h2>
             </div>
             <div className="pl-12">
-            <ul class="list-disc">
+              <ul class="list-disc">
                 <li><a href="#" className="hover:text-indigo-600">January</a></li>
                 <li><a href="#" className="hover:text-indigo-600">February</a></li>
                 <li><a href="#" className="hover:text-indigo-600">March</a></li>
