@@ -47,7 +47,7 @@ function Footer() {
                   <Link to="/blog" className="text-gray-400 cursor-pointer hover:text-white">Blog</Link>
                 </li>
                 <li className="mt-3">
-                  <a className="text-gray-400 cursor-pointer hover:text-white">Contact Us</a>
+                  <Link to="/contact-us" className="text-gray-400 cursor-pointer hover:text-white">Contact Us</Link>
                 </li>
               </nav>
             </div>
@@ -55,16 +55,16 @@ function Footer() {
               <h2 className="mb-3 text-sm font-medium tracking-widest text-white uppercase title-font">Services</h2>
               <nav className="mb-10 list-none">
                 <li className="mt-3">
-                  <a className="text-gray-400 cursor-pointer hover:text-white">Family/General Practice</a>
+                  <Link to="/services" className="text-gray-400 cursor-pointer hover:text-white">Family/General Practice</Link>
                 </li>
                 <li className="mt-3">
-                  <a className="text-gray-400 cursor-pointer hover:text-white">Geriatric Medicine</a>
+                  <Link to="/services" className="text-gray-400 cursor-pointer hover:text-white">Geriatric Medicine</Link>
                 </li>
                 <li className="mt-3">
-                  <a className="text-gray-400 cursor-pointer hover:text-white">Pediatric Medicine</a>
+                  <Link to="/services" className="text-gray-400 cursor-pointer hover:text-white">Pediatric Medicine</Link>
                 </li>
                 <li className="mt-3">
-                  <a className="text-gray-400 cursor-pointer hover:text-white">Mental Health & Substance Abuse</a>
+                  <Link to="/services" className="text-gray-400 cursor-pointer hover:text-white">Mental Health & Substance Abuse</Link>
                 </li>
               </nav>
             </div>
