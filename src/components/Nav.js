@@ -57,7 +57,7 @@ function Nav({ menuItem }) {
       <div className="container mx-auto">
         <div className="relative flex items-center justify-between w-full">
           <Link to="/" aria-label="Internal Medicine and Geriatrics" title="Internal Medicine and Geriatrics" className="inline-flex items-center">
-            <span className="w-8 text-5xl text-white" style={{ fontFamily: 'Segoe UI' }}>
+            <span className="w-8 text-5xl text-white sm:hidden hidden md:block lg:block" style={{ fontFamily: 'Segoe UI' }}>
 
               &#9764;&#xFE0E;
             </span>
