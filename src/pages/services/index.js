@@ -25,7 +25,7 @@ function Services() {
         <div className="w-full h-1/2 bg-gray900 bg-opacity-95 overflow-hidden text-center relative" style={{ backgroundImage: 'url(./runner.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="container mx-auto my-auto pt-20 h-1/2">
             <div className="w-9/12 mx-auto text-gray-300 mt-0 my-40 items-center content-center content-center h-1/2">
-              <h1 className="ml-40 mt-10 mb-4 pr-8 text-center font-sans text-4xl font-bold tracking-tight text-gray-100 sm:text-4xl shadow-xl sm:leading-none"><span data-sal="fade"
+              <h1 className="ml-40 mt-10 mb-4 pr-8 text-center font-sans text-4xl font-bold tracking-tight text-gray-100 sm:text-4xl sm:leading-none"><span data-sal="fade"
                 data-sal-delay="300"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint">IMG</span> <span data-sal="fade"
