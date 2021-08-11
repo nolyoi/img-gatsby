@@ -44,7 +44,7 @@ const BlogIndexPage = ({ data }) => {
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </Helmet>
-      <Nav menuItem="blog" />
+      <Nav menuItem="news" />
 
       <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0">
         <div className="container mx-auto divide-y-2 divide-solid divide-grey-500">

@@ -70,11 +70,8 @@ function AboutUs() {
                         data-sal-duration="1500"
                         data-sal-easing="ease-out-quint" className="mb-6 font-sans text-3xl font-bold tracking-tight text-center text-gray-900 sm:text-4xl sm:leading-none">Meet Our Team</h2>
 
-                    <div data-sal="slide-left"
-                        data-sal-delay="200"
-                        data-sal-duration="1500"
-                        data-sal-easing="ease-out-quint" className="flex items-center justify-center w-full">
-                        <div className="grid gap-6 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+                    <div className="flex items-center justify-center w-full">
+                        <div className="grid gap-6 mt-8 sm:grid-cols-2 grid-cols-1 lg:grid-cols-3 xl:grid-cols-3">
                             <div className="w-full max-w-xs text-center">
                                 <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><button onClick={() => setShowDesai(true)} className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("./desai.jpeg")' }} alt="avatar"></button></div>
                                 <div className="mt-2">

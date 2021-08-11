@@ -30,9 +30,18 @@ function Locations() {
               </div>
               <div className="my-auto h-100 lg:w-1/3 md:w-1/2 w-full bg-white flex flex-col md:ml-auto w-full md:py-2 mt-0 md:mt-0">
                 <h2 className="mb-8 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none font-roboto">Portage Office (Primary)</h2>
-                <p className="mb-20 text-xl">2640 Hamstrom Road
+                <p className="mb-8 text-xl">2640 Hamstrom Road
                   Portage, IN. 46368</p>
-                <p className="mb-60 text-5xl text-center transform -rotate-3"> <a href="tel:12197624423" className="text-indigo-500 cursor-pointer hover:text-orange-500 font-marker">(219)762-4423</a></p>
+                <h3 className="mb-4 text-xl"><strong>Office Hours</strong></h3>
+                <table class="table-auto min-w-full mb-20">
+                  <tr><td>Monday:</td><td>9a-5p</td></tr>
+                  <tr><td>Tuesday:</td><td>9a-5p</td></tr>
+                  <tr><td className="pr=4">Wednesday:</td><td>9a-5p</td></tr>
+                  <tr><td>Thursday:</td><td>9a-5p</td></tr>
+                  <tr><td>Friday:</td><td>9a-4p</td></tr>
+                </table>
+
+                <p className="mb-20 text-5xl transform -rotate-3"> <a href="tel:12197624423" className="text-indigo-500 cursor-pointer hover:text-orange-500 font-marker">(219)762-4423</a></p>
               </div>
             </div>
           </section>
@@ -44,9 +53,18 @@ function Locations() {
               </div>
               <div className="my-auto h-100 lg:w-1/3 md:w-1/2 w-full bg-white flex flex-col md:ml-auto w-full md:py-2 mt-0 md:mt-0">
                 <h2 className="mb-8 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none font-roboto">Gary Office</h2>
-                <p className="mb-20 text-xl">3535 Broadway
+                <p className="mb-8 text-xl">3535 Broadway
                   Gary, IN. 46408</p>
-                <p className="mb-60 text-5xl text-center transform -rotate-3"> <a href="tel:1219884-4900" className="text-indigo-500 cursor-pointer hover:text-orange-500 font-marker">(219)884-4900</a></p>
+                <h3 className="mb-4 text-xl"><strong>Office Hours</strong></h3>
+                <table class="table-auto min-w-full mb-20">
+                  <tr><td>Monday:</td><td>9a-5p</td></tr>
+                  <tr><td>Tuesday:</td><td>9a-5p</td></tr>
+                  <tr><td className="pr=4">Wednesday:</td><td>9a-5p</td></tr>
+                  <tr><td>Thursday:</td><td>9a-5p</td></tr>
+                  <tr><td>Friday:</td><td>9a-4p</td></tr>
+                </table>
+
+                <p className="mb-20 text-5xl transform -rotate-3"> <a href="tel:1219884-4900" className="text-indigo-500 cursor-pointer hover:text-orange-500 font-marker">(219)884-4900</a></p>
               </div>
             </div>
           </section>
@@ -58,9 +76,18 @@ function Locations() {
               </div>
               <div className="my-auto h-100 lg:w-1/3 md:w-1/2 w-full bg-white flex flex-col md:ml-auto w-full md:py-2 mt-0 md:mt-0">
                 <h2 className="mb-8 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none font-roboto">Suboxone Clinic (Portage)</h2>
-                <p className="mb-20 text-xl"> 3190 Lancer Street
+                <p className="mb-8 text-xl"> 3190 Lancer Street
                   Portage, IN. 46368</p>
-                <p className="mb-60 text-5xl text-center transform -rotate-3"> <a href="tel:12192924501" className="text-indigo-500 cursor-pointer hover:text-orange-500 font-marker">(219)292-4501</a></p>
+                <h3 className="mb-4 text-xl"><strong>Office Hours</strong></h3>
+                <table class="table-auto min-w-full mb-20">
+                  <tr><td>Monday:</td><td>10a-6p</td></tr>
+                  <tr><td>Tuesday:</td><td>11a-7p</td></tr>
+                  <tr><td className="pr=4">Wednesday:</td><td>CLOSED</td></tr>
+                  <tr><td>Thursday:</td><td>11a-7p</td></tr>
+                  <tr><td>Friday:</td><td>11a-5p</td></tr>
+                </table>
+
+                <p className="mb-20 text-5xl transform -rotate-3"> <a href="tel:12192924501" className="text-indigo-500 cursor-pointer hover:text-orange-500 font-marker">(219)292-4501</a></p>
               </div>
             </div>
           </section>
