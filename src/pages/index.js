@@ -137,7 +137,7 @@ function Index() {
                   </p>
                 </div>
               </div>
-              <div className="w-full justify-center float-right mt-8 pr-6 place-items-center">
+              <div className="w-full justify-center float-right mt-8 lg:pr-6 md:pr-6 place-items-center">
                 <div data-sal="slide-up"
                 data-sal-delay="450"
                 data-sal-duration="1500"
