@@ -25,13 +25,13 @@ function Index() {
       <Hero />
       
       <section className="flex flex-col m-auto h-screen lg:h-screen sm:h-full sm:my-24">
-        <div className="flex flex-wrap content-center container px-24 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
+        <div className="flex flex-wrap content-center container lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
            <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
             <div>
               <img data-sal="slide-up"
                 data-sal-delay="200"
                 data-sal-duration="2000"
-                data-sal-easing="ease-out-quint" className="object-cover w-full h-56 rounded sm:h-96 pr-8" src="./stethoscope-heart.jpeg" alt="" />
+                data-sal-easing="ease-out-quint" className="object-cover w-full h-56 rounded sm:h-96 lg:pr-8" src="./stethoscope-heart.jpeg" alt="" />
             </div>
             <div className="flex flex-col justify-center">
               <div className="max-w-full mb-6">
