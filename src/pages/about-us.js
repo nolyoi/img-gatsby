@@ -203,13 +203,16 @@ function AboutUs() {
                                         <h3 className="text-2xl font-semibold mt-1">
                                             About Dr. Desai
                                         </h3>
-                                        <p className="mb-4 mt-2">Shreyas Desai is certified in Internal Medicine and Geriatrics. He obtained his Bachelor’s Degree in Internal Medicine from Mount Sinai University. He went on to complete his Oncology training at Northwestern University.
+                                        <p className="mb-4 mt-2">Shreyas Desai is certified in Internal Medicine and Geriatric.s He has been in practice for 50 years practicing at Methodist, St. Mary, and Pinnacle hospitals. </p>
+                                        
+                                        <p className="mb-4 mt-2">He completed his training in Internal Medicine from Mount Sinai University. He went on to complete his Oncology training at Northwestern University.
+                                        </p>
+
+                                        <p className="mb-4 mt-2">
+                                            Dr. Desai has experience in critical care, as well as a special focus in obesity medicine, the treatment of opiate dependence, and geriatric medicine. He places high value on individualized and continuity of care, strong family values, and preventative medicine.
                                         </p>
                                         <p className="mb-4 mt-2">
-                                            As a Doctor, he has practiced in a variety of inpatient and outpatient settings. Dr. Desai has also integrated telemedicine into his practice. Dr. Desai has experience in critical care, as well as a special focus in obesity medicine, the treatment of opiate dependence, and geriatric medicine. He places high value on individualized care, strong family values, and preventative medicine.
-                                        </p>
-                                        <p className="mb-4 mt-2">
-                                            Dr. Desai was born in India and immigrated to the U.S. where he completed his studies and currently resides in Northwest Indiana. Dr. Desai is a father and grandfather with 5 grandchildren and 3 children. His children also work in medicine and law. Being part of the community has inspired him to make a positive impact on others and their health.
+                                            Dr. Desai currently resides in Northwest Indiana. He is a father and grandfather with 5 grandchildren and 3 children. His children also work in medicine and law. Being part of the community has inspired him to make a positive impact on others and their health.
                                         </p>
                                     </span>
                                 </div>
