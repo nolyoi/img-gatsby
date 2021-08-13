@@ -144,7 +144,7 @@ function Index() {
                 data-sal-delay="450"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint" className="w-full self-center text-center">
-                <Link to="/services/clinic" className="inline-flex items-center justify-center w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none">View all services</Link>
+                <Link to="/services" className="inline-flex items-center justify-center w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none">View all services</Link>
                 </div>
               </div>
             </div>
