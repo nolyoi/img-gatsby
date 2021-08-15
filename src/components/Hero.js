@@ -16,7 +16,7 @@ function Hero() {
               <img src="./suboxone.png" height="48%" className="h-48 lg:float-right lg:mx-0 mx-auto lg:-mt-8 sm:mb-8 lg:mb-20 lg:pl-10" />
               <h1 className="lg:mt-12 sm:mt-2 sm:mb-2 lg:mb-4 lg:pr-8 text-center font-sans text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl sm:leading-none">Struggling with Addiction? Call the <span className="text-indigo-600 font-bold">IMG Suboxone Clinic</span>!</h1>
               <p>Our Suboxone clinic is conveniently located just off of Willowcreek Ave in Portage, Indiana. If you are struggling with the diseas of addiction, please reach out to us today at <a href="tel:12192924501" className="font-bold text-orange-500 hover:text-indigo-300">(219) 292-4501</a>.</p>
-              <Link to="/services" className="inline-flex mt-8 items-center justify-center w-50 h-10 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none">Learn more</Link>
+              <Link to="/services/suboxone" className="inline-flex mt-8 items-center justify-center w-50 h-10 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none">Learn more</Link>
             </div>
           </div>
         </div>

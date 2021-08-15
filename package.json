@@ -23,6 +23,7 @@
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "eslint-config-react-app": "^6.0.0",
+    "false": "^0.0.4",
     "gatsby": "^3.9.1",
     "gatsby-plugin-fontawesome-css": "^1.1.0",
     "gatsby-plugin-google-analytics": "^3.9.0",
@@ -38,6 +39,7 @@
     "gatsby-plugin-transition-link": "^1.20.5",
     "gatsby-source-filesystem": "^3.10.0",
     "gatsby-source-google-mymaps": "^1.0.0-beta.5",
+    "gatsby-source-strapi": "^1.0.2",
     "gatsby-transformer-sharp": "^3.9.0",
     "google-map-react": "^2.1.10",
     "gsap": "^3.7.1",
@@ -50,6 +52,7 @@
     "react-scroll-section": "^3.0.2",
     "react-scroll-wheel-handler": "^2.0.1",
     "sal.js": "^0.8.5",
+    "shar": "^0.2.0",
     "sharp": "^0.28.3",
     "typescript": "^4.3.5"
   },
