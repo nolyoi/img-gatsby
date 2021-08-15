@@ -42,9 +42,10 @@ function Clinic() {
           <section className="w-2/3 text-gray-600 body-font relative my-20" id="blog">
             <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Suboxone Clinic</h2>
 
-            <p className="mx-2 pb-4">
+            <p className="mx-2 pb-4 text-lg">
               If you or a loved one are suffering from drug addiction or alcohol addiction, call or chat with us to schedule an appointment with our outpatient Merrillville, IN addiction treatment center today. We offer telehealth addiction treatment as well as in-person clinic visits.</p>
-              <p className="mx-2 pb-4"> Our approach is evidence based and we can get you started on drug rehab medication-assisted treatment (MAT) program immediately. Our opioid and alcohol addiction treatment programs include the use of buprenorphine (such as Suboxone) or naltrexone (Vivitrol) as part of an individualized treatment plan led by our trained medical staff. Our patients are treated with dignity, compassion and respect. We accept Medicare, Medicaid and most insurance.
+              <p className="mx-2 pb-4 text-lg">Our approach is evidence based and we can get you started on drug rehab medication-assisted treatment (MAT) program immediately. </p>
+              <p className="mx-2 pb-4 text-lg"> Our opioid and alcohol addiction treatment programs include the use of buprenorphine (such as Suboxone) or naltrexone (Vivitrol) as part of an individualized treatment plan led by our trained medical staff. Our patients are treated with dignity, compassion and respect. We accept Medicare, Medicaid, most insurance, and cash payments.
             </p>
           </section>
 
