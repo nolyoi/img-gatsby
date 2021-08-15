@@ -14,9 +14,9 @@ function Nav({ menuItem }) {
 
   const navLink = ({ to, title, description, bgColor, direction = "left" }) => {
     if (isMenuOpen && menuItem === title.toLowerCase().replace(/\s/g, "-")) {
-      return <a href="#" aria-label={title} title="Learn about our practice and team" className="font-bold tracking-wide text-indigo-600 transition-colors duration-200 hover:text-deep-purple-accent-400">
+      return <Link to={to} aria-label={title} title="Learn about our practice and team" className="font-bold tracking-wide text-indigo-600 transition-colors duration-200 hover:text-deep-purple-accent-400">
         {title}
-      </a>
+      </Link>
     } else if (isMenuOpen) {
       return <Link to={to} aria-label={title} title={description} className="font-medium tracking-wide text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400">
         {title}
