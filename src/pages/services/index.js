@@ -48,7 +48,12 @@ function Services() {
             <p data-sal="slide-up"
               data-sal-delay="300"
               data-sal-duration="1500"
-              data-sal-easing="ease-out-quint" className="text-gray-700 leading-relaxed mb-3">IMG is here throughout all stages of life providing continuity of care. From pediatrics, to general/family, geriatrics, substance abuse, and more.</p>
+              data-sal-easing="ease-out-quint" className="text-gray-700 text-lg leading-relaxed mb-3">Here at IMG, we believe the most important part of healthcare is providing continuity of care. Being able to care for patients at all stages of life allows us to focus more individually on the patient. From pediatrics, to general/family, geriatrics, substance abuse, and more. We accept Medicare, Medicaid, most insurance, and cash payments.</p>
+
+            <p data-sal="slide-up"
+              data-sal-delay="300"
+              data-sal-duration="1500"
+              data-sal-easing="ease-out-quint" className="text-gray-700 text-lg leading-relaxed mb-3">To learn more, please click on one of the health services below.</p>
             {/* <p className="text-gray-700 leading-relaxed mb-3">
               Check Ups
               Wellness Exams
@@ -81,16 +86,16 @@ function Services() {
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint" className="mb-8 p-4 lg:w-1/3 md:w-1/2 w-full">
                 <Link to="/services/primary-care">
-                <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./primary-care.png)', backgroundPosition: 'center' }}>
-                  <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Primary Care</h1>
-                  <p className="text-gray-100 leading-relaxed mb-3">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.</p>
-                  <Link to="/services/primary-care" className="text-indigo-200 inline-flex items-center">Learn More
-                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M5 12h14"></path>
-                      <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                  </Link>
-                </div>
+                  <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./primary-care.png)', backgroundPosition: 'center' }}>
+                    <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Primary Care</h1>
+                    <p className="text-gray-100 leading-relaxed mb-3">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.</p>
+                    <Link to="/services/primary-care" className="text-indigo-200 inline-flex items-center">Learn More
+                      <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </Link>
+                  </div>
                 </Link>
               </div>
               <div data-sal="slide-right"
