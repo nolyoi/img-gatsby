@@ -14,7 +14,7 @@ function Services() {
       <Helmet>
         <meta charSet="utf-8" />
         ( <title>{`Internal Medicine and Geriatrics - Browse our health services.`}</title> )
-        <meta name="Description" CONTENT="Internal Medicine and Geriatrics has been proudly serving Northwest Indiana for over 34 years with quality health care." />
+        <meta name="Description" content="Internal Medicine and Geriatrics has been proudly serving Northwest Indiana for over 34 years with quality health care." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@600&display=swap" rel="stylesheet" />
