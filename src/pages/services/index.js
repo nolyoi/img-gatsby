@@ -112,7 +112,7 @@ function Services() {
                 data-sal-delay="100"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint" className="mb-8 p-4 lg:w-1/3 md:w-1/2 w-full">
-                <Link to="/services/suboxone">
+                <Link to="/services/suboxone-clinic">
                   <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./behavioral-health.jpg)', backgroundPosition: 'center' }}>
                     <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Substance Abuse</h1>
                     <p className="text-gray-100 leading-relaxed mb-3">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.</p>
