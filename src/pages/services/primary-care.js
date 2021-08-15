@@ -42,7 +42,7 @@ function PrimaryCare() {
           <section className="w-2/3 text-gray-600 body-font relative my-20" id="blog">
             <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Primary Care</h2>
 
-            <p className="mx-2 pb-4 text-lg"></p>
+            <p className="mx-2 pb-4 text-lg">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.</p>
             <p className="mx-2 pb-4 text-lg"></p>
             <p className="mx-2 pb-4 text-lg"></p>
           </section>
