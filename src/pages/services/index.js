@@ -80,16 +80,18 @@ function Services() {
                 data-sal-delay="300"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint" className="mb-8 p-4 lg:w-1/3 md:w-1/2 w-full">
+                <Link to="/services/primary-care">
                 <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./primary-care.png)', backgroundPosition: 'center' }}>
                   <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Primary Care</h1>
                   <p className="text-gray-100 leading-relaxed mb-3">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.</p>
-                  <a href="#" className="text-indigo-200 inline-flex items-center">Learn More
+                  <Link to="/services/primary-care" className="text-indigo-200 inline-flex items-center">Learn More
                     <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M5 12h14"></path>
                       <path d="M12 5l7 7-7 7"></path>
                     </svg>
-                  </a>
+                  </Link>
                 </div>
+                </Link>
               </div>
               <div data-sal="slide-right"
                 data-sal-delay="200"
@@ -114,7 +116,7 @@ function Services() {
                   <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./behavioral-health.jpg)', backgroundPosition: 'center' }}>
                     <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Substance Abuse</h1>
                     <p className="text-gray-100 leading-relaxed mb-3">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.</p>
-                    <Link to="/services/suboxone" className="text-indigo-200 inline-flex items-center">Learn More
+                    <Link to="/services/suboxone-clinic" className="text-indigo-200 inline-flex items-center">Learn More
                       <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>

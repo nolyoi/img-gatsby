@@ -3,7 +3,6 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { Link } from "gatsby"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 import {
   ScrollingProvider,
   useScrollSection,
@@ -19,18 +18,18 @@ function Nav({ menuItem }) {
         {title}
       </a>
     } else if (isMenuOpen) {
-      return <AniLink fade bg={bgColor} duration={0.8} direction={direction} to={to} aria-label={title} title={description} className="font-medium tracking-wide text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400">
+      return <Link to={to} aria-label={title} title={description} className="font-medium tracking-wide text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400">
         {title}
-      </AniLink>
+      </Link>
     } else if (menuItem === title.toLowerCase().replace(/\s/g, "-")) {
-      return <a href="#" aria-label={title} title="Learn about our practice and team" className="font-bold nav-underline tracking-wide text-indigo-300 transition-colors duration-200 hover:text-deep-purple-accent-400">
-        {title}
-      </a>
+      return <Link to={to} aria-label={title} title={description} className="font-medium tracking-wide text-indigo-300 transition-colors duration-200 hover:text-indigo-500">
+      {title}
+    </Link>
     }
 
-    return <AniLink fade bg={bgColor} duration={0.8} direction={direction} to={to} aria-label={title} title={description} className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400">
+    return <Link to={to} aria-label={title} title={description} className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400">
       {title}
-    </AniLink>
+    </Link>
   }
 
   const aboutLink = () => {
