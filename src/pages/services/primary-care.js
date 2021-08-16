@@ -22,10 +22,10 @@ function PrimaryCare() {
       </Helmet>
 
       <section className="bg-white bg-opacity-0 mt-0 w-full h-1/2">
-        <div className="w-full h-1/2 bg-gray-900 bg-opacity-100 overflow-hidden text-center relative" style={{ backgroundImage: 'url(../office.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="w-full h-1/2 bg-gray-900 bg-opacity-100 overflow-hidden text-center relative" style={{ backgroundImage: 'url(../portage-office.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="container mx-auto my-auto pt-20 h-1/2">
             <div className="w-9/12 mx-auto text-gray-300 mt-0 my-40 items-center content-center content-center h-1/2">
-              <h1 className=" mt-10 mb-4 pr-8 text-center font-sans text-4xl font-bold tracking-tight text-indigo-700 sm:text-4xl sm:leading-none"><span data-sal="fade"
+              <h1 className="mt-10 mb-4 pr-8 text-center font-sans text-4xl font-bold tracking-tight text-indigo-700 sm:text-4xl sm:leading-none"><span data-sal="fade"
                 data-sal-delay="300"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint">IMG</span> <span data-sal="fade"
@@ -39,7 +39,7 @@ function PrimaryCare() {
 
       <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0 mb-20">
         <div className="container flex mx-auto ">
-          <section className="w-2/3 text-gray-600 body-font relative my-20" id="blog">
+          <section className="w-full text-gray-600 body-font relative my-20" id="blog">
             <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Primary Care</h2>
 
             <p className="mx-2 pb-4 text-lg">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.</p>
@@ -47,7 +47,7 @@ function PrimaryCare() {
             <p className="mx-2 pb-4 text-lg"></p>
           </section>
 
-          <section className="w-1/3 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">
+          <section className="w-full text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">
             <div className="mb-4">
               <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Information</h2>
             </div>
