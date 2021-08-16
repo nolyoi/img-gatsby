@@ -23,6 +23,16 @@ function AboutUs() {
                 <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@600&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
                 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-5NSD8J3W2V"></script>
+                <script>
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+
+                        gtag('config', 'G-5NSD8J3W2V');
+                    `}
+                </script>
             </Helmet>
 
             <Nav menuItem="about-us" />
@@ -204,7 +214,7 @@ function AboutUs() {
                                             About Dr. Desai
                                         </h3>
                                         <p className="mb-4 mt-2">Shreyas Desai is certified in Internal Medicine and Geriatric.s He has been in practice for 50 years practicing at Methodist, St. Mary, and Pinnacle hospitals. </p>
-                                        
+
                                         <p className="mb-4 mt-2">He completed his training in Internal Medicine from Mount Sinai University. He went on to complete his Oncology training at Northwestern University.
                                         </p>
 
