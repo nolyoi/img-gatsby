@@ -61,5 +61,12 @@ module.exports = {
       },
       __key: "images",
     }, 
+    {
+      resolve: `gatsby-source-ghost`,
+      options: {
+        apiUrl: `https://<your-site-subdomain>.ghost.io`,
+        contentApiKey: `<your content api key>`
+      }
+    }
   ],
 };
