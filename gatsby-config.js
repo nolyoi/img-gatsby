@@ -64,8 +64,8 @@ module.exports = {
     {
       resolve: `gatsby-source-ghost`,
       options: {
-        apiUrl: `https://<your-site-subdomain>.ghost.io`,
-        contentApiKey: `<your content api key>`
+        apiUrl: env('API_URL', 'http://localhost:2368'),
+        contentApiKey: env('API_KEY', 'http://localhost:2368')
       }
     }
   ],
