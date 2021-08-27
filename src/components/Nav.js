@@ -23,8 +23,8 @@ function Nav({ menuItem }) {
       </Link>
     } else if (menuItem === title.toLowerCase().replace(/\s/g, "-")) {
       return <Link to={to} aria-label={title} title={description} className="font-medium tracking-wide text-indigo-300 transition-colors duration-200 hover:text-indigo-500">
-      {title}
-    </Link>
+        {title}
+      </Link>
     }
 
     return <Link to={to} aria-label={title} title={description} className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400">
@@ -54,12 +54,11 @@ function Nav({ menuItem }) {
 
   return (
 
-    <Section id="nav" className="bg-gray-800 text-white px-2 py-5 mx-auto max-w-full md:px-24 lg:px-0 shadow-xl mb-0 z-50">
+    <Section id="nav" className="border-t-2 border-indigo-600 bg-gray-800 text-white px-2 py-5 mx-auto max-w-full md:px-24 lg:px-0 shadow-xl mb-0 z-50">
       <div className="container mx-auto">
         <div className="relative flex items-center justify-between w-full">
           <Link to="/" aria-label="Internal Medicine and Geriatrics" title="Internal Medicine and Geriatrics" className="inline-flex items-center">
             <span className="w-8 text-5xl text-white sm:hidden hidden md:block lg:block" style={{ fontFamily: 'Segoe UI' }}>
-
               &#9764;&#xFE0E;
             </span>
             <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase pr-12 sm:ml-4">
@@ -107,7 +106,7 @@ function Nav({ menuItem }) {
                       <div>
                         <Link to="/" aria-label="Internal Medicine and Geriatrics" title="Internal Medicine and Geriatrics" className="inline-flex items-center">
                           <span className="w-8 text-5xl text-white sm:hidden hidden md:block lg:block">
-                          &#9764;&#xFE0E;
+                            &#9764;&#xFE0E;
                           </span>
                           <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                             Internal Medicine & Geriatrics

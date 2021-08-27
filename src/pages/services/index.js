@@ -91,8 +91,8 @@ function Services() {
               Telemedicine
             </p> */}
             <div className="flex flex-wrap -m-8 mt-10">
-              <div data-sal="slide-right"
-                data-sal-delay="300"
+              <div data-sal="slide-left"
+                data-sal-delay="100"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint" className="mb-8 p-4 lg:w-1/3 md:w-1/2 w-full">
                 <Link to="/services/primary-care">
@@ -108,7 +108,7 @@ function Services() {
                   </div>
                 </Link>
               </div>
-              <div data-sal="slide-right"
+              <div data-sal="slide-left"
                 data-sal-delay="200"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint" className="mb-8 p-4 lg:w-1/3 md:w-1/2 w-full">
@@ -123,8 +123,8 @@ function Services() {
                   </a>
                 </div>
               </div>
-              <div data-sal="slide-right"
-                data-sal-delay="100"
+              <div data-sal="slide-left"
+                data-sal-delay="300"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint" className="mb-8 p-4 lg:w-1/3 md:w-1/2 w-full">
                 <Link to="/services/suboxone-clinic">
