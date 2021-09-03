@@ -9,7 +9,7 @@ function NotFoundPage() {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        ( <title>{`Internal Medicine and Geriatric - 404 - Page not found!`}</title> )v
+        ( <title>{`Internal Medicine and Geriatrics - 404. Page not found!`}</title> )v
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@600&display=swap" rel="stylesheet" />
@@ -35,7 +35,7 @@ function NotFoundPage() {
           <div className="text-2xl font-bold text-blueGray-400"><Link to="/">Return home</Link></div>
         </div>
       </section>
-      
+
       <Footer />
     </div>
   );

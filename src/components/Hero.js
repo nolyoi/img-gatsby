@@ -47,7 +47,7 @@ function Hero() {
                 </div>
               </div>
               <div className="px-4 py-4">
-                <p className="py-4 text-gray-700 dark:text-gray-400">If you are struggling with the disease of addiction, please reach out to us today. Our suboxone clinic is located in Portage, Indiana.</p>
+                <p className="py-4 text-gray-700 dark:text-gray-400 text-left">If you are struggling with the disease of addiction, please reach out to us today. Our suboxone clinic is located in Portage, Indiana.</p>
               </div>
             </div>
             <div data-sal="slide-up"
@@ -63,7 +63,7 @@ function Hero() {
                 </div>
               </div>
               <div className="px-4 py-4">
-                <p className="py-4 text-gray-700 dark:text-gray-400">We now offer general/family services to provide our patients with the best health and wellness care. Welcome to our new doctor Truptiben Patel!</p>
+                <p className="py-4 text-gray-700 dark:text-gray-400 text-left">We now offer general/family services to provide our patients with the best health and wellness care. Welcome to our new doctor Truptiben Patel!</p>
               </div>
             </div>
           </div>

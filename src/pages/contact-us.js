@@ -2,8 +2,21 @@ import * as React from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import { Helmet } from 'react-helmet';
+import ReCAPTCHA from "react-google-recaptcha";
 
 function ContactUs() {
+  var passed;
+  function onChange(value) {
+    passed = true;
+  }
+
+  function submitButton() {
+    if (passed) {
+      return <button type="submit" className="mt-2 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send</button>
+    }
+    return <button type="submit" className="mt-2 text-white bg-gray-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg" disabled>Complete Captcha</button>
+  }
+
   return (
     <div>
       <Helmet>
@@ -67,7 +80,11 @@ function ContactUs() {
               <div className="relative mb-4">
                 <textarea id="message" placeholder="How can we help you?" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
               </div>
-              <button type="submit" className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send</button>
+              <ReCAPTCHA
+                sitekey="6Le-NTUcAAAAAFofmQLpE1_JdB4_S2dXwVHC5zIh"
+                onChange={onChange}
+              />
+              {submitButton()}
               <p className="text-xs text-gray-500 mt-3">We will do our best to get back to you ASAP. For a quicker response, please call.</p>
             </form>
           </div>

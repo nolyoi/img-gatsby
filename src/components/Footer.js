@@ -55,13 +55,13 @@ function Footer() {
               <h2 className="mb-3 text-sm font-medium tracking-widest text-white uppercase title-font">Services</h2>
               <nav className="mb-10 list-none">
                 <li className="mt-3">
-                  <Link to="/services" className="text-gray-400 cursor-pointer hover:text-white">Family/General Practice</Link>
+                  <Link to="/services/primary-care" className="text-gray-400 cursor-pointer hover:text-white">Family/General Practice</Link>
                 </li>
                 <li className="mt-3">
-                  <Link to="/services" className="text-gray-400 cursor-pointer hover:text-white">Geriatric Medicine</Link>
+                  <Link to="/services/pediatrics" className="text-gray-400 cursor-pointer hover:text-white">Pediatric Medicine</Link>
                 </li>
                 <li className="mt-3">
-                  <Link to="/services" className="text-gray-400 cursor-pointer hover:text-white">Pediatric Medicine</Link>
+                  <Link to="/services/geriatrics" className="text-gray-400 cursor-pointer hover:text-white">Geriatric Medicine</Link>
                 </li>
                 <li className="mt-3">
                   <Link to="/services/suboxone-clinic" className="text-gray-400 cursor-pointer hover:text-white">Mental Health & Substance Abuse</Link>
