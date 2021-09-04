@@ -9,8 +9,8 @@ sections:
   label: Blog
   create: documents
   match: "**/*"
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: static/uploads
+public_path: "/static/uploads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
@@ -21,3 +21,11 @@ build:
   mount_path: "/srv"
   working_dir: "/srv"
   instant_preview_command: npm run develop
+sections:
+  - type: directory
+    path: src/content/posts
+    label: Posts
+    create: documents
+    match: "**/*"
+    templates:
+      - blog

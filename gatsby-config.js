@@ -22,19 +22,6 @@ module.exports = {
     //     exitEventName: 'sal:out', // Exit event name
     //   }
     // },
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        extensions: [`.mdx`, `.md`],
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `posts`,
-        path: `${__dirname}/src/pages/posts`,
-      },
-    },
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     {
@@ -51,22 +38,15 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: "./src/images/",
-      },
-      __key: "images",
-    }, 
-    {
-      resolve: `gatsby-source-ghost`,
-      options: {
-        apiUrl: env('API_URL', 'http://localhost:2368'),
-        contentApiKey: env('API_KEY', 'http://localhost:2368')
-      }
-    }
+    // "gatsby-plugin-sharp",
+    // "gatsby-transformer-sharp",
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: "images",
+    //     path: "./src/images/",
+    //   },
+    //   __key: "images",
+    // }, 
   ],
 };
