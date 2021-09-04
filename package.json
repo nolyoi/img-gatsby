@@ -42,6 +42,7 @@
     "gatsby-source-ghost": "^4.2.4",
     "gatsby-source-google-mymaps": "^1.0.0-beta.5",
     "gatsby-source-strapi": "^1.0.2",
+    "gatsby-transformer-remark": "^4.10.0",
     "gatsby-transformer-sharp": "^3.9.0",
     "google-map-react": "^2.1.10",
     "gsap": "^3.7.1",
