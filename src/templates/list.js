@@ -1,9 +1,5 @@
 import React from 'react'
-import Helmet from 'react-helmet'
-// eslint-disable-next-line
 import { Link, graphql } from 'gatsby'
-
-import Layout from '../components/layout'
 import PostList from '../components/post-list'
 
 class ListTemplate extends React.Component {
@@ -39,7 +35,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark() {
       id
       html
       frontmatter {

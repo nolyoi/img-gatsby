@@ -5,32 +5,6 @@ import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 import { Helmet } from 'react-helmet';
 
-export const query = graphql
-  `
-    query SITE_INDEX_QUERY {
-        site {
-            siteMetadata {
-                title
-                description
-            }
-        }
-        allMdx(
-            sort: { fields: [frontmatter___date], order: DESC }
-            filter: { frontmatter: { published: { eq: true } } }
-        ) {
-            nodes {
-                id
-                body
-            frontmatter {
-                title
-                date(formatString: "MMMM Do, YYYY.")
-                author
-            }
-            }
-        }
-    }
-`
-
 const BlogIndexPage = ({ data }) => {
   const { frontmatter, body } = data.allMdx.nodes[0];
   return (
@@ -87,16 +61,7 @@ const BlogIndexPage = ({ data }) => {
 
       <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0 mb-20">
         <div className="container flex mx-auto ">
-          <section className="w-2/3 text-gray-600 body-font relative my-20" id="blog">
-            <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-4xl sm:leading-none mb-8">Latest from our blog...</h2>
-            <div className="mb-4">
-              <h2 className="mb-0 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-gray-800 hover:text-indigo-600"><a href="#">{frontmatter.title}</a></h2>
-              <span className="text-sm ml-2"><strong>by</strong> {frontmatter.author} <strong>on</strong> {frontmatter.date}</span>
-            </div>
-            <div className="mx-2">
-              <MDXRenderer>{body}</MDXRenderer>
-            </div>
-          </section>
+          
 
           <section className="w-1/3 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">
             <div className="mb-4">
