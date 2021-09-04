@@ -7,5 +7,3 @@ fields:
   config:
     required: false
   label: Title
-pages:
-- src/content/posts/test-1.md
