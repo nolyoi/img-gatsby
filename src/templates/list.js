@@ -27,20 +27,3 @@ class ListTemplate extends React.Component {
 }
 
 export default ListTemplate
-
-export const pageQuery = graphql`
-  query ListPageBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      html
-      frontmatter {
-        title
-      }
-    }
-  }
-`
