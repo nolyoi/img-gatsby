@@ -8,5 +8,10 @@ fields:
   config:
     required: false
   label: Title
+- name: slug
+  type: text
+  config:
+    required: false
+  label: Slug
 pages:
 - src/content/blog/test.md
