@@ -1,4 +1,10 @@
 ---
 label: Testimonial
 hide_body: false
-fields: []
+fields:
+- name: author
+  type: text
+  config:
+    required: false
+  label: Author
+  description: Who is this testimonial from?
