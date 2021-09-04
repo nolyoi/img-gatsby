@@ -23,9 +23,6 @@ const BlogIndexPage = ({ data }) => {
       }
     }
   }
-  markdownRemark {
-    id
-  }
 }
 `);
   let frontmatter = [];
@@ -76,13 +73,13 @@ const BlogIndexPage = ({ data }) => {
         <div className="container flex mx-auto ">
 
                         <section className="w-2/3 text-gray-600 body-font relative my-20" id="blog">
-                        <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-4xl sm:leading-none mb-8">Latest from our blog...</h2>
+                        <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-4xl sm:leading-none mb-14">Latest from our blog...</h2>
 
           {frontmatter.map(element => {
-            return <div>
+            return <div className="mb-20">
               <div className="mb-4">
                 <h2 className="mb-0 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-gray-800 hover:text-indigo-600"><a href="#">{element.node.frontmatter.title}</a></h2>
-                <span className="text-sm ml-2"><strong>by</strong> <strong>on</strong></span>
+                <span className="text-sm ml-2"><strong>by</strong> IMG Team <strong>on</strong> {element.node.frontmatter.published}</span>
               </div>
               <div className="mx-2">
               <div dangerouslySetInnerHTML={{__html: element.node.html}} />
