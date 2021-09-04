@@ -41,5 +41,12 @@ module.exports = {
     //   },
     //   __key: "images",
     // }, 
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/content`,
+      },
+    },
   ],
 };
