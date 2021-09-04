@@ -49,7 +49,7 @@ function Nav({ menuItem }) {
   }
 
   const blogLink = () => {
-    return navLink({ to: '/blog', title: 'News', bgColor: '#293749', description: 'Latest news and announcements from IMG.', direction: 'left' })
+    return navLink({ to: '/locations', title: 'News', bgColor: '#293749', description: 'Latest news and announcements from IMG.', direction: 'left' })
   }
 
   return (

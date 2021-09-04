@@ -44,7 +44,7 @@ function Footer() {
                   <Link to="/about-us#staff" className="text-gray-400 cursor-pointer hover:text-white">Our Staff</Link>
                 </li>
                 <li className="mt-3">
-                  <Link to="/blog" className="text-gray-400 cursor-pointer hover:text-white">Blog</Link>
+                  <Link to="/locations" className="text-gray-400 cursor-pointer hover:text-white">Blog</Link>
                 </li>
                 <li className="mt-3">
                   <Link to="/contact-us" className="text-gray-400 cursor-pointer hover:text-white">Contact Us</Link>
