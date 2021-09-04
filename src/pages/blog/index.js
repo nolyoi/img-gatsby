@@ -4,6 +4,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 import { Helmet } from 'react-helmet';
+import parse, { domToReact } from 'html-react-parser';
 
 const BlogIndexPage = ({ data }) => {
   const query = useStaticQuery(graphql`
@@ -30,7 +31,6 @@ const BlogIndexPage = ({ data }) => {
     frontmatter.push(post);
   });
 
-  console.log(frontmatter);
   return (
     <div>
       <Helmet>
@@ -76,13 +76,20 @@ const BlogIndexPage = ({ data }) => {
                         <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-4xl sm:leading-none mb-14">Latest from our blog...</h2>
 
           {frontmatter.map(element => {
-            return <div className="mb-20">
+
+
+            let body = element.node.html;
+            console.log(body);
+
+            return <div className="mb-20" key={element.node.id}>
+              
+
               <div className="mb-4">
                 <h2 className="mb-0 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-gray-800 hover:text-indigo-600"><a href="#">{element.node.frontmatter.title}</a></h2>
                 <span className="text-sm ml-2"><strong>by</strong> IMG Team <strong>on</strong> {element.node.frontmatter.published}</span>
               </div>
               <div className="mx-2">
-              <div dangerouslySetInnerHTML={{__html: element.node.html}} />
+              <div dangerouslySetInnerHTML={{__html:  element.node.html}} />
               </div>
               </div>;
           })}
@@ -93,7 +100,7 @@ const BlogIndexPage = ({ data }) => {
               <h2 className="pl-4 font-sans text-md font-bold tracking-tight text-gray-800 sm:text-lg sm:leading-none">Posts by Month</h2>
             </div>
             <div className="pl-12">
-              <ul class="list-disc">
+              <ul className="list-disc">
                 <li><a href="#" className="hover:text-indigo-600">January</a></li>
                 <li><a href="#" className="hover:text-indigo-600">February</a></li>
                 <li><a href="#" className="hover:text-indigo-600">March</a></li>

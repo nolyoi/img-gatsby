@@ -68,7 +68,7 @@ function PrimaryCare() {
                   <p className="mb-8 text-xl"><strong>Gary Office:</strong> 3535 Broadway
                   Gary, IN. 46408</p>
                 <h4 className="mb-4 text-xl"><strong>Office Hours</strong></h4>
-                <table class="table-auto min-w-full mb-10">
+                <table className="table-auto min-w-full mb-10">
                   <tr><td>Monday:</td><td>9a-5p</td></tr>
                   <tr><td>Tuesday:</td><td>9a-5p</td></tr>
                   <tr><td className="pr=4">Wednesday:</td><td>9a-5p</td></tr>
