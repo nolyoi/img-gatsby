@@ -12,7 +12,7 @@ sections:
   templates:
   - posts
 - type: directory
-  path: testimonials
+  path: src/content/testimonials
   label: Testimonials
   create: documents
   match: "**/*"
