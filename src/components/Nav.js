@@ -82,9 +82,9 @@ function Nav({ menuItem }) {
               {contactLink()}
             </li>
             <li>
-              <a href="./book-appointment/current-patient" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none" aria-label="Patient Login" title="Patient Login">
-                Patient Login
-              </a>
+              <Link to="/book-appointment/current-patient" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none" aria-label="Patient Login" title="Patient Login">
+                Book Appointment
+              </Link>
             </li>
           </ul>
           <div className="lg:hidden z-50">
@@ -143,9 +143,9 @@ function Nav({ menuItem }) {
                           {contactLink()}
                         </li>
                         <li>
-                          <a href="./book-appointment/current-patient" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none" aria-label="Sign up" title="Sign up">
-                            Patient Login
-                          </a>
+                          <Link to="/book-appointment/current-patient" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none" aria-label="Sign up" title="Sign up">
+                            Book Appointment
+                          </Link>
                         </li>
                       </ul>
                     </nav>
