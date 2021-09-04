@@ -1,31 +1,30 @@
 import * as React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 import { Helmet } from 'react-helmet';
 
-export const query = graphql
-  `
-  query GetPosts {
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          html
-          frontmatter {
-            title
-            slug
-            content
-          }
+const BlogIndexPage = ({ data }) => {
+  const query = useStaticQuery(graphql`
+  query {
+  allMarkdownRemark {
+    edges {
+      node {
+        id
+        html
+        frontmatter {
+          title
+          slug
+          content
         }
       }
     }
   }
-`
+}
+`);
 
-const BlogIndexPage = ({ data }) => {
-  const { frontmatter, body } = data.allMdx.nodes[0];
+  const frontmatter = query.allMarkdownRemark.edges[0].node;
   return (
     <div>
       <Helmet>
@@ -69,11 +68,11 @@ const BlogIndexPage = ({ data }) => {
           <section className="w-2/3 text-gray-600 body-font relative my-20" id="blog">
             <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-4xl sm:leading-none mb-8">Latest from our blog...</h2>
             <div className="mb-4">
-              <h2 className="mb-0 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-gray-800 hover:text-indigo-600"><a href="#">{frontmatter.title}</a></h2>
-              <span className="text-sm ml-2"><strong>by</strong> {frontmatter.author} <strong>on</strong> {frontmatter.date}</span>
+              <h2 className="mb-0 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-gray-800 hover:text-indigo-600"><a href="#">{frontmatter.frontmatter.title}</a></h2>
+              <span className="text-sm ml-2"><strong>by</strong> <strong>on</strong></span>
             </div>
             <div className="mx-2">
-              <MDXRenderer>{frontmatter.body}</MDXRenderer>
+              
             </div>
           </section>
 
