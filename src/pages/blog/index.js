@@ -8,23 +8,32 @@ import { Helmet } from 'react-helmet';
 const BlogIndexPage = ({ data }) => {
   const query = useStaticQuery(graphql`
   query {
-  allMarkdownRemark {
+    allMarkdownRemark(sort: {fields: frontmatter___published, order: DESC}) {
     edges {
       node {
         id
         html
         frontmatter {
+          content
+          published
           title
           slug
-          content
         }
+        excerpt
       }
     }
   }
+  markdownRemark {
+    id
+  }
 }
 `);
+  let frontmatter = [];
+  query.allMarkdownRemark.edges.forEach(post => {
+    frontmatter.push(post);
+  });
 
-  const frontmatter = query.allMarkdownRemark.edges[0].node;
+  console.log(frontmatter);
   return (
     <div>
       <Helmet>
@@ -62,18 +71,24 @@ const BlogIndexPage = ({ data }) => {
           </div>
         </div>
       </section>
-      
+
       <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0 mb-20">
         <div className="container flex mx-auto ">
-          <section className="w-2/3 text-gray-600 body-font relative my-20" id="blog">
-            <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-4xl sm:leading-none mb-8">Latest from our blog...</h2>
-            <div className="mb-4">
-              <h2 className="mb-0 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-gray-800 hover:text-indigo-600"><a href="#">{frontmatter.frontmatter.title}</a></h2>
-              <span className="text-sm ml-2"><strong>by</strong> <strong>on</strong></span>
-            </div>
-            <div className="mx-2">
-              
-            </div>
+
+                        <section className="w-2/3 text-gray-600 body-font relative my-20" id="blog">
+                        <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-4xl sm:leading-none mb-8">Latest from our blog...</h2>
+
+          {frontmatter.map(element => {
+            return <div>
+              <div className="mb-4">
+                <h2 className="mb-0 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-gray-800 hover:text-indigo-600"><a href="#">{element.node.frontmatter.title}</a></h2>
+                <span className="text-sm ml-2"><strong>by</strong> <strong>on</strong></span>
+              </div>
+              <div className="mx-2">
+              <div dangerouslySetInnerHTML={{__html: element.node.html}} />
+              </div>
+              </div>;
+          })}
           </section>
 
           <section className="w-1/3 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">
