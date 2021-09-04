@@ -144,8 +144,27 @@ function Services() {
                 data-sal-delay="100"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint" className="mb-8 p-4 lg:w-1/3 md:w-1/2 w-full">
-                <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./pediatrics.jpeg)', backgroundPosition: 'center' }}>
-                  <Link to="/services/pediatrics">
+                <Link to="/services/pediatrics">
+                  <div className="h-full shadow-xl bg-gray-800 bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./prenatal.jpeg)', backgroundPosition: 'center' }}>
+
+                    <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Prenatal</h1>
+                    <p className="text-gray-100 leading-relaxed mb-3">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.</p>
+                    <Link to="/services/pediatrics" className="text-indigo-200 inline-flex items-center">Learn More
+                      <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </Link>
+
+                  </div>
+                </Link>
+              </div>
+              <div data-sal="slide-right"
+                data-sal-delay="200"
+                data-sal-duration="1500"
+                data-sal-easing="ease-out-quint" className="mb-8 p-4 lg:w-1/3 md:w-1/2 w-full">
+                <Link to="/services/pediatrics">
+                  <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./pediatrics.jpeg)', backgroundPosition: 'center' }}>
                     <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Pediatrics</h1>
                     <p className="text-gray-100 leading-relaxed mb-3">Our staff understand that it is a privilege to serve your family and to maintain and improve the health of your children.</p>
                     <Link to="/services/pediatrics" className="text-indigo-200 inline-flex items-center">Learn More
@@ -154,15 +173,17 @@ function Services() {
                         <path d="M12 5l7 7-7 7"></path>
                       </svg>
                     </Link>
-                  </Link>
-                </div>
+                  </div>
+                </Link>
               </div>
+
               <div data-sal="slide-right"
-                data-sal-delay="200"
+                data-sal-delay="300"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint" className="mb-8 p-4 lg:w-1/3 md:w-1/2 w-full">
-                <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./geriatrics.jpeg)', backgroundPosition: 'center' }}>
-                  <Link to="/services/geriatrics">
+                <Link to="/services/geriatrics">
+                  <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./geriatrics.jpeg)', backgroundPosition: 'center' }}>
+
                     <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Geriatrics</h1>
                     <p className="text-gray-100 leading-relaxed mb-3">We provide services for the physical, emotional and social well-being of elderly patients with medical and psychosocial problems.</p>
                     <Link to="/services/geriatrics" className="text-indigo-200 inline-flex items-center">Learn More
@@ -171,23 +192,8 @@ function Services() {
                         <path d="M12 5l7 7-7 7"></path>
                       </svg>
                     </Link>
-                  </Link>
-                </div>
-              </div>
-              <div data-sal="slide-right"
-                data-sal-delay="300"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="mb-8 p-4 lg:w-1/3 md:w-1/2 w-full">
-                <div className="h-full shadow-xl bg-gray-800 bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./prenatal.jpeg)', backgroundPosition: 'center' }}>
-                  <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Prenatal</h1>
-                  <p className="text-gray-100 leading-relaxed mb-3">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.</p>
-                  <a href="#" className="text-indigo-200 inline-flex items-center">Learn More
-                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M5 12h14"></path>
-                      <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-                </div>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
