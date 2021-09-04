@@ -4,7 +4,6 @@ module.exports = {
     title: "Internal Medicine & Geriatrics",
   },
   plugins: [
-    `gatsby-plugin-transition-link`,
     `gatsby-plugin-fontawesome-css`,
     // {
     //   resolve: `gatsby-plugin-scroll-reveal`,
@@ -24,12 +23,6 @@ module.exports = {
     // },
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "279635683",
-      },
-    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
