@@ -18,7 +18,6 @@ const BlogIndexPage = ({ data }) => {
         id
         html
         frontmatter {
-          content
           published
           title
           slug
