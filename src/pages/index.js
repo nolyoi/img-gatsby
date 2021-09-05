@@ -191,14 +191,20 @@ function Index() {
       </section>
 
       <section className="flex flex-col text-gray-700 h-screen lg:h-screen sm:h-full sm:my-24 sm:pt-12 overflow-hidden">
-        <div className="mx-auto text-center"><h1 data-sal="fade"
+        <div className="mx-auto text-center"><h1 data-sal="slide-up"
           data-sal-delay="200"
           data-sal-duration="1500"
           data-sal-easing="ease-out-quint" className="mx-auto mb-4 text-2xl font-semibold tracking-tighter text-black sm:text-6xl title-font">
           Testimonials
         </h1>
-        <p className="text-large">See what our patients have to say.</p>  </div>
-        <div className="mx-auto mt-20 rounded-2xl bg-gray-50 w-3/6 h-1/4 py-12 rounded-xl overflow-hidden" style={{ backgroundImage: "url('../quotation-mark3.png')", backgroundSize: '30%', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }}>
+        <p data-sal="fade"
+          data-sal-delay="200"
+          data-sal-duration="1500"
+          data-sal-easing="ease-out-quint" className="text-large">See what our patients have to say.</p>  </div>
+        <div data-sal="fade"
+          data-sal-delay="200"
+          data-sal-duration="1500"
+          data-sal-easing="ease-out-quint" className="mx-auto mt-20 rounded-2xl bg-gray-50 w-3/6 h-1/4 py-12 rounded-xl overflow-hidden" style={{ backgroundImage: "url('../quotation-mark3.png')", backgroundSize: '30%', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }}>
           <div className=" w-full items-center px-5 m-auto lg:px-24">
             {frontmatter.map(element => {
               return <div>
