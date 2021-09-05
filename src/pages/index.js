@@ -144,8 +144,9 @@ function Index() {
                   data-sal-delay="300"
                   data-sal-duration="1500"
                   data-sal-easing="ease-out-quint" className="p-6">
-                  {/* <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-black bg-gray-100 rounded-full">
-                  </div> */}
+                  <div className="inline-flex items-center justify-center flex-shrink-0 w-full h-50 mx-auto mb-5 text-black bg-gray-100 rounded-full">
+                    <img src="../heart-bg.jpeg" />
+                  </div> 
                   <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
                     Family & General Practice
                   </h1>
@@ -158,8 +159,9 @@ function Index() {
                   data-sal-delay="350"
                   data-sal-duration="1500"
                   data-sal-easing="ease-out-quint" className="p-6">
-                  {/* <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-black bg-gray-100 rounded-full">
-                  </div> */}
+                  <div className="inline-flex items-center justify-center flex-shrink-0 w-full h-50 mx-auto mb-5 text-black bg-gray-100 rounded-full">
+                    <img src="../addiction.jpeg" />
+                  </div>
                   <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
                     Substance Abuse
                   </h1>
@@ -172,8 +174,9 @@ function Index() {
                   data-sal-delay="400"
                   data-sal-duration="1500"
                   data-sal-easing="ease-out-quint" className="p-6">
-                  {/* <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-black bg-gray-100 rounded-full">
-                  </div> */}
+                  <div className="inline-flex items-center justify-center flex-shrink-0 w-full h-50 mx-auto mb-5 text-black bg-gray-100 rounded-full">
+                    <img src="../geriatrics.jpeg" />
+                  </div>
                   <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
                     Geriatrics & Pediatrics
                   </h1>

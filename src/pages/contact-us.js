@@ -5,9 +5,10 @@ import { Helmet } from 'react-helmet';
 import ReCAPTCHA from "react-google-recaptcha";
 
 function ContactUs() {
-  var passed;
+  const [passed, setPassed] = React.useState(false);
+
   function onChange(value) {
-    passed = true;
+    setPassed = true;
   }
 
   function submitButton() {
