@@ -64,10 +64,13 @@ const BlogIndexPage = ({ data }) => {
                 data-sal-delay="300"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint">IMG</span> <span data-sal="fade"
-                  data-sal-delay="900"
+                  data-sal-delay="800"
                   data-sal-duration="2000"
                   data-sal-easing="ease-out-quint" className="text-gray-700 font-bold">Latest Announcements</span></h1>
-              <p className="text-lg font-medium text-gray-700">Check below for the latest announcements from our office.</p>
+              <p data-sal="fade"
+                  data-sal-delay="1000"
+                  data-sal-duration="2000"
+                  data-sal-easing="ease-out-quint" className="text-lg font-medium text-gray-700">Check below for the latest announcements from our office.</p>
             </div>
           </div>
         </div>
