@@ -1,6 +1,7 @@
 ---
 label: Office
 hide_body: true
+display_field: office
 fields:
 - name: office
   type: text
