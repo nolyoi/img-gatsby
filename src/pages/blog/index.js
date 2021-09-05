@@ -19,10 +19,14 @@ const BlogIndexPage = ({ data }) => {
           published
           title
           slug
+          lead_image
         }
         excerpt
       }
     }
+  }
+  markdownRemark {
+    id
   }
 }
 `);
@@ -76,18 +80,17 @@ const BlogIndexPage = ({ data }) => {
                         <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-4xl sm:leading-none mb-14">Latest from our blog...</h2>
 
           {frontmatter.map(element => {
-
-
             let body = element.node.html;
-            console.log(body);
 
-            return <div className="mb-20" key={element.node.id}>
-              
-
-              <div className="mb-4">
+            return <div className="mb-20" key={element.node.id}>  
+            <div className="h-96 bg-gray-800 bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: element.node.frontmatter.lead_image?.replace("/static", ""), backgroundPosition: 'center' }}>
+              <img className="rounded scale-50 object-cover object-top" src={element.node.frontmatter.lead_image?.replace("/static", "")} />
+              </div>      
+              <div className="mb-4 mt-8">
                 <h2 className="mb-0 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-gray-800 hover:text-indigo-600"><a href="#">{element.node.frontmatter.title}</a></h2>
                 <span className="text-sm ml-2"><strong>by</strong> IMG Team <strong>on</strong> {element.node.frontmatter.published}</span>
               </div>
+              
               <div className="mx-2">
               <div dangerouslySetInnerHTML={{__html:  element.node.html}} />
               </div>
