@@ -8,10 +8,12 @@ function ContactUs() {
   const [passed, setPassed] = React.useState(false);
 
   function onChange(value) {
-    setPassed = true;
+    console.log(value);
+    setPassed(true);
+    submitButton(passed);
   }
 
-  function submitButton() {
+  function submitButton(passed) {
     if (passed) {
       return <button type="submit" className="mt-2 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send</button>
     }
@@ -83,9 +85,9 @@ function ContactUs() {
               </div>
               <ReCAPTCHA
                 sitekey="6Le-NTUcAAAAAFofmQLpE1_JdB4_S2dXwVHC5zIh"
-                onChange={onChange}
+                onChange={() => onChange(true)}
               />
-              {submitButton()}
+              {submitButton(passed)}
               <p className="text-xs text-gray-500 mt-3">We will do our best to get back to you ASAP. For a quicker response, please call.</p>
             </form>
           </div>
