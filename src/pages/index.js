@@ -128,12 +128,16 @@ function Index() {
               <h1 data-sal="fade"
                 data-sal-delay="200"
                 data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="mx-auto text-2xl font-semibold leading-none tracking-tighter text-black lg:w-1/2 sm:text-6xl title-font">
+                data-sal-easing="ease-out-quint" className="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-black lg:w-1/2 sm:text-6xl title-font">
                 Health Services
               </h1>
+              <p data-sal="fade"
+          data-sal-delay="200"
+          data-sal-duration="1500"
+          data-sal-easing="ease-out-quint" className="text-large">We believe continuity of care is the most important part of healthcare. IMG provides care through all stages of life.</p> 
             </div>
           </div>
-          <div className="container items-center px-5 pb-8 mx-auto lg:px-24 max-h-full">
+          <div className="container items-center px-5 pb-8 my-10 mx-auto lg:px-24 max-h-full">
             <div className="flex flex-wrap mb-12 text-left">
               <div className="w-full mx-auto lg:w-1/3">
                 <div data-sal="slide-up"
@@ -177,7 +181,7 @@ function Index() {
                   </p>
                 </div>
               </div>
-              <div className="w-full justify-center float-right mt-8 lg:pr-6 md:pr-6 place-items-center">
+              <div className="w-full justify-center float-right mt-10 lg:pr-6 md:pr-6 place-items-center">
                 <div data-sal="slide-up"
                   data-sal-delay="450"
                   data-sal-duration="1500"
