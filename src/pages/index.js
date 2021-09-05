@@ -1,7 +1,6 @@
 // Flyers
 
 import * as React from 'react';
-import { useEffect } from 'react';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
@@ -10,7 +9,7 @@ import { Link } from 'gatsby';
 import sal from 'sal.js';
 
 function Index() {
-  React.useEffect(() => {
+  useEffect(() => {
     sal();
   }, []);
 

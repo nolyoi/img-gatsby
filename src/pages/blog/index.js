@@ -1,12 +1,15 @@
 import * as React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 import { Helmet } from 'react-helmet';
-import parse, { domToReact } from 'html-react-parser';
+import sal from 'sal.js';
 
 const BlogIndexPage = ({ data }) => {
+  useEffect(() => {
+    sal();
+  }, []);
+
   const query = useStaticQuery(graphql`
   query {
     allMarkdownRemark(sort: {fields: frontmatter___published, order: DESC}) {
