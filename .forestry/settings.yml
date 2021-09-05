@@ -7,7 +7,6 @@ sections:
 - type: document
   path: src/content/office-hours
   label: Office Hours
-  match: "**/*"
 - type: directory
   path: src/content/posts
   label: Posts
