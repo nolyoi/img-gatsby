@@ -16,7 +16,7 @@ function PrimaryCare() {
       <Helmet>
         <meta charSet="utf-8" />
         ( <title>{`Internal Medicine and Geriatrics - Primary Care & Family Practice`}</title> )
-        <meta name="Description" content="IMG provides primary and family care services." />
+        <meta name="Description" content="IMG provides primary and family care services to Portage, Indiana and surrounding communities. Learn more about what we offer." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@600&display=swap" rel="stylesheet" />

@@ -5,7 +5,9 @@ import { Helmet } from 'react-helmet';
 import sal from 'sal.js';
 
 function Clinic() {
-  sal();
+  React.useEffect(() => {
+    sal();
+  }, []);
 
   return (
     <div>
