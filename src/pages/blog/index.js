@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet';
 import sal from 'sal.js';
 
 const BlogIndexPage = ({ data }) => {
-  useEffect(() => {
+  React.useEffect(() => {
     sal();
   }, []);
 
@@ -44,7 +44,7 @@ const BlogIndexPage = ({ data }) => {
         <meta charSet="utf-8" />
         ( <title>{`Internal Medicine and Geriatric - Latest news from IMG`}</title> )
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@600&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />

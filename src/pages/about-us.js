@@ -10,7 +10,7 @@ import sal from 'sal.js';
 function AboutUs() {
     const [showDesai, setShowDesai] = React.useState(false);
     const [showChristina, setShowChristina] = React.useState(false);
-    useEffect(() => {
+    React.useEffect(() => {
         sal();
       }, []);
 
@@ -21,7 +21,7 @@ function AboutUs() {
                 ( <title>{`Internal Medicine and Geriatrics - About Us`}</title> )
                 <meta name="Description" content="About Internal Medicine and Geriatrics." />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
                 <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@600&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
                 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
