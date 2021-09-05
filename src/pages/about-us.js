@@ -10,7 +10,9 @@ import sal from 'sal.js';
 function AboutUs() {
     const [showDesai, setShowDesai] = React.useState(false);
     const [showChristina, setShowChristina] = React.useState(false);
-    sal();
+    React.useEffect(() => {
+        sal();
+      }, []);
 
     return (
         <div>

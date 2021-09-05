@@ -6,7 +6,9 @@ import sal from 'sal.js';
 import { Link } from 'gatsby';
 
 function Services() {
-  sal();
+  React.useEffect(() => {
+    sal();
+  }, []);
 
   return (
     <div>
