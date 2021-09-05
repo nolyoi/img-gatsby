@@ -11,7 +11,7 @@ const BlogIndexPage = ({ data }) => {
   }, []);
 
   const query = useStaticQuery(graphql`
-  query { allMarkdownRemark(sort: {fields: frontmatter___published, order: DESC}) {
+  query { allMarkdownRemark(sort: {fields: frontmatter___published, order: DESC}, filter: {frontmatter: {author: {eq: null}}}) {
           edges {
             node {
               id
