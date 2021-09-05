@@ -51,7 +51,7 @@ function Clinic() {
 
       <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0 mb-20 flex">
         <div className="container flex mx-auto">
-          <section className="w-full text-gray-600 body-font my-20" id="blog">
+          <section className="w-8/12 text-gray-600 body-font my-20" id="blog">
             <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Suboxone Clinic</h2>
 
             <p className="mx-2 pb-4 text-lg">
@@ -61,7 +61,7 @@ function Clinic() {
             </p>
           </section>
 
-          <section className="w-full text-gray-600 body-font my-20 px-8" id="blog-sidebar">
+          <section className="w-4/12 text-gray-600 body-font my-20 px-8" id="blog-sidebar">
             <div className="mb-4">
               <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Information</h2>
             </div>
