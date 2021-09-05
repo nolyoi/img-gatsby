@@ -6,7 +6,7 @@ import { faFacebook, faGoogle, faYelp } from '@fortawesome/free-brands-svg-icons
 function Footer() {
   return (
     <div className="flex items-end w-full mt-0 bg-white" style={{ backgroundImage: '/footer-bg.png' }}>
-      <footer className="w-full text-white bg-gray-100 body-font" style={{ backgroundImage: "url('/footer-bg3.png')" }}>
+      <footer className="w-full text-white bg-gray-100 pt-10 body-font" style={{ backgroundImage: "url('/footer-bg3.png')" }}>
         <div className="container flex flex-col flex-wrap px-5 py-24 md:py-12 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
           <div className="flex-shrink-0 w-64 mx-auto text-center md:mx-0 lg:w-1/4 md:w-full md:mb-8 md:text-center lg:text-left">
             <Link to="/" className="flex items-center justify-center font-medium text-white title-font md:justify-center lg:justify-start">
@@ -111,7 +111,7 @@ function Footer() {
           </div>
         </div>
         <div style={{ backgroundColor: '#0e131a' }}>
-          <div className="container px-5 py-3 mx-auto">
+          <div className="container px-5 py-3 mt-10 mx-auto">
             <p className="text-sm text-gray-500 xl:text-center sm:text-center">Website built & hosted by <a href="https://nolanm.dev/" className="text-indigo-300 hover:text-indigo-700" target="_blank" rel="noreferrer">Nolan Mayersky</a>.
             </p>
             <p className="text-sm text-gray-500 capitalize xl:text-center sm:text-center">© {new Date().getFullYear()} <Link to="/" className="text-indigo-300 hover:text-indigo-700">Internal Medicine & Geriatrics</Link>. All rights reserved.
