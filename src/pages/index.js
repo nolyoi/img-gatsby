@@ -215,7 +215,7 @@ function Index() {
             data-sal-easing="ease-out-quint" className="text-large">We have been serving the Northwest Indiana area for over 34 years, see what our patients have to say.</p>  </div>
         <div className="container grid grid-cols-12 gap-4 mx-auto">
           <div className="col-span-2 col-start-2 mt-20 mx-auto text-center">
-            <img src="../user-girl.png" className="h-40 mt-6 ml-6 m-auto" />
+            <img src="../user-mask.jpeg" className="h-44 w-full mt-2 ml-6 m-auto" />
           </div>
           <div data-sal="fade"
             data-sal-delay="200"
