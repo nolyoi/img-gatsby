@@ -24,7 +24,7 @@ function Hero() {
           <div className="m-auto">
             <div className="w-9/12 mx-auto text-gray-800 items-end content-center h-full">
               <h1 className="lg:mt-12 sm:mt-2 sm:mb-2 lg:mb-4 text-center font-sans text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl sm:leading-none">Continuity of <span className="text-indigo-600 font-bold">Care</span>!</h1>
-              <p>Dr. Patel is a family practitioner who has just recently joined our practice.</p>
+              <p>We believe continuinity of care is the most important part of healthcare. We provide pediatric, general, and geriatric care to help you through all stages of life.</p>
             </div>
           </div>
         </div>

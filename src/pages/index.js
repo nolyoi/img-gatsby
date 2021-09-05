@@ -195,21 +195,21 @@ function Index() {
           data-sal-delay="200"
           data-sal-duration="1500"
           data-sal-easing="ease-out-quint" className="mx-auto mb-4 text-2xl font-semibold tracking-tighter text-black sm:text-6xl title-font">
-          Testimonials
+          What Our Patients Say
         </h1>
         <p data-sal="fade"
           data-sal-delay="200"
           data-sal-duration="1500"
-          data-sal-easing="ease-out-quint" className="text-large">See what our patients have to say.</p>  </div>
+          data-sal-easing="ease-out-quint" className="text-large">We have been serving the Northwest Indiana area for over 34 years, see what our patients have to say.</p>  </div>
         <div data-sal="fade"
           data-sal-delay="200"
           data-sal-duration="1500"
-          data-sal-easing="ease-out-quint" className="mx-auto mt-20 rounded-2xl bg-gray-50 w-3/6 h-1/4 py-12 rounded-xl overflow-hidden" style={{ backgroundImage: "url('../quotation-mark3.png')", backgroundSize: '30%', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }}>
-          <div className=" w-full items-center px-5 m-auto lg:px-24">
+          data-sal-easing="ease-out-quint" className="mx-auto mt-20 rounded-2xl bg-gray-50 w-3/6 h-auto py-12 rounded-xl overflow-hidden" style={{ backgroundImage: "url('../quotation-mark3.png')", backgroundSize: '30%', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }}>
+          <div className=" w-full px-5 mx-auto lg:px-24">
             {frontmatter.map(element => {
               return <div>
                 <div className="" dangerouslySetInnerHTML={{__html: element.node.html}} />
-                <p>- {element.node.frontmatter.author}</p>
+                <p className="text-sm float-right">- {element.node.frontmatter.author}</p>
                 </div>
             })}
           </div>
