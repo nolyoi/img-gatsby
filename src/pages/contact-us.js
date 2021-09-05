@@ -8,7 +8,6 @@ function ContactUs() {
   const [passed, setPassed] = React.useState(false);
 
   function onChange(value) {
-    console.log(value);
     setPassed(true);
     submitButton(passed);
   }

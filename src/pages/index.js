@@ -37,8 +37,6 @@ function Index() {
     frontmatter.push(post);
   });
 
-  console.log(frontmatter);
-
   return (
     <div>
       <Helmet>
