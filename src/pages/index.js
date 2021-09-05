@@ -132,12 +132,14 @@ function Index() {
                 Health Services
               </h1>
               <p data-sal="fade"
-          data-sal-delay="200"
-          data-sal-duration="1500"
-          data-sal-easing="ease-out-quint" className="text-large">We believe continuity of care is the most important part of healthcare. IMG provides care through all stages of life.</p> 
+                data-sal-delay="200"
+                data-sal-duration="1500"
+                data-sal-easing="ease-out-quint" className="text-large">
+                We believe continuity of care is the most important part of healthcare. IMG provides care through all stages of life.
+              </p>
             </div>
           </div>
-          <div className="container items-center px-5 pb-8 my-10 mx-auto lg:px-24 max-h-full">
+          <div className="container items-center px-5 pb-8 mb-10 mt-2 mx-auto lg:px-24 max-h-full">
             <div className="flex flex-wrap mb-12 text-left">
               <div className="w-full mx-auto lg:w-1/3">
                 <div data-sal="slide-up"
@@ -146,7 +148,7 @@ function Index() {
                   data-sal-easing="ease-out-quint" className="p-6">
                   <div className="inline-flex items-center justify-center flex-shrink-0 w-full h-50 mx-auto mb-5 text-black bg-gray-100 rounded-full">
                     <img src="../heart-bg.jpeg" />
-                  </div> 
+                  </div>
                   <h1 className="text-center mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
                     Family & General Practice
                   </h1>
@@ -186,7 +188,7 @@ function Index() {
                   </p>
                 </div>
               </div>
-          
+
               <div className="w-full justify-center float-right mt-10 lg:pr-6 md:pr-6 place-items-center">
                 <div data-sal="slide-up"
                   data-sal-delay="450"
@@ -207,21 +209,28 @@ function Index() {
           data-sal-easing="ease-out-quint" className="mx-auto mb-4 text-2xl font-semibold tracking-tighter text-black sm:text-6xl title-font">
           What Our Patients Say
         </h1>
-        <p data-sal="fade"
-          data-sal-delay="200"
-          data-sal-duration="1500"
-          data-sal-easing="ease-out-quint" className="text-large">We have been serving the Northwest Indiana area for over 34 years, see what our patients have to say.</p>  </div>
-        <div data-sal="fade"
-          data-sal-delay="200"
-          data-sal-duration="1500"
-          data-sal-easing="ease-out-quint" className="mx-auto mt-20 rounded-2xl bg-gray-50 w-3/6 h-auto py-12 rounded-xl overflow-hidden" style={{ backgroundImage: "url('../quotation-mark3.png')", backgroundSize: '30%', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }}>
-          <div className=" w-full px-5 mx-auto lg:px-24">
-            {frontmatter.map(element => {
-              return <div>
-                <div className="" dangerouslySetInnerHTML={{__html: element.node.html}} />
-                <p className="text-sm float-right">- {element.node.frontmatter.author}</p>
+          <p data-sal="fade"
+            data-sal-delay="200"
+            data-sal-duration="1500"
+            data-sal-easing="ease-out-quint" className="text-large">We have been serving the Northwest Indiana area for over 34 years, see what our patients have to say.</p>  </div>
+        <div className="container grid grid-cols-12 gap-4 mx-auto">
+          <div className="col-span-2 col-start-2 mt-20 mx-auto text-center">
+            <img src="../user-girl.png" className="h-40 mt-6 ml-6 m-auto" />
+          </div>
+          <div data-sal="fade"
+            data-sal-delay="200"
+            data-sal-duration="1500"
+            data-sal-easing="ease-out-quint" className="col-span-8 mt-20 rounded-2xl bg-gray-50 w-full h-2/3 py-12 rounded-xl overflow-hidden" style={{ backgroundImage: "url('../quotation-mark3.png')", backgroundSize: '30%', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }}>
+
+            <div className=" w-full px-5 mx-auto lg:px-24">
+
+              {frontmatter.map(element => {
+                return <div>
+                  <div className="" dangerouslySetInnerHTML={{ __html: element.node.html }} />
+                  <p className="text-sm float-right">- {element.node.frontmatter.author}</p>
                 </div>
-            })}
+              })}
+            </div>
           </div>
         </div>
       </section>
