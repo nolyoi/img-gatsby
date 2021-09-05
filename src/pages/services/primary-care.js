@@ -6,7 +6,9 @@ import sal from 'sal.js';
 import { Link } from 'gatsby';
 
 function PrimaryCare() {
-  sal();
+  React.useEffect(() => {
+    sal();
+  }, []);
 
   return (
     <div>
