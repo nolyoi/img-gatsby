@@ -147,13 +147,30 @@ function Index() {
                   <div className="inline-flex items-center justify-center flex-shrink-0 w-full h-50 mx-auto mb-5 text-black bg-gray-100 rounded-full">
                     <img src="../heart-bg.jpeg" />
                   </div> 
-                  <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
+                  <h1 className="text-center mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
                     Family & General Practice
                   </h1>
                   <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 ">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.
                   </p>
                 </div>
               </div>
+
+              <div className="w-full mx-auto lg:w-1/3">
+                <div data-sal="slide-up"
+                  data-sal-delay="400"
+                  data-sal-duration="1500"
+                  data-sal-easing="ease-out-quint" className="p-6">
+                  <div className="inline-flex items-center justify-center flex-shrink-0 w-full h-50 mx-auto mb-5 text-black bg-gray-100 rounded-full">
+                    <img src="../pediatrics2.jpeg" />
+                  </div>
+                  <h1 className="text-center mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
+                    Pediatrics & Geriatrics
+                  </h1>
+                  <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 ">We provide services for the physical, emotional and social well-being of children and elderly patients with medical and psychosocial problems.
+                  </p>
+                </div>
+              </div>
+
               <div className="w-full mx-auto lg:w-1/3">
                 <div data-sal="slide-up"
                   data-sal-delay="350"
@@ -162,28 +179,14 @@ function Index() {
                   <div className="inline-flex items-center justify-center flex-shrink-0 w-full h-50 mx-auto mb-5 text-black bg-gray-100 rounded-full">
                     <img src="../addiction.jpeg" />
                   </div>
-                  <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
+                  <h1 className="text-center mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
                     Substance Abuse
                   </h1>
                   <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 ">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.
                   </p>
                 </div>
               </div>
-              <div className="w-full mx-auto lg:w-1/3">
-                <div data-sal="slide-up"
-                  data-sal-delay="400"
-                  data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="p-6">
-                  <div className="inline-flex items-center justify-center flex-shrink-0 w-full h-50 mx-auto mb-5 text-black bg-gray-100 rounded-full">
-                    <img src="../geriatrics.jpeg" />
-                  </div>
-                  <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
-                    Geriatrics & Pediatrics
-                  </h1>
-                  <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 ">We provide services for the physical, emotional and social well-being of children and elderly patients with medical and psychosocial problems.
-                  </p>
-                </div>
-              </div>
+          
               <div className="w-full justify-center float-right mt-10 lg:pr-6 md:pr-6 place-items-center">
                 <div data-sal="slide-up"
                   data-sal-delay="450"
