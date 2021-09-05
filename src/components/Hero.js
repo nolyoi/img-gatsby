@@ -5,11 +5,21 @@ import { Link } from 'gatsby';
 function Hero() {
   return (
     <div className="flex bg-white bg-opacity-0 mt-0 w-full h-screen">
-      <HeroCarousel interval={12000}>
+      <HeroCarousel interval={8000}>
         {/* All info on one slide then sub-slides.
         Addiction
         Continuity of Care
          */}
+        <div className="flex w-full h-screen bg-gray-800 bg-opacity-70 overflow-hidden text-center relative" style={{ backgroundImage: 'url(./continuity.png)', backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'left', backgroundColor: '#EBEEED' }}>
+          <div className="m-auto">
+            <div className="w-9/12 mx-auto text-gray-800 items-end content-center h-full">
+              <h1 className="lg:mt-12 sm:mt-2 sm:mb-2 lg:mb-4 text-center font-sans text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl sm:leading-none">Continuity of <span className="text-red-600 font-bold">Care</span>!</h1>
+              <p>We believe continuinity of care is the most important part of healthcare. We provide pediatric, general, and geriatric care to help you through all stages of life.</p>
+              <Link to="/services" className="inline-flex mt-8 items-center justify-center w-50 h-10 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-red-600 hover:bg-red-800 focus:shadow-outline focus:outline-none">Browse our services</Link>
+            </div>
+          </div>
+        </div>
+
         <div className="flex w-full h-screen bg-gray-800 bg-opacity-70 overflow-hidden text-center relative" style={{ backgroundImage: 'url(./addiction.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div className="m-auto">
             <div className="w-9/12 mx-auto text-gray-300 items-center content-center h-full">
@@ -20,15 +30,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="flex w-full h-screen bg-gray-800 bg-opacity-70 overflow-hidden text-center relative" style={{ backgroundImage: 'url(./continuity.png)', backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'left', backgroundColor: '#EBEEED' }}>
-          <div className="m-auto">
-            <div className="w-9/12 mx-auto text-gray-800 items-end content-center h-full">
-              <h1 className="lg:mt-12 sm:mt-2 sm:mb-2 lg:mb-4 text-center font-sans text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl sm:leading-none">Continuity of <span className="text-red-600 font-bold">Care</span>!</h1>
-              <p>We believe continuinity of care is the most important part of healthcare. We provide pediatric, general, and geriatric care to help you through all stages of life.</p>
-              <Link to="/services" className="inline-flex mt-8 items-center justify-center w-50 h-10 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-red-600 hover:bg-red-800 focus:shadow-outline focus:outline-none">Browse our services</Link>
-            </div>
-          </div>
-        </div>
+        
         <div className="flex w-full h-screen bg-gray-800 bg-opacity-70 overflow-hidden text-center relative" style={{ backgroundImage: 'url(./glove-heart.jpeg)', backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'left', backgroundColor: '#EBEEED' }}>
           <div className="m-auto">
             <div className="w-9/12 mx-auto text-gray-800 items-center content-center h-full">
