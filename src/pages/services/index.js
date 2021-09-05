@@ -114,11 +114,11 @@ function Services() {
                 data-sal-delay="200"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint" className="mb-8 p-4 lg:w-1/3 md:w-1/2 w-full">
-                <Link to="/services/primary-care">
+                <Link to="/services/preventative-care">
                 <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(./preventative-care.jpg)', backgroundPosition: 'center' }}>
                   <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Preventative Care</h1>
                   <p className="text-gray-100 leading-relaxed mb-3">Wellness exams, annual blood work, check ups, and more. Our doctors are happy to help with your preventative care needs.</p>
-                  <Link to="/services/primary-care" className="text-indigo-200 inline-flex items-center">Learn More
+                  <Link to="/services/preventative-care" className="text-indigo-200 inline-flex items-center">Learn More
                     <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M5 12h14"></path>
                       <path d="M12 5l7 7-7 7"></path>
