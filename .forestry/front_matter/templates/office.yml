@@ -1,4 +1,10 @@
 ---
 label: Office
 hide_body: true
-fields: []
+fields:
+- name: office
+  type: text
+  config:
+    required: true
+  label: Office
+  description: Name of the office.
