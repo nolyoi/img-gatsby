@@ -58,7 +58,7 @@ module.exports = {
               classMap: {
                 "heading[depth=1]": "title",
                 "heading[depth=2]": "subtitle",
-                paragraph: "my-4 text-lg",
+                paragraph: "py-4 text-lg",
               }
             }
           }
