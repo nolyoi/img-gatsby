@@ -11,27 +11,24 @@ const BlogIndexPage = ({ data }) => {
   }, []);
 
   const query = useStaticQuery(graphql`
-  query {
-    allMarkdownRemark(sort: {fields: frontmatter___published, order: DESC}) {
-    edges {
-      node {
-        id
-        html
-        frontmatter {
-          published
-          title
-          slug
-          lead_image
+  query { allMarkdownRemark(sort: {fields: frontmatter___published, order: DESC}) {
+          edges {
+            node {
+              id
+              html
+              frontmatter {
+                published
+                title
+                slug
+                lead_image
+              }
+              excerpt
+            }
+          }
         }
-        excerpt
       }
-    }
-  }
-  markdownRemark {
-    id
-  }
-}
-`);
+    `);
+
   let frontmatter = [];
   query.allMarkdownRemark.edges.forEach(post => {
     frontmatter.push(post);
@@ -62,14 +59,15 @@ const BlogIndexPage = ({ data }) => {
       <section className="bg-white bg-opacity-0 mt-0 w-full h-2/3">
         <div className="w-full h-2/3 bg-gray-900 bg-opacity-100 overflow-hidden text-center relative" style={{ backgroundImage: 'url(../../../news.jpeg)', backgroundSize: 'cover', backgroundPosition: 'top' }}>
           <div className="container m-auto pt-20 h-1/2">
-            <div className="w-9/12 mx-auto text-gray-300 mt-0 my-40 items-center content-center content-center h-2/3">
-              <h1 className="ml-0 mt-10 mb-4 text-center font-sans text-4xl font-bold tracking-tight text-indigo-700 sm:text-4xl sm:leading-none"><span data-sal="fade"
+            <div className="w-9/12 m-auto text-gray-300 mt-0 my-40 items-center content-center content-center h-2/3">
+              <h1 className="ml-0 mt-20 mb-4 text-center font-sans text-4xl font-bold tracking-tight text-indigo-700 sm:text-4xl sm:leading-none"><span data-sal="fade"
                 data-sal-delay="300"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint">IMG</span> <span data-sal="fade"
                   data-sal-delay="900"
                   data-sal-duration="2000"
                   data-sal-easing="ease-out-quint" className="text-gray-700 font-bold">Latest Announcements</span></h1>
+              <p className="text-lg font-medium text-gray-700">Check below for the latest announcements from our office.</p>
             </div>
           </div>
         </div>
@@ -78,31 +76,30 @@ const BlogIndexPage = ({ data }) => {
       <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0 mb-20">
         <div className="container flex mx-auto ">
 
-                        <section className="w-2/3 text-gray-600 body-font relative my-20" id="blog">
-                        <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-4xl sm:leading-none mb-14">Latest from our blog...</h2>
+          <section className="w-2/3 text-gray-600 body-font relative my-20" id="blog">
+            <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-4xl sm:leading-none mb-14">Latest from our blog...</h2>
 
-          {frontmatter.map(element => {
-            let body = element.node.html;
+            {frontmatter.map(element => {
+              let body = element.node.html;
+              return <div className="mb-20 mx-4" key={element.node.id}>
+                <div className="h-96 bg-gray-800 bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: element.node.frontmatter.lead_image?.replace("/static", ""), backgroundPosition: 'center' }}>
+                  <img className="rounded scale-50 object-cover object-top" src={element.node.frontmatter.lead_image?.replace("/static", "")} />
+                </div>
+                <div className="mb-4 mt-8">
+                  <h2 className="mb-0 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-gray-800 hover:text-indigo-600"><a href="#">{element.node.frontmatter.title}</a></h2>
+                  <span className="text-sm ml-2"><strong>by</strong> IMG Team <strong>on</strong> {element.node.frontmatter.published}</span>
+                </div>
 
-            return <div className="mb-20" key={element.node.id}>  
-            <div className="h-96 bg-gray-800 bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: element.node.frontmatter.lead_image?.replace("/static", ""), backgroundPosition: 'center' }}>
-              <img className="rounded scale-50 object-cover object-top" src={element.node.frontmatter.lead_image?.replace("/static", "")} />
-              </div>      
-              <div className="mb-4 mt-8">
-                <h2 className="mb-0 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-gray-800 hover:text-indigo-600"><a href="#">{element.node.frontmatter.title}</a></h2>
-                <span className="text-sm ml-2"><strong>by</strong> IMG Team <strong>on</strong> {element.node.frontmatter.published}</span>
-              </div>
-              
-              <div className="mx-2">
-              <div dangerouslySetInnerHTML={{__html:  element.node.html}} />
-              </div>
+                <div className="mx-2">
+                  <div dangerouslySetInnerHTML={{ __html: element.node.html }} />
+                </div>
               </div>;
-          })}
+            })}
           </section>
 
           <section className="w-1/3 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">
             <div className="mb-4">
-              <h2 className="pl-4 font-sans text-xl font-bold text-gray-800 sm:text-xl sm:leading-none">Posts by Month</h2>
+              <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-4xl sm:leading-none mb-4">Archive</h2>
             </div>
             <div className="pl-12 text-lg">
               <ul className="list-disc">

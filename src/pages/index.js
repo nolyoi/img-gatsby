@@ -5,13 +5,39 @@ import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 import { Helmet } from "react-helmet";
-import { Link } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
 import sal from 'sal.js';
 
 function Index() {
   React.useEffect(() => {
     sal();
   }, []);
+
+  const query = useStaticQuery(graphql`
+  query { allMarkdownRemark(filter: {frontmatter: {author: {ne: null}}}) {
+          edges {
+            node {
+              id
+              html
+              frontmatter {
+                author
+                lead_image
+                published
+                slug
+                title
+              }
+            }
+          }
+        }
+      }
+    `);
+
+  let frontmatter = [];
+  query.allMarkdownRemark.edges.forEach(post => {
+    frontmatter.push(post);
+  });
+
+  console.log(frontmatter);
 
   return (
     <div>
@@ -37,10 +63,10 @@ function Index() {
 
       <Nav menuItem="index" />
       <Hero />
-      
+
       <section className="flex flex-col m-auto h-screen lg:h-screen sm:h-full my-24 sm:mx-24">
         <div className="flex flex-wrap content-center container sm:h-full px-12 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
-           <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
+          <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
             <div>
               <img data-sal="slide-up"
                 data-sal-delay="200"
@@ -50,23 +76,23 @@ function Index() {
             <div className="flex flex-col justify-center">
               <div className="max-w-full mb-6">
                 <h2 data-sal="slide-left"
-                data-sal-delay="300"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                  data-sal-delay="300"
+                  data-sal-duration="1500"
+                  data-sal-easing="ease-out-quint" className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
                   Local doctors you can trust.
                 </h2>
                 <p data-sal="slide-left"
-                data-sal-delay="300"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg">
+                  data-sal-delay="300"
+                  data-sal-duration="1500"
+                  data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg">
                   IMG has been caring for Northwest Indiana for over 34 years and is dedicated to providing high quality healthcare in a compassionate, ethical, and caring environment.
                 </p>
               </div>
               <div className="grid gap-5 row-gap-8 sm:grid-cols-2">
                 <div data-sal="slide-left"
-                data-sal-delay="350"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-green-500">
+                  data-sal-delay="350"
+                  data-sal-duration="1500"
+                  data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-green-500">
                   <div className="h-full p-5 border border-l-0 rounded-r">
                     <h6 className="mb-2 font-semibold leading-5">
                       Continuity of care
@@ -77,9 +103,9 @@ function Index() {
                   </div>
                 </div>
                 <div data-sal="slide-left"
-                data-sal-delay="400"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-blue-600">
+                  data-sal-delay="400"
+                  data-sal-duration="1500"
+                  data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-blue-600">
                   <div className="h-full p-5 border border-l-0 rounded-r">
                     <h6 className="mb-2 font-semibold leading-5">
                       Serving our local community
@@ -92,11 +118,11 @@ function Index() {
               </div>
             </div>
           </div>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="flex text-gray-700 h-screen lg:h-screen sm:h-full sm:my-24 sm:pt-12">
-          <div className="m-auto">
+      <section className="flex text-gray-700 h-screen lg:h-screen sm:h-full sm:my-24 sm:pt-12">
+        <div className="m-auto">
           <div className="flex flex-col items-center px-5 pt-8">
             <div className="flex flex-col w-full mb-8 text-left lg:text-center">
               <h1 data-sal="fade"
@@ -111,9 +137,9 @@ function Index() {
             <div className="flex flex-wrap mb-12 text-left">
               <div className="w-full mx-auto lg:w-1/3">
                 <div data-sal="slide-up"
-                data-sal-delay="300"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="p-6">
+                  data-sal-delay="300"
+                  data-sal-duration="1500"
+                  data-sal-easing="ease-out-quint" className="p-6">
                   {/* <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-black bg-gray-100 rounded-full">
                   </div> */}
                   <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
@@ -125,9 +151,9 @@ function Index() {
               </div>
               <div className="w-full mx-auto lg:w-1/3">
                 <div data-sal="slide-up"
-                data-sal-delay="350"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="p-6">
+                  data-sal-delay="350"
+                  data-sal-duration="1500"
+                  data-sal-easing="ease-out-quint" className="p-6">
                   {/* <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-black bg-gray-100 rounded-full">
                   </div> */}
                   <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
@@ -139,9 +165,9 @@ function Index() {
               </div>
               <div className="w-full mx-auto lg:w-1/3">
                 <div data-sal="slide-up"
-                data-sal-delay="400"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="p-6">
+                  data-sal-delay="400"
+                  data-sal-duration="1500"
+                  data-sal-easing="ease-out-quint" className="p-6">
                   {/* <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-black bg-gray-100 rounded-full">
                   </div> */}
                   <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
@@ -153,16 +179,36 @@ function Index() {
               </div>
               <div className="w-full justify-center float-right mt-8 lg:pr-6 md:pr-6 place-items-center">
                 <div data-sal="slide-up"
-                data-sal-delay="450"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="w-full self-center text-center">
-                <Link to="/services" className="inline-flex items-center justify-center w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none">View all services</Link>
+                  data-sal-delay="450"
+                  data-sal-duration="1500"
+                  data-sal-easing="ease-out-quint" className="w-full self-center text-center">
+                  <Link to="/services" className="inline-flex items-center justify-center w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none">View all services</Link>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="flex flex-col text-gray-700 h-screen lg:h-screen sm:h-full sm:my-24 sm:pt-12 overflow-hidden">
+        <div className="mx-auto text-center"><h1 data-sal="fade"
+          data-sal-delay="200"
+          data-sal-duration="1500"
+          data-sal-easing="ease-out-quint" className="mx-auto mb-4 text-2xl font-semibold tracking-tighter text-black sm:text-6xl title-font">
+          Testimonials
+        </h1>
+        <p className="text-large">See what our patients have to say.</p>  </div>
+        <div className="mx-auto mt-20 rounded-2xl bg-gray-50 w-3/6 h-1/4 py-12 rounded-xl overflow-hidden" style={{ backgroundImage: "url('../quotation-mark3.png')", backgroundSize: '30%', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }}>
+          <div className=" w-full items-center px-5 m-auto lg:px-24">
+            {frontmatter.map(element => {
+              return <div>
+                <div className="" dangerouslySetInnerHTML={{__html: element.node.html}} />
+                <p>- {element.node.frontmatter.author}</p>
+                </div>
+            })}
           </div>
-        </section>
+        </div>
+      </section>
       <Footer />
     </div>
   );
