@@ -8,3 +8,18 @@ fields:
     required: false
   label: Author
   description: Who is this testimonial from?
+- name: slug
+  type: text
+  config:
+    required: true
+  label: Slug
+- name: published
+  type: datetime
+  label: Published
+  description: ''
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
