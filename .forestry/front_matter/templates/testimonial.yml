@@ -26,4 +26,4 @@ fields:
     export_format: YYYY-MM-DD h:mm A
   default: now
 pages:
-- src/content/testimonials/john-doe-1.md
+- src/content/testimonials/virginia-yakas-1.md
