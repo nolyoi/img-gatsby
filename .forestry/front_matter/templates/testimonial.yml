@@ -23,3 +23,5 @@ fields:
     time_format: 
     display_utc: false
   default: now
+pages:
+- src/content/testimonials/john-doe-1.md
