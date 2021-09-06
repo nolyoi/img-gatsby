@@ -221,7 +221,7 @@ function AboutUs() {
                                         </p>
 
                                         <p className="mb-4 mt-2">
-                                            Dr. Desai has experience in critical care, as well as a special focus in obesity medicine, the treatment of opiate dependence, and geriatric medicine. He places high value on individualized and continuity of care, strong family values, and preventative medicine.
+                                            Dr. Desai has experience in critical care, as well as a special focus in obesity medicine, the treatment of opiate dependence, and geriatric medicine. He places high value on individualized and continuity of care, strong family values, and preventive medicine.
                                         </p>
                                         <p className="mb-4 mt-2">
                                             Dr. Desai currently resides in Northwest Indiana. He is a father and grandfather with 5 grandchildren and 3 children. His children also work in medicine and law. Being part of the community has inspired him to make a positive impact on others and their health.
@@ -267,7 +267,7 @@ function AboutUs() {
                                         <p className="mb-4 mt-2">Christina Connelly is a certified <strong><i>Family Nurse Practitioner</i></strong>. She obtained her <i>Bachelor’s Degree</i> in Nursing from <strong>Indiana University</strong>. She went on to complete her <i>Master’s Degree</i> at <strong>Indiana Wesleyan University</strong> graduating in 2015. </p>
 
                                         <p className="mb-4 mt-2">As a Family Nurse Practitioner, she has practiced in a variety of inpatient and outpatient settings. She has also integrated telemedicine into her practice. Christina has experience in critical care, as well as a special focus in obesity medicine, the treatment of opiate dependence, and geriatric medicine.
-                                            She places high value on individualized care, strong family values, and preventative medicine.</p>
+                                            She places high value on individualized care, strong family values, and preventive medicine.</p>
 
                                         <p className="mb-4 mt-2">Christina was born and raised in Northwest Indiana and currently lives in Valparaiso with her husband and youngest daughter. Being part of the community herself, has inspired her to make a positive impact on others and their health.</p>
                                         <p className="mb-4 mt-2">In her spare time Christina enjoys spending time with her eldest sons, exploring the Dunes State Park, traveling, snorkeling and exercise of any kind.

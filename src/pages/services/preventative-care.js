@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 import sal from 'sal.js';
 import { Link } from 'gatsby';
 
-function PreventativeCare() {
+function PreventiveCare() {
   React.useEffect(() => {
     sal();
   }, []);
@@ -15,7 +15,7 @@ function PreventativeCare() {
       <Nav menuItem="services" />
       <Helmet>
         <meta charSet="utf-8" />
-        ( <title>{`Internal Medicine and Geriatrics - Preventative Care`}</title> )
+        ( <title>{`Internal Medicine and Geriatrics - Preventive Care`}</title> )
         <meta name="Description" content="IMG provides primary and family care services to Portage, Indiana and surrounding communities. Learn more about what we offer." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,7 +44,7 @@ function PreventativeCare() {
                 data-sal-easing="ease-out-quint"></span> <span data-sal="fade"
                   data-sal-delay="900"
                   data-sal-duration="2000"
-                  data-sal-easing="ease-out-quint" className="text-white font-bold">Preventative Care</span></h1>
+                  data-sal-easing="ease-out-quint" className="text-white font-bold">Preventive Care</span></h1>
             </div>
           </div>
         </div>
@@ -53,7 +53,7 @@ function PreventativeCare() {
       <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0 mb-20">
         <div className="container flex mx-auto ">
           <section className="w-8/12 text-gray-600 body-font relative my-20" id="blog">
-            <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Preventative Care</h2>
+            <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Preventive Care</h2>
             <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-60 h-40 mx-auto rounded float-left mr-8 hidden"><img src="../teddy-bear.jpeg" className="absolute w-full " alt="avatar" /></div>
             <p className="mx-2 pb-4 text-lg">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.</p>
             <p className="mx-2 pb-4 text-lg">For the best medical care in Portage, Indiana and the surrounding Northwest Indiana area, <Link to="/book-appointment/current-patient" className="text-indigo-600 hover:text-orange-600">schedule an appointment with us today</Link>. </p>
@@ -103,4 +103,4 @@ function PreventativeCare() {
   );
 }
 
-export default PreventativeCare;
+export default PreventiveCare;
