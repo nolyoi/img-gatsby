@@ -63,7 +63,7 @@ const SinglePost = ({ data }) => {
 
           <div className="w-9/12 text-gray-600 body-font relative my-20" id="blog">
           <div className="mb-8">
-                  <h2 className="mb-0 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-gray-800 hover:text-indigo-600">{frontmatter.frontmatter.title}</h2>
+                  <h2 className="mb-0 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-gray-800">{frontmatter.frontmatter.title}</h2>
                   <span className="text-sm ml-2"><strong>by</strong> IMG Team <strong>on</strong> {frontmatter.frontmatter.published}</span>
                 </div>
 
