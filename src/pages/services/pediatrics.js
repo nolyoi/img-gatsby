@@ -54,9 +54,10 @@ function Pediatrics() {
           <section className="w-8/12 text-gray-600 body-font relative my-20" id="blog">
             <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Primary Care</h2>
 
-            <p className="mx-2 pb-4 text-lg">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.</p>
-            <p className="mx-2 pb-4 text-lg"></p>
-            <p className="mx-2 pb-4 text-lg"></p>
+            <p className="mx-2 pb-4 text-lg">Pediatrics is the branch of medicine dealing with the health and medical care of infants, children, and adolescents from birth up to the age of 18.</p>
+            <p className="mx-2 pb-4 text-lg">At IMG, we consider it both a great joy and responsibility to care for children. Most of us are parents ourselves, so we strive to be understanding and available to the families we are privileged to serve. We are honored that you have chosen us as your child's primary medical provider and are confident that you will be pleased with the quality of care and service that we can provide you and your family.</p>
+            <p className="mx-2 pb-4 text-lg">A vital part of our service to children begins with our outstanding staff who works hard to manage and maintain a professional, caring and supportive environment for our patients in a timely manner. Our doctors are lifelong learners. Not only have they received advanced medical training in pediatrics, they continually pursue ongoing education to stay abreast of the latest in child health care.</p>
+            <p className="mx-2 pb-4 text-lg">Your child's health is as important to us as it is to you. We look forward to providing you with excellent medical care your child deserves.</p>
           </section>
 
           <section className="w-4/12 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">

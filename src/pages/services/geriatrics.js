@@ -54,8 +54,8 @@ function Geriatrics() {
           <section className="w-8/12 text-gray-600 body-font relative my-20" id="blog">
             <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Geriatric Medicine</h2>
 
-            <p className="mx-2 pb-4 text-lg">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.</p>
-            <p className="mx-2 pb-4 text-lg"></p>
+            <p className="mx-2 pb-4 text-lg">Geriatrics is the branch of healthcare that focuses on our unique needs as we age. Just as pediatricians specialize in the health needs of children, geriatricians specialize in the health needs of older people.</p>
+            <p className="mx-2 pb-4 text-lg">Our bodies change over time, and our health care needs to adapt with us. Geriatrics is the specialty focused on the high-quality, person-centered care we all need as we age. “High-quality care” aims to improve health, independence, and quality of life for older people. “Person-centered care” puts our personal values and preferences at the heart of our care decisions.</p>
             <p className="mx-2 pb-4 text-lg"></p>
           </section>
 
