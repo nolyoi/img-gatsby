@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://imgportage.com/",
-    title: "Internal Medicine & Geriatrics",
+    siteUrl: `https://imgportage.com/`,
+    title: `Internal Medicine & Geriatrics`,
   },
   plugins: [
     `gatsby-plugin-fontawesome-css`,
