@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, navigate } from 'gatsby';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 import { Helmet } from 'react-helmet';
@@ -74,6 +74,9 @@ const SinglePost = ({ data }) => {
 
                 <div className="mx-2 mt-10">
                   <div dangerouslySetInnerHTML={{ __html: frontmatter.html }} />
+                </div>
+                <div className="mx-2 mt-10 text-center">
+                  <button onClick={() => navigate(-1)} className="inline-flex mt-8 items-center justify-center w-50 h-10 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none">Go Back</button>
                 </div>
               </div>
           </div>
