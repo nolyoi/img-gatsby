@@ -64,7 +64,7 @@ function PrimaryCare() {
             <p className="mx-2 pb-4 text-lg">Internal Medicine & Geriatrics proudly offers pediatric, family, and adult medical services, focusing on Preventive and Primary Care health needs, including but not limited to:</p>
 
             <div className="mx-2 pl-8 py-6 text-lg rounded-xl bg-gray-50">
-              <img src="../medical-cross.png" className="h-60 float-right mr-8 pb-6" />
+              <img src="../medical-cross.png" className="h-40 float-right mr-8 mt-8" />
               <ul className="list-inside list-disc">
               <li>Nutrition Counseling</li>
               <li>First Aid Treatments</li>
