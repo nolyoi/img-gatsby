@@ -1,3 +1,5 @@
+const siteUrl = process.env.URL || `https://imgportage.com`
+
 module.exports = {
   siteMetadata: {
     siteUrl: `http://imgportage.com`,
@@ -5,72 +7,56 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-fontawesome-css`,
-    // {
-    //   resolve: `gatsby-plugin-scroll-reveal`,
-    //   options: {
-    //     threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
-    //     once: true, // Defines if animation needs to be launched once
-    //     disable: false, // Flag for disabling animations
-
-    //     // Advanced Options
-    //     selector: '[data-sal]', // Selector of the elements to be animated
-    //     animateClassName: 'sal-animate', // Class name which triggers animation
-    //     disabledClassName: 'sal-disabled', // Class name which defines the disabled state
-    //     rootMargin: '0% 50%', // Corresponds to root's bounding box margin
-    //     enterEventName: 'sal:in', // Enter event name
-    //     exitEventName: 'sal:out', // Exit event name
-    //   }
-    // },
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-plugin-sitemap`,
-      options: {
-        query: `{
-          site {
-            siteMetadata {
-              siteUrl
-            }
-          }
-          allSitePage {
-            edges {
-              node {
-                path
-              }
-            }
-          }
-          allMarkdownRemark {
-            edges {
-              node {
-                fields {
-                  slug
-                }
-              }
-            }
-          }
-        }`,
-        serialize: ({ site, allSitePage, allMarkdownRemark }) => {
-          let pages = []
-          allSitePage.edges.map(edge => {
-            pages.push({
-              url: site.siteMetadata.siteUrl+ "/" + edge.node.path,
-              changefreq: `daily`,
-              priority: 0.7,
-            })
-          })
-          allMarkdownRemark.edges.map(edge => {
-            pages.push({
-              url: `${site.siteMetadata.siteUrl}/${edge.node.fields.slug
-                }`,
-              changefreq: `daily`,
-              priority: 0.7,
-            })
-          })
-
-          return pages
-        },
-      },
+      // options: {
+      //   query: `{
+      //     site {
+      //       siteMetadata {
+      //         siteUrl
+      //       }
+      //     }
+      //     allSitePage {
+      //       edges {
+      //         node {
+      //           path
+      //         }
+      //       }
+      //     }
+      //     allMarkdownRemark {
+      //       edges {
+      //         node {
+      //           fields {
+      //             slug
+      //           }
+      //         }
+      //       }
+      //     }
+      //   }`,
+        
+      //   serialize: ({ site, allSitePage, allMarkdownRemark }) => {
+      //     let pages = []
+      //     allSitePage.edges.map(edge => {
+      //       pages.push({
+      //         url: siteUrl+ "/" + edge.node.path,
+      //         changefreq: `daily`,
+      //         priority: 0.7,
+      //       })
+      //     })
+      //     allMarkdownRemark.edges.map(edge => {
+      //       pages.push({
+      //         url: `${siteUrl}/${edge.node.fields.slug
+      //           }`,
+      //         changefreq: `daily`,
+      //         priority: 0.7,
+      //       })
+      //     })
+      //     return pages
+      //   },
+      // },
     },
     {
       resolve: "gatsby-plugin-manifest",
@@ -79,15 +65,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-sharp",
-    // "gatsby-transformer-sharp",
-    // {
-    //   resolve: "gatsby-source-filesystem",
-    //   options: {
-    //     name: "images",
-    //     path: "./src/images/",
-    //   },
-    //   __key: "images",
-    // }, 
     {
       resolve: `gatsby-source-filesystem`,
       options: {

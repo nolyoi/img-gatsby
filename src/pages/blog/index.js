@@ -84,7 +84,6 @@ const BlogIndexPage = ({ data }) => {
             <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-4xl sm:leading-none mb-14">Latest from our blog...</h2>
 
             {frontmatter.map(element => {
-              let body = element.node.html;
               return <div className="mb-20 mx-4" key={element.node.id}>
                 <div className="h-96 bg-gray-800 bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: element.node.frontmatter.lead_image?.replace("/static", ""), backgroundPosition: 'center' }}>
                 <Link to={element.node.frontmatter.slug} ><img className="rounded scale-50 object-cover object-top" src={element.node.frontmatter.lead_image?.replace("/static", "")} /></Link>
@@ -101,9 +100,24 @@ const BlogIndexPage = ({ data }) => {
             })}
           </section>
 
-          <section className="w-1/3 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">
+          <section className="w-1/3 text-gray-600 body-font relative my-10 px-8" id="blog-sidebar">
+          <div className="rounded-xl px-6 py-6 bg-green-50 drop-shadow-lg text-gray-500 mt-8">
+
             <div className="mb-4">
-              <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-4xl sm:leading-none mb-4">Archive</h2>
+              <h2 className="font-sans font-bold text-lg tracking-tight text-gray-800 sm:leading-none mb-4">Latest Posts</h2>
+            </div>
+            <div className="pl-12 text-lg">
+              <ul className="list-disc">
+              {frontmatter.map(element => {
+                return <li><Link to={element.node.frontmatter.slug} className="hover:text-green-600">{element.node.frontmatter.title}</Link></li>
+              })}
+              </ul>
+            </div>
+            </div>
+          <div className="rounded-xl px-6 py-6 bg-gray-50 drop-shadow-lg text-gray-500 mt-8">
+
+            <div className="mb-4">
+              <h2 className="font-sans font-bold text-lg tracking-tight text-gray-800 sm:leading-none mb-4">Archive</h2>
             </div>
             <div className="pl-12 text-lg">
               <ul className="list-disc">
@@ -112,6 +126,7 @@ const BlogIndexPage = ({ data }) => {
                 <li><a href="#" className="hover:text-indigo-600">March</a></li>
                 <li><a href="#" className="hover:text-indigo-600">April</a></li>
               </ul>
+            </div>
             </div>
           </section>
         </div>
