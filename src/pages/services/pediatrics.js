@@ -37,7 +37,7 @@ function Pediatrics() {
       </Helmet>
 
       <section className="bg-white bg-opacity-0 mt-0 w-full h-1/2">
-        <div className="w-full h-1/2 bg-gray-900 bg-opacity-100 overflow-hidden text-center relative" style={{ backgroundImage: 'url(../../pediatrics-kids.jpeg)', backgroundSize: 'cover', backgroundPosition: '0% 10%' }}>
+        <div className="w-full h-1/2 bg-gray-900 bg-opacity-100 overflow-hidden text-center relative" style={{ backgroundImage: 'url(../pediatrics-kids.jpeg)', backgroundSize: 'cover', backgroundPosition: '0% 10%' }}>
           <div className="container mx-auto my-auto pt-20 h-1/2">
             <div className="w-9/12 mx-auto text-gray-300 mt-0 my-40 items-center content-center content-center h-1/2">
               <h1 className="mt-10 pb-10 pr-8 text-center font-sans text-4xl font-bold tracking-tight text-indigo-600 sm:text-4xl sm:leading-none"><span data-sal="fade"
