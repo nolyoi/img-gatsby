@@ -1,9 +1,10 @@
 import * as React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 import { Helmet } from 'react-helmet';
 import sal from 'sal.js';
+
 
 const BlogIndexPage = ({ data }) => {
   React.useEffect(() => {
@@ -86,10 +87,10 @@ const BlogIndexPage = ({ data }) => {
               let body = element.node.html;
               return <div className="mb-20 mx-4" key={element.node.id}>
                 <div className="h-96 bg-gray-800 bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: element.node.frontmatter.lead_image?.replace("/static", ""), backgroundPosition: 'center' }}>
-                  <img className="rounded scale-50 object-cover object-top" src={element.node.frontmatter.lead_image?.replace("/static", "")} />
+                <Link to={element.node.frontmatter.slug} ><img className="rounded scale-50 object-cover object-top" src={element.node.frontmatter.lead_image?.replace("/static", "")} /></Link>
                 </div>
                 <div className="mb-4 mt-8">
-                  <h2 className="mb-0 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-gray-800 hover:text-indigo-600"><a href="#">{element.node.frontmatter.title}</a></h2>
+                <h2 className="mb-0 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-gray-800 hover:text-indigo-600"><Link to={element.node.frontmatter.slug} >{element.node.frontmatter.title}</Link></h2>
                   <span className="text-sm ml-2"><strong>by</strong> IMG Team <strong>on</strong> {element.node.frontmatter.published}</span>
                 </div>
 
