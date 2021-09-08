@@ -86,7 +86,7 @@ function PreventiveCare() {
                 <p className="mb-4 "><strong className="tracking-wide">Portage Office</strong><br /> 2640 Hamstrom Road
                   Portage, IN. 46368  <br />
                   (219) 762-4423</p>
-                <p><strong className="tracking-wide">Gary Office</strong><br /> 3535 Broadway
+                <p><strong className="tracking-wide">Gary Office</strong><br /> 1400 Broadway
                   Gary, IN. 46408 <br />
                   (219) 884-4900</p>
               </div>

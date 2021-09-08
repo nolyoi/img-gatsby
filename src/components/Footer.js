@@ -99,7 +99,7 @@ function Footer() {
                 <li className="mt-0">
                   <Link to="/locations#gary" className="text-gray-400 cursor-pointer hover:text-white">
                     <h2 className="mb-3 text-sm font-medium tracking-widest text-white uppercase title-font">Gary Office</h2>
-                    3535 Broadway
+                    1400 Broadway
                     <br />
                     Gary, IN. 46408
                     <br />
