@@ -69,23 +69,31 @@ function Prenatal() {
 
           <section className="w-4/12 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">
             <div className="mb-4">
-              <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Information</h2>
+              <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8"></h2>
             </div>
-            <div className="pl-4">
-              <h4 className="mb-4 text-xl font-bold">Address</h4>
-              <p className="mb-4 text-xl"><strong>Portage Office:</strong> 2640 Hamstrom Road
-                Portage, IN. 46368</p>
-              <p className="mb-8 text-xl"><strong>Gary Office:</strong> 3535 Broadway
-                Gary, IN. 46408</p>
-              <h4 className="mb-4 text-xl"><strong>Office Hours</strong></h4>
-              <table class="table-auto min-w-full mb-10">
-                <tr><td>Monday:</td><td>9a-5p</td></tr>
-                <tr><td>Tuesday:</td><td>9a-5p</td></tr>
-                <tr><td className="pr=4">Wednesday:</td><td>9a-5p</td></tr>
-                <tr><td>Thursday:</td><td>9a-5p</td></tr>
-                <tr><td>Friday:</td><td>9a-4p</td></tr>
-              </table>
+            <div className="pl-4 text-white">
+              <div className="rounded-xl px-6 py-6 bg-blue-50 drop-shadow-lg text-gray-500">
+                {/* <h4 className="mb-4 text-xl font-bold tracking-wide">Address</h4> */}
+                <p className="mb-4 "><strong className="tracking-wide">Portage Office</strong><br /> 2640 Hamstrom Road
+                  Portage, IN. 46368  <br />
+                  (219) 762-4423</p>
+                <p><strong className="tracking-wide">Gary Office</strong><br /> 3535 Broadway
+                  Gary, IN. 46408 <br />
+                  (219) 884-4900</p>
+              </div>
 
+              <div className="rounded-xl px-6 py-6 bg-green-50 drop-shadow-lg text-gray-500 mt-8">
+                <h4 className="mb-2 tracking-wide"><strong>Office Hours</strong></h4>
+                <div className="w-full">
+                  <table class="table-auto w-11/12 mx-auto">
+                    <tr><td>Monday:</td><td>9a-5p</td></tr>
+                    <tr><td>Tuesday:</td><td>9a-5p</td></tr>
+                    <tr><td className="pr=4">Wednesday:</td><td>9a-5p</td></tr>
+                    <tr><td>Thursday:</td><td>9a-5p</td></tr>
+                    <tr><td>Friday:</td><td>9a-4p</td></tr>
+                  </table>
+                </div>
+              </div>
             </div>
           </section>
         </div>

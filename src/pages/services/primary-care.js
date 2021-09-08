@@ -66,38 +66,46 @@ function PrimaryCare() {
             <div className="mx-2 pl-8 py-6 text-lg rounded-xl bg-gray-50">
               <img src="../medical-cross.png" className="h-40 float-right mr-8 mt-8" />
               <ul className="list-inside list-disc">
-              <li>Nutrition Counseling</li>
-              <li>First Aid Treatments</li>
-              <li>School, College and Employment Physicals</li>
-              <li>Blood Pressure Treatment</li>
-              <li>Diabetes Management</li>
-              <li>Immunizations</li>
-              <li>Annual Wellness Visits</li>
-              <li>And more!</li>
-            </ul>
+                <li>Nutrition Counseling</li>
+                <li>First Aid Treatments</li>
+                <li>School, College and Employment Physicals</li>
+                <li>Blood Pressure Treatment</li>
+                <li>Diabetes Management</li>
+                <li>Immunizations</li>
+                <li>Annual Wellness Visits</li>
+                <li>And more!</li>
+              </ul>
             </div>
             <p className="mx-2 mt-8 pb-4 text-2xl text-center transform -rotate-1"><Link to="/contact-us" className="inline-flex items-center mt-8 items-center justify-center w-50 h-10 px-8 font-semibold tracking-wide text-white transition duration-200 rounded shadow-lg bg-green-500 hover:bg-green-600 focus:shadow-outline focus:outline-none py-8"><FontAwesomeIcon icon={faCalendarAlt} size="lg" className="mr-4" /> <span className="mt-1">Book Now!</span></Link></p>
           </section>
 
           <section className="w-4/12 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">
             <div className="mb-4">
-              <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Information</h2>
+              <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8"></h2>
             </div>
-            <div className="pl-4">
-              <h4 className="mb-4 text-xl font-bold tracking-wide">Address</h4>
-              <p className="mb-4 text-xl"><strong className="tracking-wide">Portage Office:</strong> 2640 Hamstrom Road
-                Portage, IN. 46368</p>
-              <p className="mb-8 text-xl"><strong className="tracking-wide">Gary Office:</strong> 3535 Broadway
-                Gary, IN. 46408</p>
-              <h4 className="mb-4 text-xl tracking-wide"><strong>Office Hours</strong></h4>
-              <table class="table-auto min-w-full mb-10">
-                <tr><td>Monday:</td><td>9a-5p</td></tr>
-                <tr><td>Tuesday:</td><td>9a-5p</td></tr>
-                <tr><td className="pr=4">Wednesday:</td><td>9a-5p</td></tr>
-                <tr><td>Thursday:</td><td>9a-5p</td></tr>
-                <tr><td>Friday:</td><td>9a-4p</td></tr>
-              </table>
+            <div className="pl-4 text-white">
+              <div className="rounded-xl px-6 py-6 bg-blue-50 drop-shadow-lg text-gray-500">
+                {/* <h4 className="mb-4 text-xl font-bold tracking-wide">Address</h4> */}
+                <p className="mb-4 "><strong className="tracking-wide">Portage Office</strong><br /> 2640 Hamstrom Road
+                  Portage, IN. 46368  <br />
+                  (219) 762-4423</p>
+                <p><strong className="tracking-wide">Gary Office</strong><br /> 3535 Broadway
+                  Gary, IN. 46408 <br />
+                  (219) 884-4900</p>
+              </div>
 
+              <div className="rounded-xl px-6 py-6 bg-green-50 drop-shadow-lg text-gray-500 mt-8">
+                <h4 className="mb-2 tracking-wide"><strong>Office Hours</strong></h4>
+                <div className="w-full">
+                  <table class="table-auto w-11/12 mx-auto">
+                    <tr><td>Monday:</td><td>9a-5p</td></tr>
+                    <tr><td>Tuesday:</td><td>9a-5p</td></tr>
+                    <tr><td className="pr=4">Wednesday:</td><td>9a-5p</td></tr>
+                    <tr><td>Thursday:</td><td>9a-5p</td></tr>
+                    <tr><td>Friday:</td><td>9a-4p</td></tr>
+                  </table>
+                </div>
+              </div>
             </div>
           </section>
         </div>

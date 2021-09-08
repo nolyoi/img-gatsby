@@ -63,22 +63,32 @@ function Clinic() {
             <p className="mx-2 mt-8 pb-4 text-2xl text-center transform -rotate-1"><Link to="/contact-us" className="inline-flex items-center mt-8 items-center justify-center w-50 h-10 px-8 font-semibold tracking-wide text-white transition duration-200 rounded shadow-lg bg-green-500 hover:bg-green-600 focus:shadow-outline focus:outline-none py-8"><FontAwesomeIcon icon={faCalendarAlt} size="lg" className="mr-4" /> <span className="mt-1">Book Now!</span></Link></p>
           </section>
 
-          <section className="w-4/12 text-gray-600 body-font my-20 px-8" id="blog-sidebar">
+          <section className="w-4/12 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">
             <div className="mb-4">
-              <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Information</h2>
+              <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8"></h2>
             </div>
-            <div className="pl-4">
-              <h3 className="mb-4 text-xl font-bold">Address</h3>
-              <p className="mb-8 text-xl"> 3190 Lancer Street
-                Portage, IN. 46368</p>
-              <h3 className="mb-4 text-xl font-bold">Office Hours</h3>
-              <table className="table-auto min-w-full mb-20">
-                <tr><td>Monday:</td><td>10a-6p</td></tr>
-                <tr><td>Tuesday:</td><td>11a-7p</td></tr>
-                <tr><td className="pr=4">Wednesday:</td><td>CLOSED</td></tr>
-                <tr><td>Thursday:</td><td>11a-7p</td></tr>
-                <tr><td>Friday:</td><td>11a-5p</td></tr>
-              </table>
+            <div className="pl-4 text-white">
+              <div className="rounded-xl px-6 py-6 bg-blue-50 drop-shadow-lg text-gray-500">
+                {/* <h4 className="mb-4 text-xl font-bold tracking-wide">Address</h4> */}
+                <p>
+                  <strong className="tracking-wide">Suboxone Clinic</strong><br /> 3190 Lancer Street
+                  Portage, IN. 46368  <br />
+                  (219) 292-4501
+                </p>
+              </div>
+
+              <div className="rounded-xl px-6 py-6 bg-green-50 drop-shadow-lg text-gray-500 mt-8">
+                <h4 className="mb-2 tracking-wide"><strong>Office Hours</strong></h4>
+                <div className="w-full">
+                  <table class="table-auto w-11/12 mx-auto">
+                    <tr><td>Monday:</td><td>10a-6p</td></tr>
+                    <tr><td>Tuesday:</td><td>11a-7p</td></tr>
+                    <tr><td className="pr=4">Wednesday:</td><td>CLOSED</td></tr>
+                    <tr><td>Thursday:</td><td>11a-7p</td></tr>
+                    <tr><td>Friday:</td><td>11a-5p</td></tr>
+                  </table>
+                </div>
+              </div>
             </div>
           </section>
         </div>
