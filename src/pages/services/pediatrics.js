@@ -47,6 +47,7 @@ function Pediatrics() {
                   data-sal-delay="900"
                   data-sal-duration="2000"
                   data-sal-easing="ease-out-quint" className="text-white font-bold" style={{ textShadow: '1px 1px 3px #666' }} >Pediatric Medicine</span></h1>
+            {/* <p className="text-gray-800" style={{ textShadow: '1px 1px 3px #FFF' }}>Your child's health is as important to us as it is to you. We look forward to providing you with excellent medical care your child deserves.</p> */}
             </div>
           </div>
         </div>
