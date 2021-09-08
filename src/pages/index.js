@@ -37,12 +37,14 @@ function Index() {
     frontmatter.push(post);
   });
 
+  const metaDesc = `IMG has been serving Northwest Indiana for ${(new Date().getFullYear() - 1987) + "+"} years. We provide pediatric, family, geriatric, and substance abuse care.`
+
   return (
     <div>
       <Helmet>
         <meta charSet="utf-8" />
         ( <title>{`Internal Medicine and Geriatric - Serving Northwest Indiana for ${(new Date().getFullYear() - 1987) + "+"} years.`}</title> )
-        <meta name="Description" content="IMG has been serving Northwest Indiana for 34+ years. We provide pediatric, family, geriatric, and substance abuse care." />
+        <meta name="Description" content={metaDesc} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@600&display=swap" rel="stylesheet" />
