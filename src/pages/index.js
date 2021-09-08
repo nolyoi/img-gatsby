@@ -213,16 +213,19 @@ function Index() {
           data-sal-easing="ease-out-quint" className="mx-auto mb-4 text-2xl font-semibold tracking-tighter text-black sm:text-6xl title-font">
           What Our Patients Say
         </h1>
-          <p data-sal="fade"
-            data-sal-delay="200"
+          <p data-sal="slide-up"
+            data-sal-delay="300"
             data-sal-duration="1500"
             data-sal-easing="ease-out-quint" className="text-large">We have been serving the Northwest Indiana area for over 34 years, see what our patients have to say.</p>  </div>
         <div className="container grid grid-cols-12 gap-4 mx-auto">
-          <div className="col-span-2 col-start-2 mt-20 mx-auto text-center">
-            <img src="../user-mask.jpeg" className="h-44 w-full mt-2 ml-6 m-auto" />
+          <div data-sal="slide-right"
+            data-sal-delay="400"
+            data-sal-duration="1500"
+            data-sal-easing="ease-out-quint"  className="my-auto col-span-2 col-start-2 mt-20 mx-auto text-center">
+            <img src="../blonde-lady.jpeg" className="rounded-full object-cover w-44 h-44 mt-6 ml-6 m-auto" />
           </div>
-          <div data-sal="fade"
-            data-sal-delay="200"
+          <div data-sal="slide-left"
+            data-sal-delay="400"
             data-sal-duration="1500"
             data-sal-easing="ease-out-quint" className="col-span-8 mt-20 rounded-2xl bg-gray-50 w-full h-2/3 py-12 rounded-xl overflow-hidden" style={{ backgroundImage: "url('../quotation-mark3.png')", backgroundSize: '30%', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }}>
 

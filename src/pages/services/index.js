@@ -4,6 +4,8 @@ import Footer from '../../components/Footer';
 import { Helmet } from 'react-helmet';
 import sal from 'sal.js';
 import { Link } from 'gatsby';
+import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Services() {
   React.useEffect(() => {

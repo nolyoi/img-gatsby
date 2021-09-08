@@ -1,8 +1,11 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
+import sal from 'sal.js';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 import { Helmet } from 'react-helmet';
-import sal from 'sal.js';
+import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Pediatrics() {
   React.useEffect(() => {
@@ -58,6 +61,7 @@ function Pediatrics() {
             <p className="mx-2 pb-4 text-lg">At IMG, we consider it both a great joy and responsibility to care for children. Most of us are parents ourselves, so we strive to be understanding and available to the families we are privileged to serve. We are honored that you have chosen us as your child's primary medical provider and are confident that you will be pleased with the quality of care and service that we can provide you and your family.</p>
             <p className="mx-2 pb-4 text-lg">A vital part of our service to children begins with our outstanding staff who works hard to manage and maintain a professional, caring and supportive environment for our patients in a timely manner. Our doctors are lifelong learners. Not only have they received advanced medical training in pediatrics, they continually pursue ongoing education to stay abreast of the latest in child health care.</p>
             <p className="mx-2 pb-4 text-lg">Your child's health is as important to us as it is to you. We look forward to providing you with excellent medical care your child deserves.</p>
+            <p className="mx-2 mt-8 pb-4 text-2xl text-center transform -rotate-1"><Link to="/contact-us" className="inline-flex items-center mt-8 items-center justify-center w-50 h-10 px-8 font-semibold tracking-wide text-white transition duration-200 rounded shadow-lg bg-green-500 hover:bg-green-600 focus:shadow-outline focus:outline-none py-8"><FontAwesomeIcon icon={faCalendarAlt} size="lg" className="mr-4" /> <span className="mt-1">Book Now!</span></Link></p>
           </section>
 
           <section className="w-4/12 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">

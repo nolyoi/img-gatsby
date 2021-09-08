@@ -1,8 +1,11 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
+import sal from 'sal.js';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 import { Helmet } from 'react-helmet';
-import sal from 'sal.js';
+import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Geriatrics() {
   React.useEffect(() => {
@@ -56,7 +59,7 @@ function Geriatrics() {
 
             <p className="mx-2 pb-4 text-lg">Geriatrics is the branch of healthcare that focuses on our unique needs as we age. Just as pediatricians specialize in the health needs of children, geriatricians specialize in the health needs of older people.</p>
             <p className="mx-2 pb-4 text-lg">Our bodies change over time, and our health care needs to adapt with us. Geriatrics is the specialty focused on the high-quality, person-centered care we all need as we age. “High-quality care” aims to improve health, independence, and quality of life for older people. “Person-centered care” puts our personal values and preferences at the heart of our care decisions.</p>
-            <p className="mx-2 pb-4 text-lg"></p>
+            <p className="mx-2 mt-8 pb-4 text-2xl text-center transform -rotate-1"><Link to="/contact-us" className="inline-flex items-center mt-8 items-center justify-center w-50 h-10 px-8 font-semibold tracking-wide text-white transition duration-200 rounded shadow-lg bg-green-500 hover:bg-green-600 focus:shadow-outline focus:outline-none py-8"><FontAwesomeIcon icon={faCalendarAlt} size="lg" className="mr-4" /> <span className="mt-1">Book Now!</span></Link></p>
           </section>
 
           <section className="w-4/12 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">

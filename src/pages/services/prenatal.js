@@ -1,8 +1,11 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
+import sal from 'sal.js';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 import { Helmet } from 'react-helmet';
-import sal from 'sal.js';
+import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Prenatal() {
   React.useEffect(() => {
@@ -61,6 +64,7 @@ function Prenatal() {
               <li className="mb-4">Reduce the fetus's and infant's risk for complications. Tobacco smoke and alcohol use during pregnancy have been shown to increase the risk for Sudden Infant Death Syndrome.6 Alcohol use also increases the risk for fetal alcohol spectrum disorders, which can cause a variety of problems such as abnormal facial features, having a small head, poor coordination, poor memory, intellectual disability, and problems with the heart, kidneys, or bones.7 According to one recent study supported by the NIH, these and other long-term problems can occur even with low levels of prenatal alcohol exposure.</li>
               <li className="mb-4">Help ensure the medications women take are safe. Women should not take certain medications, including some acne treatments11 and dietary and herbal supplements,12 during pregnancy because they can harm the fetus.</li>
             </ul>
+            <p className="mx-2 mt-8 pb-4 text-2xl text-center transform -rotate-1"><Link to="/contact-us" className="inline-flex items-center mt-8 items-center justify-center w-50 h-10 px-8 font-semibold tracking-wide text-white transition duration-200 rounded shadow-lg bg-green-500 hover:bg-green-600 focus:shadow-outline focus:outline-none py-8"><FontAwesomeIcon icon={faCalendarAlt} size="lg" className="mr-4" /> <span className="mt-1">Book Now!</span></Link></p>
           </section>
 
           <section className="w-4/12 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">
