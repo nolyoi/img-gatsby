@@ -140,6 +140,7 @@ function Index() {
           <div className="container items-center px-5 pb-8 mb-10 mt-2 mx-auto lg:px-24 max-h-full">
             <div className="flex flex-wrap mb-12 text-left">
               <div className="w-full mx-auto lg:w-1/3">
+              <Link to="/services/primary-care">
                 <div data-sal="slide-up"
                   data-sal-delay="300"
                   data-sal-duration="1500"
@@ -153,9 +154,11 @@ function Index() {
                   <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 ">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.
                   </p>
                 </div>
+                </Link>
               </div>
 
               <div className="w-full mx-auto lg:w-1/3">
+              <Link to="/services">
                 <div data-sal="slide-up"
                   data-sal-delay="400"
                   data-sal-duration="1500"
@@ -169,9 +172,11 @@ function Index() {
                   <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 ">We provide services for the physical, emotional and social well-being of children and elderly patients with medical and psychosocial problems.
                   </p>
                 </div>
+                </Link>
               </div>
 
               <div className="w-full mx-auto lg:w-1/3">
+              <Link to="/services/suboxone-clinic">
                 <div data-sal="slide-up"
                   data-sal-delay="350"
                   data-sal-duration="1500"
@@ -185,6 +190,7 @@ function Index() {
                   <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 ">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.
                   </p>
                 </div>
+              </Link>
               </div>
 
               <div className="w-full justify-center float-right mt-10 lg:pr-6 md:pr-6 place-items-center">
