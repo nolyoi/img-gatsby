@@ -42,7 +42,7 @@ function Locations() {
                 <h2 className="mb-8 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none font-roboto">Portage Office</h2>
                 <p className="mb-8 text-xl">2640 Hamstrom Road
                   Portage, IN. 46368</p>
-                <h3 className="mb-4 text-xl"><strong>Office Hours</strong></h3>
+                <h3 className="mb-4 text-xl tracking-wide"><strong>Office Hours</strong></h3>
                 <table className="table-auto min-w-full mb-20">
                   <tr><td>Monday:</td><td>9a-5p</td></tr>
                   <tr><td>Tuesday:</td><td>9a-5p</td></tr>
@@ -65,7 +65,7 @@ function Locations() {
                 <h2 className="mb-8 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none font-roboto">Gary Office</h2>
                 <p className="mb-8 text-xl">3535 Broadway
                   Gary, IN. 46408</p>
-                <h3 className="mb-4 text-xl"><strong>Office Hours</strong></h3>
+                <h3 className="mb-4 text-xl tracking-wide"><strong>Office Hours</strong></h3>
                 <table className="table-auto min-w-full mb-20">
                   <tr><td>Monday:</td><td>9a-5p</td></tr>
                   <tr><td>Tuesday:</td><td>9a-5p</td></tr>
@@ -88,7 +88,7 @@ function Locations() {
                 <h2 className="mb-8 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none font-roboto">Suboxone Clinic</h2>
                 <p className="mb-8 text-xl"> 3190 Lancer Street
                   Portage, IN. 46368</p>
-                <h3 className="mb-4 text-xl"><strong>Office Hours</strong></h3>
+                <h3 className="mb-4 text-xl tracking-wide"><strong>Office Hours</strong></h3>
                 <table className="table-auto min-w-full mb-20">
                   <tr><td>Monday:</td><td>10a-6p</td></tr>
                   <tr><td>Tuesday:</td><td>11a-7p</td></tr>
