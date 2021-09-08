@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 
 function Hero() {
   return (
-    <div className="flex bg-white bg-opacity-0 mt-0 w-full h-screen">
+    <div className="flex bg-white bg-opacity-0 mt-0 w-full h-screen shadow-lg">
       <HeroCarousel interval={8000}>
         {/* All info on one slide then sub-slides.
         Addiction
