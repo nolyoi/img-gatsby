@@ -74,7 +74,7 @@ function Locations() {
                   <tr><td>Friday:</td><td>9a-4p</td></tr>
                 </table>
 
-                <p className="mb-20 text-5xl transform -rotate-3"> <a href="tel:1219884-4900" className="text-indigo-500 cursor-pointer hover:text-orange-500 font-marker">(219)884-4900</a></p>
+                <p className="mb-20 text-5xl transform -rotate-3"> <a href="tel:882-2305" className="text-indigo-500 cursor-pointer hover:text-orange-500 font-marker">(219)882-2305</a></p>
               </div>
             </div>
           </section>

@@ -1,3 +1,5 @@
+// Add cont of care
+
 import * as React from 'react';
 import { Link } from 'gatsby';
 import sal from 'sal.js';
@@ -56,7 +58,7 @@ function Pediatrics() {
       <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0 mb-20">
         <div className="container flex mx-auto ">
           <section className="w-8/12 text-gray-600 body-font relative my-20" id="blog">
-            <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Primary Care</h2>
+            <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Pediatric Care</h2>
 
             <p className="mx-2 pb-4 text-lg">Pediatrics is the branch of medicine dealing with the health and medical care of infants, children, and adolescents from birth up to the age of 18.</p>
             <p className="mx-2 pb-4 text-lg">At IMG, we consider it both a great joy and responsibility to care for children. Most of us are parents ourselves, so we strive to be understanding and available to the families we are privileged to serve. We are honored that you have chosen us as your child's primary medical provider and are confident that you will be pleased with the quality of care and service that we can provide you and your family.</p>
@@ -103,3 +105,5 @@ function Pediatrics() {
 }
 
 export default Pediatrics;
+
+// Nutrition, School Physicals, Wellness Checkups, 

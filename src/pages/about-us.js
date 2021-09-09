@@ -10,9 +10,7 @@ import sal from 'sal.js';
 function AboutUs() {
     const [showDesai, setShowDesai] = React.useState(false);
     const [showChristina, setShowChristina] = React.useState(false);
-    React.useEffect(() => {
-        sal();
-      }, []);
+    sal();
 
     return (
         <div>
@@ -21,7 +19,7 @@ function AboutUs() {
                 ( <title>{`Internal Medicine and Geriatrics - About Us`}</title> )
                 <meta name="Description" content="About Internal Medicine and Geriatrics." />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                 <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@600&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
                 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -197,7 +195,7 @@ function AboutUs() {
                             <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                 <div className="flex items-start justify-between p-5 border-b border-dashed border-gray-300 rounded-t align-middle">
                                     <h3 className="text-3xl font-semibold mt-1">
-                                        <FontAwesomeIcon icon={faHeartbeat} className="text-red-500 mr-2"></FontAwesomeIcon> Shreyas Desai, MD
+                                        <FontAwesomeIcon icon={faHeartbeat} className="text-red-500 mr-2"></FontAwesomeIcon> Doctor Shreyas Desai
                                     </h3>
                                     <button
                                         className="p-1 ml-auto bg-gray-200 hover:bg-red-500 rounded border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -215,13 +213,13 @@ function AboutUs() {
                                         <h3 className="text-2xl font-semibold mt-1">
                                             About Dr. Desai
                                         </h3>
-                                        <p className="mb-4 mt-2">Shreyas Desai is certified in Internal Medicine and Geriatric.s He has been in practice for 50 years practicing at Methodist, St. Mary, and Pinnacle hospitals. </p>
+                                        <p className="mb-4 mt-2">Shreyas Desai is certified in Internal Medicine and Geriatrics. He has been in practice for 45 years practicing at Methodist, St. Mary, and Pinnacle hospitals. </p>
 
                                         <p className="mb-4 mt-2">He completed his training in Internal Medicine from Mount Sinai University. He went on to complete his Oncology training at Northwestern University.
                                         </p>
 
                                         <p className="mb-4 mt-2">
-                                            Dr. Desai has experience in critical care, as well as a special focus in obesity medicine, the treatment of opiate dependence, and geriatric medicine. He places high value on individualized and continuity of care, strong family values, and preventive medicine.
+                                            Dr. Desai has experience in internal medicine, geriatric medicine, and the treatment of substance abuse. He places high value on individualized and continuity of care, strong family values, and preventative medicine.
                                         </p>
                                         <p className="mb-4 mt-2">
                                             Dr. Desai currently resides in Northwest Indiana. He is a father and grandfather with 5 grandchildren and 3 children. His children also work in medicine and law. Being part of the community has inspired him to make a positive impact on others and their health.
@@ -267,7 +265,7 @@ function AboutUs() {
                                         <p className="mb-4 mt-2">Christina Connelly is a certified <strong><i>Family Nurse Practitioner</i></strong>. She obtained her <i>Bachelor’s Degree</i> in Nursing from <strong>Indiana University</strong>. She went on to complete her <i>Master’s Degree</i> at <strong>Indiana Wesleyan University</strong> graduating in 2015. </p>
 
                                         <p className="mb-4 mt-2">As a Family Nurse Practitioner, she has practiced in a variety of inpatient and outpatient settings. She has also integrated telemedicine into her practice. Christina has experience in critical care, as well as a special focus in obesity medicine, the treatment of opiate dependence, and geriatric medicine.
-                                            She places high value on individualized care, strong family values, and preventive medicine.</p>
+                                            She places high value on individualized care, strong family values, and preventative medicine.</p>
 
                                         <p className="mb-4 mt-2">Christina was born and raised in Northwest Indiana and currently lives in Valparaiso with her husband and youngest daughter. Being part of the community herself, has inspired her to make a positive impact on others and their health.</p>
                                         <p className="mb-4 mt-2">In her spare time Christina enjoys spending time with her eldest sons, exploring the Dunes State Park, traveling, snorkeling and exercise of any kind.

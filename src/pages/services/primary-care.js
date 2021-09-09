@@ -1,3 +1,5 @@
+// Add cont of care
+
 import * as React from 'react';
 import { Link } from 'gatsby';
 import sal from 'sal.js';

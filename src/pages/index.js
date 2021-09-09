@@ -1,4 +1,6 @@
 // Flyers
+// Add office, hospital, nursing home, home to cont of care.
+
 
 import * as React from 'react';
 import Hero from '../components/Hero';
@@ -250,3 +252,7 @@ function Index() {
 }
 
 export default Index;
+
+
+// The medical needs of elderly are diffferent because as bodies age, the need for maintaining health also changes. To remain functional and independent proper excercises and bringing balance in life is important. Preventive care including blood work, xrays, and vaccination are important for a long healthy life. 
+// Cardiac health, cancer screening, nutrition, mobility, mental health, dementia, adult vaccination, fall prevention, 

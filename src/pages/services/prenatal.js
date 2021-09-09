@@ -1,3 +1,5 @@
+// Add cont of care
+
 import * as React from 'react';
 import { Link } from 'gatsby';
 import sal from 'sal.js';
@@ -61,8 +63,8 @@ function Prenatal() {
             <p className="mx-2 pb-4 text-lg">Pre-Pregnancy and prenatal care can help prevent complications and inform women about important steps they can take to protect their infant and ensure a healthy pregnancy. With regular prenatal care women can:</p>
             <ul className="mx-2 pl-8 py-6 text-lg list-inside list-disc rounded-xl bg-gray-50">
               <li className="mb-4">Reduce the risk of pregnancy complications. Following a healthy, safe diet; getting regular exercise as advised by a health care provider; and avoiding exposure to potentially harmful substances such as lead and radiation can help reduce the risk for problems during pregnancy and promote fetal health and development. Controlling existing conditions, such as high blood pressure and diabetes, is important to prevent serious complications and their effects.</li>
-              <li className="mb-4">Reduce the fetus's and infant's risk for complications. Tobacco smoke and alcohol use during pregnancy have been shown to increase the risk for Sudden Infant Death Syndrome.6 Alcohol use also increases the risk for fetal alcohol spectrum disorders, which can cause a variety of problems such as abnormal facial features, having a small head, poor coordination, poor memory, intellectual disability, and problems with the heart, kidneys, or bones.7 According to one recent study supported by the NIH, these and other long-term problems can occur even with low levels of prenatal alcohol exposure.</li>
-              <li className="mb-4">Help ensure the medications women take are safe. Women should not take certain medications, including some acne treatments11 and dietary and herbal supplements,12 during pregnancy because they can harm the fetus.</li>
+              <li className="mb-4">Reduce the fetus's and infant's risk for complications. Tobacco smoke and alcohol use during pregnancy have been shown to increase the risk for Sudden Infant Death Syndrome. Alcohol use also increases the risk for fetal alcohol spectrum disorders, which can cause a variety of problems such as abnormal facial features, having a small head, poor coordination, poor memory, intellectual disability, and problems with the heart, kidneys, or bones.7 According to one recent study supported by the NIH, these and other long-term problems can occur even with low levels of prenatal alcohol exposure.</li>
+              <li className="mb-4">Help ensure the medications women take are safe. Women should not take certain medications, including some acne treatments and dietary and herbal supplements during pregnancy because they can harm the fetus.</li>
             </ul>
             <p className="mx-2 mt-8 pb-4 text-2xl text-center transform -rotate-1"><Link to="/contact-us" className="inline-flex items-center mt-8 items-center justify-center w-50 h-10 px-8 font-semibold tracking-wide text-white transition duration-200 rounded shadow-lg bg-green-500 hover:bg-green-600 focus:shadow-outline focus:outline-none py-8"><FontAwesomeIcon icon={faCalendarAlt} size="lg" className="mr-4" /> <span className="mt-1">Book Now!</span></Link></p>
           </section>
@@ -105,3 +107,5 @@ function Prenatal() {
 }
 
 export default Prenatal;
+
+// Nutrition, Check ups, Mental Health, 
