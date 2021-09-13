@@ -26,9 +26,9 @@ function BookButton({ nav }) {
       {showModal ? (
         <div>
           <div
-            className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+            className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none w-11/12"
           >
-            <div className="relative w-auto my-8 mx-auto max-w-3xl">
+            <div className="relative w-full my-8 mx-auto max-w-3xl">
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 <div className="flex items-start justify-between p-5 border-b border-dashed border-gray-300 rounded-t align-middle">
                   <h3 className="text-3xl font-semibold mt-1 text-gray-600">
