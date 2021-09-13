@@ -124,12 +124,12 @@ function Index() {
         </div>
       </section>
 
-      <section className="flex flex-col-reverse md:flex-col m-auto h-screen lg:h-screen sm:h-full mb-24 sm:mx-24">
+      <section className="flex flex-col m-auto h-screen lg:h-screen sm:h-full mb-24 sm:mx-24">
         <div className="flex flex-wrap content-center container sm:h-full px-12 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
           <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
             
-            <div className="flex flex-col justify-center">
-              <div className="max-w-full mb-6">
+            <div className="order-2 lg:order-1 flex flex-col justify-center">
+              <div className="max-w-full mb-6 mt-6 lg:mt-0">
                 <h2 data-sal="slide-right"
                   data-sal-delay="300"
                   data-sal-duration="1500"
@@ -156,7 +156,7 @@ function Index() {
                 </div>
               </div>
               </div>
-            <div>
+            <div className="order-1 lg:order-2">
               <img data-sal="slide-up"
                 data-sal-delay="200"
                 data-sal-duration="2000"
