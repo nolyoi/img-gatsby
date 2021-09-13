@@ -88,7 +88,7 @@ const BlogIndexPage = ({ data }) => {
             {frontmatter.map(element => {
               return <div className="mb-20 mx-4" key={element.node.id}>
                 <Link to={element.node.frontmatter.slug}>
-                  <div className="h-96 bg-gray-800 bg-blend-overlay bg-opacity-20 hover:bg-opacity-0 rounded-lg" style={{ backgroundImage: `url(${element.node.frontmatter.lead_image?.replace("/static", "")})`, backgroundPosition: 'center', backgroundSize: 'cover' }} />
+                  <div className="h-96 bg-gray-800 bg-blend-overlay bg-opacity-20 rounded-lg" style={{ backgroundImage: `url(${element.node.frontmatter.lead_image?.replace("/static", "")})`, backgroundPosition: 'center', backgroundSize: 'cover' }} />
                 </Link>
                 <div className="mb-4 mt-8">
                   <h2 className="mb-0 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-gray-800 hover:text-indigo-600"><Link to={element.node.frontmatter.slug} >{element.node.frontmatter.title}</Link></h2>
