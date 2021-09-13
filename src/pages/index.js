@@ -130,24 +130,30 @@ function Index() {
             
             <div className="flex flex-col justify-center">
               <div className="max-w-full mb-6">
-                <h2 data-sal="slide-left"
+                <h2 data-sal="slide-right"
                   data-sal-delay="300"
                   data-sal-duration="1500"
                   data-sal-easing="ease-out-quint" className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
                   Continuity of Care
                 </h2>
-                <p data-sal="slide-left"
+                <p data-sal="slide-right"
                   data-sal-delay="300"
                   data-sal-duration="1500"
                   data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg">
                   Being able to care for patients at all stages of life allows us to focus more individually on the patient. From pediatrics, to general/family, geriatrics, substance abuse, and more.
                 </p>
-                <p data-sal="slide-left"
+                <p data-sal="slide-right"
                   data-sal-delay="300"
                   data-sal-duration="1500"
                   data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg mt-4">
                   We accept Medicare, Medicaid, most insurances, and cash payments.
                 </p>
+                <div data-sal="slide-up"
+                data-sal-delay="400"
+                data-sal-duration="2000"
+                data-sal-easing="ease-out-quint" className="text-center">
+                  <Link to="/services" className="inline-flex items-center justify-center mt-8 w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none">View our services</Link>
+                </div>
               </div>
               </div>
             <div>
@@ -160,7 +166,7 @@ function Index() {
         </div>
       </section>
 
-      <section className="flex text-gray-700 h-full md:h-screen lg:h-screen sm:h-full sm:my-24 sm:pt-12 sm:mx-24">
+      <section className="flex m-auto text-gray-700 h-full md:h-screen lg:h-screen sm:h-full sm:my-24 sm:pt-12 sm:mx-24">
         <div className="m-auto">
           <div className="flex flex-col items-center px-5 pt-8">
             <div className="flex flex-col w-full mb-8 text-left lg:text-center">
@@ -247,7 +253,7 @@ function Index() {
         </div>
       </section>
 
-      <section className="flex flex-col text-gray-700 h-full md:h-screen lg:h-screen sm:h-full my-24 sm:pt-12 md:mx-0 mx-24">
+      <section className="flex flex-col m-auto text-gray-700 h-full md:h-screen lg:h-screen sm:h-full my-24 sm:pt-12 md:mx-0 mx-24">
         <div className="mx-auto text-center"><h1 data-sal="slide-up"
           data-sal-delay="200"
           data-sal-duration="1500"
