@@ -152,7 +152,7 @@ function Hero() {
         </section>
       </div> */}
 
-<div className="container flex flex-col-reverse md:flex-col sm:mx-24 mb-24 mt-24 mx-auto space-y-6 lg:h-128 lg:py-24 lg:flex-row lg:items-center lg:space-x-6 mt-10">
+<div className="container flex flex-col-reverse md:flex-col sm:mx-24 mb-24 md:mt-24 mx-auto space-y-6 lg:h-128 lg:py-24 lg:flex-row lg:items-center lg:space-x-6 mt-10">
             <div data-sal="slide-right"
                                 data-sal-delay="300"
                                 data-sal-duration="1500"
