@@ -59,9 +59,24 @@ function Geriatrics() {
         <div className="container flex flex-col md:flex-row mx-auto ">
           <section className="w-full md:w-8/12 text-gray-600 body-font relative my-20" id="blog">
             <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Geriatric Medicine</h2>
-
+            <div className="relative flex rounded-lg items-center justify-center overflow-hidden object-fit mx-auto h-96 mr-8 mb-8"><img src="../../geriatrics2.png" className="object-cover object-center w-full " alt="avatar" /></div>
             <p className="mx-2 pb-4 text-lg">Geriatrics is the branch of healthcare that focuses on our unique needs as we age. Just as pediatricians specialize in the health needs of children, geriatricians specialize in the health needs of older people.</p>
             <p className="mx-2 pb-4 text-lg">Our bodies change over time, and our health care needs to adapt with us. Geriatrics is the specialty focused on the high-quality, person-centered care we all need as we age. “High-quality care” aims to improve health, independence, and quality of life for older people. “Person-centered care” puts our personal values and preferences at the heart of our care decisions.</p>
+            <p className="mx-2 pb-4 text-lg">The medical needs of elderly are diffferent because as bodies age, the need for maintaining health also changes. To remain functional and independent proper excercises and bringing balance in life is important. Preventive care including blood work, xrays, and vaccination are important for a long healthy life.</p>
+            
+            <div className="mx-2 pl-8 py-6 text-lg rounded-xl bg-gray-50">
+              <img src="../../medical-cross.png" className="h-40 float-right mr-8 mt-8" />
+              <ul className="list-inside list-disc">
+                <li>Cardiac Health</li>
+                <li>Cancer Screening</li>
+                <li>Nutrition</li>
+                <li>Mobility</li>
+                <li>Mental Health</li>
+                <li>Adult Immunizations</li>
+                <li>Annual Wellness Visits</li>
+                <li>And more!</li>
+              </ul>
+            </div>
             <BookButton />
           </section>
 

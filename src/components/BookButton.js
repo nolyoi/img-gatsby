@@ -30,8 +30,8 @@ function BookButton({ nav }) {
           >
             <div className="relative w-auto my-8 mx-auto max-w-3xl">
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                <div className="flex items-start justify-between p-5 border-b border-dashed border-gray-300 rounded-t align-middle">
-                  <h3 className="text-3xl font-semibold mt-1 text-gray-600">
+                <div className="flex items-start text-center justify-between p-5 border-b border-dashed border-gray-300 rounded-t align-middle">
+                  <h3 className="text-3xl font-semibold mt-1 text-gray-600 w-full text-center">
                     <FontAwesomeIcon icon={faCalendarAlt} className="text-gray-600 mr-2"></FontAwesomeIcon> Book an Appointment
                   </h3>
                   <button

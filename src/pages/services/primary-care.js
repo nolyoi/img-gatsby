@@ -57,7 +57,7 @@ function PrimaryCare() {
 
       <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0 mb-20">
         <div className="container flex flex-col md:flex-row mx-auto ">
-          <section className="w-full md:w-8/12 text-gray-600 body-font relative my-20" id="blog">
+          <section className="w-full md:w-8/12 text-gray-600 body-font relative my-20" id="primary-care">
             <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Primary and Family Care</h2>
             <div className="relative flex rounded-lg items-center justify-center overflow-hidden object-fit mx-auto h-96 mr-8 mb-8"><img src="../../happy-people.jpeg" className="object-cover object-center w-full " alt="avatar" /></div>
             <p className="mx-2 pb-4 text-lg">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.</p>
