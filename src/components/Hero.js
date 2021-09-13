@@ -162,7 +162,7 @@ function Hero() {
                     <p data-sal="slide-right"
                                 data-sal-delay="300"
                                 data-sal-duration="1500"
-                                data-sal-easing="ease-out-quint" className="mt-2 text-gray-600 dark:text-gray-300">Being able to care for patients at all stages of life allows us to focus individually on the patient.</p>
+                                data-sal-easing="ease-out-quint" className="mt-2 text-gray-600 dark:text-gray-300">Appointments can now be scheduled online to help speed up your first or next office visit!</p>
                     <p data-sal="slide-right"
                                 data-sal-delay="300"
                                 data-sal-duration="1500"
