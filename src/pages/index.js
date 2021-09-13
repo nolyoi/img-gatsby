@@ -124,6 +124,42 @@ function Index() {
         </div>
       </section>
 
+      <section className="flex flex-col m-auto h-screen lg:h-screen sm:h-full mb-24 sm:mx-24">
+        <div className="flex flex-wrap content-center container sm:h-full px-12 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
+          <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
+            
+            <div className="flex flex-col justify-center">
+              <div className="max-w-full mb-6">
+                <h2 data-sal="slide-left"
+                  data-sal-delay="300"
+                  data-sal-duration="1500"
+                  data-sal-easing="ease-out-quint" className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                  Continuity of Care
+                </h2>
+                <p data-sal="slide-left"
+                  data-sal-delay="300"
+                  data-sal-duration="1500"
+                  data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg">
+                  Being able to care for patients at all stages of life allows us to focus more individually on the patient. From pediatrics, to general/family, geriatrics, substance abuse, and more.
+                </p>
+                <p data-sal="slide-left"
+                  data-sal-delay="300"
+                  data-sal-duration="1500"
+                  data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg mt-4">
+                  We accept Medicare, Medicaid, most insurances, and cash payments.
+                </p>
+              </div>
+              </div>
+            <div>
+              <img data-sal="slide-up"
+                data-sal-delay="200"
+                data-sal-duration="2000"
+                data-sal-easing="ease-out-quint" className="object-contain w-full h-56 rounded sm:h-full lg:pl-8" src="./continuity-labeled2.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="flex text-gray-700 h-full md:h-screen lg:h-screen sm:h-full sm:my-24 sm:pt-12 sm:mx-24">
         <div className="m-auto">
           <div className="flex flex-col items-center px-5 pt-8">

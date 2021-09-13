@@ -158,7 +158,7 @@ function Hero() {
                     <h1 data-sal="slide-right"
                                 data-sal-delay="300"
                                 data-sal-duration="1500"
-                                data-sal-easing="ease-out-quint" className="text-2xl font-medium tracking-wide text-gray-800 dark:text-white lg:text-4xl">Schedule your next doctor appointment today</h1>
+                                data-sal-easing="ease-out-quint" className="text-2xl font-bold tracking-wide text-gray-800 dark:text-white lg:text-4xl">Schedule your next doctor appointment today</h1>
                     <p data-sal="slide-right"
                                 data-sal-delay="300"
                                 data-sal-duration="1500"
