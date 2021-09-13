@@ -211,7 +211,7 @@ function Index() {
         </div>
       </section>
 
-      <section className="flex flex-col text-gray-700 h-screen lg:h-screen sm:h-full my-24 sm:pt-12 md:mx-0 mx-24">
+      <section className="flex flex-col text-gray-700 h-full md:h-screen lg:h-screen sm:h-full my-24 sm:pt-12 md:mx-0 mx-24">
         <div className="mx-auto text-center"><h1 data-sal="slide-up"
           data-sal-delay="200"
           data-sal-duration="1500"
