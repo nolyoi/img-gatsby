@@ -8,6 +8,7 @@ import Footer from '../../components/Footer';
 import { Helmet } from 'react-helmet';
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import BookButton from '../../components/BookButton';
 
 function Pediatrics() {
   React.useEffect(() => {
@@ -39,7 +40,7 @@ function Pediatrics() {
       </Helmet>
 
       <section className="bg-white bg-opacity-0 mt-0 w-full h-1/2 shadow-lg">
-        <div className="w-full h-1/2 bg-gray-900 bg-opacity-100 overflow-hidden text-center relative" style={{ backgroundImage: 'url(../pediatrics-kids.jpeg)', backgroundSize: 'cover', backgroundPosition: '0% 10%' }}>
+        <div className="w-full h-1/2 bg-gray-900 bg-opacity-100 overflow-hidden text-center relative" style={{ backgroundImage: 'url(../../pediatrics-kids.jpeg)', backgroundSize: 'cover', backgroundPosition: '0% 10%' }}>
           <div className="container mx-auto my-auto pt-20 h-1/2">
             <div className="w-9/12 mx-auto text-gray-300 mt-0 my-40 items-center content-center content-center h-1/2">
               <h1 className="mt-20 pb-10 pr-8 text-center font-sans text-4xl font-bold tracking-tight text-indigo-600 sm:text-4xl sm:leading-none"><span data-sal="fade"
@@ -56,18 +57,18 @@ function Pediatrics() {
       </section>
 
       <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0 mb-20">
-        <div className="container flex mx-auto ">
-          <section className="w-8/12 text-gray-600 body-font relative my-20" id="blog">
+        <div className="container flex flex-col md:flex-row mx-auto ">
+          <section className="w-full md:w-8/12 text-gray-600 body-font relative my-20" id="blog">
             <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Pediatric Care</h2>
 
             <p className="mx-2 pb-4 text-lg">Pediatrics is the branch of medicine dealing with the health and medical care of infants, children, and adolescents from birth up to the age of 18.</p>
             <p className="mx-2 pb-4 text-lg">At IMG, we consider it both a great joy and responsibility to care for children. Most of us are parents ourselves, so we strive to be understanding and available to the families we are privileged to serve. We are honored that you have chosen us as your child's primary medical provider and are confident that you will be pleased with the quality of care and service that we can provide you and your family.</p>
             <p className="mx-2 pb-4 text-lg">A vital part of our service to children begins with our outstanding staff who works hard to manage and maintain a professional, caring and supportive environment for our patients in a timely manner. Our doctors are lifelong learners. Not only have they received advanced medical training in pediatrics, they continually pursue ongoing education to stay abreast of the latest in child health care.</p>
             <p className="mx-2 pb-4 text-lg">Your child's health is as important to us as it is to you. We look forward to providing you with excellent medical care your child deserves.</p>
-            <p className="mx-2 mt-8 pb-4 text-2xl text-center transform -rotate-1"><Link to="/contact-us" className="inline-flex items-center mt-8 items-center justify-center w-50 h-10 px-8 font-semibold tracking-wide text-white transition duration-200 rounded shadow-lg bg-green-500 hover:bg-green-600 focus:shadow-outline focus:outline-none py-8"><FontAwesomeIcon icon={faCalendarAlt} size="lg" className="mr-4" /> <span className="mt-1">Book Now!</span></Link></p>
+            <BookButton />
           </section>
 
-          <section className="w-4/12 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">
+          <section className="w-full md:w-4/12 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">
             <div className="mb-4">
               <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8"></h2>
             </div>

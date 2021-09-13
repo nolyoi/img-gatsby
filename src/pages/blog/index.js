@@ -4,6 +4,7 @@ import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 import { Helmet } from 'react-helmet';
 import sal from 'sal.js';
+import LatestPosts from '../../components/LatestPosts';
 
 
 const BlogIndexPage = ({ data }) => {
@@ -11,23 +12,24 @@ const BlogIndexPage = ({ data }) => {
     sal();
   }, []);
 
+
   const query = useStaticQuery(graphql`
-  query { allMarkdownRemark(sort: {fields: frontmatter___published, order: DESC}, filter: {frontmatter: {author: {eq: null}}}) {
-          edges {
-            node {
-              id
-              html
-              frontmatter {
-                published
-                title
-                slug
-                lead_image
+    query { allMarkdownRemark(sort: {fields: frontmatter___published, order: DESC}, filter: {frontmatter: {author: {eq: null}}}) {
+            edges {
+              node {
+                id
+                html
+                frontmatter {
+                  published
+                  title
+                  slug
+                  lead_image
+                }
+                excerpt
               }
-              excerpt
             }
           }
         }
-      }
     `);
 
   let frontmatter = [];
@@ -69,9 +71,9 @@ const BlogIndexPage = ({ data }) => {
                   data-sal-duration="2000"
                   data-sal-easing="ease-out-quint" className="text-gray-700 font-bold">Latest Announcements</span></h1>
               <p data-sal="fade"
-                  data-sal-delay="1000"
-                  data-sal-duration="2000"
-                  data-sal-easing="ease-out-quint" className="text-lg font-medium text-gray-700">Check below for the latest announcements from our office.</p>
+                data-sal-delay="1000"
+                data-sal-duration="2000"
+                data-sal-easing="ease-out-quint" className="text-lg font-medium text-gray-700">Check below for the latest announcements from our office.</p>
             </div>
           </div>
         </div>
@@ -85,11 +87,11 @@ const BlogIndexPage = ({ data }) => {
 
             {frontmatter.map(element => {
               return <div className="mb-20 mx-4" key={element.node.id}>
-                <div className="h-96 bg-gray-800 bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: element.node.frontmatter.lead_image?.replace("/static", ""), backgroundPosition: 'center' }}>
-                <Link to={element.node.frontmatter.slug} ><img className="rounded scale-50 object-cover object-top" src={element.node.frontmatter.lead_image?.replace("/static", "")} /></Link>
-                </div>
+                <Link to={element.node.frontmatter.slug}>
+                  <div className="h-96 bg-gray-800 bg-blend-overlay bg-opacity-20 hover:bg-opacity-0 rounded-lg" style={{ backgroundImage: `url(${element.node.frontmatter.lead_image?.replace("/static", "")})`, backgroundPosition: 'center', backgroundSize: 'cover' }} />
+                </Link>
                 <div className="mb-4 mt-8">
-                <h2 className="mb-0 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-gray-800 hover:text-indigo-600"><Link to={element.node.frontmatter.slug} >{element.node.frontmatter.title}</Link></h2>
+                  <h2 className="mb-0 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-gray-800 hover:text-indigo-600"><Link to={element.node.frontmatter.slug} >{element.node.frontmatter.title}</Link></h2>
                   <span className="text-sm ml-2"><strong>by</strong> IMG Team <strong>on</strong> {element.node.frontmatter.published}</span>
                 </div>
 
@@ -101,32 +103,30 @@ const BlogIndexPage = ({ data }) => {
           </section>
 
           <section className="w-1/3 text-gray-600 body-font relative my-10 px-8" id="blog-sidebar">
-          <div className="rounded-xl px-6 py-6 bg-green-50 drop-shadow-lg text-gray-500 mt-8">
+            <div className="rounded-xl px-6 py-6 bg-green-50 drop-shadow-lg text-gray-500 mt-8">
 
-            <div className="mb-4">
-              <h2 className="font-sans font-bold text-lg tracking-tight text-gray-800 sm:leading-none mb-4">Latest Posts</h2>
+              <div className="mb-4">
+                <h2 className="font-sans font-bold text-lg tracking-tight text-gray-800 sm:leading-none mb-4">Latest Posts</h2>
+              </div>
+              <div className="pl-12 text-lg">
+                <ul className="list-disc">
+                  <LatestPosts />
+                </ul>
+              </div>
             </div>
-            <div className="pl-12 text-lg">
-              <ul className="list-disc">
-              {frontmatter.map(element => {
-                return <li><Link to={element.node.frontmatter.slug} className="hover:text-green-600">{element.node.frontmatter.title}</Link></li>
-              })}
-              </ul>
-            </div>
-            </div>
-          <div className="rounded-xl px-6 py-6 bg-gray-50 drop-shadow-lg text-gray-500 mt-8">
+            <div className="rounded-xl px-6 py-6 bg-gray-50 drop-shadow-lg text-gray-500 mt-8">
 
-            <div className="mb-4">
-              <h2 className="font-sans font-bold text-lg tracking-tight text-gray-800 sm:leading-none mb-4">Archive</h2>
-            </div>
-            <div className="pl-12 text-lg">
-              <ul className="list-disc">
-                <li><a href="#" className="hover:text-indigo-600">January</a></li>
-                <li><a href="#" className="hover:text-indigo-600">February</a></li>
-                <li><a href="#" className="hover:text-indigo-600">March</a></li>
-                <li><a href="#" className="hover:text-indigo-600">April</a></li>
-              </ul>
-            </div>
+              <div className="mb-4">
+                <h2 className="font-sans font-bold text-lg tracking-tight text-gray-800 sm:leading-none mb-4">Archive</h2>
+              </div>
+              <div className="pl-12 text-lg">
+                <ul className="list-disc">
+                  <li><a href="#" className="hover:text-indigo-600">January</a></li>
+                  <li><a href="#" className="hover:text-indigo-600">February</a></li>
+                  <li><a href="#" className="hover:text-indigo-600">March</a></li>
+                  <li><a href="#" className="hover:text-indigo-600">April</a></li>
+                </ul>
+              </div>
             </div>
           </section>
         </div>

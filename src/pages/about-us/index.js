@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Footer from '../components/Footer';
-import Nav from '../components/Nav';
+import Footer from '../../components/Footer';
+import Nav from '../../components/Nav';
 import { Helmet } from 'react-helmet';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeartbeat, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
@@ -10,7 +10,10 @@ import sal from 'sal.js';
 function AboutUs() {
     const [showDesai, setShowDesai] = React.useState(false);
     const [showChristina, setShowChristina] = React.useState(false);
-    sal();
+    React.useEffect(
+        () => {
+            sal();
+        });
 
     return (
         <div>
@@ -83,16 +86,16 @@ function AboutUs() {
                     <div className="flex items-center justify-center w-full">
                         <div className="grid gap-6 mt-8 sm:grid-cols-2 grid-cols-1 lg:grid-cols-3 xl:grid-cols-3">
                             <div className="w-full max-w-xs text-center">
-                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><button onClick={() => setShowDesai(true)} className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("./desai.jpeg")' }} alt="avatar"></button></div>
+                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><Link to="/about-us/shreyas-desai" className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("../../desai.jpeg")' }} alt="avatar"></Link></div>
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Shreyas Desai</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
-                                    <button onClick={() => setShowDesai(true)} className="text-indigo-500 inline-flex items-center">Learn More
+                                    <Link to="/about-us/shreyas-desai" className="text-indigo-500 inline-flex items-center">Learn More
                                         <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M5 12h14"></path>
                                             <path d="M12 5l7 7-7 7"></path>
                                         </svg>
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -100,16 +103,16 @@ function AboutUs() {
                                 data-sal-delay="300"
                                 data-sal-duration="1500"
                                 data-sal-easing="ease-out-quint" className="w-full max-w-xs text-center">
-                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><div className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("./sarma.jpeg")' }} alt="avatar"></div></div>
+                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><Link to="/about-us/havish-sarma" className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("../../sarma.jpeg")' }} alt="avatar"></Link></div>
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Havishakrishna Sarma</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
-                                    <a className="text-indigo-500 inline-flex items-center">Learn More
+                                    <Link to="/about-us/havish-sarma" className="text-indigo-500 inline-flex items-center">Learn More
                                         <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M5 12h14"></path>
                                             <path d="M12 5l7 7-7 7"></path>
                                         </svg>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -117,7 +120,7 @@ function AboutUs() {
                                 data-sal-delay="400"
                                 data-sal-duration="1500"
                                 data-sal-easing="ease-out-quint" className="w-full max-w-xs text-center">
-                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><div className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("./patel.jpeg")' }} alt="avatar"></div></div>
+                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><div className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("../../patel.jpeg")' }} alt="avatar"></div></div>
 
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Truptiben Patel</h3>
@@ -136,7 +139,7 @@ function AboutUs() {
                                 data-sal-delay="300"
                                 data-sal-duration="1500"
                                 data-sal-easing="ease-out-quint" className="w-full max-w-xs text-center">
-                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><div className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("./gayle.jpeg")' }} alt="avatar"></div></div>
+                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><div className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("../../gayle.jpeg")' }} alt="avatar"></div></div>
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Gayle Voight-Block</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Nurse Practitioner</p>
@@ -153,7 +156,7 @@ function AboutUs() {
                                 data-sal-delay="350"
                                 data-sal-duration="1500"
                                 data-sal-easing="ease-out-quint" className="w-full max-w-xs text-center">
-                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><button onClick={() => setShowChristina(true)} className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("./christina.jpeg")' }} alt="avatar"></button></div>
+                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><button onClick={() => setShowChristina(true)} className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("../../christina.jpeg")' }} alt="avatar"></button></div>
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Christina Connelly</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Nurse Practitioner</p>
@@ -170,7 +173,7 @@ function AboutUs() {
                                 data-sal-delay="400"
                                 data-sal-duration="1500"
                                 data-sal-easing="ease-out-quint" className="w-full max-w-xs text-center">
-                                <img className="object-cover object-center w-full h-48 mx-auto rounded-lg" src="./mary.jpeg" alt="avatar" />
+                                <img className="object-cover object-center w-full h-48 mx-auto rounded-lg" src="../../mary.jpeg" alt="avatar" />
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Mary Szymaszek</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Nurse/Office Manager</p>

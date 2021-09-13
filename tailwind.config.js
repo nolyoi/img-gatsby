@@ -23,8 +23,11 @@ module.exports = {
         'sans': ['Hind', 'sans-serif']
       },
       boxShadow: {
-                link: '0 -12px 0 0 rgba(178, 245, 234, .7) inset',
-            },
+        link: '0 -12px 0 0 rgba(178, 245, 234, .7) inset',
+      },
+      spacing: {
+        128: '32rem',
+      },
     },
   },
   variants: {

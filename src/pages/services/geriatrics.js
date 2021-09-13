@@ -8,6 +8,7 @@ import Footer from '../../components/Footer';
 import { Helmet } from 'react-helmet';
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import BookButton from '../../components/BookButton';
 
 function Geriatrics() {
   React.useEffect(() => {
@@ -55,16 +56,16 @@ function Geriatrics() {
       </section>
 
       <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0 mb-20">
-        <div className="container flex mx-auto ">
-          <section className="w-8/12 text-gray-600 body-font relative my-20" id="blog">
+        <div className="container flex flex-col md:flex-row mx-auto ">
+          <section className="w-full md:w-8/12 text-gray-600 body-font relative my-20" id="blog">
             <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Geriatric Medicine</h2>
 
             <p className="mx-2 pb-4 text-lg">Geriatrics is the branch of healthcare that focuses on our unique needs as we age. Just as pediatricians specialize in the health needs of children, geriatricians specialize in the health needs of older people.</p>
             <p className="mx-2 pb-4 text-lg">Our bodies change over time, and our health care needs to adapt with us. Geriatrics is the specialty focused on the high-quality, person-centered care we all need as we age. “High-quality care” aims to improve health, independence, and quality of life for older people. “Person-centered care” puts our personal values and preferences at the heart of our care decisions.</p>
-            <p className="mx-2 mt-8 pb-4 text-2xl text-center transform -rotate-1"><Link to="/contact-us" className="inline-flex items-center mt-8 items-center justify-center w-50 h-10 px-8 font-semibold tracking-wide text-white transition duration-200 rounded shadow-lg bg-green-500 hover:bg-green-600 focus:shadow-outline focus:outline-none py-8"><FontAwesomeIcon icon={faCalendarAlt} size="lg" className="mr-4" /> <span className="mt-1">Book Now!</span></Link></p>
+            <BookButton />
           </section>
 
-          <section className="w-4/12 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">
+          <section className="w-full md:w-4/12 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">
             <div className="mb-4">
               <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8"></h2>
             </div>

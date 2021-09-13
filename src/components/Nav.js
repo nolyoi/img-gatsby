@@ -2,12 +2,8 @@
 
 import * as React from 'react';
 import { useState } from 'react';
-import { Link } from "gatsby"
-import {
-  ScrollingProvider,
-  useScrollSection,
-  Section,
-} from 'react-scroll-section';
+import { Link } from 'gatsby';
+import BookButton from './BookButton';
 
 function Nav({ menuItem }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,7 +50,7 @@ function Nav({ menuItem }) {
 
   return (
 
-    <Section id="nav" className="bg-gray-800 text-white px-2 py-5 mx-auto max-w-full md:px-24 lg:px-0 shadow-xl mb-0 z-50">
+    <section id="nav" className="bg-gray-800 text-white px-2 py-5 mx-auto max-w-full md:px-24 lg:px-0 shadow-xl mb-0 z-50">
       <div className="container mx-auto">
         <div className="relative flex items-center justify-between w-full">
           <Link to="/" aria-label="Internal Medicine and Geriatrics" title="Internal Medicine and Geriatrics" className="inline-flex items-center">
@@ -83,9 +79,7 @@ function Nav({ menuItem }) {
               {contactLink()}
             </li>
             <li>
-              <a href="https://login.patientfusion.com/?defaultTab=login&redirect=https%3A%2F%2Fmy.patientfusion.com" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none" aria-label="Patient Login" title="Patient Login">
-                Patient Login
-              </a>
+              <BookButton nav="true" />
             </li>
           </ul>
           <div className="lg:hidden z-50">
@@ -156,7 +150,7 @@ function Nav({ menuItem }) {
             } </div>
         </div>
       </div>
-    </Section>
+    </section>
   );
 }
 

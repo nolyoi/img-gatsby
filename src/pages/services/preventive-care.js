@@ -6,8 +6,7 @@ import sal from 'sal.js';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 import { Helmet } from 'react-helmet';
-import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import BookButton from '../../components/BookButton';
 
 function PreventiveCare() {
   React.useEffect(() => {
@@ -55,8 +54,8 @@ function PreventiveCare() {
       </section>
 
       <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0 mb-20">
-        <div className="container flex mx-auto ">
-          <section className="w-8/12 text-gray-600 body-font relative my-20" id="blog">
+        <div className="container flex flex-col md:flex-row mx-auto ">
+          <section className="w-full md:w-8/12 text-gray-600 body-font relative my-20" id="blog">
             <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Preventive Care</h2>
             <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-60 h-40 mx-auto rounded float-left mr-8 hidden"><img src="../teddy-bear.jpeg" className="absolute w-full " alt="avatar" /></div>
             <p className="mx-2 pb-4 text-lg">Preventive care helps detect or prevent serious diseases and medical problems before they can become major. Annual check-ups, immunizations, and flu shots, as well as certain tests and screenings, are a few examples of preventive care. This may also be called routine care.</p>
@@ -75,10 +74,10 @@ function PreventiveCare() {
               <li>Annual Wellness Visits</li>
               <li>And more!</li>
             </ul>
-            <p className="mx-2 mt-8 pb-4 text-2xl text-center transform -rotate-1"><Link to="/contact-us" className="inline-flex items-center mt-8 items-center justify-center w-50 h-10 px-8 font-semibold tracking-wide text-white transition duration-200 rounded shadow-lg bg-green-500 hover:bg-green-600 focus:shadow-outline focus:outline-none py-8"><FontAwesomeIcon icon={faCalendarAlt} size="lg" className="mr-4" /> <span className="mt-1">Book Now!</span></Link></p>
+            <BookButton />
           </section>
 
-          <section className="w-4/12 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">
+          <section className="w-full md:w-4/12 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">
             <div className="mb-4">
               <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8"></h2>
             </div>

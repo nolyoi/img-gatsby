@@ -68,9 +68,7 @@ const SinglePost = ({ data }) => {
                 </div>
 
                <div className="mb-20 mx-4" key={frontmatter.id}>
-                <div className="h-96 bg-gray-800 bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: frontmatter.frontmatter.lead_image?.replace("/static", ""), backgroundPosition: 'center' }}>
-                  <img className="rounded scale-50 object-cover object-top" src={frontmatter.frontmatter.lead_image?.replace("/static", "")} />
-                </div>
+                <div className="h-96 bg-gray-8 hover:bg-blend-overlay rounded-lg" style={{ backgroundImage: `url(${frontmatter.frontmatter.lead_image?.replace("/static", "")})`, backgroundPosition: 'center', backgroundSize: 'cover'  }} />
 
                 <div className="mx-2 mt-10">
                   <div dangerouslySetInnerHTML={{ __html: frontmatter.html }} />
@@ -91,7 +89,8 @@ const SinglePost = ({ data }) => {
 }
 
 export const query = graphql`
-query  ($id: String) { markdownRemark(id: {eq: $id}) {
+query  ($id: String) {
+   markdownRemark(id: {eq: $id}) {
       html
       frontmatter {
         lead_image

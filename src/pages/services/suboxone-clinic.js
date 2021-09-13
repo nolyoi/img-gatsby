@@ -7,6 +7,7 @@ import Footer from '../../components/Footer';
 import { Helmet } from 'react-helmet';
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import BookButton from '../../components/BookButton';
 
 function Clinic() {
   React.useEffect(() => {
@@ -54,17 +55,16 @@ function Clinic() {
       </section>
 
       <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0 mb-20 flex">
-        <div className="container flex mx-auto">
-          <section className="w-8/12 text-gray-600 body-font my-20" id="blog">
+        <div className="container flex flex-col md:flex-row mx-auto ">
+          <section className="w-full md:w-8/12 text-gray-600 body-font relative my-20" id="blog">
             <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Suboxone Clinic</h2>
-
             <p className="mx-2 pb-4 text-lg">If you or a loved one are suffering from drug addiction or alcohol addiction, call or chat with us to schedule an appointment with our outpatient Merrillville, IN addiction treatment center today. We offer telehealth addiction treatment as well as in-person clinic visits.</p>
             <p className="mx-2 pb-4 text-lg">Our approach is evidence based and we can get you started on drug rehab medication-assisted treatment (MAT) program immediately. </p>
             <p className="mx-2 pb-4 text-lg"> Our opioid and alcohol addiction treatment programs include the use of buprenorphine (such as Suboxone) or naltrexone (Vivitrol) as part of an individualized treatment plan led by our trained medical staff. Our patients are treated with dignity, compassion and respect. We accept Medicare, Medicaid, most insurance, and cash payments.</p>
-            <p className="mx-2 mt-8 pb-4 text-2xl text-center transform -rotate-1"><Link to="/contact-us" className="inline-flex items-center mt-8 items-center justify-center w-50 h-10 px-8 font-semibold tracking-wide text-white transition duration-200 rounded shadow-lg bg-green-500 hover:bg-green-600 focus:shadow-outline focus:outline-none py-8"><FontAwesomeIcon icon={faCalendarAlt} size="lg" className="mr-4" /> <span className="mt-1">Book Now!</span></Link></p>
+            <BookButton />
           </section>
 
-          <section className="w-4/12 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">
+          <section className="w-full md:w-4/12 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">
             <div className="mb-4">
               <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8"></h2>
             </div>

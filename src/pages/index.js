@@ -39,7 +39,7 @@ function Index() {
     frontmatter.push(post);
   });
 
-  const metaDesc = `IMG has been serving Northwest Indiana for ${(new Date().getFullYear() - 1987) + "+"} years. We provide pediatric, family, geriatric, and substance abuse care.`
+  const metaDesc = `IMG has been serving Northwest Indiana for ${(new Date().getFullYear() - 1987) + "+"} years. We provide pediatric, family, geriatric, suboxone treatment in Northwest Indiana.`
 
   return (
     <div>
@@ -67,7 +67,7 @@ function Index() {
       <Nav menuItem="index" />
       <Hero />
 
-      <section className="flex flex-col m-auto h-screen lg:h-screen sm:h-full my-24 sm:mx-24">
+      <section className="flex flex-col m-auto h-screen lg:h-screen sm:h-full mb-24 sm:mx-24">
         <div className="flex flex-wrap content-center container sm:h-full px-12 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
           <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
             <div>
@@ -124,7 +124,7 @@ function Index() {
         </div>
       </section>
 
-      <section className="flex text-gray-700 h-screen lg:h-screen sm:h-full sm:my-24 sm:pt-12">
+      <section className="flex text-gray-700 h-screen lg:h-screen sm:h-full sm:my-24 sm:pt-12 sm:mx-24">
         <div className="m-auto">
           <div className="flex flex-col items-center px-5 pt-8">
             <div className="flex flex-col w-full mb-8 text-left lg:text-center">
@@ -211,7 +211,7 @@ function Index() {
         </div>
       </section>
 
-      <section className="flex flex-col text-gray-700 h-screen lg:h-screen sm:h-full sm:mt-24 sm:pt-12 overflow-hidden">
+      <section className="flex flex-col text-gray-700 h-screen lg:h-screen sm:h-full my-24 sm:pt-12 md:mx-0 mx-24">
         <div className="mx-auto text-center"><h1 data-sal="slide-up"
           data-sal-delay="200"
           data-sal-duration="1500"
@@ -226,13 +226,13 @@ function Index() {
           <div data-sal="slide-right"
             data-sal-delay="400"
             data-sal-duration="1500"
-            data-sal-easing="ease-out-quint"  className="my-auto col-span-2 col-start-2 mt-20 mx-auto text-center">
+            data-sal-easing="ease-out-quint"  className="my-auto md:col-span-2 col-span-12 md:col-start-2 mt-20 mx-auto text-center">
             <img src="../blonde-lady.jpeg" className="rounded-full object-cover w-44 h-44 mt-6 ml-6 m-auto" />
           </div>
           <div data-sal="slide-left"
             data-sal-delay="400"
             data-sal-duration="1500"
-            data-sal-easing="ease-out-quint" className="col-span-8 mt-20 rounded-2xl bg-gray-50 w-full h-2/3 py-12 rounded-xl overflow-hidden" style={{ backgroundImage: "url('../quotation-mark3.png')", backgroundSize: '30%', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }}>
+            data-sal-easing="ease-out-quint" className="md:col-span-8 col-span-12 mt-20 rounded-2xl bg-gray-50 w-full h-2/3 py-12 rounded-xl overflow-hidden" style={{ backgroundImage: "url('../quotation-mark3.png')", backgroundSize: '30%', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }}>
 
             <div className=" w-full px-5 mx-auto lg:px-24">
 
@@ -245,7 +245,10 @@ function Index() {
             </div>
           </div>
         </div>
+
+        
       </section>
+      
       <Footer />
     </div>
   );

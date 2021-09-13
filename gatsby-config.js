@@ -36,7 +36,7 @@ module.exports = {
       //       }
       //     }
       //   }`,
-        
+
       //   serialize: ({ site, allSitePage, allMarkdownRemark }) => {
       //     let pages = []
       //     allSitePage.edges.map(edge => {
@@ -69,7 +69,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `testimonials`,
-        path: `${__dirname}/src/content/testimonials`,
+        path: `${__dirname}/src/content`,
       },
     },
     {
