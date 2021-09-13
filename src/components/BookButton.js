@@ -26,9 +26,9 @@ function BookButton({ nav }) {
       {showModal ? (
         <div>
           <div
-            className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none w-11/12"
+            className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
           >
-            <div className="relative w-full my-8 mx-auto max-w-3xl">
+            <div className="relative w-auto my-8 mx-auto max-w-3xl">
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 <div className="flex items-start justify-between p-5 border-b border-dashed border-gray-300 rounded-t align-middle">
                   <h3 className="text-3xl font-semibold mt-1 text-gray-600">
@@ -48,7 +48,7 @@ function BookButton({ nav }) {
                   <span className="inline-block py-4 px-8 text-gray-500 text-lg text-center">
                     <p className="mb-4 mt-2">New patients can click the button below to fill out the new patient form. This will help speed up your visit! You can then call and set up an appointment.</p>
                     <p className="mb-4 mt-2">Current patients are able to book through Practice Fusion.</p>
-                    <div className="flex flex-row justify-items-center justify-center text-center mt-8 mb-4"> 
+                    <div className="flex flex-col md:flex-row justify-items-center justify-center text-center mt-8 mb-4"> 
                       <a href="https://form.jotform.com/212516599423056" target="blank" rel="noreferrer" className="mr-4 inline-flex text-xl items-center items-center justify-center w-50 h-10 px-8 font-semibold tracking-wide text-white transition duration-200 rounded-xl shadow-lg bg-indigo-600 hover:bg-indigo-700 focus:shadow-outline focus:outline-none py-8"><FontAwesomeIcon icon={faPlusSquare} size="lg" className="mr-4" /> <span className="mt-1">New Patient</span></a>
                       <p className="my-auto mr-4">
                         or
