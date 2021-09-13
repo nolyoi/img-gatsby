@@ -153,15 +153,24 @@ function Hero() {
       </div> */}
 
 <div className="container flex flex-col-reverse md:flex-col mx-auto px-4 mb-24 md:mt-24 mx-auto space-y-6 lg:h-128 lg:py-24 lg:flex-row lg:items-center lg:space-x-6 mt-10">
-            <div data-sal="slide-right"
+            <div className="w-full lg:w-1/2 mt-10 lg:mt-0">
+                <div className="lg:max-w-lg">
+                    <h1 data-sal="slide-right"
                                 data-sal-delay="300"
                                 data-sal-duration="1500"
-                                data-sal-easing="ease-out-quint" className="w-full lg:w-1/2 mt-10 lg:mt-0">
-                <div className="lg:max-w-lg">
-                    <h1 className="text-2xl font-medium tracking-wide text-gray-800 dark:text-white lg:text-4xl">Schedule your next doctor appointment today</h1>
-                    <p className="mt-2 text-gray-600 dark:text-gray-300">Being able to care for patients at all stages of life allows us to focus individually on the patient.</p>
-                    <p className="mt-2 text-gray-600 dark:text-gray-300">We accept Medicare, Medicaid, most insurance, and cash payments.</p>
-                    <div className="grid gap-6 mt-8 sm:grid-cols-2">
+                                data-sal-easing="ease-out-quint" className="text-2xl font-medium tracking-wide text-gray-800 dark:text-white lg:text-4xl">Schedule your next doctor appointment today</h1>
+                    <p data-sal="slide-right"
+                                data-sal-delay="300"
+                                data-sal-duration="1500"
+                                data-sal-easing="ease-out-quint" className="mt-2 text-gray-600 dark:text-gray-300">Being able to care for patients at all stages of life allows us to focus individually on the patient.</p>
+                    <p data-sal="slide-right"
+                                data-sal-delay="300"
+                                data-sal-duration="1500"
+                                data-sal-easing="ease-out-quint" className="mt-2 text-gray-600 dark:text-gray-300">We accept Medicare, Medicaid, most insurance, and cash payments.</p>
+                    <div data-sal="slide-right"
+                                data-sal-delay="300"
+                                data-sal-duration="1500"
+                                data-sal-easing="ease-out-quint" className="grid gap-6 mt-8 sm:grid-cols-2">
                         <div className="flex items-center space-x-6 text-gray-800 dark:text-gray-200">
                             <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
