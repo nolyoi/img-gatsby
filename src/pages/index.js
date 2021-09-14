@@ -70,6 +70,48 @@ function Index() {
       <section className="flex flex-col m-auto h-screen lg:h-screen sm:h-full mb-24 sm:mx-24">
         <div className="flex flex-wrap content-center container sm:h-full px-12 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
           <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
+            
+            <div className="order-2 lg:order-1 flex flex-col justify-center">
+              <div className="max-w-full mb-6 mt-6 lg:mt-0">
+                <h2 data-sal="slide-right"
+                  data-sal-delay="300"
+                  data-sal-duration="1500"
+                  data-sal-easing="ease-out-quint" className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                  Continuity of Care
+                </h2>
+                <p data-sal="slide-right"
+                  data-sal-delay="300"
+                  data-sal-duration="1500"
+                  data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg">
+                  Being able to care for patients at all stages of life allows us to focus more individually on the patient. From pediatrics, to general/family, geriatrics, substance abuse, and more.
+                </p>
+                <p data-sal="slide-right"
+                  data-sal-delay="300"
+                  data-sal-duration="1500"
+                  data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg mt-4">
+                  We accept Medicare, Medicaid, most insurances, and cash payments.
+                </p>
+                <div data-sal="slide-up"
+                data-sal-delay="400"
+                data-sal-duration="2000"
+                data-sal-easing="ease-out-quint" className="text-center">
+                  <Link to="/services" className="inline-flex items-center justify-center mt-8 w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none">View our services</Link>
+                </div>
+              </div>
+              </div>
+            <div className="order-1 lg:order-2">
+              <img data-sal="slide-up"
+                data-sal-delay="200"
+                data-sal-duration="2000"
+                data-sal-easing="ease-out-quint" className="object-contain w-full h-56 rounded sm:h-full lg:pl-8" src="./continuity2.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="flex flex-col m-auto h-screen lg:h-screen sm:h-full mb-24 sm:mx-24">
+        <div className="flex flex-wrap content-center container sm:h-full px-12 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
+          <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
             <div>
               <img data-sal="slide-up"
                 data-sal-delay="200"
@@ -119,48 +161,6 @@ function Index() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="flex flex-col m-auto h-screen lg:h-screen sm:h-full mb-24 sm:mx-24">
-        <div className="flex flex-wrap content-center container sm:h-full px-12 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
-          <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
-            
-            <div className="order-2 lg:order-1 flex flex-col justify-center">
-              <div className="max-w-full mb-6 mt-6 lg:mt-0">
-                <h2 data-sal="slide-right"
-                  data-sal-delay="300"
-                  data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                  Continuity of Care
-                </h2>
-                <p data-sal="slide-right"
-                  data-sal-delay="300"
-                  data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg">
-                  Being able to care for patients at all stages of life allows us to focus more individually on the patient. From pediatrics, to general/family, geriatrics, substance abuse, and more.
-                </p>
-                <p data-sal="slide-right"
-                  data-sal-delay="300"
-                  data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg mt-4">
-                  We accept Medicare, Medicaid, most insurances, and cash payments.
-                </p>
-                <div data-sal="slide-up"
-                data-sal-delay="400"
-                data-sal-duration="2000"
-                data-sal-easing="ease-out-quint" className="text-center">
-                  <Link to="/services" className="inline-flex items-center justify-center mt-8 w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none">View our services</Link>
-                </div>
-              </div>
-              </div>
-            <div className="order-1 lg:order-2">
-              <img data-sal="slide-up"
-                data-sal-delay="200"
-                data-sal-duration="2000"
-                data-sal-easing="ease-out-quint" className="object-contain w-full h-56 rounded sm:h-full lg:pl-8" src="./continuity-labeled2.png" alt="" />
             </div>
           </div>
         </div>

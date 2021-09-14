@@ -162,7 +162,7 @@ function Hero() {
                     <p data-sal="slide-right"
                                 data-sal-delay="300"
                                 data-sal-duration="1500"
-                                data-sal-easing="ease-out-quint" className="mt-2 text-gray-600 dark:text-gray-300">Appointments can now be scheduled online to help speed up your first or next office visit!</p>
+                                data-sal-easing="ease-out-quint" className="mt-2 text-gray-600 dark:text-gray-300">Welcome to IMG! Appointments can now be scheduled online to help speed up your first or next office visit!</p>
                     <p data-sal="slide-right"
                                 data-sal-delay="300"
                                 data-sal-duration="1500"
@@ -230,7 +230,7 @@ function Hero() {
                 <img data-sal="slide-left"
                                 data-sal-delay="350"
                                 data-sal-duration="1500"
-                                data-sal-easing="ease-out-quint" className="object-cover object-center w-full h-96 max-w-2xl rounded-md" src="../dr-happy.jpeg" alt="glasses photo" />
+                                data-sal-easing="ease-out-quint" className="object-cover object-center w-full h-96 max-w-2xl rounded-md shadow-lg" src="../dr-happy.jpeg" alt="glasses photo" />
             </div>
         </div>
       {/*  */}
