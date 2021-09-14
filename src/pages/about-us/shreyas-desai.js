@@ -20,8 +20,8 @@ function ShreyasDesai() {
       <Nav menuItem="about-us" />
       <Helmet>
         <meta charSet="utf-8" />
-        ( <title>{`Internal Medicine and Geriatrics - About Shreyas Desai`}</title> )
-        <meta name="Description" content="About Shreyas Desai, Internal Medicine in Portage, Indiana." />
+        ( <title>{`Internal Medicine and Geriatrics - About Shreyas Desai, Internal Medicine, Geriatrics, and Substance Abuse Doctor in Portage, Indiana.`}</title> )
+        <meta name="Description" content="About Shreyas Desai. Internal Medicine, Geriatrics, and Substance Abuse Doctor in Portage, Indiana." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@600&display=swap" rel="stylesheet" />

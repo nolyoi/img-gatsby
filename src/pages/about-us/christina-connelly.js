@@ -20,7 +20,7 @@ function ChristinaConnelly() {
       <Nav menuItem="about-us" />
       <Helmet>
         <meta charSet="utf-8" />
-        ( <title>{`Internal Medicine and Geriatrics - About Christina Connelly`}</title> )
+        ( <title>{`Internal Medicine and Geriatrics - About Christina Connelly, Nurse Practitioner in Portage, Indiana.`}</title> )
         <meta name="Description" content="About Christina Connelly, Nurse Practitioner in Portage, Indiana." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

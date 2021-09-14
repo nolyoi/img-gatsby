@@ -20,8 +20,8 @@ function HavishSarma() {
       <Nav menuItem="about-us" />
       <Helmet>
         <meta charSet="utf-8" />
-        ( <title>{`Internal Medicine and Geriatrics - About Havish Sarma`}</title> )
-        <meta name="Description" content="About Harvish Sarma, Internal Medicine in Portage, Indiana." />
+        ( <title>{`Internal Medicine and Geriatrics - About Havish Sarma, Internal Medicine and Substance Abuse Doctor in Portage, Indiana`}</title> )
+        <meta name="Description" content="About Harvish Sarma. Internal Medicine and Substance Abuse Doctor in Portage, Indiana." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@600&display=swap" rel="stylesheet" />
