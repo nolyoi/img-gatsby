@@ -156,16 +156,16 @@ function AboutUs() {
                                 data-sal-delay="350"
                                 data-sal-duration="1500"
                                 data-sal-easing="ease-out-quint" className="w-full max-w-xs text-center">
-                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><button onClick={() => setShowChristina(true)} className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("../../christina.jpeg")' }} alt="avatar"></button></div>
+                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><Link to="/about-us/christina-connelly" className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("../../christina.jpeg")' }} alt="avatar"></Link></div>
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Christina Connelly</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Nurse Practitioner</p>
-                                    <button onClick={() => setShowChristina(true)} className="text-indigo-500 inline-flex items-center">Learn More
+                                    <Link to="/about-us/christina-connelly" className="text-indigo-500 inline-flex items-center">Learn More
                                         <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M5 12h14"></path>
                                             <path d="M12 5l7 7-7 7"></path>
                                         </svg>
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
 
