@@ -70,7 +70,7 @@ function ChristinaConnelly() {
             <div className="pl-4 text-white">
               <div className="rounded-xl px-6 py-6 bg-blue-50 drop-shadow-lg text-gray-500">
                 {/* <h4 className="mb-4 text-xl font-bold tracking-wide">Address</h4> */}
-                <p className="mb-4 "><strong className="tracking-wide">Education</strong><br /> 
+                <p className="mb-2"><strong className="tracking-wide">Education</strong><br /> 
                   - Indiana University <br />
                   - Indiana Wesleyan University (Masters)
                 </p>
@@ -81,6 +81,12 @@ function ChristinaConnelly() {
                   - St. Mary Hospital<br />
                   - Pinnacle Hospital
                 </p> */}
+              </div>
+              <div className="rounded-xl px-6 py-6 bg-yellow-50 drop-shadow-lg text-gray-500 mt-4">
+                <p className="mb-4 "><strong className="tracking-wide">Contact Information</strong><br /> 
+                    - <a href="tel:12197624423">(219) 762-4423</a> <br />
+                    - contact@imgportage.com
+                </p>
               </div>
             </div>
           </section>
