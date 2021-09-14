@@ -71,16 +71,16 @@ function ChristinaConnelly() {
               <div className="rounded-xl px-6 py-6 bg-blue-50 drop-shadow-lg text-gray-500">
                 {/* <h4 className="mb-4 text-xl font-bold tracking-wide">Address</h4> */}
                 <p className="mb-4 "><strong className="tracking-wide">Education</strong><br /> 
-                  - Mount Sinai University <br />
-                  - Northwestern University (Oncology)
+                  - Indiana University <br />
+                  - Indiana Wesleyan University (Masters)
                 </p>
-                <p>
+                {/* <p>
                   <strong className="tracking-wide">Experience</strong><br />
                   - 45 years<br />
                   - Methodist Hospital<br />
                   - St. Mary Hospital<br />
                   - Pinnacle Hospital
-                </p>
+                </p> */}
               </div>
             </div>
           </section>
