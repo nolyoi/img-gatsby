@@ -85,7 +85,7 @@ function ChristinaConnelly() {
               <div className="rounded-xl px-6 py-6 bg-yellow-50 drop-shadow-lg text-gray-500 mt-4">
                 <p className="mb-4 "><strong className="tracking-wide">Contact Information</strong><br /> 
                     - <a href="tel:12197624423">(219) 762-4423</a> <br />
-                    - contact@imgportage.com
+                    - <a href="mailto:contact@imgportage.com">contact@imgportage.com</a>
                 </p>
               </div>
             </div>
