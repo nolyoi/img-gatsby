@@ -58,7 +58,7 @@ function ShreyasDesai() {
       <div className="px-4 px-10 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0 mb-20">
         <div className="container px-20 flex flex-col md:flex-row mx-auto ">
           <section className="w-full md:w-4/12 text-gray-600 body-font relative mb-20 mt-10 px-8" id="blog-sidebar">
-          <h2 className="font-sans text-center text-xl font-bold tracking-tight text-gray-700 sm:text-3xl sm:leading-none mb-8">Shreyas Desai, M.D.</h2>
+            <h2 className="font-sans text-center text-xl font-bold tracking-tight text-gray-700 sm:text-3xl sm:leading-none mb-8">Shreyas Desai, M.D.</h2>
 
             <div className="pl-4">
               <img src="../../desai.jpeg" className="rounded-xl" />
@@ -70,7 +70,7 @@ function ShreyasDesai() {
             <div className="pl-4 text-white">
               <div className="rounded-xl px-6 py-6 bg-blue-50 drop-shadow-lg text-gray-500">
                 {/* <h4 className="mb-4 text-xl font-bold tracking-wide">Address</h4> */}
-                <p className="mb-4 "><strong className="tracking-wide">Education</strong><br /> 
+                <p className="mb-4 "><strong className="tracking-wide">Education</strong><br />
                   - Mount Sinai University <br />
                   - Northwestern University (Oncology)
                 </p>
@@ -83,9 +83,9 @@ function ShreyasDesai() {
                 </p>
               </div>
               <div className="rounded-xl px-6 py-6 bg-yellow-50 drop-shadow-lg text-gray-500 mt-4">
-                <p className="mb-4 "><strong className="tracking-wide">Contact Information</strong><br /> 
-                    - <a href="tel:12197624423">(219) 762-4423</a> <br />
-                    - <a href="mailto:contact@imgportage.com">contact@imgportage.com</a>
+                <p className="mb-4 "><strong className="tracking-wide">Contact Information</strong><br />
+                  - <a href="tel:12197624423" className="hover:text-gray-700">(219) 762-4423</a> <br />
+                  - <a href="mailto:contact@imgportage.com" className="hover:text-gray-700">contact@imgportage.com</a>
                 </p>
               </div>
             </div>
