@@ -19,7 +19,7 @@ function Clinic() {
       <Nav menuItem="services" />
       <Helmet>
         <meta charSet="utf-8" />
-        ( <title>{`Internal Medicine and Geriatrics - Suboxone Clinic`}</title> )
+        ( <title>{`Internal Medicine and Geriatrics - Suboxone Clinic located in Portage, Indiana.`}</title> )
         <meta name="Description" content="The IMG Suboxone Clinic provides maintenance treatment for substance abuse. " />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
