@@ -1,4 +1,4 @@
-const siteUrl = process.env.URL || `https://imgportage.com`
+const siteUrl = () => { return process.env.URL || `https://imgportage.com` }
 
 module.exports = {
   siteMetadata: {
@@ -12,51 +12,17 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-plugin-sitemap`,
-      // options: {
-      //   query: `{
-      //     site {
-      //       siteMetadata {
-      //         siteUrl
-      //       }
-      //     }
-      //     allSitePage {
-      //       edges {
-      //         node {
-      //           path
-      //         }
-      //       }
-      //     }
-      //     allMarkdownRemark {
-      //       edges {
-      //         node {
-      //           fields {
-      //             slug
-      //           }
-      //         }
-      //       }
-      //     }
-      //   }`,
-
-      //   serialize: ({ site, allSitePage, allMarkdownRemark }) => {
-      //     let pages = []
-      //     allSitePage.edges.map(edge => {
-      //       pages.push({
-      //         url: siteUrl+ "/" + edge.node.path,
-      //         changefreq: `daily`,
-      //         priority: 0.7,
-      //       })
-      //     })
-      //     allMarkdownRemark.edges.map(edge => {
-      //       pages.push({
-      //         url: `${siteUrl}/${edge.node.fields.slug
-      //           }`,
-      //         changefreq: `daily`,
-      //         priority: 0.7,
-      //       })
-      //     })
-      //     return pages
-      //   },
-      // },
+      options: {
+        query: `{
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+        }`,
+        resolveSiteUrl: siteUrl,
+       
+      },
     },
     {
       resolve: "gatsby-plugin-manifest",

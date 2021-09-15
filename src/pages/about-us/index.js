@@ -26,14 +26,14 @@ function AboutUs() {
                 <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@600&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
                 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-5NSD8J3W2V"></script>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-XFF5TPVP9Y"></script>
                 <script>
                     {`
                         window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments);}
                         gtag('js', new Date());
 
-                        gtag('config', 'G-5NSD8J3W2V');
+                        gtag('config', 'G-XFF5TPVP9Y');
                     `}
                 </script>
             </Helmet>

@@ -30,14 +30,24 @@ function ContactUs() {
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@600&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5NSD8J3W2V"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XFF5TPVP9Y"></script>
         <script>
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-5NSD8J3W2V');
+            gtag('config', 'G-XFF5TPVP9Y');
+          `}
+        </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-204995244-1"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-204995244-1');
           `}
         </script>
       </Helmet>
@@ -65,7 +75,7 @@ function ContactUs() {
           <div className="lg:w-5/12 md:w-full bg-white flex flex-col md:ml-auto w-full xs:px-12 sm:px-12 mt-20 mb-10 md:mt-10">
             <h2 className="mb-8 font sm:text-center-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none font-roboto md:text-center sm:w-full">Get in touch <span className="text-green-500 font-bold font-marker">today</span></h2>
             <h3 className="text-gray-900 text-2xl mb-8 font-medium title-font">By Telephone</h3>
-            <p className="mb-12 text-5xl text-center transform -rotate-3"> <a href="tel:12197624423" className="text-indigo-500 cursor-pointer hover:text-orange-500 font-marker">(219)762-4423</a></p>
+            <p className="mb-12 text-5xl text-center"> <a href="tel:12197624423" className="text-indigo-500 cursor-pointer hover:text-orange-500 font-marker">(219)762-4423</a></p>
 
             <h3 className="text-gray-900 text-2xl mb-4 font-medium title-font">By E-mail</h3>
             <p className="leading-relaxed mb-5 text-gray-600 text-md">Use the form below to reach contact us via e-mail. If you need a quick response, please call us</p>

@@ -25,12 +25,9 @@ const LatestPosts = () => {
     latestPosts.push(post);
   });
 
-  console.log(latestPosts);
-
   return (
     <li>
       {latestPosts.map(post => {
-        console.log(post.node.frontmatter.title);
         return <Link to={post.node.frontmatter.slug}>
           {post.node.frontmatter.title}
         </Link>;

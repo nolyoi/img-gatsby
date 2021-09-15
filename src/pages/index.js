@@ -52,14 +52,24 @@ function Index() {
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mali:wght@600&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5NSD8J3W2V"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XFF5TPVP9Y"></script>
         <script>
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-5NSD8J3W2V');
+            gtag('config', 'G-XFF5TPVP9Y');
+          `}
+        </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-204995244-1"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-204995244-1');
           `}
         </script>
       </Helmet>
@@ -70,7 +80,7 @@ function Index() {
       <section className="flex flex-col m-auto h-screen lg:h-screen sm:h-full mb-24 sm:mx-24">
         <div className="flex flex-wrap content-center container sm:h-full px-12 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
           <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
-            
+
             <div className="order-2 lg:order-1 flex flex-col justify-center">
               <div className="max-w-full mb-6 mt-6 lg:mt-0">
                 <h2 data-sal="slide-right"
@@ -92,13 +102,13 @@ function Index() {
                   We accept Medicare, Medicaid, most insurances, and cash payments.
                 </p>
                 <div data-sal="slide-up"
-                data-sal-delay="400"
-                data-sal-duration="2000"
-                data-sal-easing="ease-out-quint" className="text-center">
+                  data-sal-delay="400"
+                  data-sal-duration="2000"
+                  data-sal-easing="ease-out-quint" className="text-center">
                   <Link to="/services" className="inline-flex items-center justify-center mt-8 w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none">View our services</Link>
                 </div>
               </div>
-              </div>
+            </div>
             <div className="order-1 lg:order-2">
               <img data-sal="slide-up"
                 data-sal-delay="200"
@@ -187,57 +197,57 @@ function Index() {
           <div className="container items-center px-5 pb-8 mb-10 mt-2 mx-auto lg:px-24 max-h-full">
             <div className="flex flex-wrap mb-12 text-left">
               <div className="w-full mx-auto lg:w-1/3">
-              <Link to="/services/primary-care">
-                <div data-sal="slide-up"
-                  data-sal-delay="300"
-                  data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="p-6">
-                  <div className="inline-flex items-center justify-center flex-shrink-0 w-full h-50 mx-auto mb-5 text-black bg-gray-100 rounded-full">
-                    <img src="../heart-bg.jpeg" />
+                <Link to="/services/primary-care">
+                  <div data-sal="slide-up"
+                    data-sal-delay="300"
+                    data-sal-duration="1500"
+                    data-sal-easing="ease-out-quint" className="p-6">
+                    <div className="inline-flex items-center justify-center flex-shrink-0 w-full h-50 mx-auto mb-5 text-black bg-gray-100 rounded-full">
+                      <img src="../heart-bg.jpeg" />
+                    </div>
+                    <h1 className="text-center mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
+                      Family & General Practice
+                    </h1>
+                    <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 ">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.
+                    </p>
                   </div>
-                  <h1 className="text-center mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
-                    Family & General Practice
-                  </h1>
-                  <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 ">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.
-                  </p>
-                </div>
                 </Link>
               </div>
 
               <div className="w-full mx-auto lg:w-1/3">
-              <Link to="/services">
-                <div data-sal="slide-up"
-                  data-sal-delay="400"
-                  data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="p-6">
-                  <div className="inline-flex items-center justify-center flex-shrink-0 w-full h-50 mx-auto mb-5 text-black bg-gray-100 rounded-full">
-                    <img src="../pediatrics2.jpeg" />
+                <Link to="/services">
+                  <div data-sal="slide-up"
+                    data-sal-delay="400"
+                    data-sal-duration="1500"
+                    data-sal-easing="ease-out-quint" className="p-6">
+                    <div className="inline-flex items-center justify-center flex-shrink-0 w-full h-50 mx-auto mb-5 text-black bg-gray-100 rounded-full">
+                      <img src="../pediatrics2.jpeg" />
+                    </div>
+                    <h1 className="text-center mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
+                      Pediatrics & Geriatrics
+                    </h1>
+                    <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 ">We provide services for the physical, emotional and social well-being of children and elderly patients with medical and psychosocial problems.
+                    </p>
                   </div>
-                  <h1 className="text-center mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
-                    Pediatrics & Geriatrics
-                  </h1>
-                  <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 ">We provide services for the physical, emotional and social well-being of children and elderly patients with medical and psychosocial problems.
-                  </p>
-                </div>
                 </Link>
               </div>
 
               <div className="w-full mx-auto lg:w-1/3">
-              <Link to="/services/suboxone-clinic">
-                <div data-sal="slide-up"
-                  data-sal-delay="350"
-                  data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="p-6">
-                  <div className="inline-flex items-center justify-center flex-shrink-0 w-full h-50 mx-auto mb-5 text-black bg-gray-100 rounded-full">
-                    <img src="../addiction.jpeg" />
+                <Link to="/services/suboxone-clinic">
+                  <div data-sal="slide-up"
+                    data-sal-delay="350"
+                    data-sal-duration="1500"
+                    data-sal-easing="ease-out-quint" className="p-6">
+                    <div className="inline-flex items-center justify-center flex-shrink-0 w-full h-50 mx-auto mb-5 text-black bg-gray-100 rounded-full">
+                      <img src="../addiction.jpeg" />
+                    </div>
+                    <h1 className="text-center mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
+                      Substance Abuse
+                    </h1>
+                    <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 ">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.
+                    </p>
                   </div>
-                  <h1 className="text-center mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-black lg:text-3xl title-font">
-                    Substance Abuse
-                  </h1>
-                  <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 ">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.
-                  </p>
-                </div>
-              </Link>
+                </Link>
               </div>
 
               <div className="w-full justify-center float-right mt-10 lg:pr-6 md:pr-6 place-items-center">
@@ -268,7 +278,7 @@ function Index() {
           <div data-sal="slide-right"
             data-sal-delay="400"
             data-sal-duration="1500"
-            data-sal-easing="ease-out-quint"  className="my-auto md:col-span-2 col-span-12 md:col-start-2 mt-20 mx-auto text-center">
+            data-sal-easing="ease-out-quint" className="my-auto md:col-span-2 col-span-12 md:col-start-2 mt-20 mx-auto text-center">
             <img src="../blonde-lady.jpeg" className="rounded-full object-cover w-44 h-44 mt-6 ml-6 m-auto" />
           </div>
           <div data-sal="slide-left"
@@ -288,9 +298,9 @@ function Index() {
           </div>
         </div>
 
-        
+
       </section>
-      
+
       <Footer />
     </div>
   );
