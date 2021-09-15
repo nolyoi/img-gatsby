@@ -45,7 +45,7 @@ function Index() {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        ( <title>{`Internal Medicine and Geriatric - Serving Northwest Indiana for ${(new Date().getFullYear() - 1987) + "+"} years.`}</title> )
+        ( <title>{`Internal Medicine and Geriatric - Pediatric, family, geriatric, and substance abuse doctors in Portage, Indiana.`}</title> )
         <meta name="Description" content={metaDesc} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
