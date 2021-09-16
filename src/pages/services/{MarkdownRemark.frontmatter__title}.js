@@ -10,27 +10,10 @@ import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import BookButton from '../../components/BookButton';
 
-function PrimaryCare() {
+function SinglePage({data}) {
   React.useEffect(() => {
     sal();
   }, []);
-
-  const query = useStaticQuery(graphql`
-    query {
-  allMarkdownRemark(filter: {frontmatter: {published_bool: {eq: true}}}) {
-    edges {
-      node {
-        html
-        frontmatter {
-          lead_image
-          published_bool
-          title
-        }
-      }
-    }
-  }
-}
-`);
 
 let frontmatter = query.allMarkdownRemark.edges[0]
 
@@ -144,5 +127,22 @@ let frontmatter = query.allMarkdownRemark.edges[0]
     </div>
   );
 }
+
+export const query = graphql`
+query  ($title: String) {
+  allMarkdownRemark(filter: {frontmatter: {title: {eq: $title}}}) {
+    edges {
+      node {
+        html
+        frontmatter {
+          lead_image
+          published_bool
+          title
+        }
+      }
+    }
+  }
+}
+`;
 
 export default PrimaryCare;

@@ -2,7 +2,7 @@
 published_: true
 title: Primary Care
 lead_image: uploads/happy-people.png
-published_bool: false
+published_bool: true
 category: ''
 
 ---

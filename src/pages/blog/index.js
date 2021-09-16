@@ -14,22 +14,19 @@ const BlogIndexPage = ({ data }) => {
 
 
   const query = useStaticQuery(graphql`
-    query { allMarkdownRemark(sort: {fields: frontmatter___published, order: DESC}, filter: {frontmatter: {author: {eq: null}}}) {
-            edges {
-              node {
-                id
-                html
-                frontmatter {
-                  published
-                  title
-                  slug
-                  lead_image
-                }
-                excerpt
-              }
-            }
-          }
-        }
+    query MyQuery {
+  allMarkdownRemark(filter: {frontmatter: {published_bool: {eq: true}}}) {
+    nodes {
+      frontmatter {
+        title
+        lead_image
+        published_
+      }
+      html
+    }
+  }
+}
+
     `);
 
   let frontmatter = [];
