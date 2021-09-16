@@ -29,3 +29,10 @@ fields:
     time_format: 
     display_utc: false
     export_format: YYYY-MM-DD h:mm A
+- name: category
+  type: text
+  config:
+    required: false
+  label: Category
+  hidden: true
+  default: blog
