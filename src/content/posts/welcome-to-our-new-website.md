@@ -3,6 +3,7 @@ title: Welcome to Our New Website!
 slug: welcome-to-our-new-website
 published: 2021-09-04 11:00 AM
 lead_image: "/static/uploads/computer.jpeg"
+category: "blog"
 
 ---
 Welcome to the new IMG website! We have been working on getting it up and running for the past month and it is a great improvement over the previous.
