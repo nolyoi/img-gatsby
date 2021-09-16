@@ -15,22 +15,23 @@ const BlogIndexPage = ({ data }) => {
 
   const query = useStaticQuery(graphql`
     query MyQuery {
-  allMarkdownRemark(filter: {frontmatter: {published_bool: {eq: true}}}) {
+  allMarkdownRemark(filter: {frontmatter: {category: {eq: "blog"}}}) {
     nodes {
       frontmatter {
         title
         lead_image
-        published_
+        published
+        category
       }
+      id
       html
     }
   }
 }
-
-    `);
+`);
 
   let frontmatter = [];
-  query.allMarkdownRemark.edges.forEach(post => {
+  query.allMarkdownRemark.nodes.map(post => {
     frontmatter.push(post);
   });
 
@@ -93,17 +94,17 @@ const BlogIndexPage = ({ data }) => {
             <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-4xl sm:leading-none mb-14">Latest from our blog...</h2>
 
             {frontmatter.map(element => {
-              return <div className="mb-20 mx-4" key={element.node.id}>
-                <Link to={element.node.frontmatter.slug}>
-                  <div className="h-96 bg-gray-800 bg-blend-overlay bg-opacity-20 rounded-lg" style={{ backgroundImage: `url(${element.node.frontmatter.lead_image?.replace("/static", "")})`, backgroundPosition: 'center', backgroundSize: 'cover' }} />
+              return <div className="mb-20 mx-4" key={element.id}>
+                <Link to={element.frontmatter.slug}>
+                  <div className="h-96 bg-gray-800 bg-blend-overlay bg-opacity-20 rounded-lg" style={{ backgroundImage: `url(${element.frontmatter.lead_image?.replace("/static", "")})`, backgroundPosition: 'center', backgroundSize: 'cover' }} />
                 </Link>
                 <div className="mb-4 mt-8">
-                  <h2 className="mb-0 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-gray-800 hover:text-indigo-600"><Link to={element.node.frontmatter.slug} >{element.node.frontmatter.title}</Link></h2>
-                  <span className="text-sm ml-2"><strong>by</strong> IMG Team <strong>on</strong> {element.node.frontmatter.published}</span>
+                  <h2 className="mb-0 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-gray-800 hover:text-indigo-600"><Link to={element.frontmatter.slug} >{element.frontmatter.title}</Link></h2>
+                  <span className="text-sm ml-2"><strong>by</strong> IMG Team <strong>on</strong> {element.frontmatter.published}</span>
                 </div>
 
                 <div className="mx-2">
-                  <div dangerouslySetInnerHTML={{ __html: element.node.html }} />
+                  <div dangerouslySetInnerHTML={{ __html: element.html }} />
                 </div>
               </div>;
             })}
