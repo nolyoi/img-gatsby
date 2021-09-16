@@ -1,7 +1,5 @@
 // Flyers
 // Add office, hospital, nursing home, home to cont of care.
-
-
 import * as React from 'react';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
@@ -175,26 +173,26 @@ function Index() {
                 <h2 data-sal="slide-right"
                   data-sal-delay="300"
                   data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                  Continuity of Care
+                  data-sal-easing="ease-out-quint" className="mb-4 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                  Continuity of <span className="text-red-600">Care</span>
                 </h2>
                 <p data-sal="slide-right"
                   data-sal-delay="300"
                   data-sal-duration="1500"
                   data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg">
-                  Being able to care for patients at all stages of life allows us to focus more individually on the patient. From pediatrics, to general/family, geriatrics, substance abuse, and more.
+                  Being able to care for patients at all stages of life allows us to focus more individually on the patient. From prenatal and pediatrics to general/family and geriatrics.
                 </p>
                 <p data-sal="slide-right"
                   data-sal-delay="300"
                   data-sal-duration="1500"
                   data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg mt-4">
-                  We accept Medicare, Medicaid, most insurances, and cash payments.
+                  Whether it's in our office, at the hospital, nursing home, or your own home, our doctors will be there.
                 </p>
                 <div data-sal="slide-up"
                   data-sal-delay="400"
                   data-sal-duration="2000"
                   data-sal-easing="ease-out-quint" className="text-center">
-                  <Link to="/services" className="inline-flex items-center justify-center mt-8 w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none">View our services</Link>
+                  <Link to="/services" className="inline-flex items-center justify-center mt-4 w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none">View our services</Link>
                 </div>
               </div>
             </div>
