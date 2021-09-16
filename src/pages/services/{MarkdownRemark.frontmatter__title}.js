@@ -137,6 +137,7 @@ query  ($title: String) {
         frontmatter {
           lead_image
           published_bool
+          slug
           title
         }
       }
@@ -145,4 +146,4 @@ query  ($title: String) {
 }
 `;
 
-export default PrimaryCare;
+export default SinglePage;

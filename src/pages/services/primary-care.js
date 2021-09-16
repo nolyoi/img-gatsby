@@ -1,7 +1,7 @@
 // Add cont of care
 
 import * as React from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
+import { Link } from 'gatsby';
 import sal from 'sal.js';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
@@ -14,25 +14,6 @@ function PrimaryCare() {
   React.useEffect(() => {
     sal();
   }, []);
-
-  const query = useStaticQuery(graphql`
-    query {
-  allMarkdownRemark(filter: {frontmatter: {published_bool: {eq: true}}}) {
-    edges {
-      node {
-        html
-        frontmatter {
-          lead_image
-          published_bool
-          title
-        }
-      }
-    }
-  }
-}
-`);
-
-let frontmatter = query.allMarkdownRemark.edges[0]
 
   return (
     <div>
@@ -88,11 +69,14 @@ let frontmatter = query.allMarkdownRemark.edges[0]
         <div className="container flex flex-col md:flex-row mx-auto ">
           <section className="w-full md:w-8/12 text-gray-600 body-font relative my-20" id="primary-care">
             <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Primary and Family Care</h2>
-            <div className="relative flex rounded-lg items-center justify-center overflow-hidden object-fit mx-auto h-96 mr-8 mb-8">
-            <div className="h-96 bg-gray-8 hover:bg-blend-overlay rounded-lg" style={{ backgroundImage: `url(${frontmatter.frontmatter.lead_image?.replace("/static", "")})`, backgroundPosition: 'center', backgroundSize: 'cover'  }} />
-              </div>
-            <div className="mx-2" dangerouslySetInnerHTML={{ __html: frontmatter.node.html }} />
-            <div className="mx-2 mt-6 pl-8 py-6 text-lg rounded-xl bg-gray-50">
+            <div className="relative flex rounded-lg items-center justify-center overflow-hidden object-fit mx-auto h-96 mr-8 mb-8"><img src="../../happy-people.jpeg" className="object-cover object-center w-full " alt="avatar" /></div>
+            <p className="mx-2 pb-4 text-lg">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.</p>
+            <p className="mx-2 pb-4 text-lg">For the best medical care in Portage, Indiana and the surrounding Northwest Indiana area, <Link to="/book-appointment/current-patient" className="text-indigo-600 hover:text-orange-600">schedule an appointment with us today</Link>. </p>
+            <p className="mx-2 pb-4 text-lg">We strive to stay up-to-date with new medical information regarding common health concerns. Our staff is committed to providing our patients with access to high quality care and ensuring a trusting relationship with them.</p>
+            <p className="mx-2 pb-4 text-lg"> At our practice we make sure that our patients get a detailed explanation of their current health condition in terms they understand. We know how important it is to stay healthy, both inside and out, and our team makes every effort to ensure you remain in peak physical health.</p>
+            <p className="mx-2 pb-4 text-lg">Internal Medicine & Geriatrics proudly offers pediatric, family, and adult medical services, focusing on Preventive and Primary Care health needs, including but not limited to:</p>
+
+            <div className="mx-2 pl-8 py-6 text-lg rounded-xl bg-gray-50">
               <img src="../../medical-cross.png" className="h-40 float-right mr-8 mt-8" />
               <ul className="list-inside list-disc">
                 <li>Nutrition Counseling</li>

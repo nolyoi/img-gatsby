@@ -9,11 +9,16 @@ import Nav from '../components/Nav';
 import { Helmet } from "react-helmet";
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import sal from 'sal.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInfo } from '@fortawesome/free-solid-svg-icons';
+import BookButton from '../components/BookButton';
 
 function Index() {
   React.useEffect(() => {
     sal();
   }, []);
+
+  const scrollDiv = React.useRef(null);
 
   const query = useStaticQuery(graphql`
   query { allMarkdownRemark(filter: {frontmatter: {author: {ne: null}}}) {
@@ -75,9 +80,93 @@ function Index() {
       </Helmet>
 
       <Nav menuItem="index" />
-      <Hero />
+      
+      <div className="container flex flex-col-reverse md:flex-col mx-auto px-4 mb-24 md:mt-24 mx-auto space-y-6 lg:h-128 lg:py-24 lg:flex-row lg:items-center lg:space-x-6 mt-10">
+            <div className="w-full lg:w-1/2 mt-10 lg:mt-0">
+                <div className="lg:max-w-lg">
+                    <h1 data-sal="slide-right"
+                                data-sal-delay="300"
+                                data-sal-duration="1500"
+                                data-sal-easing="ease-out-quint" className="text-2xl font-bold tracking-wide text-gray-800 dark:text-white lg:text-4xl">Schedule your next doctor appointment today</h1>
+                    <p data-sal="slide-right"
+                                data-sal-delay="300"
+                                data-sal-duration="1500"
+                                data-sal-easing="ease-out-quint" className="mt-2 text-gray-600 dark:text-gray-300">Welcome to IMG! Appointments can now be scheduled online to help speed up your first or next office visit!</p>
+                    <p data-sal="slide-right"
+                                data-sal-delay="300"
+                                data-sal-duration="1500"
+                                data-sal-easing="ease-out-quint" className="mt-2 text-gray-600 dark:text-gray-300">We accept Medicare, Medicaid, most insurance, and cash payments.</p>
+                    <div data-sal="slide-right"
+                                data-sal-delay="300"
+                                data-sal-duration="1500"
+                                data-sal-easing="ease-out-quint" className="grid gap-6 mt-8 sm:grid-cols-2">
+                        <div className="flex items-center space-x-6 text-gray-800 dark:text-gray-200">
+                            <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
 
-      <section className="flex flex-col m-auto h-screen lg:h-screen sm:h-full mb-24 sm:mx-24">
+                            <span>Prenatal</span>
+                        </div>
+
+                        <div className="flex items-center space-x-6 text-gray-800 dark:text-gray-200">
+                            <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+
+                            <span>Pediatrics</span>
+                        </div>
+
+                        <div className="flex items-center space-x-6 text-gray-800 dark:text-gray-200">
+                            <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+
+                            <span>Primary Care</span>
+                        </div>
+
+                        <div className="flex items-center space-x-6 text-gray-800 dark:text-gray-200">
+                            <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+
+                            <span>Geriatrics</span>
+                        </div>
+
+                        <div className="flex items-center space-x-6 text-gray-800 dark:text-gray-200">
+                            <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+
+                            <span>Preventive Care</span>
+                        </div>
+
+                        <div className="flex items-center space-x-6 text-gray-800 dark:text-gray-200">
+                            <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+
+                            <span>Substance Abuse</span>
+                        </div>
+                        <div className="col-span-2 text-center mt-6">
+                          <button
+          onClick={() => {
+            scrollDiv.current.scrollIntoView({ behavior: 'smooth' });
+          }} className="inline-flex mb-4 items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-gray-700 transition duration-200 rounded bg-gray-100 hover:bg-gray-200 focus:shadow-outline focus:outline-none" aria-label="Book Appointment" title="Book Appointment"><FontAwesomeIcon icon={faInfo} size="md" className="mr-2" /> <span className="mt-1">Learn More</span></button>
+                            <BookButton nav="true" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div className="flex items-center justify-center justify-items-center w-full bg-blend-overlay bg-white opacity-90 h-full mb-10 lg:mb-0 lg:w-1/2">
+                <img data-sal="slide-left"
+                                data-sal-delay="350"
+                                data-sal-duration="1500"
+                                data-sal-easing="ease-out-quint" className="object-cover object-center w-full h-96 max-w-2xl rounded-md shadow-lg" src="../dr-happy.jpeg" alt="glasses photo" />
+            </div>
+        </div>
+
+      <section ref={scrollDiv} className="flex flex-col m-auto h-screen lg:h-screen sm:h-full mb-24 sm:mx-24">
         <div className="flex flex-wrap content-center container sm:h-full px-12 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
           <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
 
