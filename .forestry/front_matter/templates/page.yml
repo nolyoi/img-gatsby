@@ -7,7 +7,7 @@ fields:
   config:
     required: true
   label: Title
-- name: published_
+- name: published_bool
   type: boolean
   label: Published?
   default: true
