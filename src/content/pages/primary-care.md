@@ -1,7 +1,7 @@
 ---
+published_: true
 title: Primary Care
 lead_image: uploads/happy-people.png
-published_: true
 
 ---
 We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.

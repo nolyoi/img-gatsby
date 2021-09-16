@@ -17,4 +17,4 @@ fields:
     maxSize: 64
   label: Lead Image
 pages:
-- pages/primary-care.md
+- src/content/pages/primary-care.md
