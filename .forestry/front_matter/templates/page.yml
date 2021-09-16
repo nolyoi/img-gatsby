@@ -16,5 +16,12 @@ fields:
   config:
     maxSize: 64
   label: Lead Image
+- name: category
+  type: text
+  config:
+    required: false
+  label: Category
+  hidden: true
+  default: page
 pages:
 - src/content/pages/primary-care.md
