@@ -5,7 +5,7 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: directory
-  path: pages
+  path: src/content/pages
   label: Pages
   create: documents
   match: "**/*"
