@@ -15,13 +15,14 @@ const BlogIndexPage = ({ data }) => {
 
   const query = useStaticQuery(graphql`
     query MyQuery {
-  allMarkdownRemark(filter: {frontmatter: {category: {eq: "blog"}}}) {
+      allMarkdownRemark(filter: {frontmatter: {category: {eq: "blog"}}}) {
     nodes {
       frontmatter {
         title
         lead_image
         published
-        category
+        author
+        slug
       }
       id
       html
