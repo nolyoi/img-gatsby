@@ -1,9 +1,10 @@
 ---
 published_: true
-title: Primary Care
+title: Primary and Family Care
 lead_image: uploads/happy-people.png
 published_bool: true
 category: ''
+slug: primary-and-family-care
 
 ---
 We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.
