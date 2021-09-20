@@ -130,10 +130,7 @@ const BlogIndexPage = ({ data }) => {
               </div>
               <div className="pl-12 text-lg">
                 <ul className="list-disc">
-                  <li><a href="#" className="hover:text-indigo-600">January</a></li>
-                  <li><a href="#" className="hover:text-indigo-600">February</a></li>
-                  <li><a href="#" className="hover:text-indigo-600">March</a></li>
-                  <li><a href="#" className="hover:text-indigo-600">April</a></li>
+                  <li><a href="#" className="hover:text-indigo-600">September</a></li>
                 </ul>
               </div>
             </div>

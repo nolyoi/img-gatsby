@@ -5,9 +5,7 @@ import { useStaticQuery } from "gatsby";
 
 const LatestPosts = () => {
   const query = useStaticQuery(graphql`
-    query latestPosts { allMarkdownRemark(
-    filter: {frontmatter: {author: {eq: null}}}
-    sort: {order: ASC, fields: frontmatter___published}
+    query latestPosts { allMarkdownRemark(filter: {frontmatter: {category: {eq: "blog"}}}
   ) {
     edges {
       node {
