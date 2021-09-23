@@ -53,7 +53,7 @@ function HavishSarma() {
         <div className="w-full h-1/2 bg-gray-900 bg-opacity-100 overflow-hidden text-center relative" style={{ backgroundImage: 'url(../prenatal3.jpeg)', backgroundSize: 'cover', backgroundPosition: '0% 45%' }}>
           <div className="container mx-auto my-auto pt-20 h-1/2">
             <div className="w-9/12 mx-auto text-gray-300 mt-0 my-40 items-center content-center content-center h-1/2">
-              <h1 className="mt-10 mb-4 pr-4 text-center font-sans text-4xl font-bold tracking-tight text-indigo-700 sm:text-4xl sm:leading-none"><span data-sal="fade"
+              <h1 className="mt-10 mb-4 pr-4 text-center font-sans text-4xl font-bold tracking-tight text-orange-700 sm:text-4xl sm:leading-none"><span data-sal="fade"
                 data-sal-delay="300"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint">IMG</span> <span data-sal="fade"
@@ -103,7 +103,7 @@ function HavishSarma() {
             <h2 className="font-sans text-xl font-semibold tracking-tight text-gray-700 sm:text-3xl sm:leading-none mb-4">About</h2>
 
             <p className="mb-4 mt-0">Dr. Sarma grew up in the Northwest Indiana region and has been practicing in the area for nearly a decade. He attended Loyola Univeristy for his undergraduate studies in pyscology.  Thereafter, he completed his medical school at LECOM in Bradington, Florida.  Upon completing his residency in Internal Medicine at Swedish Covenant Hospital on the north side of Chicago, he joined the practice.</p>
-            <p className="mb-4 mt-2">Dr. Sarma is interested in a wide array of internal medicine subspecialties including diabetes and hypertension.  He is also interested and enthused in geriatric health consultation.  Dr. Sarma is the medical director of two nursing homes and a hospice facility. He also consults depression and substance abuse disorder.</p>
+            <p className="mb-4 mt-2">Dr. Sarma is interested in a wide array of internal medicine subspecialties including diabetes and hypertension.  He is also interested and enthused in geriatric health consultation.  Dr. Sarma is the medical director of two nursing homes and a hospice facility. He also treats depression and substance abuse disorder.</p>
             <p className="mb-4 mt-2">He and his wife enjoying spending time with thier two young children. In addition, he is an avid sports and music fan and enjoys travel during his time away from work.</p>
 
           </section>

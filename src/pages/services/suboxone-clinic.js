@@ -49,10 +49,10 @@ function Clinic() {
       </Helmet>
 
       <section className="bg-white bg-opacity-0 mt-0 w-full h-1/2">
-        <div className="w-full h-1/2 bg-gray-900 bg-opacity-100 overflow-hidden text-center relative" style={{ backgroundImage: 'url(../office.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="w-full h-1/2 bg-gray-900 bg-opacity-100 overflow-hidden text-center relative" style={{ backgroundImage: 'url(../../happy-people4.jpeg)', backgroundSize: 'cover', backgroundPosition: '0% 40%' }}>
           <div className="container mx-auto my-auto pt-20 h-1/2">
             <div className="w-9/12 mx-auto text-gray-300 mt-0 my-40 items-center content-center content-center h-1/2">
-              <h1 className="lg:ml-40 mt-10 mb-4 pr-8 text-center font-sans text-4xl font-bold tracking-tight text-indigo-700 sm:text-4xl sm:leading-none"><span data-sal="fade"
+              <h1 className="mt-14 mb-4 pr-8 text-center font-sans text-4xl font-bold tracking-tight text-orange-400 sm:text-4xl sm:leading-none"><span data-sal="fade"
                 data-sal-delay="300"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint">IMG</span> <span data-sal="fade"
@@ -68,7 +68,7 @@ function Clinic() {
         <div className="container flex flex-col md:flex-row mx-auto ">
           <section className="w-full md:w-8/12 text-gray-600 body-font relative my-20" id="blog">
             <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Suboxone Clinic</h2>
-            <p className="mx-2 pb-4 text-lg">If you or a loved one are suffering from drug addiction or alcohol addiction, call or chat with us to schedule an appointment with our outpatient Merrillville, IN addiction treatment center today. We offer telehealth addiction treatment as well as in-person clinic visits.</p>
+            <p className="mx-2 pb-4 text-lg">If you or a loved one are suffering from drug addiction or alcohol addiction, call or chat with us to schedule an appointment with our outpatient Merrillville, IN addiction treatment center today. We offer addiction treatment as well as in-person clinic visits.</p>
             <p className="mx-2 pb-4 text-lg">Our approach is evidence based and we can get you started on drug rehab medication-assisted treatment (MAT) program immediately. </p>
             <p className="mx-2 pb-4 text-lg"> Our opioid and alcohol addiction treatment programs include the use of buprenorphine (such as Suboxone) or naltrexone (Vivitrol) as part of an individualized treatment plan led by our trained medical staff. Our patients are treated with dignity, compassion and respect. We accept Medicare, Medicaid, most insurance, and cash payments.</p>
             <BookButton />

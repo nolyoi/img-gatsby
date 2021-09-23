@@ -48,8 +48,8 @@ function Services() {
 
       <section className="bg-white bg-opacity-0 mt-0 w-full h-1/2">
         <div className="w-full h-1/2 bg-gray900 bg-opacity-95 overflow-hidden text-center relative" style={{ backgroundImage: 'url(../runner.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-          <div className="container mx-auto my-auto pt-20 h-1/2">
-            <div className="w-9/12 mx-auto text-gray-300 mt-0 my-40 items-center content-center content-center h-1/2">
+          <div className="container mx-auto my-auto py-40 h-full">
+            <div className="w-9/12 mx-auto text-gray-300 mt-0 items-center content-center content-center h-full">
               <h1 className="ml-40 mt-10 mb-4 pr-8 text-center font-sans text-4xl font-bold tracking-tight text-gray-100 sm:text-4xl sm:leading-none"><span data-sal="fade"
                 data-sal-delay="300"
                 data-sal-duration="1500"
@@ -72,7 +72,7 @@ function Services() {
             <p data-sal="slide-up"
               data-sal-delay="300"
               data-sal-duration="1500"
-              data-sal-easing="ease-out-quint" className="text-gray-700 text-lg leading-relaxed mb-3">Here at IMG, we believe the most important part of healthcare is providing <Link to="/" className="text-indigo-500 hover:text-indigo-600">continuity of care</Link>. Being able to care for patients at all stages of life allows us to focus more individually on the patient. From pediatrics, to general/family, geriatrics, substance abuse, and more. We accept Medicare, Medicaid, most insurance, and cash payments.</p>
+              data-sal-easing="ease-out-quint" className="text-gray-700 text-lg leading-relaxed mb-3">Here at IMG, we believe the most important part of healthcare is providing <Link to="/" className="text-orange-500 hover:text-orange-600">continuity of care</Link>. Being able to care for patients at all stages of life allows us to focus more individually on the patient. From pediatrics, to general/family, geriatrics, substance abuse, and more. We accept Medicare, Medicaid, most insurance, and cash payments.</p>
 
             <p data-sal="slide-up"
               data-sal-delay="300"
@@ -113,7 +113,7 @@ function Services() {
                   <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(../primary-care.png)', backgroundPosition: 'center' }}>
                     <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Primary Care</h1>
                     <p className="text-gray-100 leading-relaxed mb-3">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.</p>
-                    <Link to="/services/primary-care" className="text-indigo-200 inline-flex items-center">Learn More
+                    <Link to="/services/primary-care" className="text-orange-200 inline-flex items-center">Learn More
                       <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>
@@ -130,7 +130,7 @@ function Services() {
                 <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(../preventive-care.jpg)', backgroundPosition: 'center' }}>
                   <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Preventive Care</h1>
                   <p className="text-gray-100 leading-relaxed mb-3">Wellness exams, annual blood work, check ups, and more. Our doctors are happy to help with your preventive care needs.</p>
-                  <Link to="/services/preventive-care" className="text-indigo-200 inline-flex items-center">Learn More
+                  <Link to="/services/preventive-care" className="text-orange-200 inline-flex items-center">Learn More
                     <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M5 12h14"></path>
                       <path d="M12 5l7 7-7 7"></path>
@@ -147,7 +147,7 @@ function Services() {
                   <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(../behavioral-health.jpg)', backgroundPosition: 'center' }}>
                     <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Substance Abuse</h1>
                     <p className="text-gray-100 leading-relaxed mb-3">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.</p>
-                    <Link to="/services/suboxone-clinic" className="text-indigo-200 inline-flex items-center">Learn More
+                    <Link to="/services/suboxone-clinic" className="text-orange-200 inline-flex items-center">Learn More
                       <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>
@@ -165,7 +165,7 @@ function Services() {
 
                     <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Prenatal</h1>
                     <p className="text-gray-100 leading-relaxed mb-3">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.</p>
-                    <Link to="/services/prenatal" className="text-indigo-200 inline-flex items-center">Learn More
+                    <Link to="/services/prenatal" className="text-orange-200 inline-flex items-center">Learn More
                       <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>
@@ -183,7 +183,7 @@ function Services() {
                   <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(../pediatrics.jpeg)', backgroundPosition: 'center' }}>
                     <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Pediatrics</h1>
                     <p className="text-gray-100 leading-relaxed mb-3">Our staff understand that it is a privilege to serve your family and to maintain and improve the health of your children.</p>
-                    <Link to="/services/pediatrics" className="text-indigo-200 inline-flex items-center">Learn More
+                    <Link to="/services/pediatrics" className="text-orange-200 inline-flex items-center">Learn More
                       <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>
@@ -202,7 +202,7 @@ function Services() {
 
                     <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Geriatrics</h1>
                     <p className="text-gray-100 leading-relaxed mb-3">We provide services for the physical, emotional and social well-being of elderly patients with medical and psychosocial problems.</p>
-                    <Link to="/services/geriatrics" className="text-indigo-200 inline-flex items-center">Learn More
+                    <Link to="/services/geriatrics" className="text-orange-200 inline-flex items-center">Learn More
                       <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>
