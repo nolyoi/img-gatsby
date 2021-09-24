@@ -14,16 +14,16 @@ function Nav({ menuItem }) {
         {title}
       </Link>
     } else if (isMenuOpen) {
-      return <Link to={to} aria-label={title} title={description} className="font-medium tracking-wide text-gray-800 transition-colors duration-200 hover:text-blue-400">
+      return <Link to={to} aria-label={title} title={description} className="font-medium tracking-wide text-gray-800 transition-colors duration-200 hover:text-blue-600">
         {title}
       </Link>
     } else if (menuItem === title.toLowerCase().replace(/\s/g, "-")) {
-      return <Link to={to} aria-label={title} title={description} className="font-medium tracking-wide text-blue-400 transition-colors duration-200 hover:text-blue-500">
+      return <Link to={to} aria-label={title} title={description} className="font-medium tracking-wide text-blue-500 transition-colors duration-200 hover:text-blue-600">
       {title}
     </Link>
     }
 
-    return <Link to={to} aria-label={title} title={description} className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-300">
+    return <Link to={to} aria-label={title} title={description} className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-600">
       {title}
     </Link>
   }

@@ -160,33 +160,33 @@ function Index() {
         </div>
       </div>
 
-      <section className="flex flex-col m-auto h-screen lg:h-screen sm:h-full my-24 sm:mx-24">
+      <section className="flex flex-col h-screen lg:h-screen sm:h-full w-full my-0 bg-blue-700 via-blue-700 to-indigo-800 text-white bg-blend-overlay opacity-90" style={{backgroundImage: 'url(../snow6.jpeg)', backgroundPosition: 'top', backgroundSize: 'cover' }}>
         <div className="flex flex-wrap content-center container sm:h-full px-12 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
           <div className="grid gap-5 row-gap-8 lg:grid-cols-7">
-            <div className="col-span-2 order-1 lg:order-1 m-auto flex flex-row">
+            {/* <div className="col-span-3 order-1 lg:order-1 m-auto flex flex-row">
               <img data-sal="slide-up"
                 data-sal-delay="200"
                 data-sal-duration="2000"
-                data-sal-easing="ease-out-quint" className="object-contain h-full w-full" src="./continuity5.png" alt="" />
-            </div>
-            <div className="col-span-3 order-3 lg:order-2 flex flex-col justify-center">
+                data-sal-easing="ease-out-quint" className="object-contain h-full w-full" src="./continuity8.png" alt="" />
+            </div> */}
+            <div className="col-span-4 order-3 lg:order-3 flex flex-col justify-center">
               <div className="max-w-full mb-6 mt-6 lg:mt-0">
                 <h2 data-sal="slide-right"
                   data-sal-delay="300"
                   data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="mt-8 font-sans text-4xl text-center font-bold tracking-tight text-gray-700 sm:text-4xl sm:leading-none">
-                  Continuity of <span className="text-red-500">Care</span>
+                  data-sal-easing="ease-out-quint" className="mt-8 font-sans text-4xl text-center font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+                  Continuity of <span className="text-red-400">Care</span>
                 </h2>
                 <p data-sal="slide-right"
                   data-sal-delay="300"
                   data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="text-base mt-8 text-gray-700 md:text-lg">
+                  data-sal-easing="ease-out-quint" className="text-base mt-8 text-white md:text-lg">
                   Being able to care for patients at all stages of life allows us to focus more individually on the patient. From prenatal and pediatrics to general/family and geriatrics.
                 </p>
                 <p data-sal="slide-right"
                   data-sal-delay="300"
                   data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg mt-4">
+                  data-sal-easing="ease-out-quint" className="text-base text-white md:text-lg mt-4">
                   Whether it's in our office, at the hospital, nursing home, or your own home, our doctors will be there.
                 </p>
                 <div data-sal="slide-up"
@@ -198,18 +198,18 @@ function Index() {
               </div>
             </div>
             {/* Add 2nd circle (office, home, hospital, nursing home) */}
-            <div className="col-span-2 order-2 lg:order-3 m-auto">
+            <div className="col-span-3 order-2 m-auto">
 
               <img data-sal="slide-up"
                 data-sal-delay="200"
                 data-sal-duration="2000"
-                data-sal-easing="ease-out-quint" className="object-contain h-full w-full" src="./continuity6.png" alt="" />
+                data-sal-easing="ease-out-quint" className="object-contain h-full w-full" src="./continuity10.png" alt="" />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="flex flex-col m-auto lg:h-screen sm:h-full mb-24 sm:mx-24">
+      <section className="flex flex-col h-screen lg:h-screen sm:h-full w-full my-0 bg-yellow-200 via-blue-700 to-indigo-800 text-gray-800 bg-blend-overlay opacity-70" style={{backgroundImage: 'url(../snow-sunrise2.jpeg)', backgroundPosition: 'top', backgroundSize: 'cover' }}>
         <div className="flex flex-wrap content-center container sm:h-full px-12 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
           <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
             <div>
@@ -237,7 +237,7 @@ function Index() {
                 <div data-sal="slide-left"
                   data-sal-delay="350"
                   data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-blue-400">
+                  data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-yellow-600">
                   <div className="h-full p-5 rounded-r">
                     <h6 className="mb-2 font-semibold leading-5">
                       Continuity of care
@@ -250,7 +250,7 @@ function Index() {
                 <div data-sal="slide-left"
                   data-sal-delay="400"
                   data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-blue-300">
+                  data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-yellow-500">
                   <div className="h-full p-5 rounded-r">
                     <h6 className="mb-2 font-semibold leading-5">
                       Serving our local community
