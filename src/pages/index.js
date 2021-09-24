@@ -93,7 +93,7 @@ function Index() {
           <div data-sal="slide-right"
             data-sal-delay="300"
             data-sal-duration="1500"
-            data-sal-easing="ease-out-quint" className="flex max-w-9/10 mx-auto overflow-hidden bg-white rounded-lg border-r-4 border-orange-400 shadow-sm">
+            data-sal-easing="ease-out-quint" className="flex max-w-9/10 mx-auto overflow-hidden bg-white rounded-lg border-r-4 border-blue-400 shadow-sm">
             <div className="flex rounded-r w-full h-full">
               <div className="w-1/4 bg-cover" style={{ backgroundImage: 'url(../happy-fam7.jpeg)', backgroundPosition: 'center' }}></div>
               <div className="w-3/4 m-4">
@@ -101,7 +101,7 @@ function Index() {
 
                 <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.</p>
                 <div className="flex justify-between mt-3 float-right item-center">
-                  <Link to="/services/primary-care" className="inline-flex px-2 py-1 text-xs font-medium text-orange-500 uppercase transition-colors duration-200 transform bg-orange-100 rounded hover:bg-orange-200 focus:outline-none focus:bg-gray-700">Learn More <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"> <path d="M5 12h14M12 5l7 7-7 7"></path> </svg></Link>
+                  <Link to="/services/primary-care" className="inline-flex px-2 py-1 text-xs font-medium text-blue-500 uppercase transition-colors duration-200 transform bg-blue-100 rounded hover:bg-blue-200 focus:outline-none focus:bg-gray-700">Learn More <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"> <path d="M5 12h14M12 5l7 7-7 7"></path> </svg></Link>
                 </div>
               </div>
             </div>
@@ -110,7 +110,7 @@ function Index() {
           <div data-sal="slide-right"
             data-sal-delay="400"
             data-sal-duration="1500"
-            data-sal-easing="ease-out-quint" className="flex mt-4 max-w-9/10 mx-auto overflow-hidden bg-white rounded-lg border-r-4 border-orange-300 shadow-sm">
+            data-sal-easing="ease-out-quint" className="flex mt-4 max-w-9/10 mx-auto overflow-hidden bg-white rounded-lg border-r-4 border-blue-300 shadow-sm">
             <div className="flex rounded-r w-full h-full">
               <div className="w-1/4 bg-cover" style={{ backgroundImage: 'url(../pediatrics2.jpeg)', backgroundPosition: 'center' }}></div>
 
@@ -119,7 +119,7 @@ function Index() {
 
                 <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.</p>
                 <div className="flex justify-between mt-3 float-right item-center">
-                  <Link to="/services" className="inline-flex px-2 py-1 text-xs font-medium text-orange-500 uppercase transition-colors duration-200 transform bg-orange-100 rounded hover:bg-orange-200 focus:outline-none focus:bg-gray-700">Learn More <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"> <path d="M5 12h14M12 5l7 7-7 7"></path> </svg></Link>
+                  <Link to="/services" className="inline-flex px-2 py-1 text-xs font-medium text-blue-500 uppercase transition-colors duration-200 transform bg-blue-100 rounded hover:bg-blue-200 focus:outline-none focus:bg-gray-700">Learn More <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"> <path d="M5 12h14M12 5l7 7-7 7"></path> </svg></Link>
                 </div>
               </div>
             </div>
@@ -127,7 +127,7 @@ function Index() {
           <div data-sal="slide-right"
             data-sal-delay="500"
             data-sal-duration="1500"
-            data-sal-easing="ease-out-quint" className="flex mt-4 max-w-9/10 mx-auto overflow-hidden bg-white rounded-lg border-r-4 border-orange-200  shadow-sm">
+            data-sal-easing="ease-out-quint" className="flex mt-4 max-w-9/10 mx-auto overflow-hidden bg-white rounded-lg border-r-4 border-blue-200  shadow-sm">
             <div className="flex rounded-r w-full h-full">
               <div className="w-1/4 bg-cover" style={{ backgroundImage: 'url(../addiction.jpeg)', backgroundPosition: 'center' }}></div>
 
@@ -136,7 +136,7 @@ function Index() {
 
                 <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.</p>
                 <div className="flex justify-between mt-3 float-right item-center">
-                  <Link to="/services/suboxone-clinic" className="inline-flex px-2 py-1 text-xs font-medium text-orange-500 uppercase transition-colors duration-200 transform bg-orange-100 rounded hover:bg-orange-200 focus:outline-none focus:bg-gray-700">Learn More <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"> <path d="M5 12h14M12 5l7 7-7 7"></path> </svg></Link>
+                  <Link to="/services/suboxone-clinic" className="inline-flex px-2 py-1 text-xs font-medium text-blue-500 uppercase transition-colors duration-200 transform bg-blue-100 rounded hover:bg-blue-200 focus:outline-none focus:bg-gray-700">Learn More <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"> <path d="M5 12h14M12 5l7 7-7 7"></path> </svg></Link>
                 </div>
               </div>
             </div>
@@ -146,7 +146,7 @@ function Index() {
             data-sal-delay="400"
             data-sal-duration="2000"
             data-sal-easing="ease-out-quint" className="text-center mt-4">
-            <Link to="/services" className="inline-flex items-center justify-center mt-4 w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded  bg-orange-300 hover:bg-orange-400 focus:shadow-outline focus:outline-none">All Health Services</Link>
+            <Link to="/services" className="inline-flex items-center justify-center mt-4 w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded  bg-blue-300 hover:bg-blue-400 focus:shadow-outline focus:outline-none">All Health Services</Link>
           </div>
         </div>
 
@@ -193,7 +193,7 @@ function Index() {
                   data-sal-delay="400"
                   data-sal-duration="2000"
                   data-sal-easing="ease-out-quint" className="text-center mt-8">
-                  <Link to="/services" className="inline-flex items-center justify-center mt-4 w-50 h-12 px-4 font-medium tracking-wide text-orange-500 transition duration-200 rounded bg-orange-100 hover:bg-orange-200 focus:shadow-outline focus:outline-none uppercase">View Our Services</Link>
+                  <Link to="/services" className="inline-flex items-center justify-center mt-4 w-50 h-12 px-4 font-medium tracking-wide text-blue-500 transition duration-200 rounded bg-blue-100 hover:bg-blue-200 focus:shadow-outline focus:outline-none uppercase">View Our Services</Link>
                 </div>
               </div>
             </div>
@@ -237,7 +237,7 @@ function Index() {
                 <div data-sal="slide-left"
                   data-sal-delay="350"
                   data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-orange-400">
+                  data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-blue-400">
                   <div className="h-full p-5 rounded-r">
                     <h6 className="mb-2 font-semibold leading-5">
                       Continuity of care
@@ -250,7 +250,7 @@ function Index() {
                 <div data-sal="slide-left"
                   data-sal-delay="400"
                   data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-orange-300">
+                  data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-blue-300">
                   <div className="h-full p-5 rounded-r">
                     <h6 className="mb-2 font-semibold leading-5">
                       Serving our local community
@@ -345,7 +345,7 @@ function Index() {
                   data-sal-delay="450"
                   data-sal-duration="1500"
                   data-sal-easing="ease-out-quint" className="w-full self-center text-center">
-                  <Link to="/services" className="inline-flex items-center justify-center w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-orange-600 hover:bg-orange-800 focus:shadow-outline focus:outline-none">View all services</Link>
+                  <Link to="/services" className="inline-flex items-center justify-center w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-600 hover:bg-blue-800 focus:shadow-outline focus:outline-none">View all services</Link>
                 </div>
               </div>
             </div>

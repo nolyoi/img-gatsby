@@ -53,7 +53,7 @@ function Geriatrics() {
         <div className="w-full h-1/2 bg-gray-900 bg-opacity-100 overflow-hidden text-center relative" style={{ backgroundImage: 'url(../geriatrics-man-woman.jpeg)', backgroundSize: 'cover', backgroundPosition: '0% 55%' }}>
           <div className="container mx-auto my-auto py-10 h-1/2">
             <div className="w-9/12 mx-auto text-gray-300 mt-0 py-32 items-center content-center content-center h-1/2">
-              <h1 className="mt-10 mb-4 pr-8 text-center font-sans text-4xl font-bold tracking-tight text-orange-700 sm:text-4xl sm:leading-none"><span data-sal="fade"
+              <h1 className="mt-10 mb-4 pr-8 text-center font-sans text-4xl font-bold tracking-tight text-blue-700 sm:text-4xl sm:leading-none"><span data-sal="fade"
                 data-sal-delay="300"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint">IMG</span> <span data-sal="fade"

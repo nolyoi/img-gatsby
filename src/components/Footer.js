@@ -18,13 +18,13 @@ function Footer() {
             <p className="mt-2 text-sm text-gray-700">Quality medical care from friendly local professionals since 1987.</p>
             <div className="mt-4">
               <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
-                <a href="https://www.facebook.com/imgportage/" target="_blank" className="text-gray-700 cursor-pointer hover:text-orange-500">
+                <a href="https://www.facebook.com/imgportage/" target="_blank" className="text-gray-700 cursor-pointer hover:text-blue-500">
                   <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
                 </a>
-                <a href="https://www.google.com/maps/place/Internal+Medicine+%26+Geriatrics/@41.5752737,-87.171095,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xcea1d974d7aad2d8!8m2!3d41.575274!4d-87.1688708?hl=en" target="_blank" className="ml-3 text-gray-700 cursor-pointer hover:text-orange-500" rel="noreferrer">
+                <a href="https://www.google.com/maps/place/Internal+Medicine+%26+Geriatrics/@41.5752737,-87.171095,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xcea1d974d7aad2d8!8m2!3d41.575274!4d-87.1688708?hl=en" target="_blank" className="ml-3 text-gray-700 cursor-pointer hover:text-blue-500" rel="noreferrer">
                   <FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon>
                 </a>
-                <a href="https://www.yelp.com/biz/internal-medicine-and-geriatrics-portage-2" target="_blank" className="ml-3 text-gray-700 cursor-pointer hover:text-orange-500" rel="noreferrer">
+                <a href="https://www.yelp.com/biz/internal-medicine-and-geriatrics-portage-2" target="_blank" className="ml-3 text-gray-700 cursor-pointer hover:text-blue-500" rel="noreferrer">
                   <FontAwesomeIcon icon={faYelp}></FontAwesomeIcon>
                 </a>
               </span>
@@ -121,9 +121,9 @@ function Footer() {
         </div>
         <div className="bg-gray-50">
           <div className="container px-5 py-3 mt-10 mx-auto">
-            <p className="text-sm text-gray-500 xl:text-center sm:text-center">Website built & hosted by <a href="https://nolanm.dev/" className="text-orange-300 hover:text-orange-700" target="_blank" rel="noreferrer">Nolan Mayersky</a>.
+            <p className="text-sm text-gray-500 xl:text-center sm:text-center">Website built & hosted by <a href="https://nolanm.dev/" className="text-blue-300 hover:text-blue-700" target="_blank" rel="noreferrer">Nolan Mayersky</a>.
             </p>
-            <p className="text-sm text-gray-500 capitalize xl:text-center sm:text-center">© {new Date().getFullYear()} <Link to="/" className="text-orange-300 hover:text-orange-700">Internal Medicine & Geriatrics</Link>. All rights reserved.
+            <p className="text-sm text-gray-500 capitalize xl:text-center sm:text-center">© {new Date().getFullYear()} <Link to="/" className="text-blue-300 hover:text-blue-700">Internal Medicine & Geriatrics</Link>. All rights reserved.
             </p>
           </div>
         </div>

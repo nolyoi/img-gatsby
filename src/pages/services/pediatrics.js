@@ -53,7 +53,7 @@ function Pediatrics() {
         <div className="w-full h-1/2 bg-gray-900 bg-opacity-100 overflow-hidden text-center relative" style={{ backgroundImage: 'url(../../pediatrics-kids.jpeg)', backgroundSize: 'cover', backgroundPosition: '0% 10%' }}>
           <div className="container mx-auto my-auto pt-20 h-1/2">
             <div className="w-9/12 mx-auto text-gray-300 mt-0 my-40 items-center content-center content-center h-1/2">
-              <h1 className="mt-20 pb-10 pr-8 text-center font-sans text-4xl font-bold tracking-tight text-orange-600 sm:text-4xl sm:leading-none"><span data-sal="fade"
+              <h1 className="mt-20 pb-10 pr-8 text-center font-sans text-4xl font-bold tracking-tight text-blue-600 sm:text-4xl sm:leading-none"><span data-sal="fade"
                 data-sal-delay="300"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint" style={{ textShadow: '1px 1px 3px #888' }}>IMG</span> <span data-sal="fade"

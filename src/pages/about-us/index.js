@@ -90,7 +90,7 @@ function AboutUs() {
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Shreyas Desai</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
-                                    <Link to="/about-us/shreyas-desai" className="text-orange-500 inline-flex items-center">Learn More
+                                    <Link to="/about-us/shreyas-desai" className="text-blue-500 inline-flex items-center">Learn More
                                         <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M5 12h14"></path>
                                             <path d="M12 5l7 7-7 7"></path>
@@ -107,7 +107,7 @@ function AboutUs() {
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Havishakrishna Sarma</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
-                                    <Link to="/about-us/havish-sarma" className="text-orange-500 inline-flex items-center">Learn More
+                                    <Link to="/about-us/havish-sarma" className="text-blue-500 inline-flex items-center">Learn More
                                         <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M5 12h14"></path>
                                             <path d="M12 5l7 7-7 7"></path>
@@ -125,7 +125,7 @@ function AboutUs() {
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Truptiben Patel</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
-                                    <a className="text-orange-500 inline-flex items-center">Learn More
+                                    <a className="text-blue-500 inline-flex items-center">Learn More
                                         <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M5 12h14"></path>
                                             <path d="M12 5l7 7-7 7"></path>
@@ -143,7 +143,7 @@ function AboutUs() {
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Gayle Voight-Block</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Nurse Practitioner</p>
-                                    <a className="text-orange-500 inline-flex items-center">Learn More
+                                    <a className="text-blue-500 inline-flex items-center">Learn More
                                         <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M5 12h14"></path>
                                             <path d="M12 5l7 7-7 7"></path>
@@ -160,7 +160,7 @@ function AboutUs() {
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Christina Connelly</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Nurse Practitioner</p>
-                                    <Link to="/about-us/christina-connelly" className="text-orange-500 inline-flex items-center">Learn More
+                                    <Link to="/about-us/christina-connelly" className="text-blue-500 inline-flex items-center">Learn More
                                         <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M5 12h14"></path>
                                             <path d="M12 5l7 7-7 7"></path>
@@ -177,7 +177,7 @@ function AboutUs() {
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Mary Szymaszek</h3>
                                     <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Nurse/Office Manager</p>
-                                    <a className="text-orange-500 inline-flex items-center">Learn More
+                                    <a className="text-blue-500 inline-flex items-center">Learn More
                                         <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M5 12h14"></path>
                                             <path d="M12 5l7 7-7 7"></path>

@@ -53,7 +53,7 @@ function PrimaryCare() {
         <div className="w-full h-full bg-gray-900 bg-opacity-100 overflow-hidden text-center relative" style={{ backgroundImage: 'url(../../primary-care2.jpeg)', backgroundSize: 'cover', backgroundPosition: 'top' }}>
           <div className="m-auto h-full h-2/3">
             <div className="w-9/12 mx-auto text-gray-300 mt-0 py-52 items-center content-center content-center h-full">
-              <h1 className="mt-0 py-10 pl-10 text-center font-sans text-4xl font-bold tracking-tight text-orange-700 sm:text-4xl sm:leading-none"><span data-sal="fade"
+              <h1 className="mt-0 py-10 pl-10 text-center font-sans text-4xl font-bold tracking-tight text-blue-700 sm:text-4xl sm:leading-none"><span data-sal="fade"
                 data-sal-delay="300"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint"></span> <span data-sal="fade"
@@ -71,7 +71,7 @@ function PrimaryCare() {
             <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8">Primary and Family Care</h2>
             <div className="relative flex rounded-lg items-center justify-center overflow-hidden object-fit mx-auto h-96 mr-8 mb-8"><img src="../../happy-people.jpeg" className="object-cover object-center w-full " alt="avatar" /></div>
             <p className="mx-2 pb-4 text-lg">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.</p>
-            <p className="mx-2 pb-4 text-lg">For the best medical care in Portage, Indiana and the surrounding Northwest Indiana area, <Link to="/book-appointment/current-patient" className="text-orange-600 hover:text-orange-600">schedule an appointment with us today</Link>. </p>
+            <p className="mx-2 pb-4 text-lg">For the best medical care in Portage, Indiana and the surrounding Northwest Indiana area, <Link to="/book-appointment/current-patient" className="text-blue-600 hover:text-blue-600">schedule an appointment with us today</Link>. </p>
             <p className="mx-2 pb-4 text-lg">We strive to stay up-to-date with new medical information regarding common health concerns. Our staff is committed to providing our patients with access to high quality care and ensuring a trusting relationship with them.</p>
             <p className="mx-2 pb-4 text-lg"> At our practice we make sure that our patients get a detailed explanation of their current health condition in terms they understand. We know how important it is to stay healthy, both inside and out, and our team makes every effort to ensure you remain in peak physical health.</p>
             <p className="mx-2 pb-4 text-lg">Internal Medicine & Geriatrics proudly offers pediatric, family, and adult medical services, focusing on Preventive and Primary Care health needs, including but not limited to:</p>
