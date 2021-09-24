@@ -160,7 +160,7 @@ function Index() {
         </div>
       </div>
 
-      <section className="flex flex-col m-auto h-screen lg:h-screen sm:h-full my-24 sm:mx-24">
+      <section className="flex flex-col h-screen lg:h-screen sm:h-full w-full my-0 via-blue-700 to-indigo-800 text-white" style={{backgroundImage: 'url(../fall4.jpeg)', backgroundPosition: 'top', backgroundSize: 'cover' }}>
         <div className="flex flex-wrap content-center container sm:h-full px-12 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
           <div className="grid gap-5 row-gap-8 lg:grid-cols-7">
             <div className="col-span-2 order-1 lg:order-1 m-auto flex flex-row">
@@ -174,19 +174,19 @@ function Index() {
                 <h2 data-sal="slide-right"
                   data-sal-delay="300"
                   data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="mt-8 font-sans text-4xl text-center font-bold tracking-tight text-gray-700 sm:text-4xl sm:leading-none">
-                  Continuity of <span className="text-red-500">Care</span>
+                  data-sal-easing="ease-out-quint" className="mt-8 font-sans text-4xl text-center font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+                  Continuity of <span className="text-orange-200">Care</span>
                 </h2>
                 <p data-sal="slide-right"
                   data-sal-delay="300"
                   data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="text-base mt-8 text-gray-700 md:text-lg">
+                  data-sal-easing="ease-out-quint" className="text-base mt-8 text-white md:text-lg">
                   Being able to care for patients at all stages of life allows us to focus more individually on the patient. From prenatal and pediatrics to general/family and geriatrics.
                 </p>
                 <p data-sal="slide-right"
                   data-sal-delay="300"
                   data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg mt-4">
+                  data-sal-easing="ease-out-quint" className="text-base text-white md:text-lg mt-4">
                   Whether it's in our office, at the hospital, nursing home, or your own home, our doctors will be there.
                 </p>
                 <div data-sal="slide-up"
@@ -209,7 +209,7 @@ function Index() {
         </div>
       </section>
 
-      <section className="flex flex-col m-auto lg:h-screen sm:h-full mb-24 sm:mx-24">
+      <section className="flex flex-col h-screen lg:h-screen sm:h-full w-full my-0 bg-white via-blue-700 to-indigo-800 text-gray-700" style={{backgroundImage: 'url()', backgroundPosition: 'top', backgroundSize: 'cover' }}>
         <div className="flex flex-wrap content-center container sm:h-full px-12 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
           <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
             <div>
@@ -374,7 +374,7 @@ function Index() {
           <div data-sal="slide-left"
             data-sal-delay="400"
             data-sal-duration="1500"
-            data-sal-easing="ease-out-quint" className="md:col-span-8 col-span-12 mt-20 rounded-2xl bg-gray-50 w-full h-2/3 py-12 rounded-xl overflow-hidden" style={{ backgroundImage: "url('../quotation-mark3.png')", backgroundSize: '30%', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }}>
+            data-sal-easing="ease-out-quint" className="md:col-span-8 col-span-12 mt-20 rounded-2xl bg-yellow-50 w-full h-2/3 py-12 rounded-xl overflow-hidden" style={{ backgroundImage: "url('../quotation-mark3.png')", backgroundSize: '30%', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }}>
 
             <div className=" w-full px-5 mx-auto lg:px-24">
 
