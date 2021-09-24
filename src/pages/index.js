@@ -146,7 +146,7 @@ function Index() {
             data-sal-delay="400"
             data-sal-duration="2000"
             data-sal-easing="ease-out-quint" className="text-center mt-4">
-            <Link to="/services" className="inline-flex items-center justify-center mt-4 w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded  bg-blue-300 hover:bg-blue-400 focus:shadow-outline focus:outline-none">All Health Services</Link>
+            <Link to="/services" className="inline-flex items-center justify-center mt-4 w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded  bg-blue-300 hover:bg-blue-500 focus:shadow-outline focus:outline-none">All Health Services</Link>
           </div>
         </div>
 
@@ -155,7 +155,7 @@ function Index() {
             <img data-sal="slide-left"
               data-sal-delay="350"
               data-sal-duration="1500"
-              data-sal-easing="ease-out-quint" className="object-cover object-bottom w-full h-full" src="../happy-fam8.jpeg" alt="glasses photo" />
+              data-sal-easing="ease-out-quint" className="object-cover object-center w-full h-full" src="../fam-winter.jpeg" alt="glasses photo" />
           </div>
         </div>
       </div>

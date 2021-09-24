@@ -11,7 +11,7 @@ function BookButton({ nav }) {
 
   function getButton() {
     if (nav) {
-        return <button onClick={() => setShowModal(true)} className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-400 hover:bg-blue-500 focus:shadow-outline focus:outline-none" aria-label="Book Appointment" title="Book Appointment"><FontAwesomeIcon icon={faCalendarAlt} size="md" className="mr-2" /> <span className="mt-1">Book Now!</span></button>
+        return <button onClick={() => setShowModal(true)} className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-500 hover:bg-blue-600 focus:shadow-outline focus:outline-none" aria-label="Book Appointment" title="Book Appointment"><FontAwesomeIcon icon={faCalendarAlt} size="md" className="mr-2" /> <span className="mt-1">Book Now!</span></button>
     }
     return <div className="text-center mt-8">
     <button onClick={() => setShowModal(true)} className="inline-flex transform -rotate-1 text-2xl items-center mt-8 items-center justify-center w-50 h-10 px-8 font-semibold tracking-wide text-white transition duration-200 rounded-xl shadow-lg bg-green-500 hover:bg-green-600 focus:shadow-outline focus:outline-none py-8"><FontAwesomeIcon icon={faCalendarAlt} size="lg" className="mr-4" /> <span className="mt-1">Book Now!</span></button>
@@ -49,11 +49,11 @@ function BookButton({ nav }) {
                     <p className="mb-4 mt-2">New patients can click the button below to fill out the new patient form. This will help speed up your visit! You can then call and set up an appointment.</p>
                     <p className="mb-4 mt-2">Current patients are able to book through Practice Fusion.</p>
                     <div className="flex flex-col md:flex-row justify-items-center justify-center text-center mt-8 mb-4"> 
-                      <Link to="https://form.jotform.com/212516599423056" target="blank" rel="noreferrer" className="mr-4 inline-flex text-xl items-center items-center justify-center w-50 h-10 px-8 font-semibold tracking-wide text-white transition duration-200 rounded-xl shadow-lg bg-blue-400 hover:bg-blue-500 focus:shadow-outline focus:outline-none py-8"><FontAwesomeIcon icon={faPlusSquare} size="lg" className="mr-4" /> <span className="mt-1">New Patient</span></Link>
+                      <Link to="https://form.jotform.com/212516599423056" target="blank" rel="noreferrer" className="mr-4 inline-flex text-xl items-center items-center justify-center w-50 h-10 px-8 font-semibold tracking-wide text-white transition duration-200 rounded-xl shadow-lg bg-blue-500 hover:bg-blue-600 focus:shadow-outline focus:outline-none py-8"><FontAwesomeIcon icon={faPlusSquare} size="lg" className="mr-4" /> <span className="mt-1">New Patient</span></Link>
                       <p className="my-auto mr-4">
                         or
                         </p>
-                      <Link to="https://login.patientfusion.com/?defaultTab=login&redirect=https%3A%2F%2Fmy.patientfusion.com" className="inline-flex text-xl items-center items-center justify-center w-50 h-10 px-8 font-semibold tracking-wide text-white transition duration-200 rounded-xl shadow-lg bg-blue-400 hover:bg-blue-500 focus:shadow-outline focus:outline-none py-8" target="blank"><FontAwesomeIcon icon={faIdBadge} size="lg" className="mr-4" /> <span className="mt-1">Current Patient</span></Link>
+                      <Link to="https://login.patientfusion.com/?defaultTab=login&redirect=https%3A%2F%2Fmy.patientfusion.com" className="inline-flex text-xl items-center items-center justify-center w-50 h-10 px-8 font-semibold tracking-wide text-white transition duration-200 rounded-xl shadow-lg bg-blue-500 hover:bg-blue-600 focus:shadow-outline focus:outline-none py-8" target="blank"><FontAwesomeIcon icon={faIdBadge} size="lg" className="mr-4" /> <span className="mt-1">Current Patient</span></Link>
                     </div>
 
                   </span>
