@@ -79,13 +79,13 @@ function Index() {
 
       <Nav menuItem="index" />
       {/* Move to 3rd */}
-      <section className="flex flex-col-reverse md:flex-row h-full md:h-screen w-full">
+      <section className="flex flex-col-reverse md:flex-row h-full md:h-screen w-full mb-10 sm:mb-0">
         <div className="w-full m-auto">
           <div className="w-full text-center">
             <h1 data-sal="fade"
               data-sal-delay="200"
               data-sal-duration="1500"
-              data-sal-easing="ease-out-quint" className="mb-8 text-2xl font-semibold leading-none tracking-tighter text-black sm:text-6xl title-font">
+              data-sal-easing="ease-out-quint" className="mb-8 text-4xl font-semibold leading-none tracking-tighter text-black sm:text-6xl title-font">
               Health Services
             </h1>
           </div>
