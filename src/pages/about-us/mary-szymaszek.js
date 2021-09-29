@@ -81,16 +81,12 @@ function MarySzymasek() {
               <div className="rounded-xl px-6 py-6 bg-blue-50 drop-shadow-lg text-gray-500">
                 {/* <h4 className="mb-4 text-xl font-bold tracking-wide">Address</h4> */}
                 <p className="mb-4 "><strong className="tracking-wide">Education</strong><br /> 
-                  - Indiana University <br />
-                  - Indiana Wesleyan University (Masters)
+                  - Indiana University Northwest<br />
                 </p>
-                {/* <p>
+                <p>
                   <strong className="tracking-wide">Experience</strong><br />
-                  - 45 years<br />
-                  - Methodist Hospital<br />
-                  - St. Mary Hospital<br />
-                  - Pinnacle Hospital
-                </p> */}
+                  - 24 years
+                </p> 
               </div>
             </div>
           </section>
@@ -98,13 +94,13 @@ function MarySzymasek() {
           <section className="w-full md:w-8/12 text-gray-600 body-font relative mb-20 mt-12 px-6 text-lg" id="blog">
             <h2 className="font-sans text-xl font-semibold tracking-tight text-gray-700 sm:text-3xl sm:leading-none mb-4">About</h2>
 
-            <p className="mb-4 mt-0">Christina Connelly is a certified Family Nurse Practitioner. She obtained her Bachelor’s Degree in Nursing from Indiana University. She went on to complete her Master’s Degree at Indiana Wesleyan University graduating in 2015.</p>
+            <p className="mb-4 mt-0">Mary Szymaszek is a Registered Nurse and currently the office manager at Internal Medicine & Geriatrics. She attended Indiana University Northwest.</p>
 
-            <p className="mb-4 mt-2">As a Family Nurse Practitioner, she has practiced in a variety of inpatient and outpatient settings. She has also integrated telemedicine into her practice. Christina has experience in critical care, as well as a special focus in obesity medicine, the treatment of opiate dependence, and geriatric medicine. She places high value on individualized care, strong family values, and preventative medicine.</p>
+            <p className="mb-4 mt-2">Mary is in charge of co-coordinating care and organization. She also manages staff and patient needs.</p>
 
-            <p className="mb-4 mt-2">Christina was born and raised in Northwest Indiana and currently lives in Valparaiso with her husband and youngest daughter. Being part of the community herself, has inspired her to make a positive impact on others and their health.</p>
+            <p className="mb-4 mt-2">Mary was born and raised in Northwest Indiana and currently lives in Valparaiso. Being part of the community herself, has inspired her to make a positive impact on others and their health.</p>
 
-            <p className="mb-4 mt-2">In her spare time Christina enjoys spending time with her eldest sons, exploring the Dunes State Park, traveling, snorkeling and exercise of any kind.</p>
+            <p className="mb-4 mt-2">In her spare time, she enjoys spending time with her 4 children and 6 grandchildren, travelling, and doing outdoor activities.</p>
           </section>
         </div>
       </div>
