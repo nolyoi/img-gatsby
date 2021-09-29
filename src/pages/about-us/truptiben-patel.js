@@ -81,8 +81,9 @@ function TruptibenPatel() {
               <div className="rounded-xl px-6 py-6 bg-blue-50 drop-shadow-lg text-gray-500">
                 {/* <h4 className="mb-4 text-xl font-bold tracking-wide">Address</h4> */}
                 <p className="mb-4 "><strong className="tracking-wide">Education</strong><br /> 
-                  - Indiana University <br />
-                  - Indiana Wesleyan University (Masters)
+                  - Howard University (Postgrad Residency) <br />
+                  - Saint James School of Medicine (Doctor of Medicine) <br />
+                  - Gujarat University (Chemistry)
                 </p>
                 {/* <p>
                   <strong className="tracking-wide">Experience</strong><br />
@@ -98,13 +99,9 @@ function TruptibenPatel() {
           <section className="w-full md:w-8/12 text-gray-600 body-font relative mb-20 mt-12 px-6 text-lg" id="blog">
             <h2 className="font-sans text-xl font-semibold tracking-tight text-gray-700 sm:text-3xl sm:leading-none mb-4">About</h2>
 
-            <p className="mb-4 mt-0">Christina Connelly is a certified Family Nurse Practitioner. She obtained her Bachelor’s Degree in Nursing from Indiana University. She went on to complete her Master’s Degree at Indiana Wesleyan University graduating in 2015.</p>
+            <p className="mb-4 mt-0">Trupti Patel attended Gujarat University (Chemistry & Organic Chemistry), Saint James School of Medicine (Doctor of Medicine), and completed her postgraduate medical training at Howard University in Washington D.C. in 2020.</p>
 
-            <p className="mb-4 mt-2">As a Family Nurse Practitioner, she has practiced in a variety of inpatient and outpatient settings. She has also integrated telemedicine into her practice. Christina has experience in critical care, as well as a special focus in obesity medicine, the treatment of opiate dependence, and geriatric medicine. She places high value on individualized care, strong family values, and preventative medicine.</p>
-
-            <p className="mb-4 mt-2">Christina was born and raised in Northwest Indiana and currently lives in Valparaiso with her husband and youngest daughter. Being part of the community herself, has inspired her to make a positive impact on others and their health.</p>
-
-            <p className="mb-4 mt-2">In her spare time Christina enjoys spending time with her eldest sons, exploring the Dunes State Park, traveling, snorkeling and exercise of any kind.</p>
+            <p className="mb-4 mt-2">In her spare time, Trupti enjoys spending time with her family, travelling, listening to music, and cooking.</p>
           </section>
         </div>
       </div>
