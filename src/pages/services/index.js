@@ -78,32 +78,6 @@ function Services() {
               data-sal-delay="300"
               data-sal-duration="1500"
               data-sal-easing="ease-out-quint" className="text-gray-700 text-lg leading-relaxed mb-3">To learn more, please click on one of the health services below.</p>
-            {/* <p className="text-gray-700 leading-relaxed mb-3">
-              Check Ups
-              Wellness Exams
-              MRI
-              Lab Services
-              Heart
-              Lung
-              Stroke
-              Diabetes
-              Kidney
-              EKG
-              Asthma
-              Headache
-              Infection
-              Liver Diseases
-              Impotence and Sexual Problems
-              Stomach
-              Arthritis
-              Blood Problems
-              High Blood Pressure
-              Stress
-              Adult Internal Medicine
-              Hypertension
-              Heart Disease
-              Telemedicine
-            </p> */}
             <div className="flex flex-wrap -m-8 mt-10">
               <div data-sal="slide-left"
                 data-sal-delay="100"
