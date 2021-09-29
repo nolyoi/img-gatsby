@@ -16,6 +16,10 @@ module.exports = {
       'orange': colors.orange,
       'blueGray': colors.blueGray,
     },
+    boxShadow: {
+      sm: '0 1px 2px 0 rgba(0, 0, 0, 0.03)',
+      md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
+    },
     extend: {
       fontFamily: {
         'marker': ['Mali', 'cursive'],
@@ -27,6 +31,12 @@ module.exports = {
       },
       spacing: {
         128: '32rem',
+      },
+      maxWidth: {
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
+        '9/10': '90%',
       },
     },
   },

@@ -49,7 +49,7 @@ const SinglePost = ({ data }) => {
         <div className="w-full h-2/3 bg-gray-900 bg-opacity-100 overflow-hidden text-center relative" style={{ backgroundImage: 'url(../../../news.jpeg)', backgroundSize: 'cover', backgroundPosition: 'top' }}>
           <div className="container m-auto pt-20 h-1/2">
             <div className="w-9/12 m-auto text-gray-300 mt-0 my-40 items-center content-center content-center h-2/3">
-              <h1 className="ml-0 mt-20 mb-4 text-center font-sans text-4xl font-bold tracking-tight text-indigo-700 sm:text-4xl sm:leading-none"><span data-sal="fade"
+              <h1 className="ml-0 mt-20 mb-4 text-center font-sans text-4xl font-bold tracking-tight text-orange-700 sm:text-4xl sm:leading-none"><span data-sal="fade"
                 data-sal-delay="300"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint">IMG</span> <span data-sal="fade"
@@ -81,7 +81,7 @@ const SinglePost = ({ data }) => {
                   <div dangerouslySetInnerHTML={{ __html: frontmatter.html }} />
                 </div>
                 <div className="mx-2 mt-10 text-center">
-                  <button onClick={() => navigate(-1)} className="inline-flex mt-8 items-center justify-center w-50 h-10 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none">Go Back</button>
+                  <button onClick={() => navigate(-1)} className="inline-flex mt-8 items-center justify-center w-50 h-10 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-orange-600 hover:bg-orange-800 focus:shadow-outline focus:outline-none">Go Back</button>
                 </div>
               </div>
           </div>

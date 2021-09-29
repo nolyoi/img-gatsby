@@ -78,135 +78,138 @@ function Index() {
       </Helmet>
 
       <Nav menuItem="index" />
-      
-      <div className="container flex flex-col-reverse md:flex-col mx-auto px-4 mb-24 md:mt-24 mx-auto space-y-6 lg:h-128 lg:py-24 lg:flex-row lg:items-center lg:space-x-6 mt-10">
-            <div className="w-full lg:w-1/2 mt-10 lg:mt-0">
-                <div className="lg:max-w-lg">
-                    <h1 data-sal="slide-right"
-                                data-sal-delay="300"
-                                data-sal-duration="1500"
-                                data-sal-easing="ease-out-quint" className="text-2xl font-bold tracking-wide text-gray-800 dark:text-white lg:text-4xl">Schedule your next doctor appointment today</h1>
-                    <p data-sal="slide-right"
-                                data-sal-delay="300"
-                                data-sal-duration="1500"
-                                data-sal-easing="ease-out-quint" className="mt-2 text-gray-600 dark:text-gray-300">Welcome to IMG! Appointments can now be scheduled online to help speed up your first or next office visit!</p>
-                    <p data-sal="slide-right"
-                                data-sal-delay="300"
-                                data-sal-duration="1500"
-                                data-sal-easing="ease-out-quint" className="mt-2 text-gray-600 dark:text-gray-300">We accept Medicare, Medicaid, most insurance, and cash payments.</p>
-                    <div data-sal="slide-right"
-                                data-sal-delay="300"
-                                data-sal-duration="1500"
-                                data-sal-easing="ease-out-quint" className="grid gap-6 mt-8 sm:grid-cols-2">
-                        <div className="flex items-center space-x-6 text-gray-800 dark:text-gray-200">
-                            <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                            </svg>
+      {/* Move to 3rd */}
+      <section className="flex flex-col-reverse md:flex-row h-full md:h-screen w-full mb-10 sm:mb-0">
+        <div className="w-full m-auto">
+          <div className="w-full text-center">
+            <h1 data-sal="fade"
+              data-sal-delay="200"
+              data-sal-duration="1500"
+              data-sal-easing="ease-out-quint" className="mb-8 text-4xl font-semibold leading-none tracking-tighter text-black sm:text-6xl title-font">
+              Health Services
+            </h1>
+          </div>
 
-                            <span>Prenatal</span>
-                        </div>
+          <div data-sal="slide-right"
+            data-sal-delay="300"
+            data-sal-duration="1500"
+            data-sal-easing="ease-out-quint" className="flex max-w-9/10 mx-auto overflow-hidden bg-white rounded-lg border-r-4 border-orange-400 shadow-sm">
+            <div className="flex rounded-r w-full h-full">
+              <div className="w-1/4 bg-cover" style={{ backgroundImage: 'url(../happy-fam7.jpeg)', backgroundPosition: 'center' }}></div>
+              <div className="w-3/4 m-4">
+                <h1 className="text-2xl font-bold text-gray-700">Family Medicine</h1>
 
-                        <div className="flex items-center space-x-6 text-gray-800 dark:text-gray-200">
-                            <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                            </svg>
-
-                            <span>Pediatrics</span>
-                        </div>
-
-                        <div className="flex items-center space-x-6 text-gray-800 dark:text-gray-200">
-                            <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                            </svg>
-
-                            <span>Primary Care</span>
-                        </div>
-
-                        <div className="flex items-center space-x-6 text-gray-800 dark:text-gray-200">
-                            <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                            </svg>
-
-                            <span>Geriatrics</span>
-                        </div>
-
-                        <div className="flex items-center space-x-6 text-gray-800 dark:text-gray-200">
-                            <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                            </svg>
-
-                            <span>Preventive Care</span>
-                        </div>
-
-                        <div className="flex items-center space-x-6 text-gray-800 dark:text-gray-200">
-                            <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                            </svg>
-
-                            <span>Substance Abuse</span>
-                        </div>
-                        <div className="col-span-2 text-center mt-6">
-                          <button
-          onClick={() => {
-            scrollDiv.current.scrollIntoView({ behavior: 'smooth' });
-          }} className="inline-flex mb-4 items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-gray-700 transition duration-200 rounded bg-gray-100 hover:bg-gray-200 focus:shadow-outline focus:outline-none" aria-label="Book Appointment" title="Book Appointment"><FontAwesomeIcon icon={faInfo} size="md" className="mr-2" /> <span className="mt-1">Learn More</span></button>
-                            <BookButton nav="true" />
-                        </div>
-                    </div>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.</p>
+                <div className="flex justify-between mt-3 float-right item-center">
+                  <Link to="/services/primary-care" className="inline-flex px-2 py-1 text-xs font-medium text-orange-500 uppercase transition-colors duration-200 transform bg-orange-100 rounded hover:bg-orange-200 focus:outline-none focus:bg-gray-100">Learn More <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"> <path d="M5 12h14M12 5l7 7-7 7"></path> </svg></Link>
                 </div>
+              </div>
             </div>
-    
-            <div className="flex items-center justify-center justify-items-center w-full bg-blend-overlay bg-white opacity-90 h-full mb-10 lg:mb-0 lg:w-1/2">
-                <img data-sal="slide-left"
-                                data-sal-delay="350"
-                                data-sal-duration="1500"
-                                data-sal-easing="ease-out-quint" className="object-cover object-center w-full h-96 max-w-2xl rounded-md shadow-lg" src="../dr-happy.jpeg" alt="glasses photo" />
+
+          </div>
+          <div data-sal="slide-right"
+            data-sal-delay="400"
+            data-sal-duration="1500"
+            data-sal-easing="ease-out-quint" className="flex mt-4 max-w-9/10 mx-auto overflow-hidden bg-white rounded-lg border-r-4 border-orange-300 shadow-sm">
+            <div className="flex rounded-r w-full h-full">
+              <div className="w-1/4 bg-cover" style={{ backgroundImage: 'url(../pediatrics2.jpeg)', backgroundPosition: 'center' }}></div>
+
+              <div className="w-3/4 m-4">
+                <h1 className="text-2xl font-bold text-gray-700">Pediatrics & Geriatrics</h1>
+
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.</p>
+                <div className="flex justify-between mt-3 float-right item-center">
+                  <Link to="/services" className="inline-flex px-2 py-1 text-xs font-medium text-orange-500 uppercase transition-colors duration-200 transform bg-orange-100 rounded hover:bg-orange-200 focus:outline-none focus:bg-gray-100">Learn More <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"> <path d="M5 12h14M12 5l7 7-7 7"></path> </svg></Link>
+                </div>
+              </div>
             </div>
+          </div>
+          <div data-sal="slide-right"
+            data-sal-delay="500"
+            data-sal-duration="1500"
+            data-sal-easing="ease-out-quint" className="flex mt-4 max-w-9/10 mx-auto overflow-hidden bg-white rounded-lg border-r-4 border-orange-200  shadow-sm">
+            <div className="flex rounded-r w-full h-full">
+              <div className="w-1/4 bg-cover" style={{ backgroundImage: 'url(../addiction.jpeg)', backgroundPosition: 'center' }}></div>
+
+              <div className="w-3/4 m-4">
+                <h1 className="text-2xl font-bold text-gray-700">Substance Abuse</h1>
+
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.</p>
+                <div className="flex justify-between mt-3 float-right item-center">
+                  <a to="https://newbeginnings.clinic/" referrerpolicy="no-referrer" className="inline-flex px-2 py-1 text-xs font-medium text-orange-500 uppercase transition-colors duration-200 transform bg-orange-100 rounded hover:bg-orange-200 focus:outline-none focus:bg-gray-100">Learn More <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"> <path d="M5 12h14M12 5l7 7-7 7"></path> </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-sal="slide-up"
+            data-sal-delay="400"
+            data-sal-duration="2000"
+            data-sal-easing="ease-out-quint" className="text-center mt-4">
+            <Link to="/services" className="inline-flex items-center justify-center mt-4 w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded  bg-orange-300 hover:bg-orange-400 focus:shadow-outline focus:outline-none">All Health Services</Link>
+          </div>
         </div>
 
-      <section ref={scrollDiv} className="flex flex-col m-auto h-screen lg:h-screen sm:h-full mb-24 sm:mx-24">
-        <div className="flex flex-wrap content-center container sm:h-full px-12 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
-          <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
+        <div className="w-full md:block">
+          <div className="flex items-center justify-center justify-items-center w-full h-96 md:h-full mb-10 lg:mb-0">
+            <img data-sal="slide-left"
+              data-sal-delay="350"
+              data-sal-duration="1500"
+              data-sal-easing="ease-out-quint" className="object-cover object-center md:object-bottom w-full h-96 md:h-full" src="../happy-fam8.jpeg" alt="glasses photo" />
+          </div>
+        </div>
+      </section>
 
-            <div className="order-2 lg:order-1 flex flex-col justify-center">
+      <section className="flex flex-col h-full lg:h-screen lg:h-screen sm:h-full w-full my-0 via-blue-700 to-indigo-800 text-white" style={{backgroundImage: 'url(../fall4.jpeg)', backgroundPosition: 'top', backgroundSize: 'cover' }}>
+        <div className="flex flex-wrap content-center container sm:h-full px-12 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
+          <div className="grid gap-5 row-gap-8 lg:grid-cols-7">
+            <div className="hidden lg:block col-span-2 order-1 lg:order-1 m-auto flex flex-row">
+              <img data-sal="slide-up"
+                data-sal-delay="200"
+                data-sal-duration="2000"
+                data-sal-easing="ease-out-quint" className="object-contain h-full w-full" src="./continuity5.png" alt="" />
+            </div>
+            <div className="col-span-3 order-3 lg:order-2 flex flex-col justify-center">
               <div className="max-w-full mb-6 mt-6 lg:mt-0">
                 <h2 data-sal="slide-right"
                   data-sal-delay="300"
                   data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="mb-4 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                  Continuity of <span className="text-red-600">Care</span>
+                  data-sal-easing="ease-out-quint" className="mt-8 font-sans text-4xl text-center font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+                  Continuity of <span className="text-orange-200">Care</span>
                 </h2>
                 <p data-sal="slide-right"
                   data-sal-delay="300"
                   data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg">
+                  data-sal-easing="ease-out-quint" className="text-base mt-8 text-white md:text-lg">
                   Being able to care for patients at all stages of life allows us to focus more individually on the patient. From prenatal and pediatrics to general/family and geriatrics.
                 </p>
                 <p data-sal="slide-right"
                   data-sal-delay="300"
                   data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg mt-4">
+                  data-sal-easing="ease-out-quint" className="text-base text-white md:text-lg mt-4">
                   Whether it's in our office, at the hospital, nursing home, or your own home, our doctors will be there.
                 </p>
                 <div data-sal="slide-up"
                   data-sal-delay="400"
                   data-sal-duration="2000"
-                  data-sal-easing="ease-out-quint" className="text-center">
-                  <Link to="/services" className="inline-flex items-center justify-center mt-4 w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none">View our services</Link>
+                  data-sal-easing="ease-out-quint" className="text-center mt-8">
+                  <Link to="/services" className="inline-flex items-center justify-center mt-4 w-50 h-12 px-4 font-medium tracking-wide text-orange-500 transition duration-200 rounded bg-orange-100 hover:bg-orange-200 focus:shadow-outline focus:outline-none uppercase">View Our Services</Link>
                 </div>
               </div>
             </div>
-            <div className="order-1 lg:order-2">
+            {/* Add 2nd circle (office, home, hospital, nursing home) */}
+            <div className="hidden lg:block col-span-2 order-2 lg:order-3 m-auto">
+
               <img data-sal="slide-up"
                 data-sal-delay="200"
                 data-sal-duration="2000"
-                data-sal-easing="ease-out-quint" className="object-contain w-full h-56 rounded sm:h-full lg:pl-8" src="./continuity2.png" alt="" />
+                data-sal-easing="ease-out-quint" className="object-contain h-full w-full" src="./continuity6.png" alt="" />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="flex flex-col m-auto h-screen lg:h-screen sm:h-full mb-24 sm:mx-24">
+      <section className="flex flex-col h-full lg:h-screen lg:h-screen sm:h-full w-full my-24 bg-white via-blue-700 to-indigo-800 text-gray-700" style={{backgroundImage: 'url()', backgroundPosition: 'top', backgroundSize: 'cover' }}>
         <div className="flex flex-wrap content-center container sm:h-full px-12 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
           <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
             <div>
@@ -217,14 +220,14 @@ function Index() {
             </div>
             <div className="flex flex-col justify-center">
               <div className="max-w-full mb-6">
-                <h2 data-sal="slide-left"
+                <h2 data-sal="slide-up"
                   data-sal-delay="300"
                   data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                  data-sal-easing="ease-out-quint" className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl sm:leading-none">
                   Local doctors you can trust.
                 </h2>
-                <p data-sal="slide-left"
-                  data-sal-delay="300"
+                <p data-sal="slide-up"
+                  data-sal-delay="350"
                   data-sal-duration="1500"
                   data-sal-easing="ease-out-quint" className="text-base text-gray-700 md:text-lg">
                   IMG has been caring for Northwest Indiana for over 34 years and is dedicated to providing high quality healthcare in a compassionate, ethical, and caring environment.
@@ -234,8 +237,8 @@ function Index() {
                 <div data-sal="slide-left"
                   data-sal-delay="350"
                   data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-green-500">
-                  <div className="h-full p-5 border border-l-0 rounded-r">
+                  data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-orange-400">
+                  <div className="h-full p-5 rounded-r">
                     <h6 className="mb-2 font-semibold leading-5">
                       Continuity of care
                     </h6>
@@ -247,8 +250,8 @@ function Index() {
                 <div data-sal="slide-left"
                   data-sal-delay="400"
                   data-sal-duration="1500"
-                  data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-blue-600">
-                  <div className="h-full p-5 border border-l-0 rounded-r">
+                  data-sal-easing="ease-out-quint" className="bg-white border-l-4 shadow-sm border-orange-300">
+                  <div className="h-full p-5 rounded-r">
                     <h6 className="mb-2 font-semibold leading-5">
                       Serving our local community
                     </h6>
@@ -262,8 +265,8 @@ function Index() {
           </div>
         </div>
       </section>
-
-      <section className="flex m-auto text-gray-700 h-full md:h-screen lg:h-screen sm:h-full sm:my-24 sm:pt-12 sm:mx-24">
+      {/* Move to position 1 */}
+      {/* <section className="flex m-auto text-gray-700 h-full md:h-screen lg:h-screen sm:h-full sm:my-24 sm:pt-12 sm:mx-24">
         <div className="m-auto">
           <div className="flex flex-col items-center px-5 pt-8">
             <div className="flex flex-col w-full mb-8 text-left lg:text-center">
@@ -342,13 +345,13 @@ function Index() {
                   data-sal-delay="450"
                   data-sal-duration="1500"
                   data-sal-easing="ease-out-quint" className="w-full self-center text-center">
-                  <Link to="/services" className="inline-flex items-center justify-center w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-800 focus:shadow-outline focus:outline-none">View all services</Link>
+                  <Link to="/services" className="inline-flex items-center justify-center w-50 h-12 px-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-orange-600 hover:bg-orange-800 focus:shadow-outline focus:outline-none">View all services</Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="flex flex-col m-auto text-gray-700 h-full md:h-screen lg:h-screen sm:h-full my-24 sm:pt-12 md:mx-0 mx-24">
         <div className="mx-auto text-center"><h1 data-sal="slide-up"
@@ -371,7 +374,7 @@ function Index() {
           <div data-sal="slide-left"
             data-sal-delay="400"
             data-sal-duration="1500"
-            data-sal-easing="ease-out-quint" className="md:col-span-8 col-span-12 mt-20 rounded-2xl bg-gray-50 w-full h-2/3 py-12 rounded-xl overflow-hidden" style={{ backgroundImage: "url('../quotation-mark3.png')", backgroundSize: '30%', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }}>
+            data-sal-easing="ease-out-quint" className="md:col-span-8 col-span-12 mt-20 rounded-2xl bg-yellow-50 w-full h-2/3 py-12 rounded-xl overflow-hidden" style={{ backgroundImage: "url('../quotation-mark3.png')", backgroundSize: '30%', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }}>
 
             <div className=" w-full px-5 mx-auto lg:px-24">
 
