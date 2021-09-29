@@ -62,7 +62,7 @@ function Services() {
         </div>
       </section>
 
-      <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0">
+      <div className="px-4 py-0 mb-24 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0">
         <h2 data-sal="fade"
           data-sal-delay="300"
           data-sal-duration="1500"

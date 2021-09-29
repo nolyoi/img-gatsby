@@ -79,7 +79,7 @@ function Index() {
 
       <Nav menuItem="index" />
       {/* Move to 3rd */}
-      <div className="flex flex-row h-screen w-full">
+      <section className="flex flex-col-reverse md:flex-row h-full md:h-screen w-full">
         <div className="w-full m-auto">
           <div className="w-full text-center">
             <h1 data-sal="fade"
@@ -101,7 +101,7 @@ function Index() {
 
                 <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.</p>
                 <div className="flex justify-between mt-3 float-right item-center">
-                  <Link to="/services/primary-care" className="inline-flex px-2 py-1 text-xs font-medium text-orange-500 uppercase transition-colors duration-200 transform bg-orange-100 rounded hover:bg-orange-200 focus:outline-none focus:bg-gray-700">Learn More <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"> <path d="M5 12h14M12 5l7 7-7 7"></path> </svg></Link>
+                  <Link to="/services/primary-care" className="inline-flex px-2 py-1 text-xs font-medium text-orange-500 uppercase transition-colors duration-200 transform bg-orange-100 rounded hover:bg-orange-200 focus:outline-none focus:bg-gray-100">Learn More <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"> <path d="M5 12h14M12 5l7 7-7 7"></path> </svg></Link>
                 </div>
               </div>
             </div>
@@ -119,7 +119,7 @@ function Index() {
 
                 <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.</p>
                 <div className="flex justify-between mt-3 float-right item-center">
-                  <Link to="/services" className="inline-flex px-2 py-1 text-xs font-medium text-orange-500 uppercase transition-colors duration-200 transform bg-orange-100 rounded hover:bg-orange-200 focus:outline-none focus:bg-gray-700">Learn More <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"> <path d="M5 12h14M12 5l7 7-7 7"></path> </svg></Link>
+                  <Link to="/services" className="inline-flex px-2 py-1 text-xs font-medium text-orange-500 uppercase transition-colors duration-200 transform bg-orange-100 rounded hover:bg-orange-200 focus:outline-none focus:bg-gray-100">Learn More <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"> <path d="M5 12h14M12 5l7 7-7 7"></path> </svg></Link>
                 </div>
               </div>
             </div>
@@ -136,7 +136,7 @@ function Index() {
 
                 <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.</p>
                 <div className="flex justify-between mt-3 float-right item-center">
-                  <Link to="/services/suboxone-clinic" className="inline-flex px-2 py-1 text-xs font-medium text-orange-500 uppercase transition-colors duration-200 transform bg-orange-100 rounded hover:bg-orange-200 focus:outline-none focus:bg-gray-700">Learn More <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"> <path d="M5 12h14M12 5l7 7-7 7"></path> </svg></Link>
+                  <Link to="https://newbeginnings.clinic/" className="inline-flex px-2 py-1 text-xs font-medium text-orange-500 uppercase transition-colors duration-200 transform bg-orange-100 rounded hover:bg-orange-200 focus:outline-none focus:bg-gray-100">Learn More <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"> <path d="M5 12h14M12 5l7 7-7 7"></path> </svg></Link>
                 </div>
               </div>
             </div>
@@ -150,17 +150,17 @@ function Index() {
           </div>
         </div>
 
-        <div className="w-full">
-          <div className="flex items-center justify-center justify-items-center w-full h-full mb-10 lg:mb-0">
+        <div className="w-full md:block">
+          <div className="flex items-center justify-center justify-items-center w-full h-96 md:h-full mb-10 lg:mb-0">
             <img data-sal="slide-left"
               data-sal-delay="350"
               data-sal-duration="1500"
-              data-sal-easing="ease-out-quint" className="object-cover object-bottom w-full h-full" src="../happy-fam8.jpeg" alt="glasses photo" />
+              data-sal-easing="ease-out-quint" className="object-cover object-center md:object-bottom w-full h-96 md:h-full" src="../happy-fam8.jpeg" alt="glasses photo" />
           </div>
         </div>
-      </div>
+      </section>
 
-      <section className="flex flex-col h-screen lg:h-screen sm:h-full w-full my-0 via-blue-700 to-indigo-800 text-white" style={{backgroundImage: 'url(../fall4.jpeg)', backgroundPosition: 'top', backgroundSize: 'cover' }}>
+      <section className="flex flex-col h-full lg:h-screen lg:h-screen sm:h-full w-full my-0 via-blue-700 to-indigo-800 text-white" style={{backgroundImage: 'url(../fall4.jpeg)', backgroundPosition: 'top', backgroundSize: 'cover' }}>
         <div className="flex flex-wrap content-center container sm:h-full px-12 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
           <div className="grid gap-5 row-gap-8 lg:grid-cols-7">
             <div className="col-span-2 order-1 lg:order-1 m-auto flex flex-row">
@@ -209,7 +209,7 @@ function Index() {
         </div>
       </section>
 
-      <section className="flex flex-col h-screen lg:h-screen sm:h-full w-full my-0 bg-white via-blue-700 to-indigo-800 text-gray-700" style={{backgroundImage: 'url()', backgroundPosition: 'top', backgroundSize: 'cover' }}>
+      <section className="flex flex-col h-full lg:h-screen lg:h-screen sm:h-full w-full my-24 bg-white via-blue-700 to-indigo-800 text-gray-700" style={{backgroundImage: 'url()', backgroundPosition: 'top', backgroundSize: 'cover' }}>
         <div className="flex flex-wrap content-center container sm:h-full px-12 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
           <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
             <div>

@@ -71,6 +71,22 @@ function Clinic() {
             <p className="mx-2 pb-4 text-lg">If you or a loved one are suffering from drug addiction or alcohol addiction, call or chat with us to schedule an appointment with our outpatient Merrillville, IN addiction treatment center today. We offer addiction treatment as well as in-person clinic visits.</p>
             <p className="mx-2 pb-4 text-lg">Our approach is evidence based and we can get you started on drug rehab medication-assisted treatment (MAT) program immediately. </p>
             <p className="mx-2 pb-4 text-lg"> Our opioid and alcohol addiction treatment programs include the use of buprenorphine (such as Suboxone) or naltrexone (Vivitrol) as part of an individualized treatment plan led by our trained medical staff. Our patients are treated with dignity, compassion and respect. We accept Medicare, Medicaid, most insurance, and cash payments.</p>
+            <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-xl sm:leading-none mb-4 mt-8 mx-2">Treatment Program</h2>
+            <img className="h-40 float-right" src="../../suboxone.png" />
+            <ul className="mx-8">
+              <li className="mx-2 pb-4 text-lg"><strong>INDUCTION</strong><br />
+                The goal of an induction is to help you transition off of opiods and comfortably induce (start) onto our opioid addiction treatment medicine called buprenorphine (Suboxone). At the first visit, you meet with a doctor and his treatment team, create an individualized treatment plan, and are induced on to the prescribed medication. Our staff also works to reduce the cost of the prescribed medication through insurance and other discount programs.
+              </li>
+              <li className="mx-2 pb-4 text-lg"><strong>ACUTE STABILIZATION</strong><br />
+                Over the first week of treatment, the doctor will help you stabilize and become comfortable by optimizing the daily dosage of medication. Our doctors stay in constant contact through the week, monitoring the transition, and stabilizing your body on the proper dosage. Once you are stable and comfortable, you and your doctor can finalize your customized ongoing treatment plan.
+              </li>
+              <li className="mx-2 pb-4 text-lg"><strong>MAINTENANCE</strong><br />
+                Medically-assisted treatment (MAT) can last from six (6) months to a lifetime depending on your addiction and long term goals. At New Beginnings, we continue to monitor and manage the medication on a weekly, bi-weekly, or monthly basis.
+              </li>
+              <li className="mx-2 pb-4 text-lg"><strong>TAPERING</strong><br />
+                When you are ready to reduce the prescribed medication, we work with therapists and counselors to develop a taper program that will ensure a comfortable, successful completion of your medical treatment. Our philosophy is to carefully and slowly taper your medication to ensure stability and success.
+              </li>
+            </ul>
             <BookButton />
           </section>
 
@@ -82,9 +98,13 @@ function Clinic() {
               <div className="rounded-xl px-6 py-6 bg-blue-50 drop-shadow-lg text-gray-500">
                 {/* <h4 className="mb-4 text-xl font-bold tracking-wide">Address</h4> */}
                 <p>
-                  <strong className="tracking-wide">Suboxone Clinic</strong><br /> 3190 Lancer Street
-                  Portage, IN. 46368  <br />
-                  (219) 292-4501
+                  <strong className="tracking-wide">Office Information</strong>
+                </p>
+                <p className="mt-2">
+                  3190 Lancer Street
+                  <br />
+                  Portage, IN. 46368  </p>
+                <p className="mt-2"><a href="tel:12192924501" className="mt-4">(219) 292-4501</a>
                 </p>
               </div>
 
