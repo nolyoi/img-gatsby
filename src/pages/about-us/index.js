@@ -118,7 +118,7 @@ function AboutUs() {
                                 data-sal-delay="400"
                                 data-sal-duration="1500"
                                 data-sal-easing="ease-out-quint" className="w-full max-w-xs text-center">
-                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><Link to="/about-us/truptiben-patel"><div className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("../../patel.jpeg")' }} alt="avatar"></div></Link></div>
+                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><Link to="/about-us/truptiben-patel" className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("../../patel.jpeg")' }} alt="avatar"></Link></div>
 
                                 <div className="mt-2">
                                     <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Truptiben Patel</h3>
