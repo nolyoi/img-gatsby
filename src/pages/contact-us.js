@@ -66,7 +66,7 @@ function ContactUs() {
               </div>
               <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-                <a className="text-indigo-500 leading-relaxed">contact@imgogportage.com</a>
+                <a className="text-indigo-500 leading-relaxed">contact@imgportage.com</a>
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
                 <p className="leading-relaxed">(219)762-4423</p>
               </div>
