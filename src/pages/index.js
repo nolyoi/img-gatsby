@@ -136,7 +136,7 @@ function Index() {
 
                 <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.</p>
                 <div className="flex justify-between mt-3 float-right item-center">
-                  <Link to="https://newbeginnings.clinic/" className="inline-flex px-2 py-1 text-xs font-medium text-orange-500 uppercase transition-colors duration-200 transform bg-orange-100 rounded hover:bg-orange-200 focus:outline-none focus:bg-gray-100">Learn More <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"> <path d="M5 12h14M12 5l7 7-7 7"></path> </svg></Link>
+                  <a to="https://newbeginnings.clinic/" referrerpolicy="no-referrer" className="inline-flex px-2 py-1 text-xs font-medium text-orange-500 uppercase transition-colors duration-200 transform bg-orange-100 rounded hover:bg-orange-200 focus:outline-none focus:bg-gray-100">Learn More <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"> <path d="M5 12h14M12 5l7 7-7 7"></path> </svg></a>
                 </div>
               </div>
             </div>
