@@ -163,7 +163,7 @@ function Index() {
       <section className="flex flex-col h-full lg:h-screen lg:h-screen sm:h-full w-full my-0 via-blue-700 to-indigo-800 text-white" style={{backgroundImage: 'url(../fall4.jpeg)', backgroundPosition: 'top', backgroundSize: 'cover' }}>
         <div className="flex flex-wrap content-center container sm:h-full px-12 lg:px-0 m-auto max-w-xl md:max-w-full lg:max-w-screen-xl">
           <div className="grid gap-5 row-gap-8 lg:grid-cols-7">
-            <div className="col-span-2 order-1 lg:order-1 m-auto flex flex-row">
+            <div className="hidden lg:block col-span-2 order-1 lg:order-1 m-auto flex flex-row">
               <img data-sal="slide-up"
                 data-sal-delay="200"
                 data-sal-duration="2000"
@@ -198,7 +198,7 @@ function Index() {
               </div>
             </div>
             {/* Add 2nd circle (office, home, hospital, nursing home) */}
-            <div className="col-span-2 order-2 lg:order-3 m-auto">
+            <div className="hidden lg:block col-span-2 order-2 lg:order-3 m-auto">
 
               <img data-sal="slide-up"
                 data-sal-delay="200"
