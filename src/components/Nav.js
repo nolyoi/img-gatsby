@@ -137,10 +137,8 @@ function Nav({ menuItem }) {
                         <li>
                           {contactLink()}
                         </li>
-                        <li>
-                          <a href="https://login.patientfusion.com/?defaultTab=login&redirect=https%3A%2F%2Fmy.patientfusion.com" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-gray-700 transition duration-200 rounded shadow-md bg-orange-600 hover:bg-orange-800 focus:shadow-outline focus:outline-none" aria-label="Sign up" title="Sign up">
-                            Patient Login
-                          </a>
+                        <li className="text-center">
+                          <BookButton nav="true" />
                         </li>
                       </ul>
                     </nav>
