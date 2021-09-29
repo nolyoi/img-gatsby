@@ -90,12 +90,12 @@ function Clinic() {
             <BookButton />
           </section>
 
-          <section className="w-full md:w-4/12 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar">
+          <section className="w-full md:w-4/12 text-gray-600 body-font relative my-20 px-8" id="blog-sidebar text-lg">
             <div className="mb-4">
               <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-3xl sm:leading-none mb-8"></h2>
             </div>
             <div className="pl-4 text-white">
-              <div className="rounded-xl px-6 py-6 bg-blue-50 drop-shadow-lg text-gray-500">
+              <div className="rounded-xl px-6 py-6 bg-blue-50 drop-shadow-lg text-gray-500 text-lg">
                 {/* <h4 className="mb-4 text-xl font-bold tracking-wide">Address</h4> */}
                 <p>
                   <strong className="tracking-wide">Office Information</strong>
@@ -108,7 +108,8 @@ function Clinic() {
                 </p>
               </div>
 
-              <div className="rounded-xl px-6 py-6 bg-green-50 drop-shadow-lg text-gray-500 mt-8">
+              <div className="rounded-xl px-6 py-6 bg-green-50 drop-shadow-lg text-gray-500 mt-8 text-lg">
+
                 <h4 className="mb-2 tracking-wide"><strong>Office Hours</strong></h4>
                 <div className="w-full">
                   <table class="table-auto w-11/12 mx-auto">

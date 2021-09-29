@@ -78,7 +78,7 @@ function ChristinaConnelly() {
               <h2 className="font-sans text-xl font-bold tracking-tight text-gray-700 sm:text-3xl sm:leading-none mb-8"></h2>
             </div>
             <div className="pl-4 text-white">
-              <div className="rounded-xl px-6 py-6 bg-blue-50 drop-shadow-lg text-gray-500">
+              <div className="rounded-xl px-6 py-6 bg-blue-50 drop-shadow-lg text-gray-500 text-lg">
                 {/* <h4 className="mb-4 text-xl font-bold tracking-wide">Address</h4> */}
                 <p className="mb-2"><strong className="tracking-wide">Education</strong><br />
                   - Indiana University <br />

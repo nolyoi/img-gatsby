@@ -111,7 +111,8 @@ const BlogIndexPage = ({ data }) => {
           </section>
 
           <section className="w-1/3 text-gray-600 body-font relative my-10 px-8" id="blog-sidebar">
-            <div className="rounded-xl px-6 py-6 bg-green-50 drop-shadow-lg text-gray-500 mt-8">
+            <div className="rounded-xl px-6 py-6 bg-green-50 drop-shadow-lg text-gray-500 mt-8 text-lg">
+
 
               <div className="mb-4">
                 <h2 className="font-sans font-bold text-lg tracking-tight text-gray-800 sm:leading-none mb-4">Latest Posts</h2>
