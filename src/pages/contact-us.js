@@ -14,7 +14,7 @@ function ContactUs() {
 
   function submitButton(passed) {
     if (passed) {
-      return <button type="submit" className="mt-2 text-white bg-indigo-500 border-0 py-2 px-10 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send</button>
+      return <button type="submit" className="mt-2 text-white bg-orange-500 border-0 py-2 px-10 focus:outline-none hover:bg-orange-600 rounded text-lg">Send</button>
     }
     return <button type="submit" className="mt-2 text-white bg-gray-500 border-0 py-2 px-10 focus:outline-none hover:bg-gray-600 rounded text-lg" disabled>Complete Captcha</button>
   }
@@ -75,22 +75,22 @@ function ContactUs() {
           <div className="lg:w-5/12 md:w-full bg-white flex flex-col md:ml-auto w-full xs:px-12 sm:px-12 mt-20 mb-10 md:mt-10">
             <h2 className="mb-8 font sm:text-center-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none font-roboto md:text-center sm:w-full">Get in touch <span className="text-green-500 font-bold font-marker">today</span></h2>
             <h3 className="text-gray-900 text-2xl mb-8 font-medium title-font">By Telephone</h3>
-            <p className="mb-12 text-5xl text-center"> <a href="tel:12197624423" className="text-indigo-500 cursor-pointer hover:text-orange-500 font-marker">(219)762-4423</a></p>
+            <p className="mb-12 text-5xl text-center"> <a href="tel:12197624423" className="text-orange-500 cursor-pointer hover:text-orange-500 font-marker">(219)762-4423</a></p>
 
             <h3 className="text-gray-900 text-2xl mb-4 font-medium title-font">By E-mail</h3>
             <p className="leading-relaxed mb-5 text-gray-600 text-md">Use the form below to reach contact us via e-mail. If you need a quick response, please call us</p>
             <form action="https://getform.io/f/d7661c51-73c1-41e2-a669-580b50c55fb5" method="POST">
               <div className="relative mb-4">
-                <input type="text" placeholder="Your name" id="name" name="name" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                <input type="text" placeholder="Your name" id="name" name="name" className="w-full bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
               </div>
               <div className="relative mb-4">
-                <input type="email" placeholder="Your e-mail address" id="email" name="email" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                <input type="email" placeholder="Your e-mail address" id="email" name="email" className="w-full bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
               </div>
               <div className="relative mb-4">
-                <input type="phone" placeholder="(219)555-5555" id="phone" name="phone" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                <input type="phone" placeholder="(219)555-5555" id="phone" name="phone" className="w-full bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
               </div>
               <div className="relative mb-4">
-                <textarea id="message" placeholder="How can we help you?" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                <textarea id="message" placeholder="How can we help you?" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
               </div>
               <div className="mt-2 mb-4 text-center w-full">
                 

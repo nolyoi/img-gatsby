@@ -72,7 +72,7 @@ const BlogIndexPage = ({ data }) => {
         <div className="w-full h-2/3 bg-gray-900 bg-opacity-100 overflow-hidden text-center relative" style={{ backgroundImage: 'url(../../../news.jpeg)', backgroundSize: 'cover', backgroundPosition: 'top' }}>
           <div className="container m-auto pt-20 h-1/2">
             <div className="w-9/12 m-auto text-gray-300 mt-0 my-40 items-center content-center content-center h-2/3">
-              <h1 className="ml-0 mt-20 mb-4 text-center font-sans text-4xl font-bold tracking-tight text-indigo-700 sm:text-4xl sm:leading-none"><span data-sal="fade"
+              <h1 className="ml-0 mt-20 mb-4 text-center font-sans text-4xl font-bold tracking-tight text-orange-400 sm:text-4xl sm:leading-none"><span data-sal="fade"
                 data-sal-delay="300"
                 data-sal-duration="1500"
                 data-sal-easing="ease-out-quint">IMG</span> <span data-sal="fade"
@@ -92,7 +92,6 @@ const BlogIndexPage = ({ data }) => {
         <div className="container flex mx-auto ">
 
           <section className="w-2/3 text-gray-600 body-font relative my-20" id="blog">
-            <h2 className="font-sans text-xl font-bold tracking-tight text-gray-800 sm:text-4xl sm:leading-none mb-14">Latest from our blog...</h2>
 
             {frontmatter.map(element => {
               return <div className="mb-20 mx-4" key={element.id}>
@@ -100,7 +99,7 @@ const BlogIndexPage = ({ data }) => {
                   <div className="h-96 bg-gray-800 bg-blend-overlay bg-opacity-20 rounded-lg" style={{ backgroundImage: `url(${element.frontmatter.lead_image?.replace("/static", "")})`, backgroundPosition: 'center', backgroundSize: 'cover' }} />
                 </Link>
                 <div className="mb-4 mt-8">
-                  <h2 className="mb-0 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-gray-800 hover:text-indigo-600"><Link to={element.frontmatter.slug} >{element.frontmatter.title}</Link></h2>
+                  <h2 className="mb-0 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-gray-800 hover:text-orange-600"><Link to={element.frontmatter.slug} >{element.frontmatter.title}</Link></h2>
                   <span className="text-sm ml-2"><strong>by</strong> IMG Team <strong>on</strong> {element.frontmatter.published}</span>
                 </div>
 
@@ -130,7 +129,7 @@ const BlogIndexPage = ({ data }) => {
               </div>
               <div className="pl-12 text-lg">
                 <ul className="list-disc">
-                  <li><a href="#" className="hover:text-indigo-600">September</a></li>
+                  <li><a href="#" className="hover:text-orange-600">September</a></li>
                 </ul>
               </div>
             </div>

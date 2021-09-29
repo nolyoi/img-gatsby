@@ -34,7 +34,7 @@ function Hero() {
             <p data-sal="slide-up"
               data-sal-delay="300"
               data-sal-duration="1500"
-              data-sal-easing="ease-out-quint" className="text-gray-700 text-lg leading-relaxed mb-3">Here at IMG, we believe the most important part of healthcare is providing <Link to="/" className="text-indigo-500 hover:text-indigo-600">continuity of care</Link>. Being able to care for patients at all stages of life allows us to focus more individually on the patient. From pediatrics, to general/family, geriatrics, substance abuse, and more. We accept Medicare, Medicaid, most insurance, and cash payments.</p>
+              data-sal-easing="ease-out-quint" className="text-gray-700 text-lg leading-relaxed mb-3">Here at IMG, we believe the most important part of healthcare is providing <Link to="/" className="text-orange-500 hover:text-orange-600">continuity of care</Link>. Being able to care for patients at all stages of life allows us to focus more individually on the patient. From pediatrics, to general/family, geriatrics, substance abuse, and more. We accept Medicare, Medicaid, most insurance, and cash payments.</p>
 
             <p data-sal="slide-up"
               data-sal-delay="300"
@@ -49,7 +49,7 @@ function Hero() {
                   <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(../primary-care.png)', backgroundPosition: 'center' }}>
                     <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Primary Care</h1>
                     <p className="text-gray-100 leading-relaxed mb-3">We offer a full range of services in order to provide our patients with the best health and wellness care to enjoy life to the fullest.</p>
-                    <Link to="/services/primary-care" className="text-indigo-200 inline-flex items-center">Learn More
+                    <Link to="/services/primary-care" className="text-orange-200 inline-flex items-center">Learn More
                       <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>
@@ -66,7 +66,7 @@ function Hero() {
                 <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(../preventive-care.jpg)', backgroundPosition: 'center' }}>
                   <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Preventive Care</h1>
                   <p className="text-gray-100 leading-relaxed mb-3">Wellness exams, annual blood work, check ups, and more. Our doctors are happy to help with your preventive care needs.</p>
-                  <Link to="/services/preventive-care" className="text-indigo-200 inline-flex items-center">Learn More
+                  <Link to="/services/preventive-care" className="text-orange-200 inline-flex items-center">Learn More
                     <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M5 12h14"></path>
                       <path d="M12 5l7 7-7 7"></path>
@@ -83,7 +83,7 @@ function Hero() {
                   <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(../behavioral-health.jpg)', backgroundPosition: 'center' }}>
                     <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Substance Abuse</h1>
                     <p className="text-gray-100 leading-relaxed mb-3">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.</p>
-                    <Link to="/services/suboxone-clinic" className="text-indigo-200 inline-flex items-center">Learn More
+                    <Link to="/services/suboxone-clinic" className="text-orange-200 inline-flex items-center">Learn More
                       <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>
@@ -101,7 +101,7 @@ function Hero() {
 
                     <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Prenatal</h1>
                     <p className="text-gray-100 leading-relaxed mb-3">We provide Suboxone maintenance treatment along with counseling to those struggling with addiction.</p>
-                    <Link to="/services/prenatal" className="text-indigo-200 inline-flex items-center">Learn More
+                    <Link to="/services/prenatal" className="text-orange-200 inline-flex items-center">Learn More
                       <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>
@@ -119,7 +119,7 @@ function Hero() {
                   <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(../pediatrics.jpeg)', backgroundPosition: 'center' }}>
                     <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Pediatrics</h1>
                     <p className="text-gray-100 leading-relaxed mb-3">Our staff understand that it is a privilege to serve your family and to maintain and improve the health of your children.</p>
-                    <Link to="/services/pediatrics" className="text-indigo-200 inline-flex items-center">Learn More
+                    <Link to="/services/pediatrics" className="text-orange-200 inline-flex items-center">Learn More
                       <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>
@@ -138,7 +138,7 @@ function Hero() {
 
                     <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Geriatrics</h1>
                     <p className="text-gray-100 leading-relaxed mb-3">We provide services for the physical, emotional and social well-being of elderly patients with medical and psychosocial problems.</p>
-                    <Link to="/services/geriatrics" className="text-indigo-200 inline-flex items-center">Learn More
+                    <Link to="/services/geriatrics" className="text-orange-200 inline-flex items-center">Learn More
                       <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>
@@ -173,7 +173,7 @@ function Hero() {
                                 data-sal-easing="ease-out-quint" className="grid gap-6 mt-8 sm:grid-cols-2">
                         <div className="flex items-center space-x-6 text-gray-800 dark:text-gray-200">
                             <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                             </svg>
 
                             <span>Prenatal</span>
@@ -181,7 +181,7 @@ function Hero() {
 
                         <div className="flex items-center space-x-6 text-gray-800 dark:text-gray-200">
                             <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                             </svg>
 
                             <span>Pediatrics</span>
@@ -189,7 +189,7 @@ function Hero() {
 
                         <div className="flex items-center space-x-6 text-gray-800 dark:text-gray-200">
                             <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                             </svg>
 
                             <span>Primary Care</span>
@@ -197,7 +197,7 @@ function Hero() {
 
                         <div className="flex items-center space-x-6 text-gray-800 dark:text-gray-200">
                             <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                             </svg>
 
                             <span>Geriatrics</span>
@@ -205,7 +205,7 @@ function Hero() {
 
                         <div className="flex items-center space-x-6 text-gray-800 dark:text-gray-200">
                             <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                             </svg>
 
                             <span>Preventive Care</span>
@@ -213,7 +213,7 @@ function Hero() {
 
                         <div className="flex items-center space-x-6 text-gray-800 dark:text-gray-200">
                             <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                             </svg>
 
                             <span>Substance Abuse</span>
