@@ -353,7 +353,7 @@ function Index() {
         </div>
       </section> */}
 
-      <section className="flex flex-col m-auto text-gray-700 h-full md:h-screen lg:h-screen sm:h-full my-24 sm:pt-12 md:mx-0 mx-24">
+      <section className="flex flex-col m-auto text-gray-700 h-full md:h-screen lg:h-screen sm:h-full my-24 sm:pt-12 md:mx-0 mx-8">
         <div className="mx-auto text-center"><h1 data-sal="slide-up"
           data-sal-delay="200"
           data-sal-duration="1500"
@@ -369,12 +369,12 @@ function Index() {
             data-sal-delay="400"
             data-sal-duration="1500"
             data-sal-easing="ease-out-quint" className="my-auto md:col-span-2 col-span-12 md:col-start-2 mt-20 mx-auto text-center">
-            <img src="../blonde-lady.jpeg" className="rounded-full object-cover w-44 h-44 mt-6 ml-6 m-auto" />
+            <img src="../blonde-lady.jpeg" className="rounded-full object-cover w-44 h-44 md:mt-6 m-auto" />
           </div>
           <div data-sal="slide-left"
             data-sal-delay="400"
             data-sal-duration="1500"
-            data-sal-easing="ease-out-quint" className="md:col-span-8 col-span-12 mt-20 rounded-2xl bg-yellow-50 w-full h-2/3 py-12 rounded-xl overflow-hidden" style={{ backgroundImage: "url('../quotation-mark3.png')", backgroundSize: '30%', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }}>
+            data-sal-easing="ease-out-quint" className="md:col-span-8 col-span-12 mt-10 md:mt-20 rounded-2xl bg-yellow-50 w-full h-full md:h-2/3 md:py-12 rounded-xl overflow-hidden" style={{ backgroundImage: "url('../quotation-mark3.png')", backgroundSize: '30%', backgroundRepeat: 'no-repeat', backgroundPosition: 'right' }}>
 
             <div className=" w-full px-5 mx-auto lg:px-24">
 
