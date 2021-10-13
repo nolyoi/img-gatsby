@@ -100,7 +100,9 @@ function PreventiveCare() {
                   (219) 762-4423</p>
                 <p><strong className="tracking-wide">Gary Office</strong><br /> 1400 Broadway
                   Gary, IN. 46408 <br />
-                  (219) 884-4900</p>
+                  (219) 882-2305
+
+</p>
               </div>
 
               <div className="rounded-xl px-6 py-6 bg-green-50 drop-shadow-lg text-gray-500 mt-8 text-lg">
