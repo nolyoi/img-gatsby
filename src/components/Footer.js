@@ -123,8 +123,6 @@ function Footer() {
         </div>
         <div className="bg-gray-50">
           <div className="container px-5 py-3 mt-10 mx-auto">
-            <p className="text-sm text-gray-500 xl:text-center sm:text-center">Website built & hosted by <a href="https://nolanm.dev/" className="text-orange-300 hover:text-orange-700" target="_blank" rel="noreferrer">Nolan Mayersky</a>.
-            </p>
             <p className="text-sm text-gray-500 capitalize xl:text-center sm:text-center">© {new Date().getFullYear()} <Link to="/" className="text-orange-300 hover:text-orange-700">Internal Medicine & Geriatrics</Link>. All rights reserved.
             </p>
           </div>
