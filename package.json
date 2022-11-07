@@ -48,7 +48,7 @@
     "gatsby-transformer-sharp": "^3.9.0",
     "google-map-react": "^2.1.10",
     "graphql": "^15.5.3",
-    "gsap": "^3.7.1",
+    "gsap": "^3.11.3",
     "html-react-parser": "^1.2.8",
     "leaflet": "^1.7.1",
     "react": "^17.0.1",
