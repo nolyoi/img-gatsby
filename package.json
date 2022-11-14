@@ -62,7 +62,7 @@
     "react-scroll-wheel-handler": "^2.0.1",
     "sal.js": "^0.8.5",
     "sharp": "^0.28.3",
-    "typescript": "^4.3.5"
+    "typescript": "^4.8.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
