@@ -12275,10 +12275,10 @@ react-scroll-section@^3.0.2:
   dependencies:
     smoothscroll-polyfill "^0.4.4"
 
-react-scroll-wheel-handler@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/react-scroll-wheel-handler/-/react-scroll-wheel-handler-2.0.1.tgz"
-  integrity sha512-D2g2lEG8wU3FsSQmL/AS/Gzud9q1un4SwEUmW8ulljxEpxkqzIPSetOOG+YXAOFxV18rkbPEKFTlcs3zjxXN6g==
+react-scroll-wheel-handler@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/react-scroll-wheel-handler/-/react-scroll-wheel-handler-2.2.0.tgz#8119f6befe374d70764511212fd91672cd5cfd7f"
+  integrity sha512-x1OqSyF5qzCEvX2C3Rgfm6BoOMwuV4JJezBZEkRkaMe0cnb9xrnsoYtwrKIJ+J1zRy3dZESoHdoAtepzW+xtKA==
 
 react-side-effect@^2.1.0:
   version "2.1.1"
