@@ -114,25 +114,6 @@ function AboutUs() {
                                 </div>
                             </div>
 
-                            <div data-sal="slide-left"
-                                data-sal-delay="400"
-                                data-sal-duration="1500"
-                                data-sal-easing="ease-out-quint" className="w-full max-w-xs text-center">
-                                <div className="relative flex items-center justify-center overflow-hidden object-cover object-center w-full h-48 mx-auto rounded-lg"><Link to="/about-us/truptiben-patel" className="absolute w-full h-full transition-all duration-500 hover:scale-110 ease-in-out transform bg-center bg-cover" style={{ backgroundImage: 'url("../../patel.jpeg")' }} alt="avatar"></Link></div>
-
-                                <div className="mt-2">
-                                    <h3 className="text-lg font-medium text-gray-700 dark:text-gray-200">Truptiben Patel</h3>
-                                    <p className="mt-0 font-medium text-gray-600 dark:text-gray-300">Doctor</p>
-                                    <Link to="/about-us/truptiben-patel" className="text-orange-500 inline-flex items-center">Learn More
-                                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M5 12h14"></path>
-                                            <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </Link>
-
-                                </div>
-                            </div>
-
                             <div data-sal="slide-right"
                                 data-sal-delay="300"
                                 data-sal-duration="1500"
