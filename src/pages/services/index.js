@@ -72,13 +72,13 @@ function Services() {
             <p data-sal="slide-up"
               data-sal-delay="300"
               data-sal-duration="1500"
-              data-sal-easing="ease-out-quint" className="text-gray-700 text-lg leading-relaxed mb-3">Here at IMG, we believe the most important part of healthcare is providing <Link to="/" className="text-orange-500 hover:text-orange-600">continuity of care</Link>. Being able to care for patients at all stages of life allows us to focus more individually on the patient. From pediatrics, to general/family, geriatrics, substance abuse, and more. We accept Medicare, Medicaid, most insurance, and cash payments.</p>
+              data-sal-easing="ease-out-quint" className="text-gray-700 text-lg leading-relaxed mb-3">Here at IMG, we believe the most important part of healthcare is providing <Link to="/" className="text-orange-500 hover:text-orange-600">continuity of care</Link>. Being able to care for patients at all stages of life allows us to focus more individually on the patient. From general/family to geriatrics, substance abuse, and more. We accept Medicare, Medicaid, most insurance, and cash payments.</p>
 
             <p data-sal="slide-up"
               data-sal-delay="300"
               data-sal-duration="1500"
               data-sal-easing="ease-out-quint" className="text-gray-700 text-lg leading-relaxed mb-3">To learn more, please click on one of the health services below.</p>
-            <div className="flex flex-wrap -m-8 mt-10">
+            <div className="flex flex-wrap justify-center -m-8 mt-10">
               <div data-sal="slide-left"
                 data-sal-delay="100"
                 data-sal-duration="1500"
@@ -146,23 +146,6 @@ function Services() {
                       </svg>
                     </Link>
 
-                  </div>
-                </Link>
-              </div>
-              <div data-sal="slide-right"
-                data-sal-delay="200"
-                data-sal-duration="1500"
-                data-sal-easing="ease-out-quint" className="mb-8 p-4 lg:w-1/3 md:w-1/2 w-full">
-                <Link to="/services/pediatrics">
-                  <div className="h-full bg-gray-800 shadow-xl bg-opacity-95 hover:bg-opacity-100 hover:bg-blend-overlay px-8 pt-16 pb-16 rounded-lg overflow-hidden text-center relative bg-blend-overlay" style={{ backgroundImage: 'url(../pediatrics.jpeg)', backgroundPosition: 'center' }}>
-                    <h1 className="title-font sm:text-2xl text-xl font-bold text-gray-100 mb-3">Pediatrics</h1>
-                    <p className="text-gray-100 leading-relaxed mb-3">Our staff understand that it is a privilege to serve your family and to maintain and improve the health of your children.</p>
-                    <Link to="/services/pediatrics" className="text-orange-200 inline-flex items-center">Learn More
-                      <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                      </svg>
-                    </Link>
                   </div>
                 </Link>
               </div>
