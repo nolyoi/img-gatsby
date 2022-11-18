@@ -61,9 +61,6 @@ function Footer() {
                   <Link to="/services" className="text-gray-500 cursor-pointer hover:text-gray-700">Geriatric Medicine</Link>
                 </li>
                 <li className="mt-3">
-                  <Link to="/services" className="text-gray-500 cursor-pointer hover:text-gray-700">Pediatric Medicine</Link>
-                </li>
-                <li className="mt-3">
                   <Link to="/services/suboxone-clinic" className="text-gray-500 cursor-pointer hover:text-gray-700">Substance Abuse & Mental Health</Link>
                 </li>
               </nav>

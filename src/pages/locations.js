@@ -96,13 +96,13 @@ function Locations() {
 
               </div>
               <div className="my-auto h-100 lg:w-1/3 md:w-1/2 w-full bg-white flex flex-col md:ml-auto w-full md:py-2 mt-0 md:mt-0">
-                <h2 className="mb-8 font-sans text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none font-roboto">Suboxone Clinic</h2>
+                <h2 className="mb-8 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl sm:leading-none font-roboto">Suboxone Clinic</h2>
                 <p className="mb-8 text-xl"> 3190 Lancer Street
                   Portage, IN. 46368</p>
                 <h3 className="mb-4 text-xl tracking-wide"><strong>Office Hours</strong></h3>
                 <table className="table-auto min-w-full mb-20">
                   <tr><td>Monday:</td><td>10a-6p</td></tr>
-                  <tr><td>Tuesday:</td><td>11a-7p</td></tr>
+                  <tr><td>Tuesday:</td><td>11a-3p</td></tr>
                   <tr><td className="pr=4">Wednesday:</td><td>CLOSED</td></tr>
                   <tr><td>Thursday:</td><td>11a-7p</td></tr>
                   <tr><td>Friday:</td><td>11a-5p</td></tr>
