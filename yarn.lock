@@ -8318,10 +8318,10 @@ gatsby-source-google-mymaps@^1.0.0:
     fast-xml-parser "^3.21.1"
     request "^2.88.2"
 
-gatsby-source-strapi@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/gatsby-source-strapi/-/gatsby-source-strapi-1.0.2.tgz"
-  integrity sha512-/qi5giMtT79eaNGXwm8z6C9v88eCcSSHjoxHk9EBbATrtwR5tTZFkBAIoZyTZUWRiK98WpW2PR0j3ImDK6P5QA==
+gatsby-source-strapi@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-source-strapi/-/gatsby-source-strapi-1.0.3.tgz#e1f94a9c1e055b4de1018fa8b509aa2713323645"
+  integrity sha512-mNZsYBLh/N5O+FZ6mf7PhCv+cOMOuc9CGF/Tk72rboOWrLLAuP+MfPeUZzRgTMHGqRD99TrBWTc6/s+nPdngnQ==
   dependencies:
     axios "0.21.1"
     gatsby-node-helpers "0.3.0"
