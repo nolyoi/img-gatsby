@@ -40,7 +40,7 @@
     "gatsby-plugin-sitemap": "^4.10.0",
     "gatsby-plugin-transition-link": "^1.20.5",
     "gatsby-remark-classes": "^1.0.0",
-    "gatsby-source-filesystem": "^3.10.0",
+    "gatsby-source-filesystem": "^3.15.0",
     "gatsby-source-ghost": "^4.2.4",
     "gatsby-source-google-mymaps": "^1.0.0",
     "gatsby-source-strapi": "^1.0.2",
